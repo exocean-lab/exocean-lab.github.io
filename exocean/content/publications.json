@@ -6,8 +6,8 @@
   "olivier-sulpis",
   "sonia-chaabane"
  ],
- "updated": "2026-09-22",
- "count": 105,
+ "updated": "2026-09-28",
+ "count": 106,
  "items": [
   {
    "hal": "hal-05703400",
@@ -191,6 +191,29 @@
    "type": "ART",
    "volume": "23",
    "pages": "531-563"
+  },
+  {
+   "hal": "hal-05760332",
+   "title": "RADIv2: an adaptable and versatile diagenetic model for coastal and open-ocean sediments",
+   "authors": [
+    "Hinne F van der Zant",
+    "Olivier Sulpis",
+    "Jack J Middelburg",
+    "Matthew P Humphreys",
+    "Raphaël Savelli",
+    "Dustin Carroll",
+    "Dimitris Menemenlis",
+    "Kay Sušelj",
+    "Vincent Le Fouest"
+   ],
+   "journal": "Geoscientific Model Development",
+   "year": 2026,
+   "date": "2026-01-01",
+   "doi": "10.5194/gmd-19-1965-2026",
+   "pdf": "https://hal.science/hal-05760332/document",
+   "type": "ART",
+   "volume": "19",
+   "pages": "1965-1989"
   },
   {
    "hal": "hal-05759501",
