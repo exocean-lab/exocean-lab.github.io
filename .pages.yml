@@ -18,6 +18,8 @@ media:
 settings:
   content:
     merge: true          # keep everything in the files that is not edited here
+  commit:
+    identity: user       # commits show who made the edit, not just "Pages CMS"
 
 content:
   - name: news
@@ -158,7 +160,6 @@ content:
               - { name: affiliation, label: Affiliation (long form), type: string, description: "e.g. CNRS Researcher at CEREGE, France" }
               - { name: position, label: Position, type: string, description: "e.g. PhD student" }
               - { name: focus, label: Research focus (one line), type: string }
-              - { name: role, label: Fun title (optional), type: string }
               - { name: photo, type: image }
               - { name: greeting, type: string, description: "e.g. Bonjour !" }
               - { name: bio, label: Biography, type: text, list: true, description: One paragraph per item. Leave empty for no personal page. }
@@ -184,7 +185,6 @@ content:
                 list: true
                 fields:
                   - { name: name, type: string, required: true }
-                  - { name: role, type: string }
                   - { name: country, type: string }
                   - name: institutions
                     type: object

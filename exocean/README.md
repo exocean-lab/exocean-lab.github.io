@@ -109,9 +109,9 @@ that HAL links to their `"orcid"` are picked up instead — an idHAL is better
 of `team.json` (invisible while empty). Put the years in `"position"`.
 
 **An outside collaborator** — in `team.json`, the "Collaborators on current
-projects" group lists them by project (`"external"`): name, optional
-`"role"`, `"institutions"` (each with the `"url"` of its website) and
-`"country"`. They are not bolded on the Publications page.
+projects" group lists them by project (`"external"`): name, `"institutions"`
+(each with the `"url"` of its website) and `"country"`. They are not bolded
+on the Publications page.
 
 **A project** — copy a block in `content/projects.json`. `"programme"` and
 `"years"` show on its card; `"completed": true` moves it to *Completed

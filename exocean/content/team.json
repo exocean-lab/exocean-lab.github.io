@@ -13,7 +13,6 @@
           "affiliation": "CNRS Researcher at CEREGE, France",
           "position": "CNRS researcher",
           "focus": "Past ocean pH and CO₂ from boron isotopes",
-          "role": "Isotope Geochemist",
           "photo": "p-chalk.jpg",
           "greeting": "Bonjour !",
           "bio": [
@@ -51,7 +50,6 @@
           "affiliation": "CNRS Researcher at CEREGE, France",
           "position": "CNRS researcher",
           "focus": "Life cycles and culture of planktonic foraminifera",
-          "role": "Plankton biologist",
           "photo": "p-meilland.jpg",
           "greeting": "Bonjour !",
           "bio": [
@@ -88,7 +86,6 @@
           "affiliation": "CNRS Researcher at CEREGE, France",
           "position": "CNRS researcher",
           "focus": "Deep-sea carbonate dissolution under pressure",
-          "role": "CO₂ neutralizer",
           "photo": "p-sulpis.jpg",
           "greeting": "Bonjour !",
           "bio": [
@@ -326,7 +323,6 @@
           "people": [
             {
               "name": "Christian Tamburini",
-              "role": "Abyssal microbiologist",
               "institutions": [
                 {
                   "name": "Mediterranean Institute of Oceanography (MIO)",
@@ -337,7 +333,6 @@
             },
             {
               "name": "Marc Garel",
-              "role": "High-pressure microbiology",
               "institutions": [
                 {
                   "name": "Mediterranean Institute of Oceanography (MIO)",
@@ -348,7 +343,6 @@
             },
             {
               "name": "Ronnie N. Glud",
-              "role": "Hadal biogeochemist",
               "institutions": [
                 {
                   "name": "University of Southern Denmark",
@@ -359,7 +353,6 @@
             },
             {
               "name": "Peter Stief",
-              "role": "Microbial ecologist",
               "institutions": [
                 {
                   "name": "University of Southern Denmark",
@@ -531,7 +524,6 @@
           "people": [
             {
               "name": "Steeve Comeau",
-              "role": "Calcification ecophysiologist",
               "institutions": [
                 {
                   "name": "Laboratoire d'Océanographie de Villefranche (LOV)",

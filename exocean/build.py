@@ -135,6 +135,14 @@ def rel(depth: int, path: str) -> str:
     return ("../" * depth) + path
 
 
+def home(depth: int) -> str:
+    """Link to the home page by its folder address (https://exocean-lab.github.io/),
+    so there is only one address for it — not a second one ending in index.html."""
+    if depth == ABS:
+        return f"{BASE}/"
+    return "../" * depth if depth > 0 else "./"
+
+
 def absurl(path: str) -> str:
     return f"{BASE}/{path}" if BASE else path
 
@@ -445,7 +453,7 @@ def head(depth: int, title: str, description: str, active: str, path: str, *,
 
 <header class="site-header">
   <div class="wrap header-inner">
-    <a class="brand" href="{rel(depth, 'index.html') if lang == 'en' else rel(depth, 'index.html')}">
+    <a class="brand" href="{home(depth)}">
       <img src="{asset(depth, 'logo.svg')}" alt="{escape(SITE['name'])} — {escape(ui['home'])}" width="{logo_dims[0]}" height="{logo_dims[1]}">
     </a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="bars" aria-hidden="true"></span>{escape(ui['menu'])}</button>
@@ -1473,8 +1481,7 @@ def collaborators_block(depth: int, g: dict) -> str:
                 f'<a href="{escape(i["url"])}">{escape(i["name"])}</a>' if i.get("url") else escape(i["name"])
                 for i in p.get("institutions", []))
             where = ", ".join(x for x in (insts, escape(p.get("country", ""))) if x)
-            role = f'<span class="crole">{escape(p["role"])}</span>' if p.get("role") else ""
-            items.append(f'              <li><span class="cname">{escape(p["name"])}</span>{role}'
+            items.append(f'              <li><span class="cname">{escape(p["name"])}</span>'
                          f'<span class="cinst">{where}</span></li>')
         parts.append(f"""          <div class="collab-proj">
             <h3>{label}</h3>
@@ -1507,11 +1514,10 @@ def build_team() -> None:
         cards = []
         eager, first = first, False
         for m in g["members"]:
-            role = f' · <span class="prole">{escape(m["role"])}</span>' if m.get("role") else ""
             focus = f'<span class="focus">{escape(m["focus"])}</span>' if m.get("focus") else ""
             inner = f"""{avatar(d, m, "(max-width: 480px) 46vw, 220px", lazy=not eager)}
               <span class="pname">{escape(m['name'])}</span>
-              <span class="position">{escape(m.get('position') or m['affiliation'])}{role}</span>
+              <span class="position">{escape(m.get('position') or m['affiliation'])}</span>
               {focus}"""
             if m.get("bio"):
                 cards.append(f'            <a class="person" href="people/{m["slug"]}.html">\n              {inner}\n            </a>')
@@ -1565,7 +1571,6 @@ def member_papers(m: dict, n: int = 5) -> list[dict]:
 
 def build_person(m: dict) -> None:
     d = 1
-    role = f' · <span class="prole">{escape(m["role"])}</span>' if m.get("role") else ""
     greeting = f'<p class="greeting">{escape(m["greeting"])}</p>' if m.get("greeting") else ""
     paras = "\n".join(f"        <p>{escape(t)}</p>" for t in m["bio"])
     contact = ""
@@ -1600,7 +1605,7 @@ def build_person(m: dict) -> None:
       {avatar(d, m, "200px", lazy=False)}
       <div>
         <h1>{escape(m['name'])}</h1>
-        <p class="position">{escape(m.get('position') or m['affiliation'])}{role}</p>
+        <p class="position">{escape(m.get('position') or m['affiliation'])}</p>
         {focus}
       </div>
     </div>
@@ -2028,7 +2033,7 @@ def build_404() -> None:
     <div class="wrap">
       <p>The page you were looking for doesn't exist, or it has moved.</p>
       <div class="btn-row">
-        <a class="btn primary" href="{rel(d, 'index.html')}">Back to the lab</a>
+        <a class="btn primary" href="{home(d)}">Back to the lab</a>
         <a class="btn" href="{rel(d, 'projects.html')}">Our research</a>
         <a class="btn" href="{rel(d, 'contact.html')}">Contact us</a>
       </div>
