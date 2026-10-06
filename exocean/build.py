@@ -459,7 +459,7 @@ def build_services() -> None:
 """
     write("services.html", d, s["title"],
           "Analyses and experiments the exocean laboratory at CEREGE runs for academic and private partners — "
-          "carbonate chemistry, microsensor profiling, cultures, high-pressure incubations — and its instruments.",
+          "carbonate chemistry, nutrients, microsensor profiling, cultures, high-pressure incubations — and its instruments.",
           "services.html", body)
 
 

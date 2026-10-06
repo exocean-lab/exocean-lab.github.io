@@ -62,7 +62,7 @@
       },
       {
         "title": "Chemical microprofiling",
-        "body": "We routinely use a set of <strong>microsensors</strong> to measure chemical composition of water (e.g., pH, oxygen, nitrate, hydrogen sulfide) in constrained environments and to follow reactions through time in our various experimental systems.<br><br>With our mobile Unisense micromanipulator, we can perform microprofiles of sediment porewaters on ships right after sediment collection, or on coastal sites. Using the Unisense NanoRespiration kit coupled with a Zeiss stereomicroscope and an axiocam, we can measure the rate of biogeochemical processes at the scale of individual microorganisms."
+        "body": "We routinely use a set of <strong>microsensors</strong> to measure chemical composition of water (e.g., pH, oxygen, nitric oxide, hydrogen sulfide) in constrained environments and to follow reactions through time in our various experimental systems.<br><br>With our mobile Unisense micromanipulator, we can perform microprofiles of sediment porewaters on ships right after sediment collection, or on coastal sites. Using the Unisense NanoRespiration kit coupled with a Zeiss stereomicroscope and an axiocam, we can measure the rate of biogeochemical processes at the scale of individual microorganisms."
       },
       {
         "title": "Foraminifera Cultures",
@@ -109,8 +109,13 @@
         "kit": "Metrohm OMNIS titrator · Agilent Cary 60 spectrophotometer"
       },
       {
+        "title": "Dissolved silicate and phosphate",
+        "body": "Concentrations of the nutrients silicate and phosphate in seawater, measured by colorimetry on a UV-Vis spectrophotometer.",
+        "kit": "Agilent Cary 60 spectrophotometer"
+      },
+      {
         "title": "Microsensor profiling",
-        "body": "Microprofiles of oxygen, pH, nitrate and hydrogen sulfide through sediments and other confined environments. The setup is mobile: profiles can be measured in the lab, on ships right after sediment collection, or at coastal sites.",
+        "body": "Microprofiles of oxygen, pH, nitric oxide (NO) and hydrogen sulfide through sediments and other confined environments. The setup is mobile: profiles can be measured in the lab, on ships right after sediment collection, or at coastal sites.",
         "kit": "Unisense microsensor profiling system"
       },
       {
@@ -131,7 +136,7 @@
       {
         "title": "Cultures and incubations",
         "body": "Culture of plankton, microbes and other small organisms, and incubation experiments, under controlled temperature and light — from 0 to above 35 °C in the incubators of our COREFF foraminifera facility. Light intensity and spectrum are measured with a PAR sensor.",
-        "kit": "Culture incubators (×3) · PAR sensor"
+        "kit": "Friocell 111 EVO and Memmert incubators · PAR sensor"
       },
       {
         "title": "Microscopy and imaging",
@@ -151,8 +156,8 @@
         "heading": "Chemical analyses",
         "items": [
           { "name": "Metrohm OMNIS titrator", "desc": "Total alkalinity of seawater by potentiometric titration, on small volumes." },
-          { "name": "Agilent Cary 60 UV-Vis spectrophotometer", "desc": "Seawater chemistry by spectrophotometry, including pH with purified indicator dye." },
-          { "name": "Unisense microsensor profiling system", "desc": "Microsensors for oxygen, pH, nitrate and hydrogen sulfide on a motorized, automated vertical micromanipulator." }
+          { "name": "Agilent Cary 60 UV-Vis spectrophotometer", "desc": "Seawater chemistry by spectrophotometry: pH with purified indicator dye, dissolved silicate and phosphate." },
+          { "name": "Unisense microsensor profiling system", "desc": "Microsensors for oxygen, pH, nitric oxide (NO) and hydrogen sulfide on a motorized, automated vertical micromanipulator." }
         ]
       },
       {
@@ -161,7 +166,7 @@
           { "name": "Büchiglas Novoclave high-pressure reactor", "desc": "600 mL vessel for water or solid samples, up to 500 bar." },
           { "name": "Rotating disk reactors (×6)", "desc": "Stirred or rotating-disk reactors that reproduce benthic hydrodynamics, with chemical monitoring." },
           { "name": "Unisense NanoRespiration system", "desc": "Incubation of microbes or plankton in very small volumes of water, followed with microsensors." },
-          { "name": "Culture incubators (×3)", "desc": "Culture of microbes, plankton and other small organisms under controlled temperature and light." }
+          { "name": "Friocell 111 EVO (×2) and Memmert incubators", "desc": "Culture of microbes, plankton and other small organisms, and incubations, under controlled temperature and light." }
         ]
       },
       {
