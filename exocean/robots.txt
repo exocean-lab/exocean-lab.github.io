@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+Disallow: /capabilities.html
 Sitemap: https://exocean-lab.github.io/sitemap.xml

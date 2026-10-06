@@ -1,0 +1,433 @@
+{
+  "_note": "French versions of the Services, Join us and Contact pages (fr/…). Same structure as the matching blocks of site.json; keep the instrument ids and the services' \"kit\" lists in step with the English page — build.py warns when they differ.",
+  "services": {
+    "title": "Services et instruments",
+    "lede": "Les analyses et expériences que nous réalisons pour nos partenaires, et les équipements qui les rendent possibles.",
+    "hero": "news-julie.jpg",
+    "hero_alt": "Foraminifères planctoniques au microscope, et Julie Meilland devant un incubateur de culture au laboratoire exocean",
+    "hero_caption": "Foraminifères planctoniques au microscope (en haut) et Julie Meilland préparant des cultures au laboratoire exocean, au CEREGE.",
+    "hero_credit": "Photo © Elodie Gazquez, 2025",
+    "intro": [
+      "Au-delà de nos propres recherches, nous réalisons des mesures et des expériences pour des <strong>partenaires académiques et privés</strong>, dans le cadre d'une collaboration ou d'une prestation payante. Vous pouvez nous envoyer vos échantillons, ou venir travailler avec nous au laboratoire ; les visiteurs versent une participation modeste aux frais de fonctionnement du laboratoire.",
+      "exocean fait partie du réseau de plateformes techniques du CEREGE : un séjour chez nous peut se combiner avec des analyses sur <a href=\"#platforms\">d'autres plateformes du CEREGE</a> — isotopes stables, chimie élémentaire, imagerie par rayons X, micropaléontologie, etc."
+    ],
+    "how_title": "Comment procéder",
+    "how": [
+      {
+        "title": "Écrivez-nous",
+        "text": "Écrivez-nous à {email} en décrivant vos échantillons — nature, nombre, volume — et vos besoins. Si vous souhaitez aussi utiliser d'autres plateformes du CEREGE, dites-le-nous."
+      },
+      {
+        "title": "Notre réponse",
+        "text": "Nous vous indiquons ce qui est faisable, comment prélever, conserver et envoyer vos échantillons, et dans quel délai — avec un devis pour les prestations payantes."
+      },
+      {
+        "title": "Échantillons ou visite",
+        "text": "Envoyez-nous vos échantillons, ou venez réaliser le travail avec nous au laboratoire. Les visiteurs versent une participation modeste aux frais de fonctionnement du laboratoire."
+      },
+      {
+        "title": "Résultats",
+        "text": "Vous recevez vos données avec une description des méthodes et du contrôle qualité. Si votre projet est confidentiel, nous convenons des conditions avant l'envoi des échantillons."
+      }
+    ],
+    "offers_title": "Ce que nous proposons",
+    "themes": [
+      {
+        "title": "Chimie de l'eau et des sédiments",
+        "offers": [
+          {
+            "title": "Chimie des carbonates de l'eau de mer",
+            "body": "Alcalinité totale par titrage potentiométrique sur des échantillons à partir de 4 mL, et pH par spectrophotométrie avec un indicateur coloré purifié. L'alcalinité est étalonnée avec des matériaux de référence certifiés de Dickson.",
+            "kit": [
+              "omnis",
+              "cary60"
+            ]
+          },
+          {
+            "title": "Silicate et phosphate dissous",
+            "body": "Concentrations en silicate et en phosphate de l'eau de mer, par colorimétrie sur un spectrophotomètre UV-visible.",
+            "kit": [
+              "cary60"
+            ]
+          },
+          {
+            "title": "Profils par microcapteurs",
+            "body": "Microprofils d'oxygène, de pH, de monoxyde d'azote (NO) et de sulfure d'hydrogène dans les sédiments et d'autres milieux confinés — au laboratoire, à bord juste après le prélèvement des sédiments, ou sur des sites côtiers.",
+            "kit": [
+              "unisense"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Expériences et incubations",
+        "offers": [
+          {
+            "title": "Expériences à l'interface eau–sédiment",
+            "body": "Incubations de sédiments dans six réacteurs thermostatés qui reproduisent l'hydrodynamique benthique, des plaines abyssales calmes aux récifs. Ouverts ou fermés à l'atmosphère, en évolution libre ou en flux continu, avec un suivi de la chimie dans les eaux interstitielles et dans l'eau surnageante.",
+            "kit": [
+              "rdr",
+              "corio"
+            ]
+          },
+          {
+            "title": "Incubations à haute pression",
+            "body": "Échantillons d'eau ou solides maintenus jusqu'à 500 bar (environ la pression à 5 000 m de profondeur) dans une enceinte de 600 mL, avec prélèvement d'eau en cours d'expérience. La composition des gaz ne peut pas être mesurée avec le dispositif actuel.",
+            "kit": [
+              "novoclave"
+            ]
+          },
+          {
+            "title": "Cultures et incubations",
+            "body": "Culture de plancton, de microbes et d'autres petits organismes, et expériences d'incubation, à température et lumière contrôlées — de 0 à plus de 35 °C dans les incubateurs de COREFF, notre installation de culture de foraminifères. L'intensité et le spectre lumineux sont mesurés avec un capteur PAR.",
+            "kit": [
+              "incubators",
+              "par"
+            ],
+            "note": "<strong>COREFF</strong> (COntinuous REproduction for Foraminifera Facility), notre installation de reproduction continue de foraminifères, peut accueillir des milliers de foraminifères planctoniques à la fois — surtout des espèces méditerranéennes, maintenues en vie et se reproduisant selon des protocoles que nous continuons d'améliorer — ainsi que des souches de diatomées cultivées pour nourrir leurs différents stades de vie. Pour des spécimens vivants, une visite ou la saison de culture, contactez Julie Meilland (<span class=\"eml\" data-u=\"meilland\" data-d=\"cerege.fr\"></span>)."
+          }
+        ]
+      },
+      {
+        "title": "Organismes et échantillons",
+        "offers": [
+          {
+            "title": "Respiration d'organismes isolés",
+            "body": "Respiration de microbes, de foraminifères isolés ou d'autres petits organismes planctoniques, mesurée avec des microcapteurs dans de très petits volumes d'eau, sous loupe binoculaire.",
+            "kit": [
+              "nanoresp",
+              "stemi"
+            ]
+          },
+          {
+            "title": "Microscopie et imagerie",
+            "body": "Observation et imagerie de plancton vivant et d'autres échantillons immergés au microscope inversé, et de petits échantillons à la loupe binoculaire.",
+            "kit": [
+              "axiovert",
+              "stemi"
+            ]
+          },
+          {
+            "title": "Nettoyage plasma",
+            "body": "Élimination de la matière organique des échantillons par nettoyage au plasma.",
+            "kit": [
+              "plasma"
+            ]
+          }
+        ]
+      }
+    ],
+    "instruments_title": "Nos instruments",
+    "instruments_intro": "Les équipements du laboratoire exocean au CEREGE, par type.",
+    "groups": [
+      {
+        "heading": "Analyses chimiques",
+        "items": [
+          {
+            "id": "omnis",
+            "name": "Titrateur Metrohm OMNIS",
+            "desc": "Alcalinité totale de l'eau de mer par titrage potentiométrique, sur de petits volumes."
+          },
+          {
+            "id": "cary60",
+            "name": "Spectrophotomètre UV-visible Agilent Cary 60",
+            "short": "Agilent Cary 60",
+            "desc": "Chimie de l'eau de mer par spectrophotométrie : pH avec un indicateur coloré purifié, silicate et phosphate dissous."
+          },
+          {
+            "id": "unisense",
+            "name": "Système de profilage par microcapteurs Unisense",
+            "short": "Microcapteurs Unisense",
+            "desc": "Microcapteurs d'oxygène, de pH, de monoxyde d'azote (NO) et de sulfure d'hydrogène, sur un micromanipulateur vertical motorisé et automatisé."
+          }
+        ]
+      },
+      {
+        "heading": "Systèmes expérimentaux",
+        "items": [
+          {
+            "id": "novoclave",
+            "name": "Réacteur haute pression Büchiglas Novoclave",
+            "short": "Büchiglas Novoclave",
+            "desc": "Enceinte de 600 mL pour échantillons d'eau ou solides, jusqu'à 500 bar."
+          },
+          {
+            "id": "rdr",
+            "name": "Réacteurs à disque tournant (×6)",
+            "short": "Réacteurs à disque tournant",
+            "desc": "Réacteurs agités ou à disque tournant qui reproduisent l'hydrodynamique benthique, avec suivi chimique."
+          },
+          {
+            "id": "nanoresp",
+            "name": "Système NanoRespiration Unisense",
+            "short": "NanoRespiration Unisense",
+            "desc": "Incubation de microbes ou de plancton dans de très petits volumes d'eau, suivie par microcapteurs."
+          },
+          {
+            "id": "incubators",
+            "name": "Incubateurs Friocell 111 EVO (×2) et Memmert",
+            "short": "Incubateurs Friocell et Memmert",
+            "desc": "Culture de microbes, de plancton et d'autres petits organismes, et incubations, à température et lumière contrôlées."
+          }
+        ]
+      },
+      {
+        "heading": "Microscopie",
+        "items": [
+          {
+            "id": "axiovert",
+            "name": "Microscope inversé Zeiss Axiovert 5",
+            "short": "Zeiss Axiovert 5",
+            "desc": "Observation et imagerie de plancton vivant et d'autres échantillons immergés."
+          },
+          {
+            "id": "stemi",
+            "name": "Loupe binoculaire Zeiss Stemi 508",
+            "short": "Zeiss Stemi 508",
+            "desc": "Observation des échantillons et des pointes de microcapteurs."
+          }
+        ]
+      },
+      {
+        "heading": "Lumière et température",
+        "items": [
+          {
+            "id": "par",
+            "name": "Capteur PAR",
+            "desc": "Intensité et spectre lumineux dans les cultures et les incubations."
+          },
+          {
+            "id": "corio",
+            "name": "Cryothermostat à circulation Julabo CORIO",
+            "short": "Julabo CORIO",
+            "desc": "Chauffage ou refroidissement des réacteurs et des incubations."
+          }
+        ]
+      },
+      {
+        "heading": "Préparation et stockage des échantillons",
+        "items": [
+          {
+            "id": "plasma",
+            "name": "Nettoyeur plasma Henniker HPT-100",
+            "short": "Henniker HPT-100",
+            "desc": "Élimination de la matière organique des échantillons."
+          },
+          {
+            "id": "freezer",
+            "name": "Congélateur −80 °C",
+            "desc": "Stockage des échantillons sur le long terme."
+          },
+          {
+            "id": "fridge",
+            "name": "Réfrigérateur de laboratoire",
+            "desc": "Stockage des échantillons."
+          }
+        ]
+      },
+      {
+        "heading": "Réservé au projet ERC Deep-C",
+        "reserved": true,
+        "note": "Construits pour <a href=\"projects/deep-c.html\">Deep-C</a> et utilisés uniquement pour ce projet ; ils ne sont disponibles ni pour d'autres projets ni pour des prestations.",
+        "items": [
+          {
+            "id": "deepc-reactors",
+            "name": "Réacteurs haute pression",
+            "desc": "Pressions abyssales à hadales (jusqu'à 1 000 bar), thermostatés, avec prélèvement d'eau sous pression."
+          },
+          {
+            "id": "deepc-meters",
+            "name": "Oxymètres et pH-mètres",
+            "desc": "Suivi de l'oxygène et du pH dans les réacteurs haute pression."
+          }
+        ]
+      }
+    ],
+    "visit_title": "Préparer une visite",
+    "visit": [
+      "Le laboratoire se trouve au CEREGE, sur le plateau de l'Arbois près d'Aix-en-Provence — voir <a href=\"contact.html#visit\">comment venir</a>. Indiquez-nous vos dates le plus tôt possible : les instruments sont partagés entre projets, et certaines expériences durent des jours, voire des semaines.",
+      "Un séjour chez nous peut se combiner avec des analyses sur <a href=\"#platforms\">d'autres plateformes du CEREGE</a>, chacune avec ses propres conditions d'accès."
+    ],
+    "cerege": {
+      "title": "exocean au sein du CEREGE",
+      "body": [
+        "Le CEREGE regroupe ses équipements analytiques et expérimentaux par domaine de compétence en six <a href=\"https://www.cerege.fr/fr/equipements/poles-techniques/\">pôles techniques</a>, chacun coanimé par un responsable technique et un responsable scientifique. exocean est l'un des quatre laboratoires du pôle <strong>Bio-physico-chimie expérimentale</strong> (responsable technique Pierre Boutet, responsable scientifique Julie Meilland), avec le Centre d'innovation et de recherche en environnement <a href=\"https://www.cerege.fr/equipements/poles-techniques/cirene/\">CIRENE</a>, le laboratoire de <a href=\"https://www.cerege.fr/equipements/poles-techniques/caracterisation-des-colloides/\">caractérisation des colloïdes</a> et le laboratoire de géomicrobiologie."
+      ],
+      "centres": [
+        {
+          "name": "Bio-physico-chimie expérimentale",
+          "labs": [
+            "CIRENE",
+            "Caractérisation des colloïdes",
+            "exocean",
+            "Géomicrobiologie"
+          ],
+          "here": "exocean"
+        },
+        {
+          "name": "Géochimie",
+          "labs": [
+            "ENVITOP",
+            "LGO2i",
+            "PANISS",
+            "LA-ICP-MS"
+          ]
+        },
+        {
+          "name": "Géophysique et hydrologie",
+          "labs": [
+            "Géophysique et pétrographie",
+            "Pétrophysique et acoustique",
+            "Hydro-terrain"
+          ]
+        },
+        {
+          "name": "Imagerie, intelligence artificielle et modélisation",
+          "labs": [
+            "MATRIX",
+            "MANTA",
+            "SIGEO",
+            "Statistique et géomodélisation"
+          ]
+        },
+        {
+          "name": "LN2C, instrument national – ASTER",
+          "labs": [
+            "Nucléides cosmogéniques"
+          ]
+        },
+        {
+          "name": "Préparation des échantillons et archives naturelles",
+          "labs": [
+            "Lithopréparation",
+            "Sols",
+            "LPM",
+            "SEDIM"
+          ]
+        }
+      ],
+      "platforms_title": "Combiner votre visite avec d'autres plateformes du CEREGE",
+      "platforms_intro": "Les plateformes les plus souvent utiles à nos partenaires. Chacune a ses propres conditions d'accès et ses tarifs — nous pouvons vous mettre en relation.",
+      "platforms": [
+        {
+          "what": "Isotopes stables",
+          "name": "PANISS",
+          "url": "https://www.cerege.fr/equipements/poles-techniques/analyse-des-isotopes-stables-paniss-2/",
+          "desc": "δ¹⁸O et δ¹³C des carbonates, isotopes agrégés (Δ<sub>47</sub>, Δ<sub>48</sub>), δ¹⁸O, δ¹⁷O et δD de l'eau, et δ¹⁵N, δ¹³C et δD des composés organiques. Ouverte aux collaborations académiques et aux prestations."
+        },
+        {
+          "what": "Chimie élémentaire",
+          "name": "LA-ICP-MS",
+          "url": "https://www.cerege.fr/equipements/poles-techniques/chimie-elementaire-la-icp-ms/",
+          "desc": "Environ 90 % du tableau périodique en solution par ICP-OES ou ICP-MS, et ablation laser des solides pour des cartes élémentaires semi-quantitatives. Ouverte aux utilisateurs publics et privés."
+        },
+        {
+          "what": "Radiocarbone, biomarqueurs et géochimie des sédiments",
+          "name": "LGO2i",
+          "url": "https://www.cerege.fr/equipements/poles-techniques/geochimie-organique-inorganique-et-isotopique-2/",
+          "desc": "Datation radiocarbone sur le spectromètre de masse par accélérateur AixMICADAS, composés organiques comme indicateurs environnementaux, et composition élémentaire des archives sédimentaires marines et lacustres."
+        },
+        {
+          "what": "Imagerie X 2D et 3D",
+          "name": "MATRIX",
+          "url": "https://www.cerege.fr/equipements/poles-techniques/imagerie-2d-et-3d-par-rayons-x-matrix/",
+          "desc": "Micro- et nano-tomographie, micro-diffraction X et cartographie micro-XRF d'un même échantillon, sans le détruire. Ouverte à toutes et à tous."
+        },
+        {
+          "what": "Micropaléontologie automatisée",
+          "name": "MANTA",
+          "url": "https://www.cerege.fr/equipements/poles-techniques/micropaleontologie-automatisee/",
+          "desc": "Microscopes automatisés avec reconnaissance par intelligence artificielle des coccolithophoridés, foraminifères, radiolaires, diatomées et pollens, et un robot qui trie les foraminifères pour les analyses chimiques."
+        },
+        {
+          "what": "Extraction des microfossiles",
+          "name": "LPM",
+          "url": "https://www.cerege.fr/equipements/poles-techniques/preparation-micropaleontologique/",
+          "desc": "Extraction des microfossiles et d'autres bio-indicateurs des sédiments, des sols, des végétaux et des échantillons d'eau, prêts pour la microscopie ou la géochimie."
+        },
+        {
+          "what": "Sédimentologie",
+          "name": "SEDIM",
+          "url": "https://www.cerege.fr/equipements/poles-techniques/sedimentologie/",
+          "desc": "Imagerie haute résolution en mosaïque, distributions granulométriques et de forme des particules (avec ou sans prétraitement chimique), et identification de micro- et macro-restes comme les coquilles et les ostracodes."
+        }
+      ]
+    },
+    "sheet": {
+      "label": "Résumé d'une page (PDF, en anglais)",
+      "file": "exocean-services.pdf"
+    }
+  },
+  "join": {
+    "title": "Nous rejoindre",
+    "lede": "Étudiantes et étudiants, jeunes chercheuses et chercheurs, scientifiques de passage : vous êtes les bienvenus toute l'année.",
+    "openings_title": "Postes ouverts",
+    "openings": [],
+    "no_openings": "Aucun poste n'est ouvert pour le moment. Les postes financés sont annoncés sur cette page et sur notre <a href=\"https://bsky.app/profile/exoceanlab.bsky.social\">compte Bluesky</a> dès leur ouverture — et nous vous aidons volontiers à monter une demande de bourse pour venir travailler avec nous (voir ci-dessous).",
+    "items": [
+      {
+        "title": "Stages",
+        "body": "Nous accueillons chaque année des stagiaires de master et de licence, généralement pour deux à six mois, sur des sujets qui vont de la culture et de la microscopie des foraminifères à la chimie des carbonates, aux expériences à haute pression et aux réacteurs à sédiments. Écrivez-nous à {email} avec un CV et quelques lignes sur ce que vous aimeriez apprendre — nous pouvons en général construire un projet ensemble."
+      },
+      {
+        "title": "Thèses et postdocs",
+        "body": "Nous recrutons des doctorantes, des doctorants et des postdocs sur nos projets financés ; les postes ouverts sont listés ci-dessus. Pour vous présenter, envoyez un CV, une courte présentation de vos thèmes de recherche et le nom de la personne de l'équipe dont les travaux sont les plus proches des vôtres — la page <a href=\"team.html\">Équipe</a> indique ce sur quoi chacun travaille."
+      },
+      {
+        "title": "Bourses",
+        "body": "Nous échangeons volontiers avec les candidates et candidats qui souhaitent préparer avec nous une demande de bourse, par exemple une bourse postdoctorale Marie Skłodowska-Curie. Deux de nos postdocs, Astrid Hylén et Jaime Suárez-Ibarra, sont titulaires d'une bourse Marie Skłodowska-Curie. Contactez-nous plusieurs mois avant la date limite de l'appel : une bonne candidature prend du temps."
+      },
+      {
+        "title": "Séjours scientifiques et accès aux équipements",
+        "body": "Les collègues qui souhaitent mener des expériences avec des foraminifères planctoniques vivants à COREFF, utiliser notre réacteur 500 bar ou les réacteurs à disque tournant, ou passer du temps au laboratoire peuvent contacter directement <a href=\"people/julie-meilland.html\">Julie Meilland</a> (cultures) ou <a href=\"people/olivier-sulpis.html\">Olivier Sulpis</a> (réacteurs) ; les visiteurs versent une participation modeste aux frais de fonctionnement du laboratoire. Les analyses que nous pouvons réaliser pour vous sont présentées sur notre page <a href=\"services.html\">Services</a>."
+      }
+    ],
+    "apply_title": "Candidater",
+    "apply": "Écrivez à {email} avec un CV et quelques lignes sur ce que vous souhaitez faire. Pour un stage, précisez les dates et la durée.",
+    "life_title": "Travailler avec nous",
+    "life": "Nos chercheuses et chercheurs font partie de l'équipe Climat du CEREGE, et le laboratoire lui-même est l'une des plateformes techniques du CEREGE. Le CEREGE est installé sur le plateau de l'Arbois, près d'Aix-en-Provence, à proximité de Marseille et de la Méditerranée."
+  },
+  "contact": {
+    "title": "Contact",
+    "lede": "Questions, collaborations, analyses ou visite : un court e-mail suffit.",
+    "write_title": "Nous écrire",
+    "write_text": "Une seule adresse pour tout le laboratoire :",
+    "bluesky_text": "Actualités, publications et offres de postes sont aussi publiées sur <a href=\"https://bsky.app/profile/exoceanlab.bsky.social\">Bluesky</a>.",
+    "topics_title": "À qui écrire",
+    "topics": [
+      {
+        "what": "Analyses, expériences et accès aux instruments",
+        "who": "le laboratoire",
+        "link": {
+          "label": "Services",
+          "href": "services.html"
+        }
+      },
+      {
+        "what": "Collaborations scientifiques sur les cultures de plancton (COREFF)",
+        "who": "Julie Meilland",
+        "slug": "julie-meilland"
+      },
+      {
+        "what": "Collaborations scientifiques sur les réacteurs et les expériences sur les sédiments",
+        "who": "Olivier Sulpis",
+        "slug": "olivier-sulpis"
+      },
+      {
+        "what": "Stages, thèses, postdocs et bourses",
+        "who": "le laboratoire",
+        "link": {
+          "label": "Nous rejoindre",
+          "href": "join.html"
+        }
+      },
+      {
+        "what": "Presse et médias",
+        "who": "le laboratoire"
+      }
+    ],
+    "visit_title": "Venir au laboratoire",
+    "visit_text": "Le CEREGE se trouve sur le plateau de l'Arbois, en dehors de la ville : à environ 15 à 20 minutes en voiture ou en taxi de la gare d'Aix-en-Provence TGV ou du centre d'Aix, et à environ 25 minutes de l'aéroport Marseille Provence. Écrivez-nous avant votre venue : nous vous enverrons les informations pratiques.",
+    "post_title": "Adresse postale"
+  }
+}

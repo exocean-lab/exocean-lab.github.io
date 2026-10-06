@@ -1,14 +1,16 @@
 {
-  "title": "What We're Working On",
-  "lede": "- A glimpse into the diverse research projects we're leading today.",
+  "title": "Research",
+  "lede": "We follow carbon from the plankton that build shells at the sea surface to the seafloor where those shells dissolve or are buried — and read past climates in the sediments they leave behind.",
   "projects": [
     {
       "slug": "deep-c",
-      "name": "DEEP-C",
+      "name": "Deep-C",
       "card_image": "card-deep-c.jpg",
       "hero_image": "deep-c-fig.jpg",
       "card_text": "Deep-sea carbonates under pressure: mechanisms of dissolution and climate feedbacks.",
       "funder": "ERC Starting Grant (2025–2029)",
+      "programme": "ERC Starting Grant",
+      "years": "2025–2029",
       "subtitle": "Deep-sea Carbonates under pressure: mechanisms of dissolution and climate feedbacks",
       "intro": [
         "The deep seafloor—one of the largest carbon reservoirs on Earth—holds immense stores of calcium carbonate (CaCO₃), a mineral critical for long-term carbon cycling and climate regulation. Human-driven ocean acidification is triggering CaCO₃ dissolution in deep-sea sediments, releasing alkalinity that helps buffer excess CO₂. Yet, the physical and microbial controls on this process remain poorly quantified, particularly under abyssal and hadal conditions where extreme pressures prevail.",
@@ -47,20 +49,49 @@
         }
       ],
       "keywords": "Deep sea, CaCO₃ dissolution, pressure solubility, carbon cycling, microbial respiration, high-pressure reactors, ocean alkalinity, ECCO-Darwin, foraminifera, aragonite, calcite",
-      "lead": { "label": "Principal Investigator", "name": "Olivier SULPIS", "slug": "olivier-sulpis", "email_user": "sulpis", "email_domain": "cerege.fr" },
+      "lead": {
+        "label": "Principal Investigator",
+        "name": "Olivier Sulpis",
+        "slug": "olivier-sulpis",
+        "email_user": "sulpis",
+        "email_domain": "cerege.fr"
+      },
       "participants": [
-        { "name": "Sonia CHAABANE", "slug": "sonia-chaabane" },
-        { "name": "Julie MEILLAND", "slug": "julie-meilland" },
-        { "name": "Tom CHALK", "slug": "thomas-chalk" },
-        { "name": "Marine JAUMON", "slug": "marine-jaumon" },
-        { "name": "Maxime FELIX", "slug": "maxime-felix" }
+        {
+          "name": "Sonia Chaabane",
+          "slug": "sonia-chaabane"
+        },
+        {
+          "name": "Julie Meilland",
+          "slug": "julie-meilland"
+        },
+        {
+          "name": "Tom Chalk",
+          "slug": "thomas-chalk"
+        },
+        {
+          "name": "Marine Jaumon",
+          "slug": "marine-jaumon"
+        },
+        {
+          "name": "Devangi Sathe",
+          "slug": "devangi-sathe"
+        },
+        {
+          "name": "Maxime Felix",
+          "slug": "maxime-felix"
+        }
       ],
       "external": [
-        "Christian TAMBURINI and Marc GAREL (MIO, France)",
-        "Ronnie N. GLUD and Peter STIEF (SDU, Denmark)",
-        "Dustin CARROLL (San José State University, USA)"
+        "Christian Tamburini and Marc Garel (MIO, France)",
+        "Ronnie N. Glud and Peter Stief (SDU, Denmark)",
+        "Dustin Carroll (San José State University, USA)"
       ],
-      "funders": ["funder-eu-erc.png", "funder-cnrs.png", "funder-cerege.png"]
+      "funders": [
+        "funder-eu-erc.png",
+        "funder-cnrs.png",
+        "funder-cerege.png"
+      ]
     },
     {
       "slug": "mango",
@@ -68,6 +99,8 @@
       "card_image": "card-mango.jpg",
       "card_text": "Mangrove influence on lagoon eutrophication and coastal deoxygenation in Senegal.",
       "funder": "2025–2027 · INSU LEFE CYBER 2025",
+      "programme": "INSU LEFE-CYBER",
+      "years": "2025–2027",
       "subtitle": "Mangrove Influence on Lagoon Eutrophication and Coastal Deoxygenation in Senegal",
       "hero_image": "card-mango.jpg",
       "intro": [
@@ -105,19 +138,46 @@
         }
       ],
       "keywords": "Anoxia, mangrove, nutrients, sediments, diagenetic modeling, organic matter, nitrogen and carbon isotopes, foraminifera, Senegal",
-      "lead": { "label": "Principal Investigator", "name": "Sonia CHAABANE", "slug": "sonia-chaabane" },
-      "colead": { "label": "Co-PI", "name": "Olivier SULPIS", "slug": "olivier-sulpis", "email_user": "sulpis", "email_domain": "cerege.fr" },
+      "lead": {
+        "label": "Principal Investigator",
+        "name": "Sonia Chaabane",
+        "slug": "sonia-chaabane"
+      },
+      "colead": {
+        "label": "Co-PI",
+        "name": "Olivier Sulpis",
+        "slug": "olivier-sulpis",
+        "email_user": "sulpis",
+        "email_domain": "cerege.fr"
+      },
       "participants": [
-        { "name": "Thibault DE GARIDEL-THORON", "url": "https://www.cerege.fr/fr/cerege/thibault-de-garidel-thoron/" },
-        { "name": "Laetitia LICARI", "url": "https://www.cerege.fr/fr/cerege/laetitia-licari/" },
-        { "name": "Guillaume LEDUC", "url": "https://www.cerege.fr/fr/cerege/guillaume-leduc/" },
-        { "name": "Anne-Lise JOURDAN", "url": "https://www.cerege.fr/fr/cerege/anne-lise-jourdan/" }
+        {
+          "name": "Thibault de Garidel-Thoron",
+          "url": "https://www.cerege.fr/fr/cerege/thibault-de-garidel-thoron/"
+        },
+        {
+          "name": "Laetitia Licari",
+          "url": "https://www.cerege.fr/fr/cerege/laetitia-licari/"
+        },
+        {
+          "name": "Guillaume Leduc",
+          "url": "https://www.cerege.fr/fr/cerege/guillaume-leduc/"
+        },
+        {
+          "name": "Anne-Lise Jourdan",
+          "url": "https://www.cerege.fr/fr/cerege/anne-lise-jourdan/"
+        }
       ],
       "external": [
-        "Malick THIAM, Amadou Thierno GAYE, Ibrahima CAMARA (UCAD, Senegal)",
-        "Eric MACHU (IRD/LOPS, Ifremer Brest, France)"
+        "Malick Thiam, Amadou Thierno Gaye, Ibrahima Camara (UCAD, Senegal)",
+        "Eric Machu (IRD/LOPS, Ifremer Brest, France)"
       ],
-      "funders": ["funder-ird.png", "funder-cnrs.png", "funder-cerege.png"]
+      "funders": [
+        "funder-ird.png",
+        "funder-cnrs.png",
+        "funder-cerege.png"
+      ],
+      "card_contain": true
     },
     {
       "slug": "dynamite",
@@ -125,6 +185,8 @@
       "card_image": "card-dynamite.jpg",
       "card_text": "DYNAMics of the production and export of aragonITE shells.",
       "funder": "CESAB – FRB Biodiversity Foundation (2024–2026)",
+      "programme": "CESAB – FRB",
+      "years": "2024–2026",
       "subtitle": "Dynamics of Aragonite Shell Production and Export in the Global Ocean",
       "hero_image": "dynamite-fig.jpg",
       "intro": [
@@ -160,38 +222,60 @@
         }
       ],
       "keywords": "Aragonite, calcium carbonate, planktonic mollusks, carbon cycle, ocean acidification, marine biogeochemistry, global database, pteropods, heteropods, janthinids",
-      "lead": { "label": "Principal Investigator", "name": "Julie MEILLAND", "slug": "julie-meilland", "email_user": "meilland", "email_domain": "cerege.fr" },
-      "colead": { "label": "Co-PI", "name": "Olivier SULPIS", "slug": "olivier-sulpis", "email_user": "sulpis", "email_domain": "cerege.fr" },
-      "participants": [{ "name": "Sonia CHAABANE", "slug": "sonia-chaabane" }],
+      "lead": {
+        "label": "Principal Investigator",
+        "name": "Julie Meilland",
+        "slug": "julie-meilland",
+        "email_user": "meilland",
+        "email_domain": "cerege.fr"
+      },
+      "colead": {
+        "label": "Co-PI",
+        "name": "Olivier Sulpis",
+        "slug": "olivier-sulpis",
+        "email_user": "sulpis",
+        "email_domain": "cerege.fr"
+      },
+      "participants": [
+        {
+          "name": "Sonia Chaabane",
+          "slug": "sonia-chaabane"
+        }
+      ],
       "external": [
-        "Deborah WALL-PALMER – Naturalis Biodiversity Center (Netherlands)",
-        "Katja PEIJNENBURG – University of Amsterdam &amp; Naturalis Biodiversity Center (Netherlands)",
-        "Fabio BENEDETTI – ETH Zurich (Switzerland)",
-        "Nina BEDNARSEK – Oregon State University, CIMERS (USA/Slovenia)",
-        "Ralf SCHIEBEL – Max Planck Institute for Chemistry (Germany)",
-        "Mark OHMAN – Scripps Institution of Oceanography, University of California San Diego (USA)",
-        "Clara MANNO – British Antarctic Survey (UK)"
+        "Deborah Wall-Palmer – Naturalis Biodiversity Center (Netherlands)",
+        "Katja Peijnenburg – University of Amsterdam &amp; Naturalis Biodiversity Center (Netherlands)",
+        "Fabio Benedetti – ETH Zurich (Switzerland)",
+        "Nina Bednaršek – Oregon State University, CIMERS (USA/Slovenia)",
+        "Ralf Schiebel – Max Planck Institute for Chemistry (Germany)",
+        "Mark Ohman – Scripps Institution of Oceanography, University of California San Diego (USA)",
+        "Clara Manno – British Antarctic Survey (UK)"
       ],
       "note": "DYNAMITE was selected through the 2023 CESAB Datashare call for proposals, following evaluation by an independent panel of experts.",
-      "funders": ["funder-cnrs.png", "funder-cerege.png"]
+      "funders": [
+        "funder-cnrs.png",
+        "funder-cerege.png"
+      ]
     },
     {
       "slug": "forcry",
-      "name": "FORCRY",
+      "name": "ForCry",
       "card_image": "card-forcry.jpg",
       "hero_image": "forcry-fig.jpg",
       "card_text": "Analysing frozen Foraminifera by Cryostage LA-ICPMS: Neogene CO₂, patterns, cycles, and climate sensitivity.",
       "funder": "ERC Starting Grant (2022–2028)",
+      "programme": "ERC Starting Grant",
+      "years": "2022–2028",
       "subtitle": "Analysing frozen Foraminifera by Cryostage LA-ICPMS: Neogene CO₂, patterns, cycles, and climate sensitivity",
       "intro": [
-        "Knowledge of past concentrations of atmospheric carbon dioxide (CO₂) has transformed our understanding of earth's climate: past, present, and future. Ice cores have yielded 800,000 years of high resolution and high precision data, revolutionising Earth system science. Marine sediment records provide the opportunity for highly resolved records of ocean and past ocean pH (and therefore ocean and atmosphere CO₂ content) over millions of years by means of the δ¹¹B-pH proxy, but present progress is currently hampered by large sample size requirements and intensive laboratory techniques limiting throughput and applicability.",
+        "Knowledge of past concentrations of atmospheric carbon dioxide (CO₂) has transformed our understanding of Earth's climate: past, present, and future. Ice cores have yielded 800,000 years of high resolution and high precision data, revolutionising Earth system science. Marine sediment records provide the opportunity for highly resolved records of past ocean pH (and therefore of ocean and atmospheric CO₂) over millions of years by means of the δ¹¹B-pH proxy, but present progress is currently hampered by large sample size requirements and intensive laboratory techniques limiting throughput and applicability.",
         "Innovation is therefore required to answer a number of key questions, including: \"How do spatial variations in ocean carbon flux cause natural climate variability?\" and \"Does climate sensitivity vary with background state?\". By analysing small samples frozen into a blank-free ice puck, ForCry exploits the increased sensitivity of laser ablation δ¹¹B analysis to enable the next generation of past climate data to be recovered. This novel approach allows analyses to be conducted on ≤20 individual plankton representing a ~10-fold reduction in sample size, but while maintaining precision. Additionally, this approach removes costly chemical purification steps and leads to higher throughput which makes high-resolution CO₂ reconstructions using the δ¹¹B-pH proxy a viable option to augment and extend the ice core CO₂ records."
       ],
       "sections": [
         {
           "heading": "Objectives",
           "items": [
-            "Develop techniques to reduce the amount of material needed to measure boron isotopes values from planktonic foraminifera (surface dwelling biogenic carbonate producers).",
+            "Develop techniques to reduce the amount of material needed to measure boron isotope values in planktonic foraminifera (surface dwelling biogenic carbonate producers).",
             "Calibrate the relationship between boron isotopes and oceanic pH (acidity) in multiple species.",
             "Map changes in carbon flux to and from the oceans through time.",
             "Reconstruct atmospheric CO₂ levels at high resolution in Neogene snapshots."
@@ -216,27 +300,62 @@
         }
       ],
       "keywords": "isotope geochemistry, boron isotopes, pH, CO₂, climate sensitivity",
-      "lead": { "label": "Principal Investigator", "name": "Thomas CHALK", "slug": "thomas-chalk", "email_user": "chalk", "email_domain": "cerege.fr" },
+      "lead": {
+        "label": "Principal Investigator",
+        "name": "Thomas Chalk",
+        "slug": "thomas-chalk",
+        "email_user": "chalk",
+        "email_domain": "cerege.fr"
+      },
       "participants": [
-        { "name": "Matthieu BUISSON", "slug": "matthieu-buisson" },
-        { "name": "Jaime Y. SUÁREZ-IBARRA", "slug": "jaime-suarez-ibarra" },
-        { "name": "Clara BOLTON", "url": "https://www.cerege.fr/fr/cerege/clara-bolton/" },
-        { "name": "Abel GUIHOU", "url": "https://www.cerege.fr/fr/cerege/abel-guihou/" },
-        { "name": "Sonia CHAABANE", "slug": "sonia-chaabane" },
-        { "name": "Thibault DE GARIDEL-THORON", "url": "https://www.cerege.fr/fr/cerege/thibault-de-garidel-thoron/" }
+        {
+          "name": "Matthieu Buisson",
+          "slug": "matthieu-buisson"
+        },
+        {
+          "name": "Jaime Y. Suárez-Ibarra",
+          "slug": "jaime-suarez-ibarra"
+        },
+        {
+          "name": "Clara Bolton",
+          "url": "https://www.cerege.fr/fr/cerege/clara-bolton/"
+        },
+        {
+          "name": "Abel Guihou",
+          "url": "https://www.cerege.fr/fr/cerege/abel-guihou/"
+        },
+        {
+          "name": "Sonia Chaabane",
+          "slug": "sonia-chaabane"
+        },
+        {
+          "name": "Thibault de Garidel-Thoron",
+          "url": "https://www.cerege.fr/fr/cerege/thibault-de-garidel-thoron/"
+        }
       ],
-      "former": ["Rachel BROWN — University of Southampton (UK)", "Juliette BODY", "Maxime FELIX"],
-      "external": ["Christopher STANDISH — University of Southampton (UK)"],
-      "funders": ["funder-eu-erc.png", "funder-cnrs.png", "funder-cerege.png"]
+      "former": [
+        "Rachel Brown — University of Southampton (UK)",
+        "Juliette Body",
+        "Maxime Felix"
+      ],
+      "external": [
+        "Christopher Standish — University of Southampton (UK)"
+      ],
+      "funders": [
+        "funder-eu-erc.png",
+        "funder-cnrs.png",
+        "funder-cerege.png"
+      ]
     },
     {
       "slug": "asperge",
-      "name": "Completed project: ASPERGE (2022–2025)",
-      "short_name": "ASPERGE",
+      "name": "ASPERGE",
       "completed": true,
       "card_image": "card-asperge.jpg",
       "card_text": "Aragonite at the Seafloor: a secret PlayEr in the ReGulation of Earth's climate?",
       "funder": "NWO Veni grant (2022–2025)",
+      "programme": "NWO Veni grant",
+      "years": "2022–2025",
       "subtitle": "Aragonite at the Seafloor: a secret PlayEr in the ReGulation of Earth's climate?",
       "hero_image": "asperge-fig.jpg",
       "intro": [
@@ -267,11 +386,18 @@
         }
       ],
       "keywords": "Aragonite dissolution, ocean acidification, calcium carbonate cycle, marine sediments, alkalinity buffering",
-      "lead": { "label": "Lead", "name": "Olivier SULPIS", "slug": "olivier-sulpis", "email_user": "sulpis", "email_domain": "cerege.fr" },
+      "lead": {
+        "label": "Lead",
+        "name": "Olivier Sulpis",
+        "slug": "olivier-sulpis",
+        "email_user": "sulpis",
+        "email_domain": "cerege.fr"
+      },
       "participants": [],
       "external": [],
       "note": "Project funded by The Dutch Research Council (NWO).",
-      "funders": []
+      "funders": [],
+      "card_contain": true
     }
   ]
 }

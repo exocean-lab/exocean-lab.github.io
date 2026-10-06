@@ -2,8 +2,13 @@
 #
 # Runs on every push to main (a content edit goes live about a minute later),
 # and every Monday morning on its own: that scheduled run first refreshes the
-# publication list from HAL and the latest Bluesky posts, commits them if they
-# changed, then rebuilds and publishes. Nobody has to touch anything.
+# publication list from HAL and the latest Bluesky posts (posts tagged
+# #exoceannews become news items), commits them if they changed, then rebuilds
+# and publishes. Nobody has to touch anything.
+#
+# Each run also makes light WebP copies of the photos (optimise_images.py) and
+# prints the one-page Services summary to PDF with Chrome. Neither is committed:
+# they are rebuilt for every deploy.
 
 name: Build and deploy exocean
 
@@ -36,6 +41,16 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Install Pillow (for the lighter copies of the photos)
+        run: pip install --quiet pillow
+
+      - name: Reuse the photo copies made by earlier runs
+        uses: actions/cache@v4
+        with:
+          path: exocean/assets/img/w
+          key: photos-${{ hashFiles('exocean/assets/img/*') }}
+          restore-keys: photos-
+
       - name: Refresh publications (HAL) and Bluesky posts
         if: github.event_name != 'push'
         working-directory: exocean
@@ -43,9 +58,26 @@ jobs:
           python3 fetch_hal.py || echo "HAL refresh skipped"
           python3 fetch_bluesky.py || echo "Bluesky refresh skipped"
 
+      - name: Make lighter copies of the photos
+        working-directory: exocean
+        run: python3 optimise_images.py
+
       - name: Generate HTML from content/
         working-directory: exocean
         run: python3 build.py
+
+      - name: Print the one-page Services summary (PDF)
+        continue-on-error: true      # the site deploys anyway, just without the PDF link
+        working-directory: exocean
+        run: |
+          python3 -m http.server 8123 --bind 127.0.0.1 >/dev/null 2>&1 &
+          server=$!
+          sleep 2
+          google-chrome --headless --no-sandbox --disable-gpu --no-pdf-header-footer --print-to-pdf-no-header \
+            --virtual-time-budget=10000 --print-to-pdf=assets/exocean-services.pdf \
+            http://127.0.0.1:8123/capabilities.html
+          kill $server || true
+          python3 build.py >/dev/null   # again, so the Services page links the PDF
 
       - name: Commit refreshed content
         if: github.event_name != 'push'

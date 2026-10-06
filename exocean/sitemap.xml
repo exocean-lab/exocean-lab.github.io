@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url><loc>https://exocean-lab.github.io/</loc></url>
   <url><loc>https://exocean-lab.github.io/projects.html</loc></url>
-  <url><loc>https://exocean-lab.github.io/services.html</loc></url>
+  <url><loc>https://exocean-lab.github.io/services.html</loc><xhtml:link rel="alternate" hreflang="en" href="https://exocean-lab.github.io/services.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://exocean-lab.github.io/fr/services.html"/></url>
   <url><loc>https://exocean-lab.github.io/data.html</loc></url>
   <url><loc>https://exocean-lab.github.io/publications.html</loc></url>
   <url><loc>https://exocean-lab.github.io/team.html</loc></url>
   <url><loc>https://exocean-lab.github.io/news.html</loc></url>
-  <url><loc>https://exocean-lab.github.io/contact.html</loc></url>
+  <url><loc>https://exocean-lab.github.io/join.html</loc><xhtml:link rel="alternate" hreflang="en" href="https://exocean-lab.github.io/join.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://exocean-lab.github.io/fr/join.html"/></url>
+  <url><loc>https://exocean-lab.github.io/contact.html</loc><xhtml:link rel="alternate" hreflang="en" href="https://exocean-lab.github.io/contact.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://exocean-lab.github.io/fr/contact.html"/></url>
+  <url><loc>https://exocean-lab.github.io/legal.html</loc></url>
   <url><loc>https://exocean-lab.github.io/projects/deep-c.html</loc></url>
   <url><loc>https://exocean-lab.github.io/projects/mango.html</loc></url>
   <url><loc>https://exocean-lab.github.io/projects/dynamite.html</loc></url>
@@ -24,4 +26,10 @@
   <url><loc>https://exocean-lab.github.io/people/astrid-hylen.html</loc></url>
   <url><loc>https://exocean-lab.github.io/people/devangi-sathe.html</loc></url>
   <url><loc>https://exocean-lab.github.io/people/katoo-declerck.html</loc></url>
+  <url><loc>https://exocean-lab.github.io/news/eco2-morph.html</loc></url>
+  <url><loc>https://exocean-lab.github.io/news/alan-higgins-award.html</loc></url>
+  <url><loc>https://exocean-lab.github.io/news/emb-mcdr-report.html</loc></url>
+  <url><loc>https://exocean-lab.github.io/fr/services.html</loc><xhtml:link rel="alternate" hreflang="en" href="https://exocean-lab.github.io/services.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://exocean-lab.github.io/fr/services.html"/></url>
+  <url><loc>https://exocean-lab.github.io/fr/join.html</loc><xhtml:link rel="alternate" hreflang="en" href="https://exocean-lab.github.io/join.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://exocean-lab.github.io/fr/join.html"/></url>
+  <url><loc>https://exocean-lab.github.io/fr/contact.html</loc><xhtml:link rel="alternate" hreflang="en" href="https://exocean-lab.github.io/contact.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://exocean-lab.github.io/fr/contact.html"/></url>
 </urlset>

@@ -4,10 +4,16 @@
   "thomas-chalk",
   "julie-meilland",
   "olivier-sulpis",
-  "sonia-chaabane"
+  "sonia-chaabane",
+  "jaime-y-suarez-ibarra",
+  "astrid-hylen"
  ],
- "updated": "2026-09-28",
- "count": 106,
+ "orcids": [
+  "0000-0002-0720-2962",
+  "0000-0002-1375-5774"
+ ],
+ "updated": "2026-10-06",
+ "count": 117,
  "items": [
   {
    "hal": "hal-05703400",
@@ -21,7 +27,7 @@
     "Thomas B Chalk",
     "Alexander M Piotrowski",
     "Thibault de Garidel-Thoron",
-    "Maria a G Pivel"
+    "Maria A G Pivel"
    ],
    "journal": "Global and Planetary Change",
    "year": 2026,
@@ -30,7 +36,8 @@
    "pdf": "https://hal.inrae.fr/hal-05703400/document",
    "type": "ART",
    "volume": "262",
-   "pages": "105467"
+   "pages": "105467",
+   "projects": []
   },
   {
    "hal": "hal-05723199",
@@ -52,7 +59,10 @@
    "pdf": "https://hal.science/hal-05723199/document",
    "type": "ART",
    "volume": "424",
-   "pages": "229-241"
+   "pages": "229-241",
+   "projects": [
+    "ForCry"
+   ]
   },
   {
    "hal": "hal-05679852",
@@ -69,7 +79,10 @@
    "pdf": "https://hal.science/hal-05679852/document",
    "type": "ART",
    "volume": "14",
-   "pages": null
+   "pages": null,
+   "projects": [
+    "BIOINDIC-IA"
+   ]
   },
   {
    "hal": "hal-05637947",
@@ -90,7 +103,8 @@
    "pdf": null,
    "type": "ART",
    "volume": "48",
-   "pages": null
+   "pages": null,
+   "projects": []
   },
   {
    "hal": "hal-05637962",
@@ -115,7 +129,74 @@
    "pdf": "https://hal.science/hal-05637962/document",
    "type": "ART",
    "volume": "23",
-   "pages": "3655-3673"
+   "pages": "3655-3673",
+   "projects": []
+  },
+  {
+   "hal": "hal-05744091",
+   "title": "Bioerosion Drill Holes Increase Carbonate Dissolution in the Planktonic Foraminifer Globigerinoides ruber",
+   "authors": [
+    "Cristiane Fraga Frozza",
+    "Jaime Y Suárez-Ibarra",
+    "Carla Bonetti",
+    "Alisson Martins",
+    "João Carlos Coimbra",
+    "Maria Alejandra Gomez Pivel"
+   ],
+   "journal": "Geochemistry, Geophysics, Geosystems",
+   "year": 2026,
+   "date": "2026-05-12",
+   "doi": "10.1029/2025gc012678",
+   "pdf": "https://hal.inrae.fr/hal-05744091/document",
+   "type": "ART",
+   "volume": "27",
+   "pages": "e2025GC012678",
+   "projects": []
+  },
+  {
+   "hal": "hal-05626189",
+   "title": "Could artificial reoxygenation revitalize dying coastal seas?",
+   "authors": [
+    "C P Slomp",
+    "A Oschlies",
+    "A H Altieri",
+    "L T Bach",
+    "L Bopp",
+    "D Breitburg",
+    "A Canning",
+    "D J Conley",
+    "M Dai",
+    "B Dewitte",
+    "H Enevoldsen",
+    "E M Ferrer",
+    "A Galán",
+    "V Garcon",
+    "M Gregoire",
+    "B Gustafsson",
+    "D Gutierrez",
+    "P Handmann",
+    "A Hylén",
+    "K Isensee",
+    "R Lamond",
+    "M Li",
+    "K Limburg",
+    "I Montes",
+    "J Sterling",
+    "A Tan Shau Hwai",
+    "J M Testa",
+    "D Wallace",
+    "J J Waniek",
+    "M Yasuhara"
+   ],
+   "journal": "Environmental Research Letters",
+   "year": 2026,
+   "date": "2026-04-24",
+   "doi": "10.1088/1748-9326/ae5e96",
+   "pdf": "https://hal.science/hal-05626189/document",
+   "type": "ART",
+   "volume": "21",
+   "pages": null,
+   "projects": []
   },
   {
    "hal": "hal-05637944",
@@ -136,7 +217,8 @@
    "pdf": null,
    "type": "ART",
    "volume": null,
-   "pages": null
+   "pages": null,
+   "projects": []
   },
   {
    "hal": "hal-05564064",
@@ -162,7 +244,10 @@
    "pdf": "https://hal.science/hal-05564064/document",
    "type": "ART",
    "volume": "45",
-   "pages": "195-217"
+   "pages": "195-217",
+   "projects": [
+    "ForCry"
+   ]
   },
   {
    "hal": "hal-05468403",
@@ -190,7 +275,10 @@
    "pdf": "https://hal.science/hal-05468403/document",
    "type": "ART",
    "volume": "23",
-   "pages": "531-563"
+   "pages": "531-563",
+   "projects": [
+    "SPANC"
+   ]
   },
   {
    "hal": "hal-05760332",
@@ -213,7 +301,11 @@
    "pdf": "https://hal.science/hal-05760332/document",
    "type": "ART",
    "volume": "19",
-   "pages": "1965-1989"
+   "pages": "1965-1989",
+   "projects": [
+    "Deep-C",
+    "REWRITE"
+   ]
   },
   {
    "hal": "hal-05759501",
@@ -235,7 +327,92 @@
    "pdf": "https://hal.science/hal-05759501/document",
    "type": "ART",
    "volume": "23",
-   "pages": "5477–5495"
+   "pages": "5477–5495",
+   "projects": [
+    "MEDSENS"
+   ]
+  },
+  {
+   "hal": "hal-05662053",
+   "title": "Ikaite precipitation indicates near surface occurrence of methane in an Icelandic fjord",
+   "authors": [
+    "A Hylén",
+    "S Arndt",
+    "J.P. Balmonte",
+    "R Bosman",
+    "W Bui",
+    "L Chou",
+    "I Delbono",
+    "C Goossens",
+    "P.O.J. Hall",
+    "S Hidalgo-Martinez",
+    "R.K. James",
+    "M Kononets",
+    "P Ley",
+    "C März",
+    "S.P. Purayil",
+    "J Reardon",
+    "P Reyniers",
+    "F Sales de Freitas",
+    "L Verweirder",
+    "K Wagner",
+    "C Wittig",
+    "K.R. Hendry",
+    "S.J. van de Velde"
+   ],
+   "journal": "Geochemical Perspectives Letters",
+   "year": 2026,
+   "date": "2026-01-01",
+   "doi": "10.7185/geochemlet.2621",
+   "pdf": "https://hal.science/hal-05662053/document",
+   "type": "ART",
+   "volume": "40",
+   "pages": "43-48",
+   "projects": []
+  },
+  {
+   "hal": "hal-05444779",
+   "title": "Meiofaunal diversity across a sharp gradient of fjord oxygenation: Insights from metabarcoding and morphology approaches in foraminifera",
+   "authors": [
+    "Phoebe O'Brien",
+    "Magali Schweizer",
+    "Filip Morin",
+    "Astrid Hylén",
+    "Elizabeth K Robertson",
+    "Per O J Hall",
+    "Sophie Quinchard",
+    "Irina Polovodova Asteman"
+   ],
+   "journal": "Marine Pollution Bulletin",
+   "year": 2025,
+   "date": "2025-12-23",
+   "doi": "10.1016/j.marpolbul.2025.119145",
+   "pdf": "https://hal.science/hal-05444779/document",
+   "type": "ART",
+   "volume": "224",
+   "pages": "119145",
+   "projects": []
+  },
+  {
+   "hal": "hal-05626215",
+   "title": "Limited physical protection leads to high organic carbon reactivity in anoxic Baltic Sea sediments",
+   "authors": [
+    "Silvia Placitu",
+    "Sebastiaan J van de Velde",
+    "Astrid Hylén",
+    "Mats Eriksson",
+    "Per O J Hall",
+    "Steeve Bonneville"
+   ],
+   "journal": "Biogeosciences",
+   "year": 2025,
+   "date": "2025-12-19",
+   "doi": "10.5194/bg-22-8065-2025",
+   "pdf": "https://hal.science/hal-05626215/document",
+   "type": "ART",
+   "volume": "22",
+   "pages": "8065 - 8076",
+   "projects": []
   },
   {
    "hal": "hal-05462621",
@@ -285,7 +462,8 @@
    "pdf": "https://hal.science/hal-05462621/document",
    "type": "ART",
    "volume": "39",
-   "pages": "e2025GB008643"
+   "pages": "e2025GB008643",
+   "projects": []
   },
   {
    "hal": "hal-05302722",
@@ -306,7 +484,60 @@
    "pdf": "https://hal.science/hal-05302722/document",
    "type": "ART",
    "volume": "201",
-   "pages": "102518"
+   "pages": "102518",
+   "projects": []
+  },
+  {
+   "hal": "hal-05462433",
+   "title": "A sedimentary record of paleodirectional and relative paleointensity variations of the Earth's magnetic field from offshore South Brazil spanning the time from 46.15 to 5.36 ka",
+   "authors": [
+    "Camila Lopes",
+    "Jairo Savian",
+    "Everton Frigo",
+    "Gelvam Hartmann",
+    "Maria A.G. Pivel",
+    "Sanja Panovska",
+    "Jaime Suárez-Ibarra",
+    "Caroline Pontel",
+    "João Coimbra",
+    "Sandro Petró",
+    "Adriana Leonhardt",
+    "Ricardo I.F. Trindade"
+   ],
+   "journal": "Quaternary Science Reviews",
+   "year": 2025,
+   "date": "2025-12-01",
+   "doi": "10.1016/j.quascirev.2025.109652",
+   "pdf": "https://hal.science/hal-05462433/document",
+   "type": "ART",
+   "volume": "370",
+   "pages": "109652",
+   "projects": []
+  },
+  {
+   "hal": "hal-05348616",
+   "title": "Hawaiian beaches as natural analogues for enhanced silicate weathering of olivine",
+   "authors": [
+    "Matthias Kreuzburg",
+    "Astrid Hylén",
+    "Devon B Cole",
+    "Stephen J Romaniello",
+    "Chandra W Winardhi",
+    "Veerle Cnudde",
+    "Daniel A Frick",
+    "Josephine Barnett",
+    "Kirsten P Nicolaysen",
+    "Filip J R Meysman"
+   ],
+   "journal": "Environmental Research Letters",
+   "year": 2025,
+   "date": "2025-11-04",
+   "doi": "10.1088/1748-9326/ae130c",
+   "pdf": "https://hal.science/hal-05348616/document",
+   "type": "ART",
+   "volume": "20",
+   "pages": "114074",
+   "projects": []
   },
   {
    "hal": "hal-05332107",
@@ -340,7 +571,8 @@
    "pdf": null,
    "type": "ART",
    "volume": "390",
-   "pages": null
+   "pages": null,
+   "projects": []
   },
   {
    "hal": "hal-05312691",
@@ -359,7 +591,8 @@
    "pdf": "https://hal.science/hal-05312691/document",
    "type": "ART",
    "volume": "10",
-   "pages": "9217"
+   "pages": "9217",
+   "projects": []
   },
   {
    "hal": "hal-05450584",
@@ -369,7 +602,7 @@
     "T. Babila",
     "M. Henehan",
     "H. Jurikova",
-    "K.‐f. Huang",
+    "K.-F. Huang",
     "E. Anagnostou"
    ],
    "journal": "Paleoceanography and Paleoclimatology",
@@ -379,7 +612,11 @@
    "pdf": "https://hal.science/hal-05450584/document",
    "type": "ART",
    "volume": "40",
-   "pages": "e2024PA005057"
+   "pages": "e2024PA005057",
+   "projects": [
+    "ForCry",
+    "HighBorG"
+   ]
   },
   {
    "hal": "hal-05450601",
@@ -399,7 +636,10 @@
    "pdf": "https://hal.science/hal-05450601/document",
    "type": "ART",
    "volume": "40",
-   "pages": "e2024PA005078"
+   "pages": "e2024PA005078",
+   "projects": [
+    "ForCry"
+   ]
   },
   {
    "hal": "hal-05158626",
@@ -467,7 +707,8 @@
    "pdf": null,
    "type": "ART",
    "volume": "44",
-   "pages": "145-168"
+   "pages": "145-168",
+   "projects": []
   },
   {
    "hal": "hal-05158585",
@@ -490,7 +731,8 @@
    "pdf": null,
    "type": "ART",
    "volume": "25",
-   "pages": "3274-3297"
+   "pages": "3274-3297",
+   "projects": []
   },
   {
    "hal": "hal-05158599",
@@ -514,7 +756,8 @@
    "pdf": null,
    "type": "ART",
    "volume": "40",
-   "pages": null
+   "pages": null,
+   "projects": []
   },
   {
    "hal": "hal-05031323",
@@ -530,7 +773,10 @@
    "pdf": null,
    "type": "ART",
    "volume": "21",
-   "pages": "98-104"
+   "pages": "98-104",
+   "projects": [
+    "ForCry"
+   ]
   },
   {
    "hal": "hal-05188398",
@@ -555,7 +801,8 @@
    "pdf": "https://hal.science/hal-05188398/document",
    "type": "ART",
    "volume": "55",
-   "pages": "320-335"
+   "pages": "320-335",
+   "projects": []
   },
   {
    "hal": "hal-04784711",
@@ -582,7 +829,32 @@
    "pdf": "https://hal.science/hal-04784711/document",
    "type": "ART",
    "volume": "636",
-   "pages": null
+   "pages": null,
+   "projects": []
+  },
+  {
+   "hal": "hal-05773891",
+   "title": "Limited Organic Carbon Burial by the Rusty Carbon Sink in Swedish Fjord Sediments",
+   "authors": [
+    "S. Placitu",
+    "S. van de Velde",
+    "A. Hylén",
+    "P. Hall",
+    "E. Robertson",
+    "M. Eriksson",
+    "M. Leermakers",
+    "Neha Mehta",
+    "S. Bonneville"
+   ],
+   "journal": "Journal of Geophysical Research: Biogeosciences",
+   "year": 2024,
+   "date": "2024-10-31",
+   "doi": "10.1029/2024jg008277",
+   "pdf": null,
+   "type": "ART",
+   "volume": "129",
+   "pages": "147369",
+   "projects": []
   },
   {
    "hal": "hal-05189551",
@@ -624,7 +896,8 @@
    "pdf": "https://hal.science/hal-05189551/document",
    "type": "ART",
    "volume": "6",
-   "pages": null
+   "pages": null,
+   "projects": []
   },
   {
    "hal": "hal-04745907",
@@ -649,7 +922,8 @@
    "pdf": "https://hal.science/hal-04745907/document",
    "type": "ART",
    "volume": "15",
-   "pages": "9002"
+   "pages": "9002",
+   "projects": []
   },
   {
    "hal": "hal-04714587",
@@ -657,7 +931,7 @@
    "authors": [
     "L. Delaigue",
     "O. Sulpis",
-    "G.‐j. Reichart",
+    "G.-J. Reichart",
     "M. Humphreys"
    ],
    "journal": "Global Biogeochemical Cycles",
@@ -667,7 +941,8 @@
    "pdf": "https://hal.science/hal-04714587/document",
    "type": "ART",
    "volume": "38",
-   "pages": "e2024GB008202"
+   "pages": "e2024GB008202",
+   "projects": []
   },
   {
    "hal": "hal-04700537",
@@ -685,7 +960,8 @@
    "pdf": "https://hal.science/hal-04700537/document",
    "type": "ART",
    "volume": "38",
-   "pages": "e2023GB008009"
+   "pages": "e2023GB008009",
+   "projects": []
   },
   {
    "hal": "hal-04724549",
@@ -727,9 +1003,9 @@
     "Gerhard Lammel",
     "Otto Larink",
     "Patrick Leibold",
-    "Alfredo Martínez‐garcía",
+    "Alfredo Martínez-García",
     "Simone Moretti",
-    "Jann‐gerrit Müller",
+    "Jann-Gerrit Müller",
     "Björn Nillius",
     "Xihao Pan",
     "Subha S Raj",
@@ -764,7 +1040,8 @@
    "pdf": "https://hal.science/hal-04724549/document",
    "type": "ART",
    "volume": "129",
-   "pages": "e2023JD040581"
+   "pages": "e2023JD040581",
+   "projects": []
   },
   {
    "hal": "hal-04702509",
@@ -785,7 +1062,8 @@
    "pdf": "https://hal.science/hal-04702509/document",
    "type": "ART",
    "volume": "46",
-   "pages": "403-420"
+   "pages": "403-420",
+   "projects": []
   },
   {
    "hal": "hal-04700539",
@@ -795,7 +1073,7 @@
     "Thibault de Garidel-Thoron",
     "Xavier Giraud",
     "Julie Meilland",
-    "Geert‐jan Brummer",
+    "Geert-Jan Brummer",
     "Lukas Jonkers",
     "P. Graham Mortyn",
     "Mattia Greco",
@@ -814,7 +1092,8 @@
    "pdf": "https://hal.science/hal-04700539/document",
    "type": "ART",
    "volume": "22",
-   "pages": "701-719"
+   "pages": "701-719",
+   "projects": []
   },
   {
    "hal": "hal-04700511",
@@ -830,7 +1109,8 @@
    "pdf": null,
    "type": "ART",
    "volume": null,
-   "pages": null
+   "pages": null,
+   "projects": []
   },
   {
    "hal": "hal-04702512",
@@ -854,7 +1134,8 @@
    "pdf": "https://hal.science/hal-04702512/document",
    "type": "ART",
    "volume": "14",
-   "pages": "11121"
+   "pages": "11121",
+   "projects": []
   },
   {
    "hal": "hal-04727074",
@@ -877,7 +1158,8 @@
    "pdf": null,
    "type": "ART",
    "volume": "54",
-   "pages": "81-94"
+   "pages": "81-94",
+   "projects": []
   },
   {
    "hal": "hal-05158655",
@@ -895,7 +1177,8 @@
    "pdf": null,
    "type": "ART",
    "volume": "71",
-   "pages": null
+   "pages": null,
+   "projects": []
   },
   {
    "hal": "hal-04552961",
@@ -929,7 +1212,8 @@
    "pdf": "https://univ-lyon1.hal.science/hal-04552961/document",
    "type": "ART",
    "volume": "99",
-   "pages": "1218–1241"
+   "pages": "1218–1241",
+   "projects": []
   },
   {
    "hal": "hal-04700530",
@@ -942,7 +1226,7 @@
     "S. Ossebaar",
     "K. Bakker",
     "João P Trabucho-Alexandre",
-    "A. van Leeuwen‐tolboom",
+    "A. van Leeuwen-Tolboom",
     "M. Wolthers",
     "Olivier Sulpis"
    ],
@@ -953,7 +1237,8 @@
    "pdf": "https://hal.science/hal-04700530/document",
    "type": "ART",
    "volume": "129",
-   "pages": "e2023JG007581"
+   "pages": "e2023JG007581",
+   "projects": []
   },
   {
    "hal": "hal-04707877",
@@ -976,7 +1261,8 @@
    "pdf": "https://hal.science/hal-04707877/document",
    "type": "ART",
    "volume": "19",
-   "pages": "2493-2510"
+   "pages": "2493-2510",
+   "projects": []
   },
   {
    "hal": "insu-04198321",
@@ -1037,7 +1323,10 @@
    "pdf": "https://insu.hal.science/insu-04198321/document",
    "type": "ART",
    "volume": "10",
-   "pages": "354"
+   "pages": "354",
+   "projects": [
+    "ITEM"
+   ]
   },
   {
    "hal": "hal-04707894",
@@ -1065,7 +1354,8 @@
    "pdf": "https://hal.science/hal-04707894/document",
    "type": "ART",
    "volume": "11",
-   "pages": null
+   "pages": null,
+   "projects": []
   },
   {
    "hal": "hal-05158610",
@@ -1086,7 +1376,8 @@
    "pdf": null,
    "type": "ART",
    "volume": "218",
-   "pages": "103121"
+   "pages": "103121",
+   "projects": []
   },
   {
    "hal": "hal-05158670",
@@ -1106,7 +1397,8 @@
    "pdf": null,
    "type": "ART",
    "volume": "10",
-   "pages": "679"
+   "pages": "679",
+   "projects": []
   },
   {
    "hal": "hal-04702526",
@@ -1125,7 +1417,8 @@
    "pdf": "https://hal.science/hal-04702526/document",
    "type": "ART",
    "volume": null,
-   "pages": "43-43"
+   "pages": "43-43",
+   "projects": []
   },
   {
    "hal": "hal-04702515",
@@ -1145,7 +1438,8 @@
    "pdf": "https://hal.science/hal-04702515/document",
    "type": "ART",
    "volume": "45",
-   "pages": "732-745"
+   "pages": "732-745",
+   "projects": []
   },
   {
    "hal": "hal-04700525",
@@ -1165,7 +1459,8 @@
    "pdf": "https://hal.science/hal-04700525/document",
    "type": "ART",
    "volume": "37",
-   "pages": null
+   "pages": null,
+   "projects": []
   },
   {
    "hal": "hal-05158622",
@@ -1184,7 +1479,8 @@
    "pdf": null,
    "type": "ART",
    "volume": "45",
-   "pages": "652-660"
+   "pages": "652-660",
+   "projects": []
   },
   {
    "hal": "hal-04727073",
@@ -1207,7 +1503,8 @@
    "pdf": "https://hal.science/hal-04727073/document",
    "type": "ART",
    "volume": "37",
-   "pages": null
+   "pages": null,
+   "projects": []
   },
   {
    "hal": "hal-04707889",
@@ -1229,7 +1526,8 @@
    "pdf": "https://hal.science/hal-04707889/document",
    "type": "ART",
    "volume": "351",
-   "pages": "108-124"
+   "pages": "108-124",
+   "projects": []
   },
   {
    "hal": "hal-04700531",
@@ -1245,7 +1543,8 @@
    "pdf": null,
    "type": "ART",
    "volume": "6",
-   "pages": "1039-1040"
+   "pages": "1039-1040",
+   "projects": []
   },
   {
    "hal": "hal-04698943",
@@ -1343,7 +1642,8 @@
    "pdf": "https://hal.science/hal-04698943/document",
    "type": "ART",
    "volume": "382",
-   "pages": null
+   "pages": null,
+   "projects": []
   },
   {
    "hal": "hal-05158650",
@@ -1364,7 +1664,8 @@
    "pdf": null,
    "type": "ART",
    "volume": "45",
-   "pages": "15-32"
+   "pages": "15-32",
+   "projects": []
   },
   {
    "hal": "insu-04139555",
@@ -1389,7 +1690,10 @@
    "pdf": "https://insu.hal.science/insu-04139555/document",
    "type": "ART",
    "volume": "14",
-   "pages": null
+   "pages": null,
+   "projects": [
+    "SO-CHIC"
+   ]
   },
   {
    "hal": "hal-03911903",
@@ -1415,7 +1719,8 @@
    "pdf": "https://cnrs.hal.science/hal-03911903/document",
    "type": "ART",
    "volume": "602",
-   "pages": "117923"
+   "pages": "117923",
+   "projects": []
   },
   {
    "hal": "hal-05723219",
@@ -1438,7 +1743,10 @@
    "pdf": null,
    "type": "ART",
    "volume": "10",
-   "pages": null
+   "pages": null,
+   "projects": [
+    "ForCry"
+   ]
   },
   {
    "hal": "hal-05158674",
@@ -1456,7 +1764,8 @@
    "pdf": null,
    "type": "ART",
    "volume": "19",
-   "pages": "4903-4927"
+   "pages": "4903-4927",
+   "projects": []
   },
   {
    "hal": "insu-03793683",
@@ -1485,7 +1794,8 @@
    "pdf": "https://insu.hal.science/insu-03793683/document",
    "type": "ART",
    "volume": "9",
-   "pages": null
+   "pages": null,
+   "projects": []
   },
   {
    "hal": "hal-04702989",
@@ -1508,7 +1818,8 @@
    "pdf": "https://hal.science/hal-04702989/document",
    "type": "ART",
    "volume": "41",
-   "pages": "1147-1159"
+   "pages": "1147-1159",
+   "projects": []
   },
   {
    "hal": "hal-04700529",
@@ -1530,7 +1841,8 @@
    "pdf": "https://hal.science/hal-04700529/document",
    "type": "ART",
    "volume": "15",
-   "pages": "2105-2131"
+   "pages": "2105-2131",
+   "projects": []
   },
   {
    "hal": "hal-04707867",
@@ -1550,7 +1862,8 @@
    "pdf": "https://hal.science/hal-04707867/document",
    "type": "ART",
    "volume": "12",
-   "pages": "3830"
+   "pages": "3830",
+   "projects": []
   },
   {
    "hal": "hal-04700513",
@@ -1570,7 +1883,8 @@
    "pdf": "https://hal.science/hal-04700513/document",
    "type": "ART",
    "volume": "13",
-   "pages": null
+   "pages": null,
+   "projects": []
   },
   {
    "hal": "hal-05158628",
@@ -1589,7 +1903,8 @@
    "pdf": null,
    "type": "ART",
    "volume": "18",
-   "pages": "89-101"
+   "pages": "89-101",
+   "projects": []
   },
   {
    "hal": "insu-03780581",
@@ -1608,7 +1923,8 @@
    "pdf": "https://insu.hal.science/insu-03780581/document",
    "type": "ART",
    "volume": "15",
-   "pages": "664-670"
+   "pages": "664-670",
+   "projects": []
   },
   {
    "hal": "hal-05158644",
@@ -1627,7 +1943,30 @@
    "pdf": null,
    "type": "ART",
    "volume": "18",
-   "pages": "5789-5809"
+   "pages": "5789-5809",
+   "projects": []
+  },
+  {
+   "hal": "hal-04221360",
+   "title": "High precision MC-ICP-MS measurements of 11 B/ 10 B ratios from ng amounts of boron in carbonate samples using microsublimation and direct injection (μ-dDIHEN)",
+   "authors": [
+    "Matthieu Buisson",
+    "Pascale Louvat",
+    "Caroline Thaler",
+    "Claire Rollion-Bard"
+   ],
+   "journal": "Journal of Analytical Atomic Spectrometry",
+   "year": 2021,
+   "date": "2021-10-06",
+   "doi": "10.1039/d1ja00109d",
+   "pdf": null,
+   "type": "ART",
+   "volume": "36",
+   "pages": "2116-2131",
+   "projects": [
+    "B2SeaCarb",
+    "Université de Paris"
+   ]
   },
   {
    "hal": "hal-03514728",
@@ -1647,7 +1986,8 @@
    "pdf": "https://hal.science/hal-03514728/document",
    "type": "ART",
    "volume": null,
-   "pages": null
+   "pages": null,
+   "projects": []
   },
   {
    "hal": "hal-05158613",
@@ -1668,7 +2008,8 @@
    "pdf": null,
    "type": "ART",
    "volume": "8",
-   "pages": null
+   "pages": null,
+   "projects": []
   },
   {
    "hal": "hal-05158576",
@@ -1686,7 +2027,8 @@
    "pdf": null,
    "type": "ART",
    "volume": "57",
-   "pages": "29-47"
+   "pages": "29-47",
+   "projects": []
   },
   {
    "hal": "hal-04698949",
@@ -1705,7 +2047,8 @@
    "pdf": "https://hal.science/hal-04698949/document",
    "type": "ART",
    "volume": "14",
-   "pages": "423-428"
+   "pages": "423-428",
+   "projects": []
   },
   {
    "hal": "hal-04707857",
@@ -1729,7 +2072,8 @@
    "pdf": "https://hal.science/hal-04707857/document",
    "type": "ART",
    "volume": "126",
-   "pages": null
+   "pages": null,
+   "projects": []
   },
   {
    "hal": "hal-04700479",
@@ -1749,7 +2093,8 @@
    "pdf": "https://hal.science/hal-04700479/document",
    "type": "ART",
    "volume": "11",
-   "pages": null
+   "pages": null,
+   "projects": []
   },
   {
    "hal": "hal-03122401",
@@ -1769,14 +2114,14 @@
     "Freya Hemsing",
     "Michael Henehan",
     "Philip Holdship",
-    "Yu‐te Hsieh",
+    "Yu-Te Hsieh",
     "Ana Kolevica",
-    "Yen‐po Lin",
+    "Yen-Po Lin",
     "Elaine Mawbey",
     "James Rae",
     "Laura Robinson",
     "Rachael Shuttleworth",
-    "Chen‐feng You",
+    "Chen-Feng You",
     "Shuang Zhang",
     "Russell Day"
    ],
@@ -1787,7 +2132,11 @@
    "pdf": "https://hal.science/hal-03122401/document",
    "type": "ART",
    "volume": "1",
-   "pages": "77-96"
+   "pages": "77-96",
+   "projects": [
+    "CARBORIC",
+    "HAMOC"
+   ]
   },
   {
    "hal": "hal-04707852",
@@ -1809,7 +2158,8 @@
    "pdf": "https://hal.science/hal-04707852/document",
    "type": "ART",
    "volume": "554",
-   "pages": "116649"
+   "pages": "116649",
+   "projects": []
   },
   {
    "hal": "hal-04707843",
@@ -1837,7 +2187,8 @@
    "pdf": "https://hal.science/hal-04707843/document",
    "type": "ART",
    "volume": "250",
-   "pages": "106644"
+   "pages": "106644",
+   "projects": []
   },
   {
    "hal": "hal-04700467",
@@ -1861,7 +2212,8 @@
    "pdf": "https://hal.science/hal-04700467/document",
    "type": "ART",
    "volume": "11",
-   "pages": null
+   "pages": null,
+   "projects": []
   },
   {
    "hal": "hal-05158624",
@@ -1880,7 +2232,8 @@
    "pdf": null,
    "type": "ART",
    "volume": "39",
-   "pages": null
+   "pages": null,
+   "projects": []
   },
   {
    "hal": "hal-04700515",
@@ -1897,7 +2250,8 @@
    "pdf": "https://hal.science/hal-04700515/document",
    "type": "ART",
    "volume": "16",
-   "pages": "847-862"
+   "pages": "847-862",
+   "projects": []
   },
   {
    "hal": "hal-04699109",
@@ -1916,7 +2270,8 @@
    "pdf": "https://hal.science/hal-04699109/document",
    "type": "ART",
    "volume": "10",
-   "pages": "11002"
+   "pages": "11002",
+   "projects": []
   },
   {
    "hal": "hal-04707930",
@@ -1932,7 +2287,8 @@
    "pdf": "https://hal.science/hal-04707930/document",
    "type": "ART",
    "volume": "33",
-   "pages": "101–103"
+   "pages": "101–103",
+   "projects": []
   },
   {
    "hal": "hal-05158658",
@@ -1953,7 +2309,8 @@
    "pdf": null,
    "type": "ART",
    "volume": "125",
-   "pages": null
+   "pages": null,
+   "projects": []
   },
   {
    "hal": "insu-03663845",
@@ -1973,7 +2330,11 @@
    "pdf": "https://insu.hal.science/insu-03663845/document",
    "type": "ART",
    "volume": "17",
-   "pages": "1437-1450"
+   "pages": "1437-1450",
+   "projects": [
+    "CORAIL",
+    "NExT (I-SITE)"
+   ]
   },
   {
    "hal": "hal-04700519",
@@ -1990,7 +2351,28 @@
    "pdf": null,
    "type": "ART",
    "volume": "268",
-   "pages": "90-106"
+   "pages": "90-106",
+   "projects": []
+  },
+  {
+   "hal": "hal-05303395",
+   "title": "Bioerosion on Late Quaternary Planktonic Foraminifera Related to Paleoproductivity in the Western South Atlantic",
+   "authors": [
+    "Cristiane Fraga Frozza",
+    "Maria Alejandra Gomez Pivel",
+    "J Y Suárez-Ibarra",
+    "M N Ritter",
+    "J C Coimbra"
+   ],
+   "journal": "Paleoceanography and Paleoclimatology",
+   "year": 2020,
+   "date": "2020-01-01",
+   "doi": "10.1029/2020pa003865",
+   "pdf": "https://hal.science/hal-05303395/document",
+   "type": "ART",
+   "volume": "35",
+   "pages": "e2020PA003865",
+   "projects": []
   },
   {
    "hal": "hal-04700534",
@@ -2012,7 +2394,8 @@
    "pdf": "https://hal.science/hal-04700534/document",
    "type": "ART",
    "volume": "33",
-   "pages": "1654-1673"
+   "pages": "1654-1673",
+   "projects": []
   },
   {
    "hal": "hal-04702501",
@@ -2035,7 +2418,8 @@
    "pdf": "https://hal.science/hal-04702501/document",
    "type": "ART",
    "volume": "12",
-   "pages": "1006-1011"
+   "pages": "1006-1011",
+   "projects": []
   },
   {
    "hal": "hal-02457973",
@@ -2059,7 +2443,30 @@
    "pdf": "https://hal.science/hal-02457973/document",
    "type": "ART",
    "volume": "524",
-   "pages": "237-258"
+   "pages": "237-258",
+   "projects": []
+  },
+  {
+   "hal": "insu-02862854",
+   "title": "μ-dDIHEN: a new micro-flow liquid sample introduction system for direct injection nebulization in ICP-MS",
+   "authors": [
+    "Pascale Louvat",
+    "Mickaël Tharaud",
+    "Matthieu Buisson",
+    "Claire Rollion-Bard",
+    "Marc Benedetti"
+   ],
+   "journal": "Journal of Analytical Atomic Spectrometry",
+   "year": 2019,
+   "date": "2019-07-31",
+   "doi": "10.1039/c9ja00146h",
+   "pdf": null,
+   "type": "ART",
+   "volume": "34",
+   "pages": "1553-1563",
+   "projects": [
+    "B2SeaCarb"
+   ]
   },
   {
    "hal": "hal-02975093",
@@ -2068,7 +2475,7 @@
     "Allison Hsiang",
     "Anieke Brombacher",
     "Marina Rillo",
-    "Maryline Mleneck‐vautravers",
+    "Maryline Mleneck-Vautravers",
     "Stephen Conn",
     "Sian Lordsmith",
     "Anna Jentzen",
@@ -2096,7 +2503,8 @@
    "pdf": "https://hal.science/hal-02975093/document",
    "type": "ART",
    "volume": "34",
-   "pages": "1157-1177"
+   "pages": "1157-1177",
+   "projects": []
   },
   {
    "hal": "hal-04700493",
@@ -2116,7 +2524,8 @@
    "pdf": "https://hal.science/hal-04700493/document",
    "type": "ART",
    "volume": "33",
-   "pages": "959-968"
+   "pages": "959-968",
+   "projects": []
   },
   {
    "hal": "hal-04700523",
@@ -2135,7 +2544,8 @@
    "pdf": "https://hal.science/hal-04700523/document",
    "type": "ART",
    "volume": "17",
-   "pages": "241-253"
+   "pages": "241-253",
+   "projects": []
   },
   {
    "hal": "hal-04707823",
@@ -2159,7 +2569,8 @@
    "pdf": "https://hal.science/hal-04707823/document",
    "type": "ART",
    "volume": "15",
-   "pages": "539-554"
+   "pages": "539-554",
+   "projects": []
   },
   {
    "hal": "hal-05158640",
@@ -2192,7 +2603,8 @@
    "pdf": null,
    "type": "ART",
    "volume": "41",
-   "pages": "127-141"
+   "pages": "127-141",
+   "projects": []
   },
   {
    "hal": "hal-04703418",
@@ -2209,7 +2621,8 @@
    "pdf": "https://hal.science/hal-04703418/document",
    "type": "ART",
    "volume": "510",
-   "pages": "1-11"
+   "pages": "1-11",
+   "projects": []
   },
   {
    "hal": "hal-02091055",
@@ -2243,7 +2656,8 @@
    "pdf": null,
    "type": "ART",
    "volume": "61",
-   "pages": "113-138"
+   "pages": "113-138",
+   "projects": []
   },
   {
    "hal": "hal-04702493",
@@ -2260,7 +2674,8 @@
    "pdf": "https://hal.science/hal-04702493/document",
    "type": "ART",
    "volume": "33",
-   "pages": "1099-1115"
+   "pages": "1099-1115",
+   "projects": []
   },
   {
    "hal": "hal-02152105",
@@ -2281,7 +2696,8 @@
    "pdf": "https://univ-lyon1.hal.science/hal-02152105/document",
    "type": "ART",
    "volume": "144",
-   "pages": "14-24"
+   "pages": "14-24",
+   "projects": []
   },
   {
    "hal": "hal-04707816",
@@ -2303,7 +2719,8 @@
    "pdf": "https://hal.science/hal-04707816/document",
    "type": "ART",
    "volume": "45",
-   "pages": "3228-3237"
+   "pages": "3228-3237",
+   "projects": []
   },
   {
    "hal": "hal-04698941",
@@ -2324,7 +2741,8 @@
    "pdf": null,
    "type": "ART",
    "volume": "115",
-   "pages": "11700 - 11705"
+   "pages": "11700 - 11705",
+   "projects": []
   },
   {
    "hal": "hal-01832219",
@@ -2343,7 +2761,8 @@
    "pdf": null,
    "type": "ART",
    "volume": "131",
-   "pages": "27 - 40"
+   "pages": "27 - 40",
+   "projects": []
   },
   {
    "hal": "hal-04698938",
@@ -2371,7 +2790,8 @@
    "pdf": "https://hal.science/hal-04698938/document",
    "type": "ART",
    "volume": "114",
-   "pages": "13114-13119"
+   "pages": "13114-13119",
+   "projects": []
   },
   {
    "hal": "hal-04700518",
@@ -2389,7 +2809,8 @@
    "pdf": "https://hal.science/hal-04700518/document",
    "type": "ART",
    "volume": "195",
-   "pages": "70-83"
+   "pages": "70-83",
+   "projects": []
   },
   {
    "hal": "hal-04707808",
@@ -2414,7 +2835,8 @@
    "pdf": "https://hal.science/hal-04707808/document",
    "type": "ART",
    "volume": "14",
-   "pages": "3287-3308"
+   "pages": "3287-3308",
+   "projects": []
   },
   {
    "hal": "hal-04700470",
@@ -2437,7 +2859,8 @@
    "pdf": "https://hal.science/hal-04700470/document",
    "type": "ART",
    "volume": "13",
-   "pages": "149-170"
+   "pages": "149-170",
+   "projects": []
   },
   {
    "hal": "hal-01584249",
@@ -2464,7 +2887,8 @@
    "pdf": "https://hal.science/hal-01584249/document",
    "type": "ART",
    "volume": "136",
-   "pages": "1-13"
+   "pages": "1-13",
+   "projects": []
   },
   {
    "hal": "hal-04707794",
@@ -2485,7 +2909,8 @@
    "pdf": "https://hal.science/hal-04707794/document",
    "type": "ART",
    "volume": "151",
-   "pages": "236-254"
+   "pages": "236-254",
+   "projects": []
   },
   {
    "hal": "hal-04736286",
@@ -2506,7 +2931,8 @@
    "pdf": null,
    "type": "ART",
    "volume": "186",
-   "pages": "11 - 23"
+   "pages": "11 - 23",
+   "projects": []
   },
   {
    "hal": "hal-01291671",
@@ -2526,7 +2952,8 @@
    "pdf": "https://hal.sorbonne-universite.fr/hal-01291671/document",
    "type": "ART",
    "volume": "111",
-   "pages": "91–101"
+   "pages": "91–101",
+   "projects": []
   },
   {
    "hal": "hal-04702503",
@@ -2546,7 +2973,8 @@
    "pdf": null,
    "type": "ART",
    "volume": "9",
-   "pages": "375-379"
+   "pages": "375-379",
+   "projects": []
   },
   {
    "hal": "hal-01453020",
@@ -2568,7 +2996,8 @@
    "pdf": null,
    "type": "ART",
    "volume": "110",
-   "pages": "75-89"
+   "pages": "75-89",
+   "projects": []
   },
   {
    "hal": "hal-01453017",
@@ -2586,7 +3015,8 @@
    "pdf": null,
    "type": "ART",
    "volume": "124",
-   "pages": "63-74"
+   "pages": "63-74",
+   "projects": []
   },
   {
    "hal": "hal-04703001",
@@ -2603,7 +3033,8 @@
    "pdf": null,
    "type": "ART",
    "volume": "440",
-   "pages": "551-563"
+   "pages": "551-563",
+   "projects": []
   },
   {
    "hal": "hal-04698994",
@@ -2626,7 +3057,8 @@
    "pdf": null,
    "type": "ART",
    "volume": "518",
-   "pages": "49-54"
+   "pages": "49-54",
+   "projects": []
   }
  ]
 }

@@ -7,3 +7,11 @@
 /*.jpg
 /*.jpeg
 /*.webp
+
+# Made by the GitHub Action on every deploy (optimise_images.py and Chrome),
+# so they are never committed
+exocean/assets/img/w/
+exocean/assets/exocean-services.pdf
+
+# Python's own cache
+__pycache__/

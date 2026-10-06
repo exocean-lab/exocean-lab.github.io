@@ -1,60 +1,125 @@
 {
   "name": "exocean",
   "tagline": "Experimental Oceanology Laboratory",
-  "description": "exocean is an experimental oceanology laboratory at CEREGE, Aix-en-Provence, founded by CNRS scientists studying the ocean's role in the global carbon cycle.",
+  "description": "exocean is the experimental oceanology laboratory of CEREGE in Aix-en-Provence: plankton cultures, seafloor and high-pressure experiments, and past-climate geochemistry to understand the ocean carbon cycle.",
   "baseurl": "https://exocean-lab.github.io",
   "goatcounter": "",
   "email": "exocean@cerege.fr",
   "bluesky": "https://bsky.app/profile/exoceanlab.bsky.social",
-  "address": ["CEREGE", "Technopôle de l'Arbois-Méditerranée", "BP80, 13545 Aix-en-Provence", "France"],
-  "nav": [
-    { "label": "The Lab", "href": "index.html" },
-    { "label": "Services", "href": "services.html" },
-    { "label": "Projects", "href": "projects.html" },
-    { "label": "Data & Models", "href": "data.html" },
-    { "label": "Publications", "href": "publications.html" },
-    { "label": "Team", "href": "team.html" },
-    { "label": "News & Highlights", "href": "news.html" },
-    { "label": "Contact us", "href": "contact.html" }
+  "address": [
+    "CEREGE",
+    "Technopôle de l'Environnement Arbois-Méditerranée",
+    "BP 80",
+    "13545 Aix-en-Provence cedex 04",
+    "France"
   ],
-
+  "nav": [
+    {
+      "label": "Research",
+      "href": "projects.html"
+    },
+    {
+      "label": "Services",
+      "href": "services.html"
+    },
+    {
+      "label": "Data & Models",
+      "href": "data.html"
+    },
+    {
+      "label": "Publications",
+      "href": "publications.html"
+    },
+    {
+      "label": "People",
+      "href": "team.html"
+    },
+    {
+      "label": "News",
+      "href": "news.html"
+    },
+    {
+      "label": "Join us",
+      "href": "join.html"
+    }
+  ],
   "home": {
-    "title": "Who We Are",
-    "lede": "– Exocean, bringing the ocean inside the lab.",
-    "intro": [
-      "We are an Oceanology Laboratory founded by <a href=\"https://www.cnrs.fr/fr\">CNRS</a> scientists with complementary expertise, <strong>united by the shared goal of better understanding the ocean's role in the global carbon cycle</strong>. Our work combines <strong>innovation, curiosity, and a collaborative spirit</strong> to develop new tools and insights into ocean systems.",
-      "Together, the team is developing a <strong>shared research framework around the ocean carbonate system</strong> — one that connects surface ecosystems, deep-sea feedbacks, and sedimentary records."
+    "hero_title": "Bringing the ocean into the lab",
+    "hero_text": "exocean is the experimental oceanology laboratory of CEREGE, in Aix-en-Provence. We culture plankton, recreate seafloor currents and deep-sea pressures, and read past climates in fossil shells — to understand how the ocean stores carbon and regulates Earth's climate.",
+    "hero_image": "hero-ocean.webp",
+    "hero_buttons": [
+      {
+        "label": "Our research",
+        "href": "projects.html",
+        "primary": true
+      },
+      {
+        "label": "Work with us",
+        "href": "services.html"
+      },
+      {
+        "label": "Join us",
+        "href": "join.html"
+      }
     ],
+    "founders_title": "The founders",
+    "founders_intro": "exocean was founded by three CNRS researchers whose approaches bridge biology, geochemistry and sedimentary processes.",
     "founders_photo": "founders.jpg",
-    "founders_caption": "Thomas B. CHALK, Olivier SULPIS and Julie MEILLAND, exocean founders (CEREGE) / Photo © Elodie GAZQUEZ, 2025.",
-    "founders_intro": "At the centre of the project, we are three researchers whose approaches bridge biology, geochemistry, and sedimentary processes:",
+    "founders_alt": "Thomas Chalk, Olivier Sulpis and Julie Meilland standing in front of a CEREGE building",
+    "founders_caption": "Thomas B. Chalk, Olivier Sulpis and Julie Meilland, the founders of exocean, at CEREGE.",
+    "founders_credit": "Photo © Elodie Gazquez, 2025",
     "founders": [
-      { "slug": "thomas-chalk", "name": "Thomas CHALK", "blurb": "Resident geochemist and ERC awardee for the <strong>ForCry</strong> project, I am developing <strong>laser ablation techniques</strong> for the miniaturisation of sample analysis through novel techniques. I specialise in the <strong>reconstruction of past ocean pH and CO₂ at high spatial and temporal scales</strong>." },
-      { "slug": "olivier-sulpis", "name": "Olivier SULPIS", "blurb": "Carbonate cycle expert and ERC grantee behind the <strong>Deep-C</strong> project, I explore <strong>deep-sea carbonate dissolution under high pressure</strong>, in the laboratory, to unveil how marine sediments act as a <strong>long-term CO₂ sink</strong> and contribute to Earth's climate regulation." },
-      { "slug": "julie-meilland", "name": "Julie MEILLAND", "blurb": "Specialist in <strong>planktonic foraminifera reproduction and in vitro culture</strong>. My work — ranging from cultured experiments to field-based studies — helps clarify the <strong>living conditions and carbon export role</strong> of these key calcifying organisms, contributing essential knowledge on the <strong>biological carbon pump</strong>." }
+      {
+        "slug": "thomas-chalk",
+        "name": "Thomas Chalk",
+        "blurb": "Resident geochemist and ERC awardee for the <strong>ForCry</strong> project, I am developing <strong>laser ablation techniques</strong> to analyse ever smaller samples. I specialise in the <strong>reconstruction of past ocean pH and CO₂ at high spatial and temporal scales</strong>."
+      },
+      {
+        "slug": "olivier-sulpis",
+        "name": "Olivier Sulpis",
+        "blurb": "Carbonate cycle expert and ERC grantee behind the <strong>Deep-C</strong> project, I explore <strong>deep-sea carbonate dissolution under high pressure</strong>, in the laboratory, to unveil how marine sediments act as a <strong>long-term CO₂ sink</strong> and contribute to Earth's climate regulation."
+      },
+      {
+        "slug": "julie-meilland",
+        "name": "Julie Meilland",
+        "blurb": "Specialist in <strong>planktonic foraminifera reproduction and in vitro culture</strong>. My work — ranging from culture experiments to field studies — helps clarify the <strong>living conditions and carbon export role</strong> of these key calcifying organisms, contributing essential knowledge on the <strong>biological carbon pump</strong>."
+      }
     ],
-    "questions_title": "Our key questions span from surface to deep-sea:",
-    "questions": [
-      "What controls <strong>spatial variability</strong> in oceanic carbon fluxes?",
-      "How are carbon fluxes impacted by <strong>calcifying plankton population dynamics</strong>?",
-      "What is the future of <strong>ocean biogenic carbon</strong> production and export?",
-      "How <strong>sensitive is climate change</strong> to initial climate conditions?",
-      "How do <strong>deep-sea processes</strong> mitigate anthropogenic CO₂?",
-      "And how are <strong>human activities</strong> already leaving traces in the sediment record?"
+    "doors_title": "Work with us",
+    "doors": [
+      {
+        "title": "Analyses and experiments",
+        "text": "Carbonate chemistry, nutrients, microsensor profiles, plankton cultures and high-pressure incubations, for academic and private partners.",
+        "href": "services.html",
+        "cta": "Services and instruments"
+      },
+      {
+        "title": "Data and models",
+        "text": "The RADI sediment model, the FORCIS census of planktonic foraminifera, the Cenozoic CO₂ synthesis and more — open and free to use.",
+        "href": "data.html",
+        "cta": "Data & Models"
+      },
+      {
+        "title": "Internships, PhDs and visits",
+        "text": "Students, early-career researchers and visiting scientists are welcome all year round, and we support fellowship applications.",
+        "href": "join.html",
+        "cta": "Join us"
+      }
     ],
-    "where_title": "Where We Are",
+    "latest_title": "Latest news and papers",
+    "where_title": "Where we are",
     "where": [
-      "We are based at <strong>CEREGE</strong> (Centre for Research and Teaching in Environmental Geosciences), a multidisciplinary research and teaching center covering a broad range of scientific topics at the highest level, supported by state-of-the-art analytical facilities. It is one of the leading Earth Science laboratories in France and internationally recognized for its scientific excellence.",
-      "Ideally located in the heart of the Technopôle de l'Arbois in Aix-en-Provence and in central Marseille on the Saint-Charles campus, CEREGE benefits from optimal conditions to foster collaborations and partnerships.",
-      "Within CEREGE, exocean is one of the laboratories of the Experimental Biophysics and Chemistry technical centre — see <a href=\"services.html#cerege\">how it fits in, and the other platforms you can use during a visit</a>."
+      "We are based at <strong>CEREGE</strong>, the Centre for Research and Teaching in Environmental Geosciences — a joint research unit of Aix-Marseille Université, CNRS, IRD, INRAE and the Collège de France. Its main site is on the Arbois plateau between Aix-en-Provence and Marseille, with a second site on the Saint-Charles campus in central Marseille.",
+      "Within CEREGE, exocean is one of the laboratories of the Experimental Biophysics and Chemistry technical centre, next door to platforms for stable isotopes, elemental chemistry, radiocarbon and X-ray imaging — see <a href=\"services.html#cerege\">how it fits in</a> and <a href=\"contact.html#visit\">how to get here</a>."
     ],
     "where_photo": "cerege-aerial.jpg",
-    "where_caption": "CEREGE (plateau de l'Arbois, Aix-en-Provence, France) / Photo : © SEMEPA / Source CEREGE"
+    "where_alt": "Aerial view of the CEREGE buildings among the pine woods of the Arbois plateau",
+    "where_caption": "CEREGE on the Arbois plateau, Aix-en-Provence.",
+    "where_credit": "Photo © SEMEPA / CEREGE"
   },
-
   "data": {
     "title": "Data & Models",
-    "lede": "- Models, datasets and tools we build and share — all open and free to use.",
+    "lede": "Models, datasets and tools we build and share — all open and free to use.",
     "intro": "Write to us if you use them, get stuck, or would like something that is not listed.",
     "sections": [
       {
@@ -237,22 +302,17 @@
     ],
     "outro": "All our articles, with open-access PDFs where they exist, are on the <a href=\"publications.html\">Publications</a> page."
   },
-
   "services": {
     "title": "Services & Instruments",
-    "lede": "- Analyses and experiments we run for partners, and the equipment behind them.",
+    "lede": "Analyses and experiments we run for partners, and the equipment behind them.",
     "hero": "news-julie.jpg",
     "hero_alt": "Planktonic foraminifera under the microscope, and Julie Meilland at a culture incubator in the exocean laboratory",
-    "hero_caption": "Planktonic foraminifera under the microscope (top) and Julie MEILLAND preparing cultures in the exocean laboratory at CEREGE.",
-    "hero_credit": "Photo © Elodie GAZQUEZ, 2025",
+    "hero_caption": "Planktonic foraminifera under the microscope (top) and Julie Meilland preparing cultures in the exocean laboratory at CEREGE.",
+    "hero_credit": "Photo © Elodie Gazquez, 2025",
     "intro": [
       "Beyond our own research, we run measurements and experiments for <strong>academic and private partners</strong> — within a collaboration, or as a paid service. You can send us your samples, or come and work with us in the laboratory; visitors pay a small lab occupation fee.",
       "exocean is part of CEREGE's network of technical platforms, so a stay with us can be combined with analyses on <a href=\"#platforms\">other CEREGE platforms</a> — stable isotopes, elemental chemistry, X-ray imaging, micropalaeontology and more."
     ],
-    "request": {
-      "title": "How to request an analysis",
-      "body": "Write to us at {email} with a few lines on your samples (type, number, volume) and on what you need. We will tell you what is feasible and how long it will take, and send a quote for paid services. If you would also like to use other CEREGE platforms during your visit, say so and we will put you in touch."
-    },
     "offers_title": "What we offer",
     "themes": [
       {
@@ -261,17 +321,24 @@
           {
             "title": "Seawater carbonate chemistry",
             "body": "Total alkalinity by potentiometric titration on samples down to 4 mL, and pH by spectrophotometry with purified indicator dye. Alkalinity is calibrated with Dickson certified reference materials.",
-            "kit": ["omnis", "cary60"]
+            "kit": [
+              "omnis",
+              "cary60"
+            ]
           },
           {
             "title": "Dissolved silicate and phosphate",
             "body": "Silicate and phosphate concentrations in seawater, by colorimetry on a UV-Vis spectrophotometer.",
-            "kit": ["cary60"]
+            "kit": [
+              "cary60"
+            ]
           },
           {
             "title": "Microsensor profiling",
             "body": "Microprofiles of oxygen, pH, nitric oxide (NO) and hydrogen sulfide through sediments and other confined environments — in the lab, on ships right after sediment collection, or at coastal sites.",
-            "kit": ["unisense"]
+            "kit": [
+              "unisense"
+            ]
           }
         ]
       },
@@ -281,18 +348,26 @@
           {
             "title": "Sediment–water interface experiments",
             "body": "Sediment incubations in six temperature-controlled reactors that reproduce benthic hydrodynamics, from calm abyssal plains to reefs. Open or closed to the atmosphere, in free drift or flow-through, with chemistry followed in the porewaters and the overlying water.",
-            "kit": ["rdr", "corio"]
+            "kit": [
+              "rdr",
+              "corio"
+            ]
           },
           {
             "title": "High-pressure incubations",
             "body": "Water or solid samples held at up to 500 bar (roughly the pressure at 5,000 m depth) in a 600 mL vessel, with water sampling during the run. Gas composition cannot be measured with the current setup.",
-            "kit": ["novoclave"]
+            "kit": [
+              "novoclave"
+            ]
           },
           {
             "title": "Cultures and incubations",
             "body": "Culture of plankton, microbes and other small organisms, and incubation experiments, under controlled temperature and light — from 0 to above 35 °C in the incubators of our COREFF foraminifera facility. Light intensity and spectrum are measured with a PAR sensor.",
-            "kit": ["incubators", "par"],
-            "note": "<strong>COREFF</strong>, our COntinuous REproduction for Foraminifera Facility, can host thousands of planktonic foraminifera at a time — mostly Mediterranean species, kept alive and reproducing with protocols we keep refining — alongside diatom strains grown as food for their different life stages. For live specimens, visits or the culture season, contact Julie MEILLAND (<span class=\"eml\" data-u=\"meilland\" data-d=\"cerege.fr\"></span>)."
+            "kit": [
+              "incubators",
+              "par"
+            ],
+            "note": "<strong>COREFF</strong>, our COntinuous REproduction for Foraminifera Facility, can host thousands of planktonic foraminifera at a time — mostly Mediterranean species, kept alive and reproducing with protocols we keep refining — alongside diatom strains grown as food for their different life stages. For live specimens, visits or the culture season, contact Julie Meilland (<span class=\"eml\" data-u=\"meilland\" data-d=\"cerege.fr\"></span>)."
           }
         ]
       },
@@ -302,17 +377,25 @@
           {
             "title": "Respiration of single organisms",
             "body": "Respiration of microbes, single foraminifera or other small plankton, measured with microsensors in very small volumes of water under a stereomicroscope.",
-            "kit": ["nanoresp", "stemi"]
+            "kit": [
+              "nanoresp",
+              "stemi"
+            ]
           },
           {
             "title": "Microscopy and imaging",
             "body": "Observation and imaging of living plankton and other immersed samples on an inverted microscope, and of small samples under a stereomicroscope.",
-            "kit": ["axiovert", "stemi"]
+            "kit": [
+              "axiovert",
+              "stemi"
+            ]
           },
           {
             "title": "Plasma cleaning of samples",
             "body": "Removal of organic matter from samples by plasma cleaning.",
-            "kit": ["plasma"]
+            "kit": [
+              "plasma"
+            ]
           }
         ]
       }
@@ -323,23 +406,103 @@
         "CEREGE groups its analytical and experimental facilities by area of expertise into six <a href=\"https://www.cerege.fr/en/equipment/technical-clusters/\">technical centres</a>, each co-led by a technical and a scientific manager. exocean is one of the four laboratories of the <strong>Experimental Biophysics and Chemistry</strong> centre (technical manager Pierre Boutet, scientific manager Julie Meilland), together with the <a href=\"https://www.cerege.fr/en/equipment/technical-clusters/cirene/\">CIRENE</a> technology hall, the <a href=\"https://www.cerege.fr/en/equipment/technical-clusters/caracterisation-of-colloids/\">colloid characterisation</a> laboratory and the geomicrobiology laboratory."
       ],
       "centres": [
-        {"name": "Experimental Biophysics and Chemistry", "labs": ["CIRENE", "Colloid characterisation", "exocean", "Geomicrobiology"], "here": "exocean"},
-        {"name": "Geochemistry", "labs": ["ENVITOP", "LGO2i", "PANISS", "LA-ICP-MS"]},
-        {"name": "Geophysics and Hydrology", "labs": ["Geophysics & petrography", "Petrophysics & acoustics", "Hydro-terrain"]},
-        {"name": "Imaging, AI and Modelling", "labs": ["MATRIX", "MANTA", "SIGEO", "Statistics & geomodelling"]},
-        {"name": "LN2C national instrument – ASTER", "labs": ["Cosmogenic nuclides"]},
-        {"name": "Sample preparation and natural archives", "labs": ["Lithopreparation", "Soils", "LPM", "SEDIM"]}
+        {
+          "name": "Experimental Biophysics and Chemistry",
+          "labs": [
+            "CIRENE",
+            "Colloid characterisation",
+            "exocean",
+            "Geomicrobiology"
+          ],
+          "here": "exocean"
+        },
+        {
+          "name": "Geochemistry",
+          "labs": [
+            "ENVITOP",
+            "LGO2i",
+            "PANISS",
+            "LA-ICP-MS"
+          ]
+        },
+        {
+          "name": "Geophysics and Hydrology",
+          "labs": [
+            "Geophysics & petrography",
+            "Petrophysics & acoustics",
+            "Hydro-terrain"
+          ]
+        },
+        {
+          "name": "Imaging, AI and Modelling",
+          "labs": [
+            "MATRIX",
+            "MANTA",
+            "SIGEO",
+            "Statistics & geomodelling"
+          ]
+        },
+        {
+          "name": "LN2C national instrument – ASTER",
+          "labs": [
+            "Cosmogenic nuclides"
+          ]
+        },
+        {
+          "name": "Sample preparation and natural archives",
+          "labs": [
+            "Lithopreparation",
+            "Soils",
+            "LPM",
+            "SEDIM"
+          ]
+        }
       ],
       "platforms_title": "Combine your visit with other CEREGE platforms",
       "platforms_intro": "The platforms most often useful to our partners. Each one has its own access conditions and rates — we can put you in touch.",
       "platforms": [
-        {"what": "Stable isotopes", "name": "PANISS", "url": "https://www.cerege.fr/en/equipment/technical-clusters/analysis-of-stable-isotopes-panis-2/", "desc": "δ¹⁸O and δ¹³C of carbonates, clumped isotopes (Δ<sub>47</sub>, Δ<sub>48</sub>), δ¹⁸O, δ¹⁷O and δD of water, and δ¹⁵N, δ¹³C and δD of organic compounds. Open to academic collaborations and services."},
-        {"what": "Elemental chemistry", "name": "LA-ICP-MS", "url": "https://www.cerege.fr/en/equipment/technical-clusters/chemistry-elementary-the-icp-ms/", "desc": "About 90% of the periodic table in solution by ICP-OES or ICP-MS, and laser ablation of solids for semi-quantitative elemental maps. Open to public and private users."},
-        {"what": "Radiocarbon, biomarkers and sediment geochemistry", "name": "LGO2i", "url": "https://www.cerege.fr/en/equipment/technical-clusters/geochemistry-organic-inorganic-and-isotopic-2/", "desc": "Radiocarbon dating on the AixMICADAS accelerator mass spectrometer, organic compounds as environmental indicators, and the elemental composition of marine and lake sediment archives."},
-        {"what": "2D and 3D X-ray imaging", "name": "MATRIX", "url": "https://www.cerege.fr/en/equipment/technical-clusters/imagery-2d-and-3d-by-x-matrix-ray/", "desc": "Micro- and nano-tomography, X-ray micro-diffraction and micro-XRF mapping of the same sample, all non-destructive. Open to all."},
-        {"what": "Automated micropalaeontology", "name": "MANTA", "url": "https://www.cerege.fr/en/equipment/technical-clusters/micropaleontology-automation/", "desc": "Automated microscopes with AI recognition of coccolithophores, foraminifera, radiolarians, diatoms and pollen, and a robot that picks foraminifera for chemical analyses."},
-        {"what": "Microfossil extraction", "name": "LPM", "url": "https://www.cerege.fr/en/equipment/technical-clusters/micropaleontological-preparation/", "desc": "Extraction of microfossils and other bio-indicators from sediments, soils, plants and water samples, ready for microscopy or geochemistry."},
-        {"what": "Sedimentology", "name": "SEDIM", "url": "https://www.cerege.fr/en/equipment/technical-clusters/sedimentology/", "desc": "High-resolution imaging with mosaics, grain-size and particle-shape distributions (with or without chemical pre-treatment), and identification of micro- and macro-remains such as shells and ostracods."}
+        {
+          "what": "Stable isotopes",
+          "name": "PANISS",
+          "url": "https://www.cerege.fr/en/equipment/technical-clusters/analysis-of-stable-isotopes-panis-2/",
+          "desc": "δ¹⁸O and δ¹³C of carbonates, clumped isotopes (Δ<sub>47</sub>, Δ<sub>48</sub>), δ¹⁸O, δ¹⁷O and δD of water, and δ¹⁵N, δ¹³C and δD of organic compounds. Open to academic collaborations and services."
+        },
+        {
+          "what": "Elemental chemistry",
+          "name": "LA-ICP-MS",
+          "url": "https://www.cerege.fr/en/equipment/technical-clusters/chemistry-elementary-the-icp-ms/",
+          "desc": "About 90% of the periodic table in solution by ICP-OES or ICP-MS, and laser ablation of solids for semi-quantitative elemental maps. Open to public and private users."
+        },
+        {
+          "what": "Radiocarbon, biomarkers and sediment geochemistry",
+          "name": "LGO2i",
+          "url": "https://www.cerege.fr/en/equipment/technical-clusters/geochemistry-organic-inorganic-and-isotopic-2/",
+          "desc": "Radiocarbon dating on the AixMICADAS accelerator mass spectrometer, organic compounds as environmental indicators, and the elemental composition of marine and lake sediment archives."
+        },
+        {
+          "what": "2D and 3D X-ray imaging",
+          "name": "MATRIX",
+          "url": "https://www.cerege.fr/en/equipment/technical-clusters/imagery-2d-and-3d-by-x-matrix-ray/",
+          "desc": "Micro- and nano-tomography, X-ray micro-diffraction and micro-XRF mapping of the same sample, all non-destructive. Open to all."
+        },
+        {
+          "what": "Automated micropalaeontology",
+          "name": "MANTA",
+          "url": "https://www.cerege.fr/en/equipment/technical-clusters/micropaleontology-automation/",
+          "desc": "Automated microscopes with AI recognition of coccolithophores, foraminifera, radiolarians, diatoms and pollen, and a robot that picks foraminifera for chemical analyses."
+        },
+        {
+          "what": "Microfossil extraction",
+          "name": "LPM",
+          "url": "https://www.cerege.fr/en/equipment/technical-clusters/micropaleontological-preparation/",
+          "desc": "Extraction of microfossils and other bio-indicators from sediments, soils, plants and water samples, ready for microscopy or geochemistry."
+        },
+        {
+          "what": "Sedimentology",
+          "name": "SEDIM",
+          "url": "https://www.cerege.fr/en/equipment/technical-clusters/sedimentology/",
+          "desc": "High-resolution imaging with mosaics, grain-size and particle-shape distributions (with or without chemical pre-treatment), and identification of micro- and macro-remains such as shells and ostracods."
+        }
       ]
     },
     "instruments_title": "Our instruments",
@@ -348,40 +511,106 @@
       {
         "heading": "Chemical analyses",
         "items": [
-          { "id": "omnis", "name": "Metrohm OMNIS titrator", "desc": "Total alkalinity of seawater by potentiometric titration, on small volumes." },
-          { "id": "cary60", "name": "Agilent Cary 60 UV-Vis spectrophotometer", "short": "Agilent Cary 60", "desc": "Seawater chemistry by spectrophotometry: pH with purified indicator dye, dissolved silicate and phosphate." },
-          { "id": "unisense", "name": "Unisense microsensor profiling system", "short": "Unisense microsensors", "desc": "Microsensors for oxygen, pH, nitric oxide (NO) and hydrogen sulfide on a motorized, automated vertical micromanipulator." }
+          {
+            "id": "omnis",
+            "name": "Metrohm OMNIS titrator",
+            "desc": "Total alkalinity of seawater by potentiometric titration, on small volumes."
+          },
+          {
+            "id": "cary60",
+            "name": "Agilent Cary 60 UV-Vis spectrophotometer",
+            "short": "Agilent Cary 60",
+            "desc": "Seawater chemistry by spectrophotometry: pH with purified indicator dye, dissolved silicate and phosphate."
+          },
+          {
+            "id": "unisense",
+            "name": "Unisense microsensor profiling system",
+            "short": "Unisense microsensors",
+            "desc": "Microsensors for oxygen, pH, nitric oxide (NO) and hydrogen sulfide on a motorized, automated vertical micromanipulator."
+          }
         ]
       },
       {
         "heading": "Experimental systems",
         "items": [
-          { "id": "novoclave", "name": "Büchiglas Novoclave high-pressure reactor", "short": "Büchiglas Novoclave", "desc": "600 mL vessel for water or solid samples, up to 500 bar." },
-          { "id": "rdr", "name": "Rotating disk reactors (×6)", "short": "Rotating disk reactors", "desc": "Stirred or rotating-disk reactors that reproduce benthic hydrodynamics, with chemical monitoring." },
-          { "id": "nanoresp", "name": "Unisense NanoRespiration system", "short": "Unisense NanoRespiration", "desc": "Incubation of microbes or plankton in very small volumes of water, followed with microsensors." },
-          { "id": "incubators", "name": "Friocell 111 EVO (×2) and Memmert incubators", "short": "Friocell & Memmert incubators", "desc": "Culture of microbes, plankton and other small organisms, and incubations, under controlled temperature and light." }
+          {
+            "id": "novoclave",
+            "name": "Büchiglas Novoclave high-pressure reactor",
+            "short": "Büchiglas Novoclave",
+            "desc": "600 mL vessel for water or solid samples, up to 500 bar."
+          },
+          {
+            "id": "rdr",
+            "name": "Rotating disk reactors (×6)",
+            "short": "Rotating disk reactors",
+            "desc": "Stirred or rotating-disk reactors that reproduce benthic hydrodynamics, with chemical monitoring."
+          },
+          {
+            "id": "nanoresp",
+            "name": "Unisense NanoRespiration system",
+            "short": "Unisense NanoRespiration",
+            "desc": "Incubation of microbes or plankton in very small volumes of water, followed with microsensors."
+          },
+          {
+            "id": "incubators",
+            "name": "Friocell 111 EVO (×2) and Memmert incubators",
+            "short": "Friocell & Memmert incubators",
+            "desc": "Culture of microbes, plankton and other small organisms, and incubations, under controlled temperature and light."
+          }
         ]
       },
       {
         "heading": "Microscopy",
         "items": [
-          { "id": "axiovert", "name": "Zeiss Axiovert 5 inverted microscope", "short": "Zeiss Axiovert 5", "desc": "Observation and imaging of living plankton and other immersed samples." },
-          { "id": "stemi", "name": "Zeiss Stemi 508 stereomicroscope", "short": "Zeiss Stemi 508", "desc": "Observation of samples and of microsensor tips." }
+          {
+            "id": "axiovert",
+            "name": "Zeiss Axiovert 5 inverted microscope",
+            "short": "Zeiss Axiovert 5",
+            "desc": "Observation and imaging of living plankton and other immersed samples."
+          },
+          {
+            "id": "stemi",
+            "name": "Zeiss Stemi 508 stereomicroscope",
+            "short": "Zeiss Stemi 508",
+            "desc": "Observation of samples and of microsensor tips."
+          }
         ]
       },
       {
         "heading": "Light and temperature",
         "items": [
-          { "id": "par", "name": "PAR sensor", "desc": "Light intensity and spectrum in cultures and incubations." },
-          { "id": "corio", "name": "Julabo CORIO refrigerated circulator", "short": "Julabo CORIO circulator", "desc": "Heating or cooling of reactors and incubations." }
+          {
+            "id": "par",
+            "name": "PAR sensor",
+            "desc": "Light intensity and spectrum in cultures and incubations."
+          },
+          {
+            "id": "corio",
+            "name": "Julabo CORIO refrigerated circulator",
+            "short": "Julabo CORIO circulator",
+            "desc": "Heating or cooling of reactors and incubations."
+          }
         ]
       },
       {
         "heading": "Sample preparation and storage",
         "items": [
-          { "id": "plasma", "name": "Henniker HPT-100 plasma cleaner", "short": "Henniker HPT-100", "desc": "Removal of organic matter from samples." },
-          { "id": "freezer", "name": "−80 °C freezer", "desc": "Long-term sample storage." },
-          { "id": "fridge", "name": "Laboratory refrigerator", "desc": "Sample storage." }
+          {
+            "id": "plasma",
+            "name": "Henniker HPT-100 plasma cleaner",
+            "short": "Henniker HPT-100",
+            "desc": "Removal of organic matter from samples."
+          },
+          {
+            "id": "freezer",
+            "name": "−80 °C freezer",
+            "desc": "Long-term sample storage."
+          },
+          {
+            "id": "fridge",
+            "name": "Laboratory refrigerator",
+            "desc": "Sample storage."
+          }
         ]
       },
       {
@@ -389,41 +618,244 @@
         "note": "Built for <a href=\"projects/deep-c.html\">Deep-C</a> and used only for that project; not available for other projects or for service work.",
         "reserved": true,
         "items": [
-          { "id": "deepc-reactors", "name": "High-pressure reactors", "desc": "Abyssal to hadal pressures (up to 1000 bar), temperature-controlled, with water sampling under pressure." },
-          { "id": "deepc-meters", "name": "Oxygen and pH meters", "desc": "Oxygen and pH monitoring in the high-pressure reactors." }
+          {
+            "id": "deepc-reactors",
+            "name": "High-pressure reactors",
+            "desc": "Abyssal to hadal pressures (up to 1000 bar), temperature-controlled, with water sampling under pressure."
+          },
+          {
+            "id": "deepc-meters",
+            "name": "Oxygen and pH meters",
+            "desc": "Oxygen and pH monitoring in the high-pressure reactors."
+          }
         ]
       }
-    ]
+    ],
+    "how_title": "How it works",
+    "how": [
+      {
+        "title": "Write to us",
+        "text": "Tell us about your samples — type, number, volume — and what you need, at {email}. If you would also like to use other CEREGE platforms, say so."
+      },
+      {
+        "title": "We reply",
+        "text": "We tell you what is feasible, how to collect, preserve and send your samples, and how long it will take — with a quote for paid services."
+      },
+      {
+        "title": "Samples or a visit",
+        "text": "Send us your samples, or come and run the work with us in the laboratory. Visitors pay a small lab occupation fee."
+      },
+      {
+        "title": "Results",
+        "text": "You receive your data with a description of the methods and quality control. If your project is confidential, we agree on the conditions before you send samples."
+      }
+    ],
+    "visit_title": "Planning a visit",
+    "visit": [
+      "The laboratory is at CEREGE, on the Arbois plateau near Aix-en-Provence — see <a href=\"contact.html#visit\">how to get here</a>. Tell us your dates early: instruments are shared between projects, and experiments can run for days or weeks.",
+      "A stay with us can be combined with analyses on <a href=\"#platforms\">other CEREGE platforms</a>; each has its own access conditions."
+    ],
+    "sheet": {
+      "label": "One-page summary (PDF)",
+      "file": "exocean-services.pdf"
+    }
   },
-
   "contact": {
-    "title": "Let's connect!",
-    "lede": "- Curious to learn more about our work or explore a potential collaboration?",
-    "body": "We'd love to exchange ideas! Whether you're a researcher, partner institution, or simply intrigued by our projects, feel free to reach out."
+    "title": "Contact",
+    "lede": "Questions, collaborations, analyses or a visit — a short e-mail is all it takes.",
+    "write_title": "Write to us",
+    "write_text": "One address for the whole lab:",
+    "bluesky_text": "News, papers and positions are also posted on <a href=\"https://bsky.app/profile/exoceanlab.bsky.social\">Bluesky</a>.",
+    "topics_title": "Who to write to",
+    "topics": [
+      {
+        "what": "Analyses, experiments and instrument use",
+        "who": "the lab",
+        "link": {
+          "label": "Services",
+          "href": "services.html"
+        }
+      },
+      {
+        "what": "Research collaborations on plankton cultures (COREFF)",
+        "who": "Julie Meilland",
+        "slug": "julie-meilland"
+      },
+      {
+        "what": "Research collaborations on reactors and sediment experiments",
+        "who": "Olivier Sulpis",
+        "slug": "olivier-sulpis"
+      },
+      {
+        "what": "Internships, PhD and postdoctoral positions, fellowships",
+        "who": "the lab",
+        "link": {
+          "label": "Join us",
+          "href": "join.html"
+        }
+      },
+      {
+        "what": "Press and media",
+        "who": "the lab"
+      }
+    ],
+    "visit_title": "Visit us",
+    "visit_text": "CEREGE sits on the Arbois plateau, outside the town: about 15–20 minutes by car or taxi from the Aix-en-Provence TGV station or from the centre of Aix, and about 25 minutes from Marseille Provence airport. Write to us before your visit and we will send you practical details.",
+    "post_title": "Postal address"
   },
-
   "join": {
     "title": "Join us",
-    "lede": "- Students, early-career researchers and visiting scientists are welcome all year round.",
+    "lede": "Students, early-career researchers and visiting scientists are welcome all year round.",
+    "openings_title": "Open positions",
+    "openings": [],
+    "no_openings": "There is no open position right now. Funded positions are announced on this page and on our <a href=\"https://bsky.app/profile/exoceanlab.bsky.social\">Bluesky account</a> as they open — and we are glad to help you apply for a fellowship to work with us (see below).",
     "items": [
       {
         "title": "Internships",
-        "body": "We host Master's and undergraduate interns every year, usually for two to six months, on topics ranging from foraminifera culture and microscopy to carbonate chemistry, high-pressure experiments and sediment reactors. Write to us with a CV and a few lines on what you would like to learn — we can usually shape a project together."
+        "body": "We host Master's and undergraduate interns every year, usually for two to six months, on topics ranging from foraminifera culture and microscopy to carbonate chemistry, high-pressure experiments and sediment reactors. Write to us at {email} with a CV and a few lines on what you would like to learn — we can usually shape a project together."
       },
       {
         "title": "PhD and postdoctoral positions",
-        "body": "Funded positions are announced on our <a href=\"https://bsky.app/profile/exoceanlab.bsky.social\">Bluesky account</a> as they open. We are also glad to hear from candidates who would like to prepare a fellowship application with us (Marie Skłodowska-Curie Actions and similar schemes). Send a CV, a short statement of interests and the name of the team member whose work is closest to yours."
+        "body": "We recruit PhD students and postdocs on our funded projects; open positions are listed above. To introduce yourself, send a CV, a short statement of interests and the name of the team member whose work is closest to yours — the <a href=\"team.html\">People</a> page says what everyone works on."
+      },
+      {
+        "title": "Fellowships",
+        "body": "We are glad to hear from candidates who would like to prepare a fellowship application with us, such as a Marie Skłodowska-Curie Postdoctoral Fellowship. Two of our postdocs, Astrid Hylén and Jaime Suárez-Ibarra, hold Marie Skłodowska-Curie fellowships. Get in touch several months before the call deadline: a good application takes time."
       },
       {
         "title": "Visiting scientists and facility access",
-        "body": "Colleagues who would like to run experiments with live planktonic foraminifera at COREFF, use our 500-bar reactor or the rotating disk reactors, or spend time in the laboratory can contact <a href=\"people/julie-meilland.html\">Julie MEILLAND</a> (cultures) or <a href=\"people/olivier-sulpis.html\">Olivier SULPIS</a> (reactors) directly; visitors pay a small lab occupation fee. Analyses we can run for you are listed on our <a href=\"services.html\">Services</a> page."
+        "body": "Colleagues who would like to run experiments with live planktonic foraminifera at COREFF, use our 500-bar reactor or the rotating disk reactors, or spend time in the laboratory can contact <a href=\"people/julie-meilland.html\">Julie Meilland</a> (cultures) or <a href=\"people/olivier-sulpis.html\">Olivier Sulpis</a> (reactors) directly; visitors pay a small lab occupation fee. Analyses we can run for you are listed on our <a href=\"services.html\">Services</a> page."
       }
-    ]
+    ],
+    "apply_title": "How to apply",
+    "apply": "Write to {email} with a CV and a few lines on what you would like to do. For an internship, say when and for how long.",
+    "life_title": "Working with us",
+    "life": "Our researchers belong to CEREGE's Climate team, and the laboratory itself is one of CEREGE's technical platforms. CEREGE is on the Arbois plateau near Aix-en-Provence, with Marseille and the Mediterranean close by."
   },
-
   "footer": {
     "partners_image": "partners-strip.png",
     "partners_alt": "CEREGE, Aix-Marseille Université, CNRS, Collège de France, INRAE and IRD",
     "cerege_url": "https://www.cerege.fr/en/"
+  },
+  "nav_cta": {
+    "label": "Contact",
+    "href": "contact.html"
+  },
+  "visit_address": [
+    "CEREGE",
+    "Avenue Louis Philibert",
+    "Technopôle de l'Environnement Arbois-Méditerranée",
+    "Aix-en-Provence, France"
+  ],
+  "geo": {
+    "lat": 43.49122,
+    "lon": 5.3333
+  },
+  "research": {
+    "column_title": "From surface to seafloor",
+    "column_text": "Our projects follow carbon from the plankton that build shells in the sunlit surface ocean, down through the water column to the deep seafloor, where those shells dissolve or are buried — and into the sediments that record past climates.",
+    "zones": [
+      {
+        "name": "Sunlit surface",
+        "text": "plankton build carbonate shells"
+      },
+      {
+        "name": "Water column",
+        "text": "shells and organic matter sink"
+      },
+      {
+        "name": "Deep sea",
+        "text": "up to 1,000 bar in the trenches"
+      },
+      {
+        "name": "Seafloor",
+        "text": "shells dissolve or are buried"
+      },
+      {
+        "name": "Sediment archive",
+        "text": "millions of years of climate history"
+      }
+    ],
+    "pins": [
+      {
+        "project": "mango",
+        "where": "Mangrove lagoons and coastal oxygen, Senegal",
+        "x": 5,
+        "y": 8,
+        "label": "below"
+      },
+      {
+        "project": "dynamite",
+        "where": "Aragonite shells of planktonic snails",
+        "x": 57,
+        "y": 18,
+        "label": "left"
+      },
+      {
+        "project": "asperge",
+        "where": "Aragonite reaching the seafloor",
+        "x": 60.4,
+        "y": 71.6
+      },
+      {
+        "project": "deep-c",
+        "where": "Carbonate dissolution at up to 1,000 bar",
+        "x": 84.5,
+        "y": 90,
+        "label": "left"
+      },
+      {
+        "project": "forcry",
+        "where": "Past CO₂ from foraminifera in sediment cores",
+        "x": 47,
+        "y": 86,
+        "label": "left"
+      }
+    ],
+    "questions_title": "Our key questions, from the surface to the deep sea",
+    "questions": [
+      "What controls <strong>spatial variability</strong> in oceanic carbon fluxes?",
+      "How are carbon fluxes impacted by <strong>calcifying plankton population dynamics</strong>?",
+      "What is the future of <strong>ocean biogenic carbon</strong> production and export?",
+      "How does <strong>climate sensitivity</strong> depend on the background climate state?",
+      "How do <strong>deep-sea processes</strong> mitigate anthropogenic CO₂?",
+      "And how are <strong>human activities</strong> already leaving traces in the sediment record?"
+    ],
+    "current_title": "Current projects",
+    "completed_title": "Completed projects",
+    "outro": "Working on a related question, or looking for data, a model or an analysis? <a href=\"contact.html\">Write to us</a>."
+  },
+  "funders": {
+    "funder-eu-erc.png": "European Research Council (ERC), funded by the European Union",
+    "funder-cnrs.png": "CNRS",
+    "funder-cerege.png": "CEREGE",
+    "funder-ird.png": "IRD, French National Research Institute for Sustainable Development"
+  },
+  "publications": {
+    "title": "Publications",
+    "lede": "Peer-reviewed papers by members of the lab.",
+    "selected_title": "Selected papers",
+    "selected": [
+      "10.1038/s41586-024-08191-5",
+      "10.1126/science.adi5177",
+      "10.1126/science.adq8520",
+      "10.1111/jeu.13022",
+      "10.1038/s41467-022-28711-z",
+      "10.1038/s41561-022-00982-7",
+      "10.1073/pnas.1804250115"
+    ],
+    "all_title": "All publications",
+    "open_years": 3
+  },
+  "legal": {
+    "title": "Legal notice and accessibility",
+    "lede": "Who publishes this site, what it does with your data, and how accessible it is.",
+    "publisher": "the exocean laboratory at CEREGE (Centre for Research and Teaching in Environmental Geosciences: Aix-Marseille Université, CNRS, IRD, INRAE, Collège de France), Technopôle de l'Environnement Arbois-Méditerranée, Avenue Louis Philibert, BP 80, 13545 Aix-en-Provence cedex 04, France",
+    "director": "Olivier Sulpis",
+    "editors": "Thomas Chalk, Julie Meilland and Olivier Sulpis",
+    "host": "GitHub Pages — GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA",
+    "credits": "Photographs © Elodie Gazquez (2025), © SEMEPA / CEREGE, © Jaime Suárez-Ibarra and the exocean team, as credited on each image. Logo: exocean. Typeface: Cabin (SIL Open Font License).",
+    "status": "not compliant",
+    "status_fr": "non conforme"
   }
 }

@@ -1,6 +1,6 @@
 {
-  "title": "Get to Know Us",
-  "lede": "- Meet the team members behind the science.",
+  "title": "People",
+  "lede": "The founders, the scientific team and the colleagues we work with.",
   "groups": [
     {
       "heading": "The founders",
@@ -9,8 +9,10 @@
           "slug": "thomas-chalk",
           "orcid": "0000-0002-2880-3847",
           "idhal": "thomas-chalk",
-          "name": "Thomas CHALK",
+          "name": "Thomas Chalk",
           "affiliation": "CNRS Researcher at CEREGE, France",
+          "position": "CNRS researcher",
+          "focus": "Past ocean pH and CO₂ from boron isotopes",
           "role": "Isotope Geochemist",
           "photo": "p-chalk.jpg",
           "greeting": "Bonjour !",
@@ -23,57 +25,100 @@
           "email_user": "chalk",
           "email_domain": "cerege.fr",
           "links": [
-            { "label": "ERC ForCry dedicated page on CEREGE website", "url": "https://www.cerege.fr/fr/sciences/climat/projets-climat/erc-forcry/" },
-            { "label": "Google Scholar", "url": "https://scholar.google.com/citations?user=ZOcioqsAAAAJ&hl=en" },
-            { "label": "ResearchGate", "url": "https://www.researchgate.net/profile/Thomas-Chalk" },
-            { "label": "Bluesky", "url": "https://bsky.app/profile/chalkyoceans.bsky.social" }
+            {
+              "label": "ERC ForCry dedicated page on CEREGE website",
+              "url": "https://www.cerege.fr/fr/sciences/climat/projets-climat/erc-forcry/"
+            },
+            {
+              "label": "Google Scholar",
+              "url": "https://scholar.google.com/citations?user=ZOcioqsAAAAJ&hl=en"
+            },
+            {
+              "label": "ResearchGate",
+              "url": "https://www.researchgate.net/profile/Thomas-Chalk"
+            },
+            {
+              "label": "Bluesky",
+              "url": "https://bsky.app/profile/chalkyoceans.bsky.social"
+            }
           ]
         },
         {
           "slug": "julie-meilland",
           "orcid": "0000-0001-8966-3115",
           "idhal": "julie-meilland",
-          "name": "Julie MEILLAND",
+          "name": "Julie Meilland",
           "affiliation": "CNRS Researcher at CEREGE, France",
+          "position": "CNRS researcher",
+          "focus": "Life cycles and culture of planktonic foraminifera",
           "role": "Plankton biologist",
           "photo": "p-meilland.jpg",
           "greeting": "Bonjour !",
           "bio": [
             "I'm a marine biologist whose research explores the life cycle and population dynamics of marine pelagic calcifiers such as planktonic Foraminifera and Pteropods. I graduated (PhD) from the University of Angers, France, in late 2015 and joined the Arctic University of Tromsø, Norway for my first postdoctoral research contract.",
-            "During my PhD and in Norway I specialised in the ecology and contribution of pelagic calcifiers, from polar regions and environments, to the marine carbon export. I later joined MARUM, at the University of Bremen, DE, before starting my CNRS research position in the Climate team at CEREGE in early 2025. There, and based on my findings on planktonic foraminifera reproduction in laboratory (Meilland et al., 2023 & 2024) I develop and manage the COntinuous REproduction for Foraminifera Facility (COREFF). I am also a modern foraminifera expert in taxonomy. With more than a year and half spent at sea through 20 research cruise from Antarctica to the Arctic, I have a tremendous field experience — strengthening my fundamental understanding of plankton ecology and population dynamics.",
+            "During my PhD and in Norway I specialised in the ecology and contribution of pelagic calcifiers, from polar regions and environments, to the marine carbon export. I later joined MARUM, at the University of Bremen, DE, before starting my CNRS research position in the Climate team at CEREGE in early 2025. There, and based on my findings on planktonic foraminifera reproduction in laboratory (Meilland et al., 2023 & 2024) I develop and manage the COntinuous REproduction for Foraminifera Facility (COREFF). I am also a modern foraminifera expert in taxonomy. With more than a year and a half spent at sea on 20 research cruises, from Antarctica to the Arctic, I have extensive field experience — strengthening my fundamental understanding of plankton ecology and population dynamics.",
             "I love running and diving!"
           ],
           "email_user": "meilland",
           "email_domain": "cerege.fr",
           "links": [
-            { "label": "Google Scholar", "url": "https://scholar.google.com/citations?user=6nIhErwAAAAJ&hl=fr&oi=ao" },
-            { "label": "ResearchGate", "url": "https://www.researchgate.net/profile/Julie-Meilland" },
-            { "label": "Bluesky", "url": "https://bsky.app/profile/juliemeilland.bsky.social" },
-            { "label": "CEREGE", "url": "https://www.cerege.fr/fr/cerege/julie-meilland/" }
+            {
+              "label": "Google Scholar",
+              "url": "https://scholar.google.com/citations?user=6nIhErwAAAAJ&hl=fr&oi=ao"
+            },
+            {
+              "label": "ResearchGate",
+              "url": "https://www.researchgate.net/profile/Julie-Meilland"
+            },
+            {
+              "label": "Bluesky",
+              "url": "https://bsky.app/profile/juliemeilland.bsky.social"
+            },
+            {
+              "label": "CEREGE",
+              "url": "https://www.cerege.fr/fr/cerege/julie-meilland/"
+            }
           ]
         },
         {
           "slug": "olivier-sulpis",
           "orcid": "0000-0002-6463-3320",
           "idhal": "olivier-sulpis",
-          "name": "Olivier SULPIS",
+          "name": "Olivier Sulpis",
           "affiliation": "CNRS Researcher at CEREGE, France",
+          "position": "CNRS researcher",
+          "focus": "Deep-sea carbonate dissolution under pressure",
           "role": "CO₂ neutralizer",
           "photo": "p-sulpis.jpg",
           "greeting": "Bonjour !",
           "bio": [
             "I'm Olivier, a marine biogeochemist and ecologist, primarily interested in the carbon cycle of the ocean in the early Anthropocene. I use numerical models, laboratory experiments and in-situ observations to understand how sediments and organisms at the seafloor, a mostly unmapped environment that covers more than two thirds of our planet surface, regulate the climate of our planet. My research also explores deep-sea currents, waves and tides, marine snow, calcification and the response of calcifiers to global change. Leader of the Deep-C ERC project, I am developing novel experimental tools to reproduce abyssal and hadal environments in the laboratory, with a set of sensors operating under the highest pressures of the oceans.",
-            "I earned my PhD from McGill University, Montreal, in 2019, in aqueous chemistry. I pursued as a postdoctoral researcher at the University of Utrecht until 2023, when I started a CNRS research scientist position in the Climate team at CEREGE, south of France. In parallel with my research, I serve as an editor for Global Biogeochemical Cycles and Biogeosciences, and act as co-chair of a working group on the monitoring, reporting and verification of marine carbon dioxide removal, as part of the European Marine Board.",
+            "I earned my PhD from McGill University, Montreal, in 2019, in aqueous chemistry. I then worked as a postdoctoral researcher at Utrecht University until 2023, when I started a CNRS research scientist position in the Climate team at CEREGE, south of France. In parallel with my research, I serve as an editor for Global Biogeochemical Cycles and Biogeosciences, and act as co-chair of a working group on the monitoring, reporting and verification of marine carbon dioxide removal, as part of the European Marine Board.",
             "In my spare time, I enjoy playing bass, dancing, and cooking."
           ],
           "email_user": "sulpis",
           "email_domain": "cerege.fr",
           "links": [
-            { "label": "Google Scholar", "url": "https://scholar.google.com/citations?user=JPfVNNcAAAAJ&hl=en" },
-            { "label": "ResearchGate", "url": "https://www.researchgate.net/profile/Olivier-Sulpis" },
-            { "label": "CEREGE", "url": "https://www.cerege.fr/fr/cerege/olivier-sulpis/" },
-            { "label": "LinkedIn", "url": "https://www.linkedin.com/in/oliviersulpis/" },
-            { "label": "Bluesky", "url": "https://bsky.app/profile/sulpis.bsky.social" }
+            {
+              "label": "Google Scholar",
+              "url": "https://scholar.google.com/citations?user=JPfVNNcAAAAJ&hl=en"
+            },
+            {
+              "label": "ResearchGate",
+              "url": "https://www.researchgate.net/profile/Olivier-Sulpis"
+            },
+            {
+              "label": "CEREGE",
+              "url": "https://www.cerege.fr/fr/cerege/olivier-sulpis/"
+            },
+            {
+              "label": "LinkedIn",
+              "url": "https://www.linkedin.com/in/oliviersulpis/"
+            },
+            {
+              "label": "Bluesky",
+              "url": "https://bsky.app/profile/sulpis.bsky.social"
+            }
           ]
         }
       ]
@@ -84,8 +129,10 @@
         {
           "slug": "matthieu-buisson",
           "orcid": "0000-0002-0720-2962",
-          "name": "Matthieu BUISSON",
+          "name": "Matthieu Buisson",
           "affiliation": "CNRS Postdoctoral Researcher at CEREGE, France",
+          "position": "CNRS postdoctoral researcher",
+          "focus": "Boron isotopes and past seawater pH",
           "photo": "p-buisson.jpg",
           "greeting": "Bonjour !",
           "bio": [
@@ -100,34 +147,59 @@
           "slug": "sonia-chaabane",
           "orcid": "0000-0002-4653-8610",
           "idhal": "sonia-chaabane",
-          "name": "Sonia CHAABANE",
+          "name": "Sonia Chaabane",
           "affiliation": "IRD Researcher at CEREGE, France",
+          "position": "IRD researcher",
+          "focus": "Plankton responses to warming, acidification and low oxygen",
           "photo": "p-chaabane.jpg",
           "greeting": "Bonjour !",
           "bio": [
-            "I am a marine ecologist and micropalaeontologist at the French Research Institute for Development (IRD), based at CEREGE in Aix-en-Provence. My research focuses on how marine plankton responds to climate change, particularly warming, ocean acidification, and deoxygenation. I use planktonic foraminifera, microscopic calcifying organisms, as bioindicators to understand how marine ecosystems have changed in the past and how they may evolve in the future.",
+            "I am a marine ecologist and micropalaeontologist at the French National Research Institute for Sustainable Development (IRD), based at CEREGE in Aix-en-Provence. My research focuses on how marine plankton responds to climate change, particularly warming, ocean acidification, and deoxygenation. I use planktonic foraminifera, microscopic calcifying organisms, as bioindicators to understand how marine ecosystems have changed in the past and how they may evolve in the future.",
             "My work bridges global biodiversity databases, trait-based ecology, high-throughput imaging, and artificial intelligence. I have been deeply involved in the development and synthesis of large international databases (such as FORCIS and DYNAMITE), aiming to transform scattered observations into coherent knowledge that can inform both science and society. A key motivation of my research is to improve our capacity to detect, quantify, and anticipate biological responses to global change at large spatial and temporal scales.",
             "Before joining IRD, I trained in marine and environmental sciences in Spain (ICTA) and held postdoctoral positions in France (CEREGE; FRB) and Germany (MPIC). Beyond research, I am strongly committed to open science, capacity building, and international collaboration, particularly in West Africa.",
             "Outside the lab, I enjoy fieldwork at sea, and sharing science through collaborative projects and mentoring."
           ],
           "links": [
-            { "label": "Google Scholar", "url": "https://scholar.google.fr/citations?user=FeJqQtsAAAAJ&hl=fr" },
-            { "label": "FORCIS database (Scientific Data / Zenodo)", "url": "https://doi.org/10.5281/zenodo.7390792" },
-            { "label": "R package forcis (rOpenSci / CRAN)", "url": "https://docs.ropensci.org/forcis/" },
-            { "label": "Nature (2024)", "url": "https://doi.org/10.1038/s41586-024-08191-5" },
-            { "label": "Science (2025)", "url": "https://doi.org/10.1126/science.adq8520" },
-            { "label": "IRD — Laboratoire BISSAP-LUCAD", "url": "https://www.ird.fr/inauguration-du-laboratoire-bissap-lucad-un-nouveau-centre-de-reference-pour-la-surveillance-des" },
-            { "label": "IRD — Prix départemental pour la recherche en Provence 2025", "url": "https://www.ird.fr/prix-departemental-pour-la-recherche-en-provence-2025-deux-chercheurs-ird-parmi-les-laureats" }
+            {
+              "label": "Google Scholar",
+              "url": "https://scholar.google.fr/citations?user=FeJqQtsAAAAJ&hl=fr"
+            },
+            {
+              "label": "FORCIS database (Scientific Data / Zenodo)",
+              "url": "https://doi.org/10.5281/zenodo.7390792"
+            },
+            {
+              "label": "R package forcis (rOpenSci / CRAN)",
+              "url": "https://docs.ropensci.org/forcis/"
+            },
+            {
+              "label": "Nature (2024)",
+              "url": "https://doi.org/10.1038/s41586-024-08191-5"
+            },
+            {
+              "label": "Science (2025)",
+              "url": "https://doi.org/10.1126/science.adq8520"
+            },
+            {
+              "label": "IRD — Laboratoire BISSAP-LUCAD",
+              "url": "https://www.ird.fr/inauguration-du-laboratoire-bissap-lucad-un-nouveau-centre-de-reference-pour-la-surveillance-des"
+            },
+            {
+              "label": "IRD — Prix départemental pour la recherche en Provence 2025",
+              "url": "https://www.ird.fr/prix-departemental-pour-la-recherche-en-provence-2025-deux-chercheurs-ird-parmi-les-laureats"
+            }
           ]
         },
         {
           "slug": "maxime-felix",
-          "name": "Maxime FELIX",
+          "name": "Maxime Felix",
           "affiliation": "CNRS Marine Biogeochemistry Research Engineer at CEREGE, France",
+          "position": "CNRS research engineer",
+          "focus": "High-pressure equipment and carbonate chemistry",
           "photo": "p-felix.jpg",
           "greeting": "Bonjour !",
           "bio": [
-            "I am a research engineer in the Climate team at CEREGE. My work focuses on management of hyperbaric equipment and measurement of carbonate chemistry at the Exocean laboratory. Passionate about ocean dynamics, my aim is to advance scientific research in deep sea waters, but also to enable the successful development of various projects within the laboratory.",
+            "I am a research engineer in the Climate team at CEREGE. My work focuses on management of hyperbaric equipment and measurement of carbonate chemistry at the exocean laboratory. Passionate about ocean dynamics, my aim is to advance scientific research in deep sea waters, but also to enable the successful development of various projects within the laboratory.",
             "Before joining CEREGE, I studied marine science with a specialization in anthropogenic disturbances at the University of Toulon, where I developed an interest in research as well as in laboratory instruments and analytical techniques.",
             "Outside the lab, I enjoy sports such as tennis, running, and football, and I also appreciate discovering marine wildlife while freediving."
           ],
@@ -135,8 +207,10 @@
         },
         {
           "slug": "marine-jaumon",
-          "name": "Marine JAUMON",
+          "name": "Marine Jaumon",
           "affiliation": "PhD Student at CEREGE and LOV, France",
+          "position": "PhD student, CEREGE and LOV",
+          "focus": "How coral carbonates form and dissolve",
           "photo": "p-jaumon.jpg",
           "greeting": "Bonjour !",
           "bio": [
@@ -149,8 +223,11 @@
         {
           "slug": "jaime-suarez-ibarra",
           "orcid": "0000-0002-0227-4369",
-          "name": "Jaime Y. SUÁREZ-IBARRA",
+          "idhal": "jaime-y-suarez-ibarra",
+          "name": "Jaime Y. Suárez-Ibarra",
           "affiliation": "Marie Skłodowska-Curie Fellow at CEREGE, France",
+          "position": "Marie Skłodowska-Curie fellow",
+          "focus": "Neogene foraminifera and past CO₂",
           "photo": "p-suarez.jpg",
           "greeting": "¡Hola!",
           "bio": [
@@ -160,14 +237,20 @@
           "email_user": "suarez",
           "email_domain": "cerege.fr",
           "links": [
-            { "label": "Personal page", "url": "https://jysuarezibarra.github.io/biography/index.html" }
+            {
+              "label": "Personal page",
+              "url": "https://jysuarezibarra.github.io/biography/index.html"
+            }
           ]
         },
         {
           "slug": "astrid-hylen",
           "orcid": "0000-0003-4037-0033",
-          "name": "Astrid HYLÉN",
+          "idhal": "astrid-hylen",
+          "name": "Astrid Hylén",
           "affiliation": "Marie Skłodowska-Curie Fellow at CEREGE, France",
+          "position": "Marie Skłodowska-Curie fellow",
+          "focus": "Carbon burial and fluxes in coastal sediments",
           "photo": "p-hylen.jpg",
           "greeting": "Hej!",
           "bio": [
@@ -178,23 +261,40 @@
           "email_user": "hylen",
           "email_domain": "cerege.fr",
           "links": [
-            { "label": "Google Scholar", "url": "https://scholar.google.com/citations?user=ECz9Tm4AAAAJ&hl=en" },
-            { "label": "ResearchGate", "url": "https://www.researchgate.net/profile/Astrid-Hylen-2" },
-            { "label": "Bluesky", "url": "https://bsky.app/profile/astridhylen.bsky.social" },
-            { "label": "LinkedIn", "url": "https://fr.linkedin.com/in/astridhylen" },
-            { "label": "GitHub", "url": "https://github.com/AstridHylen" }
+            {
+              "label": "Google Scholar",
+              "url": "https://scholar.google.com/citations?user=ECz9Tm4AAAAJ&hl=en"
+            },
+            {
+              "label": "ResearchGate",
+              "url": "https://www.researchgate.net/profile/Astrid-Hylen-2"
+            },
+            {
+              "label": "Bluesky",
+              "url": "https://bsky.app/profile/astridhylen.bsky.social"
+            },
+            {
+              "label": "LinkedIn",
+              "url": "https://fr.linkedin.com/in/astridhylen"
+            },
+            {
+              "label": "GitHub",
+              "url": "https://github.com/AstridHylen"
+            }
           ]
         },
         {
           "slug": "devangi-sathe",
           "orcid": "0000-0002-1375-5774",
-          "name": "Devangi SATHE",
+          "name": "Devangi Sathe",
           "affiliation": "CNRS Postdoctoral Researcher at CEREGE, France",
+          "position": "CNRS postdoctoral researcher",
+          "focus": "Carbonate solubility at abyssal and hadal pressures",
           "photo": "p-sathe.jpg",
           "greeting": "Hello!",
           "bio": [
             "I am a postdoctoral researcher on the ERC project Deep-C at CEREGE, where I study how calcium carbonate dissolves in the deep sea. Using the laboratory's high-pressure reactors, I measure the solubility of different carbonate minerals at the pressures of the abyssal and hadal seafloor, and how fast they dissolve when microbes are respiring around them.",
-            "Before coming to Aix-en-Provence I did my PhD with Ronnie GLUD at the University of Southern Denmark (HADAL & Nordcee, Odense), studying microbial life under high pressure. That background in experimental microbiology is what brought me to the reactors: my aim is to understand how respiration in sediments drives carbonate dissolution, from incubations of coastal sediment to experiments at 1,000 bar."
+            "Before coming to Aix-en-Provence I did my PhD with Ronnie Glud at the University of Southern Denmark (HADAL & Nordcee, Odense), studying microbial life under high pressure. That background in experimental microbiology is what brought me to the reactors: my aim is to understand how respiration in sediments drives carbonate dissolution, from incubations of coastal sediment to experiments at 1,000 bar."
           ],
           "email_user": "sathe",
           "email_domain": "cerege.fr",
@@ -202,12 +302,14 @@
         },
         {
           "slug": "katoo-declerck",
-          "name": "Katoo DECLERCK",
+          "name": "Katoo Declerck",
           "affiliation": "PhD Student at CEREGE, France",
+          "position": "PhD student",
+          "focus": "Dissolution of single foraminifera shells",
           "photo": "p-declerck.jpg",
           "greeting": "Hallo!",
           "bio": [
-            "I am a biologist and PhD student at the exocean laboratory in CEREGE, supervised by Olivier SULPIS and Julie MEILLAND. My thesis follows deep-sea calcium carbonate dissolution from the microenvironment of a single foraminifera shell to the global carbon cycle, combining micro-CT imaging of dissolving shells, pore-scale modelling and dissolution experiments, with a particular interest in the role of organic matter. Passionate about the ocean, my aim is to get a better understanding of the importance of marine environments in mitigating climate change by dissolving calcium carbonates.",
+            "I am a biologist and PhD student at the exocean laboratory in CEREGE, supervised by Olivier Sulpis and Julie Meilland. My thesis follows deep-sea calcium carbonate dissolution from the microenvironment of a single foraminifera shell to the global carbon cycle, combining micro-CT imaging of dissolving shells, pore-scale modelling and dissolution experiments, with a particular interest in the role of organic matter. Passionate about the ocean, my aim is to get a better understanding of the importance of marine environments in mitigating climate change by dissolving calcium carbonates.",
             "Before joining CEREGE I studied global change biology at the University of Antwerp, where I learned about different consequences of climate change and to help mitigate these effects.",
             "Outside the lab you can find me somewhere hiking, chasing beautiful sunsets or enjoying a big cup of tea, usually accompanied with a homemade song and some jokes!"
           ],
@@ -218,34 +320,228 @@
     {
       "heading": "Collaborators on current projects",
       "external": [
-        { "label": "Deep-C", "project": "deep-c", "people": [
-            { "name": "Christian TAMBURINI", "role": "Abyssal microbiologist", "institutions": [{ "name": "Mediterranean Institute of Oceanography (MIO)", "url": "https://www.mio.osupytheas.fr/en/" }], "country": "France" },
-            { "name": "Marc GAREL", "role": "High-pressure microbiology", "institutions": [{ "name": "Mediterranean Institute of Oceanography (MIO)", "url": "https://www.mio.osupytheas.fr/en/" }], "country": "France" },
-            { "name": "Ronnie N. GLUD", "role": "Hadal biogeochemist", "institutions": [{ "name": "University of Southern Denmark", "url": "https://www.sdu.dk/en" }], "country": "Denmark" },
-            { "name": "Peter STIEF", "role": "Microbial ecologist", "institutions": [{ "name": "University of Southern Denmark", "url": "https://www.sdu.dk/en" }], "country": "Denmark" },
-            { "name": "Dustin CARROLL", "institutions": [{ "name": "San José State University", "url": "https://www.sjsu.edu/" }], "country": "USA" }
-          ] },
-        { "label": "MANGO", "project": "mango", "people": [
-            { "name": "Malick THIAM", "institutions": [{ "name": "Université Cheikh Anta Diop (UCAD)", "url": "https://www.ucad.sn/" }], "country": "Senegal" },
-            { "name": "Amadou Thierno GAYE", "institutions": [{ "name": "Université Cheikh Anta Diop (UCAD)", "url": "https://www.ucad.sn/" }], "country": "Senegal" },
-            { "name": "Ibrahima CAMARA", "institutions": [{ "name": "Université Cheikh Anta Diop (UCAD)", "url": "https://www.ucad.sn/" }], "country": "Senegal" },
-            { "name": "Eric MACHU", "institutions": [{ "name": "IRD", "url": "https://en.ird.fr/" }, { "name": "LOPS", "url": "https://www.umr-lops.fr/" }], "country": "France" }
-          ] },
-        { "label": "DYNAMITE", "project": "dynamite", "people": [
-            { "name": "Deborah WALL-PALMER", "institutions": [{ "name": "Naturalis Biodiversity Center", "url": "https://www.naturalis.nl/en" }], "country": "Netherlands" },
-            { "name": "Katja PEIJNENBURG", "institutions": [{ "name": "University of Amsterdam", "url": "https://www.uva.nl/en" }, { "name": "Naturalis Biodiversity Center", "url": "https://www.naturalis.nl/en" }], "country": "Netherlands" },
-            { "name": "Fabio BENEDETTI", "institutions": [{ "name": "ETH Zurich", "url": "https://ethz.ch/en.html" }], "country": "Switzerland" },
-            { "name": "Nina BEDNARSEK", "institutions": [{ "name": "Oregon State University, CIMERS", "url": "https://cimers.oregonstate.edu/" }], "country": "USA / Slovenia" },
-            { "name": "Ralf SCHIEBEL", "institutions": [{ "name": "Max Planck Institute for Chemistry", "url": "https://www.mpic.de/en" }], "country": "Germany" },
-            { "name": "Mark OHMAN", "institutions": [{ "name": "Scripps Institution of Oceanography, UC San Diego", "url": "https://scripps.ucsd.edu/" }], "country": "USA" },
-            { "name": "Clara MANNO", "institutions": [{ "name": "British Antarctic Survey", "url": "https://www.bas.ac.uk/" }], "country": "UK" }
-          ] },
-        { "label": "ForCry", "project": "forcry", "people": [
-            { "name": "Christopher STANDISH", "institutions": [{ "name": "University of Southampton", "url": "https://www.southampton.ac.uk/" }], "country": "UK" }
-          ] },
-        { "label": "PhD co-supervision", "people": [
-            { "name": "Steeve COMEAU", "role": "Calcification ecophysiologist", "institutions": [{ "name": "Laboratoire d'Océanographie de Villefranche (LOV)", "url": "https://lov.imev-mer.fr/web/" }], "country": "France" }
-          ] }
+        {
+          "label": "Deep-C",
+          "project": "deep-c",
+          "people": [
+            {
+              "name": "Christian Tamburini",
+              "role": "Abyssal microbiologist",
+              "institutions": [
+                {
+                  "name": "Mediterranean Institute of Oceanography (MIO)",
+                  "url": "https://www.mio.osupytheas.fr/en/"
+                }
+              ],
+              "country": "France"
+            },
+            {
+              "name": "Marc Garel",
+              "role": "High-pressure microbiology",
+              "institutions": [
+                {
+                  "name": "Mediterranean Institute of Oceanography (MIO)",
+                  "url": "https://www.mio.osupytheas.fr/en/"
+                }
+              ],
+              "country": "France"
+            },
+            {
+              "name": "Ronnie N. Glud",
+              "role": "Hadal biogeochemist",
+              "institutions": [
+                {
+                  "name": "University of Southern Denmark",
+                  "url": "https://www.sdu.dk/en"
+                }
+              ],
+              "country": "Denmark"
+            },
+            {
+              "name": "Peter Stief",
+              "role": "Microbial ecologist",
+              "institutions": [
+                {
+                  "name": "University of Southern Denmark",
+                  "url": "https://www.sdu.dk/en"
+                }
+              ],
+              "country": "Denmark"
+            },
+            {
+              "name": "Dustin Carroll",
+              "institutions": [
+                {
+                  "name": "San José State University",
+                  "url": "https://www.sjsu.edu/"
+                }
+              ],
+              "country": "USA"
+            }
+          ]
+        },
+        {
+          "label": "MANGO",
+          "project": "mango",
+          "people": [
+            {
+              "name": "Malick Thiam",
+              "institutions": [
+                {
+                  "name": "Université Cheikh Anta Diop (UCAD)",
+                  "url": "https://www.ucad.sn/"
+                }
+              ],
+              "country": "Senegal"
+            },
+            {
+              "name": "Amadou Thierno Gaye",
+              "institutions": [
+                {
+                  "name": "Université Cheikh Anta Diop (UCAD)",
+                  "url": "https://www.ucad.sn/"
+                }
+              ],
+              "country": "Senegal"
+            },
+            {
+              "name": "Ibrahima Camara",
+              "institutions": [
+                {
+                  "name": "Université Cheikh Anta Diop (UCAD)",
+                  "url": "https://www.ucad.sn/"
+                }
+              ],
+              "country": "Senegal"
+            },
+            {
+              "name": "Eric Machu",
+              "institutions": [
+                {
+                  "name": "IRD",
+                  "url": "https://en.ird.fr/"
+                },
+                {
+                  "name": "LOPS",
+                  "url": "https://www.umr-lops.fr/"
+                }
+              ],
+              "country": "France"
+            }
+          ]
+        },
+        {
+          "label": "DYNAMITE",
+          "project": "dynamite",
+          "people": [
+            {
+              "name": "Deborah Wall-Palmer",
+              "institutions": [
+                {
+                  "name": "Naturalis Biodiversity Center",
+                  "url": "https://www.naturalis.nl/en"
+                }
+              ],
+              "country": "Netherlands"
+            },
+            {
+              "name": "Katja Peijnenburg",
+              "institutions": [
+                {
+                  "name": "University of Amsterdam",
+                  "url": "https://www.uva.nl/en"
+                },
+                {
+                  "name": "Naturalis Biodiversity Center",
+                  "url": "https://www.naturalis.nl/en"
+                }
+              ],
+              "country": "Netherlands"
+            },
+            {
+              "name": "Fabio Benedetti",
+              "institutions": [
+                {
+                  "name": "ETH Zurich",
+                  "url": "https://ethz.ch/en.html"
+                }
+              ],
+              "country": "Switzerland"
+            },
+            {
+              "name": "Nina Bednaršek",
+              "institutions": [
+                {
+                  "name": "Oregon State University, CIMERS",
+                  "url": "https://cimers.oregonstate.edu/"
+                }
+              ],
+              "country": "USA / Slovenia"
+            },
+            {
+              "name": "Ralf Schiebel",
+              "institutions": [
+                {
+                  "name": "Max Planck Institute for Chemistry",
+                  "url": "https://www.mpic.de/en"
+                }
+              ],
+              "country": "Germany"
+            },
+            {
+              "name": "Mark Ohman",
+              "institutions": [
+                {
+                  "name": "Scripps Institution of Oceanography, UC San Diego",
+                  "url": "https://scripps.ucsd.edu/"
+                }
+              ],
+              "country": "USA"
+            },
+            {
+              "name": "Clara Manno",
+              "institutions": [
+                {
+                  "name": "British Antarctic Survey",
+                  "url": "https://www.bas.ac.uk/"
+                }
+              ],
+              "country": "UK"
+            }
+          ]
+        },
+        {
+          "label": "ForCry",
+          "project": "forcry",
+          "people": [
+            {
+              "name": "Christopher Standish",
+              "institutions": [
+                {
+                  "name": "University of Southampton",
+                  "url": "https://www.southampton.ac.uk/"
+                }
+              ],
+              "country": "UK"
+            }
+          ]
+        },
+        {
+          "label": "PhD co-supervision",
+          "people": [
+            {
+              "name": "Steeve Comeau",
+              "role": "Calcification ecophysiologist",
+              "institutions": [
+                {
+                  "name": "Laboratoire d'Océanographie de Villefranche (LOV)",
+                  "url": "https://lov.imev-mer.fr/web/"
+                }
+              ],
+              "country": "France"
+            }
+          ]
+        }
       ]
     },
     {

@@ -1,0 +1,258 @@
+# Pages CMS (https://pagescms.org) — edit the website with forms instead of
+# JSON. Sign in at https://app.pagescms.org with a GitHub account that belongs
+# to the exocean-lab organisation, open this repository, and pick an entry on
+# the left. Saving makes a commit; the site rebuilds itself about a minute later.
+#
+# Only the parts people change often are listed here (news, open positions,
+# people, projects, selected papers). Everything else stays in the JSON files
+# described in exocean/README.md.
+#
+# Every key used in the lists below must stay declared here: when a list is
+# saved, keys that are not declared are dropped from its items.
+
+media:
+  input: exocean/assets/img
+  output: ""
+  extensions: [jpg, jpeg, png, webp]
+
+settings:
+  content:
+    merge: true          # keep everything in the files that is not edited here
+
+content:
+  - name: news
+    label: News
+    description: News items, newest first. Each one gets its own page; the two newest also appear on the home page.
+    type: file
+    path: exocean/content/news.json
+    format: json
+    fields:
+      - name: items
+        label: News items
+        type: object
+        list: true
+        fields:
+          - name: id
+            label: Short name for the web address
+            description: Lower case and dashes, e.g. alan-higgins-award (the page will be news/alan-higgins-award.html). Don't change it once published.
+            type: string
+            required: true
+            pattern:
+              regex: "^[a-z0-9]+(-[a-z0-9]+)*$"
+              message: Use lower-case letters, digits and dashes only.
+          - name: date
+            label: Month
+            description: Year and month, e.g. 2026-10
+            type: string
+            required: true
+            pattern:
+              regex: "^[0-9]{4}-[0-9]{2}$"
+              message: Write the month as YYYY-MM, e.g. 2026-10.
+          - name: headline
+            type: string
+            required: true
+          - name: image
+            label: Photo
+            type: image
+          - name: image_alt
+            label: Photo description
+            description: What the photo shows, for people who cannot see it.
+            type: string
+          - name: image_caption
+            label: Caption
+            type: string
+          - name: image_credit
+            label: Credit
+            description: e.g. Photo © Elodie Gazquez, 2025
+            type: string
+          - name: body
+            label: Text
+            type: object
+            list: true
+            fields:
+              - name: type
+                label: Kind of block
+                type: select
+                default: p
+                options:
+                  values:
+                    - { value: p, label: Paragraph }
+                    - { value: q, label: Interview question }
+                    - { value: callout, label: Highlighted box }
+              - name: text
+                type: text
+                description: Simple HTML is allowed, e.g. <strong>bold</strong> or <a href="https://…">a link</a>.
+          - name: readmore_label
+            label: Heading of the links box
+            description: e.g. Read more
+            type: string
+          - name: readmore
+            label: Links
+            type: object
+            list: true
+            fields:
+              - { name: label, type: string }
+              - { name: url, label: Address (https://…), type: string }
+
+  - name: positions
+    label: Open positions
+    description: Shown on the Join us page (in English and French). Remove a position once it is filled.
+    type: file
+    path: exocean/content/site.json
+    format: json
+    fields:
+      - name: join
+        label: Join us
+        type: object
+        fields:
+          - name: openings
+            label: Open positions
+            type: object
+            list: true
+            fields:
+              - { name: title, type: string, required: true, description: "e.g. PhD position: carbonate dissolution under pressure" }
+              - { name: type, label: Kind of position, type: string, description: "e.g. PhD, 3 years" }
+              - { name: start, label: Start, type: string, description: "e.g. Starts October 2027" }
+              - { name: deadline, label: Deadline, type: string, description: "e.g. Apply by 15 May 2027" }
+              - { name: body, label: Description, type: text, description: "A few lines. {email} becomes the lab's address." }
+              - { name: url, label: Link to the full offer, type: string }
+              - { name: link_label, label: Link text, type: string, default: Full offer }
+
+  - name: selected
+    label: Selected papers
+    description: The papers shown first on the Publications page, by DOI (e.g. 10.1038/s41586-024-08191-5). They must be in HAL under a team member's name.
+    type: file
+    path: exocean/content/site.json
+    format: json
+    fields:
+      - name: publications
+        label: Publications page
+        type: object
+        fields:
+          - name: selected
+            label: Selected papers (DOIs)
+            type: string
+            list: true
+
+  - name: people
+    label: People
+    description: Everyone on the People page. Photos are square, 640×640 or larger.
+    type: file
+    path: exocean/content/team.json
+    format: json
+    fields:
+      - name: groups
+        label: Groups
+        type: object
+        list: true
+        fields:
+          - { name: heading, type: string, required: true }
+          - { name: note, type: text, description: Internal note, not shown on the site. }
+          - name: members
+            label: Members
+            type: object
+            list: true
+            fields:
+              - { name: slug, label: Short name for the web address, type: string, required: true, description: "e.g. julie-meilland — don't change it once published" }
+              - { name: name, type: string, required: true }
+              - { name: affiliation, label: Affiliation (long form), type: string, description: "e.g. CNRS Researcher at CEREGE, France" }
+              - { name: position, label: Position, type: string, description: "e.g. PhD student" }
+              - { name: focus, label: Research focus (one line), type: string }
+              - { name: role, label: Fun title (optional), type: string }
+              - { name: photo, type: image }
+              - { name: greeting, type: string, description: "e.g. Bonjour !" }
+              - { name: bio, label: Biography, type: text, list: true, description: One paragraph per item. Leave empty for no personal page. }
+              - { name: email_user, label: E-mail (part before @), type: string }
+              - { name: email_domain, label: E-mail (part after @), type: string }
+              - { name: orcid, label: ORCID iD, type: string, description: "e.g. 0000-0002-6463-3320" }
+              - { name: idhal, label: HAL author ID, type: string, description: Their papers then join the Publications page. }
+              - name: links
+                type: object
+                list: true
+                fields:
+                  - { name: label, type: string }
+                  - { name: url, label: Address (https://…), type: string }
+          - name: external
+            label: Outside collaborators
+            type: object
+            list: true
+            fields:
+              - { name: label, label: Project or role, type: string }
+              - { name: project, label: Project page (short name, e.g. deep-c), type: string }
+              - name: people
+                type: object
+                list: true
+                fields:
+                  - { name: name, type: string, required: true }
+                  - { name: role, type: string }
+                  - { name: country, type: string }
+                  - name: institutions
+                    type: object
+                    list: true
+                    fields:
+                      - { name: name, type: string }
+                      - { name: url, label: Website, type: string }
+
+  - name: projects
+    label: Research projects
+    type: file
+    path: exocean/content/projects.json
+    format: json
+    fields:
+      - name: projects
+        label: Projects
+        type: object
+        list: true
+        fields:
+          - { name: slug, label: Short name for the web address, type: string, required: true }
+          - { name: name, type: string, required: true }
+          - { name: subtitle, type: string }
+          - { name: completed, label: Completed, type: boolean }
+          - { name: programme, label: Funding programme, type: string, description: "e.g. ERC Starting Grant" }
+          - { name: years, type: string, description: "e.g. 2025–2029" }
+          - { name: funder, label: Funding (long form), type: string }
+          - { name: card_image, label: Card picture, type: image }
+          - { name: hero_image, label: Main picture, type: image }
+          - { name: card_text, label: Card text, type: text }
+          - { name: intro, label: Introduction, type: text, list: true }
+          - name: sections
+            type: object
+            list: true
+            fields:
+              - { name: heading, type: string }
+              - { name: intro, type: text }
+              - { name: body, type: text }
+              - { name: items, label: Bullet points, type: text, list: true }
+              - { name: outro, type: text }
+          - { name: keywords, type: text }
+          - name: lead
+            label: Lead
+            type: object
+            fields:
+              - { name: label, type: string, description: "e.g. Principal Investigator" }
+              - { name: name, type: string }
+              - { name: slug, label: Team member (short name), type: string }
+              - { name: email_user, type: string }
+              - { name: email_domain, type: string }
+          - name: colead
+            label: Co-lead
+            type: object
+            fields:
+              - { name: label, type: string, description: "e.g. Co-PI" }
+              - { name: name, type: string }
+              - { name: slug, label: Team member (short name), type: string }
+              - { name: email_user, type: string }
+              - { name: email_domain, type: string }
+          - name: participants
+            label: CEREGE team
+            type: object
+            list: true
+            fields:
+              - { name: name, type: string }
+              - { name: slug, label: Team member (short name), type: string }
+              - { name: url, label: Or a web page, type: string }
+          - { name: external, label: Partners, type: string, list: true }
+          - { name: former, label: Former team members, type: string, list: true }
+          - { name: funders, label: Funder logos (file names), type: string, list: true }
+          - { name: outputs, label: Extra papers (DOIs), type: string, list: true, description: Papers to list under "Outputs so far" when HAL does not link them to the project. }
+          - { name: note, type: text }

@@ -3,61 +3,70 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>exocean — Data &amp; Models</title>
+<title>Data &amp; Models — exocean</title>
 <meta name="description" content="Models, datasets and tools shared by the exocean laboratory at CEREGE: the RADI sediment model, the FORCIS planktonic foraminifera census, the Cenozoic CO2 synthesis and micro-CT images of foraminifera.">
 <link rel="canonical" href="https://exocean-lab.github.io/data.html">
 <meta property="og:url" content="https://exocean-lab.github.io/data.html">
 <meta property="og:site_name" content="exocean">
-<meta property="og:title" content="exocean — Data &amp; Models">
+<meta property="og:title" content="Data &amp; Models — exocean">
 <meta property="og:description" content="Models, datasets and tools shared by the exocean laboratory at CEREGE: the RADI sediment model, the FORCIS planktonic foraminifera census, the Cenozoic CO2 synthesis and micro-CT images of foraminifera.">
 <meta property="og:type" content="website">
+<meta property="og:locale" content="en_GB">
 <meta property="og:image" content="https://exocean-lab.github.io/assets/img/share.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0a0e1a">
-<link rel="icon" href="assets/img/favicon.png">
-<link rel="apple-touch-icon" href="assets/img/favicon.png">
-<link rel="stylesheet" href="assets/css/style.css?v=102236ff">
+<link rel="icon" href="assets/img/mark.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon-48.png" sizes="48x48" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/cabin-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/style.css?v=52b69bbf">
+<script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<div class="sheet">
 
-  <header class="banner" style="background-image:url('assets/img/hero-banner.webp')">
-    <a href="index.html" aria-label="exocean — home">
-      <span class="visually-hidden">exocean</span>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/img/logo.svg" alt="exocean — home" width="694" height="213">
     </a>
-    <p class="tagline">Experimental Oceanology Laboratory</p>
-  </header>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="bars" aria-hidden="true"></span>Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <ul>
+          <li><a href="projects.html">Research</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="data.html" aria-current="page">Data &amp; Models</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="team.html">People</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="join.html">Join us</a></li>
+      </ul>
+      <a class="nav-cta" href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
 
-  <nav class="nav" aria-label="Main">
-    <ul>
-        <li><a href="index.html">The Lab</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="data.html" aria-current="page">Data &amp; Models</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="team.html">Team</a></li>
-        <li><a href="news.html">News &amp; Highlights</a></li>
-        <li><a href="contact.html">Contact us</a></li>
-    </ul>
-  </nav>
+<main id="main">
+  <div class="page-head">
+    <div class="wrap">
+      <h1>Data &amp; Models</h1>
+      <p class="lede">Models, datasets and tools we build and share — all open and free to use.</p>
+      <span class="rule" aria-hidden="true"></span>
+    </div>
+  </div>
 
-  <main id="main">
-    <section class="section">
+  <section class="band">
+    <div class="wrap">
       <div class="measure">
-        <h1>Data &amp; Models</h1>
-        <p class="lede">- Models, datasets and tools we build and share — all open and free to use.</p>
-        <hr class="rule">
         <p>Write to us if you use them, get stuck, or would like something that is not listed.</p>
         <h2>Models</h2>
-        <hr class="rule short">
           <article class="res">
             <h3>RADI</h3>
             <p class="res-sub">Reaction-transport model of early diagenesis in marine sediments</p>
             <p>The reactive-advective-diffusive-irrigative model simulates, through time, the chemistry of surface sediments and their exchanges with the overlying seawater, in Julia (Radi.jl) and MATLAB/GNU Octave (Radi.m). RADIv2 handles coastal and open-ocean sediments alike.</p>
-            <p class="res-who">From the team: <a href="people/olivier-sulpis.html">Olivier SULPIS</a></p>
+            <p class="res-who">From the team: <a href="people/olivier-sulpis.html">Olivier Sulpis</a></p>
             <div class="res-link-rows">
               <div class="res-links"><span class="res-kind">Papers</span><ul class="pills"><li><a href="https://doi.org/10.5194/gmd-19-1965-2026">RADIv2 · Geosci. Model Dev. 2026</a></li><li><a href="https://doi.org/10.5194/gmd-15-2105-2022">RADIv1 · Geosci. Model Dev. 2022</a></li></ul></div>
               <div class="res-links"><span class="res-kind">Code</span><ul class="pills"><li><a href="https://github.com/RADI-model/Radi.jl">Radi.jl (Julia) on GitHub</a></li><li><a href="https://github.com/RADI-model/Radi.m">Radi.m (MATLAB/Octave) on GitHub</a></li></ul></div>
@@ -65,12 +74,11 @@
             </div>
           </article>
         <h2>Datasets</h2>
-        <hr class="rule short">
           <article class="res">
             <h3>FORCIS</h3>
             <p class="res-sub">Global census of living planktonic foraminifera</p>
             <p>Distribution and diversity of planktonic foraminifera from a century of plankton-net, pump, sediment-trap and continuous-plankton-recorder samples across the world ocean, with an R package to download, filter, harmonise and map the data.</p>
-            <p class="res-who">From the team: <a href="people/sonia-chaabane.html">Sonia CHAABANE</a> and <a href="people/julie-meilland.html">Julie MEILLAND</a></p>
+            <p class="res-who">From the team: <a href="people/sonia-chaabane.html">Sonia Chaabane</a> and <a href="people/julie-meilland.html">Julie Meilland</a></p>
             <div class="res-link-rows">
               <div class="res-links"><span class="res-kind">Papers</span><ul class="pills"><li><a href="https://doi.org/10.1038/s41597-023-02264-2">Database · Scientific Data 2023</a></li><li><a href="https://doi.org/10.5194/jm-45-195-2026">Global reassessment · J. Micropalaeontology 2026</a></li></ul></div>
               <div class="res-links"><span class="res-kind">Data</span><ul class="pills"><li><a href="https://doi.org/10.5281/zenodo.7390791">FORCIS database · Zenodo (latest version)</a></li></ul></div>
@@ -81,7 +89,7 @@
             <h3>Cenozoic CO₂ (CenCO2PIP)</h3>
             <p class="res-sub">66 million years of atmospheric CO₂ from proxy records</p>
             <p>A community-vetted synthesis of atmospheric CO₂ over the Cenozoic, assembled by the Cenozoic CO₂ Proxy Integration Project consortium from marine and terrestrial proxy records. Every record and its evaluation is openly archived.</p>
-            <p class="res-who">From the team: <a href="people/thomas-chalk.html">Thomas CHALK</a></p>
+            <p class="res-who">From the team: <a href="people/thomas-chalk.html">Thomas Chalk</a></p>
             <div class="res-link-rows">
               <div class="res-links"><span class="res-kind">Paper</span><ul class="pills"><li><a href="https://doi.org/10.1126/science.adi5177">Science 2023</a></li></ul></div>
               <div class="res-links"><span class="res-kind">Data</span><ul class="pills"><li><a href="https://www.ncei.noaa.gov/pub/data/paleo/climate_forcing/trace_gases/Paleo-pCO2/">Data archive · NOAA NCEI</a></li><li><a href="https://www.ncei.noaa.gov/pub/data/paleo/climate_forcing/trace_gases/Paleo-pCO2/product_files/">Vetted CO₂ products · NOAA NCEI</a></li><li><a href="https://paleo-co2.org/">Interactive viewer · paleo-co2.org</a></li></ul></div>
@@ -91,44 +99,49 @@
             <h3>Micro-CT images of planktonic foraminifera</h3>
             <p class="res-sub">3D scans of shells with curated taxonomy</p>
             <p>X-ray micro-computed tomography images of 179 shells covering 43 of the 48 recognised species and subspecies of holoplanktonic foraminifera, with their metadata.</p>
-            <p class="res-who">From the team: <a href="people/julie-meilland.html">Julie MEILLAND</a></p>
+            <p class="res-who">From the team: <a href="people/julie-meilland.html">Julie Meilland</a></p>
             <div class="res-link-rows">
               <div class="res-links"><span class="res-kind">Paper</span><ul class="pills"><li><a href="https://doi.org/10.1038/s41597-023-02498-0">Scientific Data 2023</a></li></ul></div>
               <div class="res-links"><span class="res-kind">Data</span><ul class="pills"><li><a href="https://doi.org/10.1594/PANGAEA.949585">Image volumes · PANGAEA</a></li></ul></div>
             </div>
           </article>
-        <p class="res-outro">All our articles, with open-access PDFs where they exist, are on the <a href="publications.html">Publications</a> page.</p>
-        <div class="btn-row two">
+        <p style="margin-top:1.6rem">All our articles, with open-access PDFs where they exist, are on the <a href="publications.html">Publications</a> page.</p>
+        <div class="btn-row">
           <a class="btn" href="services.html">Services &amp; instruments</a>
           <a class="btn primary" href="contact.html">Contact us</a>
         </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
+</main>
 
-  <footer class="site-footer">
-    <img class="partners" src="assets/img/partners-strip.png" alt="CEREGE, Aix-Marseille Université, CNRS, Collège de France, INRAE and IRD" loading="lazy">
-    <nav aria-label="Footer">
-      <ul>
-        <li><a href="index.html">The Lab</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="data.html">Data &amp; Models</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="team.html">Team</a></li>
-        <li><a href="news.html">News &amp; Highlights</a></li>
-        <li><a href="contact.html">Contact us</a></li>
-        <li><a href="https://bsky.app/profile/exoceanlab.bsky.social">Bluesky</a></li>
-      </ul>
+<div class="partners-band"><div class="wrap"><picture><source type="image/webp" srcset="assets/img/w/partners-strip-480.webp 480w, assets/img/w/partners-strip-960.webp 960w, assets/img/w/partners-strip-1600.webp 1600w" sizes="(max-width: 660px) 92vw, 620px"><img src="assets/img/partners-strip.png" alt="CEREGE, Aix-Marseille Université, CNRS, Collège de France, INRAE and IRD" width="1600" height="139" loading="lazy" decoding="async"></picture></div></div>
+<footer class="site-footer">
+  <div class="wrap footer-main">
+    <div class="footer-brand">
+      <img src="assets/img/logo-white.svg" alt="exocean" width="694" height="213" loading="lazy">
+      <p>Experimental Oceanology Laboratory<br><a href="https://www.cerege.fr/en/">CEREGE</a> · <span class="nw">Aix-en-Provence</span>, France</p>
+    </div>
+    <nav aria-label="Explore">
+      <h2>Explore</h2>
+      <ul><li><a href="projects.html">Research</a></li><li><a href="services.html">Services</a></li><li><a href="data.html">Data &amp; Models</a></li><li><a href="publications.html">Publications</a></li></ul>
     </nav>
-    <p class="colophon">
-      exocean · Experimental Oceanology Laboratory ·
-      <a href="https://www.cerege.fr/en/">CEREGE</a>,
-      Technop&ocirc;le de l'Arbois-M&eacute;diterran&eacute;e, Aix-en-Provence, France
-    </p>
-  </footer>
-
-</div>
-<script src="assets/js/main.js?v=e30b0bd3"></script>
+    <nav aria-label="The lab">
+      <h2>The lab</h2>
+      <ul><li><a href="team.html">People</a></li><li><a href="news.html">News</a></li><li><a href="join.html">Join us</a></li><li><a href="contact.html">Contact</a></li></ul>
+    </nav>
+    <div>
+      <h2>Follow</h2>
+      <ul><li><a href="https://bsky.app/profile/exoceanlab.bsky.social">Bluesky</a></li></ul>
+      <h2 style="margin-top:1.2rem">En français</h2>
+      <ul><li><a href="fr/services.html" lang="fr" hreflang="fr">Services</a></li><li><a href="fr/join.html" lang="fr" hreflang="fr">Nous rejoindre</a></li><li><a href="fr/contact.html" lang="fr" hreflang="fr">Contact</a></li></ul>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>exocean · CEREGE, Technopôle de l&#x27;Environnement Arbois-Méditerranée, <span class="nw">Aix-en-Provence</span>, France</span>
+    <span><a href="legal.html">Legal notice</a> · <a href="legal.html#accessibility">Accessibility: not compliant</a></span>
+  </div>
+</footer>
+<script src="assets/js/main.js?v=681c3d74"></script>
 </body>
 </html>

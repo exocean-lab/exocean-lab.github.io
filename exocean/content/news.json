@@ -1,73 +1,157 @@
 {
-  "title": "News & Highlights",
-  "lede": "- Follow our updates, field missions, and the people behind the science.",
-  "spotlight_label": "In the Spotlight",
+  "title": "News",
+  "lede": "Awards, fellowships, field missions and the people behind the science.",
   "items": [
     {
       "id": "eco2-morph",
       "date": "2026-02",
-      "headline": "eCO₂-MorpH: MSCA Postdoctoral Fellowship Awarded to Dr. Jaime SUÁREZ-IBARRA to Advance Palaeoclimate and CO₂ Reconstructions",
+      "headline": "eCO₂-MorpH: a Marie Skłodowska-Curie fellowship for Jaime Suárez-Ibarra to refine past-CO₂ reconstructions",
       "image": "news-lego.jpg",
-      "image_credit": "Photo © Jaime SUÁREZ-IBARRA, 2026",
+      "image_alt": "Lego figures of two researchers with a marine sediment core, a 3D-printed model of a foraminifera shell and a Lego mass spectrometer",
+      "image_credit": "Photo © Jaime Suárez-Ibarra, 2026",
       "image_caption": "A Lego version of Dr. Suárez-Ibarra (left) and Dr. Chalk (right) hypothetically analysing a marine sediment core. In the back (still in focus), a 3D printed model of the planktonic foraminifera species <em>Globigerinoides ruber</em> (left), and a Lego version of a thermal ionisation mass spectrometer (TIMS, right), used to measure the boron isotopic ratios on foraminifera that record past seawater pH conditions. Thank you #Nu for the Lego.",
       "body": [
-        { "type": "p", "text": "All members of Exocean are proud to announce that <a href=\"https://www.cerege.fr/fr/cerege/jaime-suarez/\">Dr. Jaime SUÁREZ-IBARRA</a>, postdoctoral researcher at CEREGE, has been awarded a highly competitive <strong>Marie Skłodowska-Curie Actions Postdoctoral Fellowship (MSCA PF)</strong> under the Horizon Europe programme. Selected in the 2025–2026 call, which attracted more than 17,000 applications and had a success rate of only ~9.6%, this prestigious European research grant recognises the excellence and international impact of his work in paleoclimate and ocean–climate interactions." },
-        { "type": "p", "text": "Through his project <strong>eCO₂-MorpH</strong>, Jaime combines advanced morphometrics and artificial intelligence to refine Neogene geochemical proxies used to reconstruct past atmospheric CO₂ levels. By improving our understanding of major climate transitions such as the Miocene Climatic Optimum (16.7–14.7 millions of years ago, Ma), his research contributes to more robust climate modelling and strengthens our knowledge of long-term climate change." },
-        { "type": "q", "text": "Hi Jaime! For those who may not be familiar with it, could you explain what your MSCA PF project focuses on?" },
-        { "type": "p", "text": "So, if I have to put it in a nutshell, my project focuses on planktonic foraminifera, marine single-celled microorganisms that produce a carbonate shell, which act like time-capsules for past oceanic conditions. These shells can be analysed for a wide array of aspects such as size, weight and geochemical composition. Based on certain isotopic systems (like those of the element boron — δ¹¹B), we can reconstruct past seawater pH and therefore estimate atmospheric CO₂. However, the complex evolutionary patterns of life can hinder our reconstructions, as ecological (habitat) and morphological (shell shape) changes affect the interpretation of this important geochemical data. With eCO₂-MorpH I aim to track these changes, refining the interpretation of geochemical analyses and thus delimiting boundary conditions (like the CO₂) for the Miocene Climatic Optimum (16.7–14.7 Ma). Knowledge of this ancient climate state is crucial to enable climate modellers to work with new and more accurate projections of past climate, which can then inform policymakers about our immediate future." },
-        { "type": "q", "text": "How does being awarded an MSCA PF impact you at this stage of your career?" },
-        { "type": "p", "text": "Having a MSCA PF means I am on my way to being an independent researcher and have my own research group at a renowned European institute (like CEREGE, for instance). It represents an enormous step in the process and reassures me that my research path is on track. While at CEREGE I will be working with Dr. Thomas CHALK but the MSCA PF will allow me to visit and carry on scientific research at two other world-leading institutions in the United Kingdom: University College London and University of Southampton to work with professors Bridget WADE and Thomas EZARD, respectively. On a personal note, I am extremely delighted to have been selected this year as the 2025–2026 MSCA Postdoctoral Fellowship call was historically competitive." },
-        { "type": "q", "text": "If you had one piece of advice for postdocs thinking about applying, what would it be?" },
-        { "type": "p", "text": "My advice is to start thinking on the project by March (so get on it now!) and start writing no later than May, as the summer break usually means people are away from work some time, and you will benefit from having more time to reflect on the details of a near-completed draft." },
-        { "type": "q", "text": "Last but not least, why does it matter for Exocean?" },
-        { "type": "p", "text": "In Exocean we study proxy (a proxy is something measurable, which we can connect to a real world environmental variable, like temperature, acidity or biological activity) development as one of our main research axes, trying to neatly tie the messy world of biology and oceanography with environmental variables to understand the natural processes. My MSCA project will be transformational for this theme, interrogating in detail the precise moments and impacts of speciation on our environmental data archives. This has implications not only for the geological past, but for the modern fields of ecology and evolution." }
+        {
+          "type": "p",
+          "text": "All members of exocean are proud to announce that <a href=\"https://www.cerege.fr/fr/cerege/jaime-suarez/\">Dr. Jaime Suárez-Ibarra</a>, postdoctoral researcher at CEREGE, has been awarded a highly competitive <strong>Marie Skłodowska-Curie Actions Postdoctoral Fellowship (MSCA PF)</strong> under the Horizon Europe programme. Selected in the 2025–2026 call, which attracted more than 17,000 applications and had a success rate of only ~9.6%, this prestigious European research grant recognises the excellence and international impact of his work in paleoclimate and ocean–climate interactions."
+        },
+        {
+          "type": "p",
+          "text": "Through his project <strong>eCO₂-MorpH</strong>, Jaime combines advanced morphometrics and artificial intelligence to refine Neogene geochemical proxies used to reconstruct past atmospheric CO₂ levels. By improving our understanding of major climate transitions such as the Miocene Climatic Optimum (16.7–14.7 million years ago), his research contributes to more robust climate modelling and strengthens our knowledge of long-term climate change."
+        },
+        {
+          "type": "q",
+          "text": "Hi Jaime! For those who may not be familiar with it, could you explain what your MSCA PF project focuses on?"
+        },
+        {
+          "type": "p",
+          "text": "So, if I have to put it in a nutshell, my project focuses on planktonic foraminifera, marine single-celled microorganisms that produce a carbonate shell, which act like time-capsules for past oceanic conditions. These shells can be analysed for a wide array of aspects such as size, weight and geochemical composition. Based on certain isotopic systems (like those of the element boron — δ¹¹B), we can reconstruct past seawater pH and therefore estimate atmospheric CO₂. However, the complex evolutionary patterns of life can hinder our reconstructions, as ecological (habitat) and morphological (shell shape) changes affect the interpretation of this important geochemical data. With eCO₂-MorpH I aim to track these changes, refining the interpretation of geochemical analyses and thus delimiting boundary conditions (like the CO₂) for the Miocene Climatic Optimum (16.7–14.7 Ma). Knowledge of this ancient climate state is crucial to enable climate modellers to work with new and more accurate projections of past climate, which can then inform policymakers about our immediate future."
+        },
+        {
+          "type": "q",
+          "text": "How does being awarded an MSCA PF impact you at this stage of your career?"
+        },
+        {
+          "type": "p",
+          "text": "Having an MSCA PF means I am on my way to being an independent researcher and have my own research group at a renowned European institute (like CEREGE, for instance). It represents an enormous step in the process and reassures me that my research path is on track. While at CEREGE I will be working with Dr. Thomas Chalk but the MSCA PF will allow me to visit and carry on scientific research at two other world-leading institutions in the United Kingdom: University College London and University of Southampton to work with professors Bridget Wade and Thomas Ezard, respectively. On a personal note, I am extremely delighted to have been selected this year as the 2025–2026 MSCA Postdoctoral Fellowship call was historically competitive."
+        },
+        {
+          "type": "q",
+          "text": "If you had one piece of advice for postdocs thinking about applying, what would it be?"
+        },
+        {
+          "type": "p",
+          "text": "My advice is to start thinking on the project by March (so get on it now!) and start writing no later than May, as the summer break usually means people are away from work some time, and you will benefit from having more time to reflect on the details of a near-completed draft."
+        },
+        {
+          "type": "q",
+          "text": "Last but not least, why does it matter for exocean?"
+        },
+        {
+          "type": "p",
+          "text": "At exocean we study proxy (a proxy is something measurable, which we can connect to a real world environmental variable, like temperature, acidity or biological activity) development as one of our main research axes, trying to neatly tie the messy world of biology and oceanography with environmental variables to understand the natural processes. My MSCA project will be transformational for this theme, interrogating in detail the precise moments and impacts of speciation on our environmental data archives. This has implications not only for the geological past, but for the modern fields of ecology and evolution."
+        }
       ],
       "readmore_label": "Discover more about Jaime's work:",
       "readmore": [
-        { "label": "Suárez-Ibarra et al. — Journal of Foraminiferal Research", "url": "https://doi.org/10.61551/gsjfr.55.3.320" },
-        { "label": "Jaime's personal page", "url": "https://jysuarezibarra.github.io/biography/index.html" },
-        { "label": "Marie Skłodowska-Curie Actions", "url": "https://marie-sklodowska-curie-actions.ec.europa.eu/" }
+        {
+          "label": "Suárez-Ibarra et al. — Journal of Foraminiferal Research",
+          "url": "https://doi.org/10.61551/gsjfr.55.3.320"
+        },
+        {
+          "label": "Jaime's personal page",
+          "url": "https://jysuarezibarra.github.io/biography/index.html"
+        },
+        {
+          "label": "Marie Skłodowska-Curie Actions",
+          "url": "https://marie-sklodowska-curie-actions.ec.europa.eu/"
+        }
       ]
     },
     {
       "id": "alan-higgins-award",
       "date": "2025-11",
-      "headline": "Julie MEILLAND receives the Alan Higgins Award for her breakthrough research on planktonic foraminifera",
+      "headline": "Julie Meilland receives the Alan Higgins Award for her breakthrough research on planktonic foraminifera",
       "image": "news-julie.jpg",
-      "image_credit": "Photo © Elodie GAZQUEZ, 2025",
-      "image_caption": "Julie MEILLAND in the exocean lab based at CEREGE, preparing cultures.",
+      "image_alt": "Planktonic foraminifera under the microscope, and Julie Meilland at a culture incubator in the exocean laboratory",
+      "image_credit": "Photo © Elodie Gazquez, 2025",
+      "image_caption": "Julie Meilland in the exocean lab based at CEREGE, preparing cultures.",
       "body": [
-        { "type": "p", "text": "In November, founding exocean member <strong>Julie MEILLAND</strong> was awarded the <strong>2025 Alan Higgins Award</strong>, an international distinction granted annually to an early-career scientist for outstanding contributions to applied micropalaeontology. Presented by the Micropalaeontological Society, the award recognises research that significantly advances the field and supports environmental and climate science." },
-        { "type": "p", "text": "Julie achieved a major methodological breakthrough by maintaining planktonic foraminifera in continuous culture over multiple generations, a technical feat that also revealed the unexpected importance of asexual reproduction in these marine microorganisms. This finding unlocks new opportunities for improving geochemical proxies and exploring fine-scale cellular and molecular processes that were previously inaccessible." },
-        { "type": "p", "text": "At CEREGE, in the exocean lab, Julie is now developing a full continuous-culture facility based on these advances. She investigates the distribution and population dynamics of planktonic foraminifera to better understand their ecological niches and their role in the marine carbon cycle." },
-        { "type": "callout", "text": "<strong>Why it matters:</strong> Julie's work directly supports exocean's mission to understand how marine organisms regulate Earth's climate. By developing continuous culture systems for planktonic foraminifera, she provides the community with powerful tools to investigate the biological carbon pump, improve geochemical proxies, and better predict the ocean's response to climate change. This breakthrough strengthens the scientific foundations on which several of exocean's interdisciplinary projects rely." }
+        {
+          "type": "p",
+          "text": "In November, founding exocean member <strong>Julie Meilland</strong> was awarded the <strong>2025 Alan Higgins Award</strong>, an international distinction granted annually to an early-career scientist for outstanding contributions to applied micropalaeontology. Presented by the Micropalaeontological Society, the award recognises research that significantly advances the field and supports environmental and climate science."
+        },
+        {
+          "type": "p",
+          "text": "Julie achieved a major methodological breakthrough by maintaining planktonic foraminifera in continuous culture over multiple generations, a technical feat that also revealed the unexpected importance of asexual reproduction in these marine microorganisms. This finding unlocks new opportunities for improving geochemical proxies and exploring fine-scale cellular and molecular processes that were previously inaccessible."
+        },
+        {
+          "type": "p",
+          "text": "At CEREGE, in the exocean lab, Julie is now developing a full continuous-culture facility based on these advances. She investigates the distribution and population dynamics of planktonic foraminifera to better understand their ecological niches and their role in the marine carbon cycle."
+        },
+        {
+          "type": "callout",
+          "text": "<strong>Why it matters:</strong> Julie's work directly supports exocean's mission to understand how marine organisms regulate Earth's climate. By developing continuous culture systems for planktonic foraminifera, she provides the community with powerful tools to investigate the biological carbon pump, improve geochemical proxies, and better predict the ocean's response to climate change. This breakthrough strengthens the scientific foundations on which several of exocean's interdisciplinary projects rely."
+        }
       ],
       "readmore_label": "Discover more about Julie's work:",
       "readmore": [
-        { "label": "Continuous reproduction of planktonic foraminifera in laboratory culture", "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/jeu.13022" },
-        { "label": "Rare but persistent asexual reproduction explains the success of planktonic foraminifera in polar oceans", "url": "https://academic.oup.com/plankt/article/45/1/15/6887243?login=false" },
-        { "label": "Read the full article on the CEREGE website", "url": "https://www.cerege.fr/fr/julie-meilland-recoit-lalan-higgins-award-pour-ses-travaux-sur-les-foraminiferes-planctoniques/" }
+        {
+          "label": "Continuous reproduction of planktonic foraminifera in laboratory culture",
+          "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/jeu.13022"
+        },
+        {
+          "label": "Rare but persistent asexual reproduction explains the success of planktonic foraminifera in polar oceans",
+          "url": "https://academic.oup.com/plankt/article/45/1/15/6887243?login=false"
+        },
+        {
+          "label": "Read the full article on the CEREGE website",
+          "url": "https://www.cerege.fr/fr/julie-meilland-recoit-lalan-higgins-award-pour-ses-travaux-sur-les-foraminiferes-planctoniques/"
+        }
       ]
     },
     {
       "id": "emb-mcdr-report",
       "date": "2025-11",
-      "headline": "Olivier SULPIS co-chairs a major European Marine Board report on mCDR",
+      "headline": "Olivier Sulpis co-chairs a major European Marine Board report on mCDR",
       "image": "news-olivier.jpg",
-      "image_credit": "Photo © Elodie GAZQUEZ, 2025",
-      "image_caption": "Olivier SULPIS in the exocean lab next to the EMB report cover.",
+      "image_alt": "Olivier Sulpis in the exocean laboratory next to the cover of the European Marine Board report",
+      "image_credit": "Photo © Elodie Gazquez, 2025",
+      "image_caption": "Olivier Sulpis in the exocean lab next to the EMB report cover.",
       "body": [
-        { "type": "p", "text": "The work and scientific contribution of one of our members is in the spotlight — a contribution that helps tackle one of today's most pressing challenges: how to limit global warming by reducing excess CO₂ in our atmosphere." },
-        { "type": "p", "text": "<strong>Olivier SULPIS</strong>, one of the founding members of exocean, has co-chaired a major report commissioned by the <strong>European Marine Board (EMB)</strong> on marine Carbon Dioxide Removal (mCDR). Marine CO₂ capture approaches involve extracting CO₂ that is already dissolved in seawater. Removing some of this CO₂ creates a slight chemical imbalance, enabling the ocean to naturally absorb more CO₂ from the atmosphere. These techniques therefore aim to enhance this natural exchange process in order to help reduce atmospheric CO₂. The report provides an in-depth assessment of current ocean-based carbon removal approaches, their potential effectiveness, risks, and governance requirements." },
-        { "type": "p", "text": "Following its publication, both CEREGE and CNRS Le Journal highlighted Olivier's contribution through a dedicated news article and an interview." },
-        { "type": "callout", "text": "This report emphasizes the need for rigorous evaluation of mCDR methods, enhanced interdisciplinary research, and transparent environmental monitoring frameworks — priorities that strongly resonate with exocean's mission." }
+        {
+          "type": "p",
+          "text": "The work and scientific contribution of one of our members is in the spotlight — a contribution that helps tackle one of today's most pressing challenges: how to limit global warming by reducing excess CO₂ in our atmosphere."
+        },
+        {
+          "type": "p",
+          "text": "<strong>Olivier Sulpis</strong>, one of the founding members of exocean, has co-chaired a major report commissioned by the <strong>European Marine Board (EMB)</strong> on marine Carbon Dioxide Removal (mCDR). Some of these approaches extract CO₂ that is already dissolved in seawater; removing it creates a slight chemical imbalance that lets the ocean absorb more CO₂ from the atmosphere. These techniques therefore aim to enhance this natural exchange process in order to help reduce atmospheric CO₂. The report provides an in-depth assessment of current ocean-based carbon removal approaches, their potential effectiveness, risks, and governance requirements."
+        },
+        {
+          "type": "p",
+          "text": "Following its publication, both CEREGE and CNRS Le Journal highlighted Olivier's contribution through a dedicated news article and an interview."
+        },
+        {
+          "type": "callout",
+          "text": "This report emphasizes the need for rigorous evaluation of mCDR methods, enhanced interdisciplinary research, and transparent environmental monitoring frameworks — priorities that strongly resonate with exocean's mission."
+        }
       ],
       "readmore_label": "Read more:",
       "readmore": [
-        { "label": "CEREGE — Comprendre le rôle de l'océan dans la capture du CO₂", "url": "https://www.cerege.fr/fr/comprendre-le-role-de-locean-dans-la-capture-du-co%e2%82%82/" },
-        { "label": "CNRS Le Journal — Interview with Olivier SULPIS", "url": "https://lejournal.cnrs.fr/articles/rechauffement-peut-reduire-le-co2-oceanique" },
-        { "label": "Future Science Brief — Monitoring, Reporting and Verification for Marine Carbon Dioxide Removal", "url": "https://zenodo.org/records/17435116" }
-      ]
+        {
+          "label": "CEREGE — Comprendre le rôle de l'océan dans la capture du CO₂",
+          "url": "https://www.cerege.fr/fr/comprendre-le-role-de-locean-dans-la-capture-du-co%e2%82%82/"
+        },
+        {
+          "label": "CNRS Le Journal — Interview with Olivier Sulpis",
+          "url": "https://lejournal.cnrs.fr/articles/rechauffement-peut-reduire-le-co2-oceanique"
+        },
+        {
+          "label": "Future Science Brief — Monitoring, Reporting and Verification for Marine Carbon Dioxide Removal",
+          "url": "https://zenodo.org/records/17435116"
+        }
+      ],
+      "thumb_position": "left center"
     }
   ],
   "media": {
@@ -78,41 +162,96 @@
       {
         "heading": "Human activities are dissolving the seafloor",
         "links": [
-          { "label": "Smithsonian Magazine", "url": "https://www.smithsonianmag.com/smart-news/parts-ocean-floor-are-disintegrating-180970706/" },
-          { "label": "Vice", "url": "https://www.vice.com/en/article/d3qaek/the-seafloor-is-dissolving-because-climate-change" },
-          { "label": "Popular Science", "url": "https://www.popsci.com/seafloor-disappearing-acidification/" },
-          { "label": "IFLScience", "url": "https://www.iflscience.com/our-oceans-are-becoming-so-acidic-it-could-dissolve-the-seabed-50393" },
-          { "label": "Gizmodo", "url": "https://gizmodo.com/human-carbon-emissions-are-dissolving-the-ocean-floor-1830178302" },
-          { "label": "NBC News", "url": "https://www.nbcnews.com/mach/science/climate-change-may-be-dissolving-ocean-floor-here-s-why-ncna935261" },
-          { "label": "La Vanguardia", "url": "https://www.lavanguardia.com/natural/cambio-climatico/20181031/452670178388/fondo-mar-esta-cambiando-color-imaginate.html" },
-          { "label": "Le Devoir", "url": "https://www.ledevoir.com/societe/science/540139/l-anthropocene-s-invite-au-fond-des-mers" },
-          { "label": "The Science Breaker", "url": "https://thesciencebreaker.org/breaks/earth-space/carbonating-the-bottom-of-the-oceanand-dissolving-the-seafloor-with-it" }
+          {
+            "label": "Smithsonian Magazine",
+            "url": "https://www.smithsonianmag.com/smart-news/parts-ocean-floor-are-disintegrating-180970706/"
+          },
+          {
+            "label": "Vice",
+            "url": "https://www.vice.com/en/article/d3qaek/the-seafloor-is-dissolving-because-climate-change"
+          },
+          {
+            "label": "Popular Science",
+            "url": "https://www.popsci.com/seafloor-disappearing-acidification/"
+          },
+          {
+            "label": "IFLScience",
+            "url": "https://www.iflscience.com/our-oceans-are-becoming-so-acidic-it-could-dissolve-the-seabed-50393"
+          },
+          {
+            "label": "Gizmodo",
+            "url": "https://gizmodo.com/human-carbon-emissions-are-dissolving-the-ocean-floor-1830178302"
+          },
+          {
+            "label": "NBC News",
+            "url": "https://www.nbcnews.com/mach/science/climate-change-may-be-dissolving-ocean-floor-here-s-why-ncna935261"
+          },
+          {
+            "label": "La Vanguardia",
+            "url": "https://www.lavanguardia.com/natural/cambio-climatico/20181031/452670178388/fondo-mar-esta-cambiando-color-imaginate.html"
+          },
+          {
+            "label": "Le Devoir",
+            "url": "https://www.ledevoir.com/societe/science/540139/l-anthropocene-s-invite-au-fond-des-mers"
+          },
+          {
+            "label": "The Science Breaker",
+            "url": "https://thesciencebreaker.org/breaks/earth-space/carbonating-the-bottom-of-the-oceanand-dissolving-the-seafloor-with-it"
+          }
         ]
       },
       {
         "heading": "Sea butterflies, the unsung heroes in the climate crisis",
         "links": [
-          { "label": "Trouw", "url": "https://www.trouw.nl/duurzaamheid-economie/de-zeevlinder-beschermt-de-oceaan-tegen-verzuring-mits-het-er-niet-te-zuur-wordt~bb2a048e/" },
-          { "label": "Atlas (science TV show)", "url": "https://www.npostart.nl/atlas/09-03-2022/VPWON_1335378" },
-          { "label": "COMSOL", "url": "https://www.comsol.com/story/how-decaying-shells-help-preserve-the-alkalinity-of-the-seas-112351" },
-          { "label": "Physik", "url": "https://www.pro-physik.de/restricted-files/159096" }
+          {
+            "label": "Trouw",
+            "url": "https://www.trouw.nl/duurzaamheid-economie/de-zeevlinder-beschermt-de-oceaan-tegen-verzuring-mits-het-er-niet-te-zuur-wordt~bb2a048e/"
+          },
+          {
+            "label": "Atlas (science TV show)",
+            "url": "https://www.npostart.nl/atlas/09-03-2022/VPWON_1335378"
+          },
+          {
+            "label": "COMSOL",
+            "url": "https://www.comsol.com/story/how-decaying-shells-help-preserve-the-alkalinity-of-the-seas-112351"
+          },
+          {
+            "label": "Physik",
+            "url": "https://www.pro-physik.de/restricted-files/159096"
+          }
         ]
       },
       {
         "heading": "Research cruises",
         "links": [
-          { "label": "Atlantic — Winter 2023 — NIOZ", "url": "https://www.nioz.nl/en/blog/64pe513-blog-the-beyond-expedition" },
-          { "label": "Canadian Arctic — Winter 2019 — Le Monde", "url": "https://www.lemonde.fr/sciences/article/2019/03/05/mesurer-la-vie-sous-la-glace-du-saint-laurent_5431795_1650684.html" },
-          { "label": "Canadian Arctic — Winter 2019 — Le Devoir", "url": "https://www.ledevoir.com/societe/science/547993/odyssee-glacee-sur-le-saint-laurent" },
-          { "label": "St Lawrence Gulf — Summer 2016 — Québec Science", "url": "https://www.quebecscience.qc.ca/sciences/science-a-bord/" }
+          {
+            "label": "Atlantic — Winter 2023 — NIOZ",
+            "url": "https://www.nioz.nl/en/blog/64pe513-blog-the-beyond-expedition"
+          },
+          {
+            "label": "St Lawrence — Winter 2019 — Le Monde",
+            "url": "https://www.lemonde.fr/sciences/article/2019/03/05/mesurer-la-vie-sous-la-glace-du-saint-laurent_5431795_1650684.html"
+          },
+          {
+            "label": "St Lawrence — Winter 2019 — Le Devoir",
+            "url": "https://www.ledevoir.com/societe/science/547993/odyssee-glacee-sur-le-saint-laurent"
+          },
+          {
+            "label": "St Lawrence Gulf — Summer 2016 — Québec Science",
+            "url": "https://www.quebecscience.qc.ca/sciences/science-a-bord/"
+          }
         ]
       },
       {
         "heading": "Podcasts",
         "links": [
-          { "label": "CHOQ.ca : L'œuf ou la poule (1 April 2019, archived copy)", "url": "https://web.archive.org/web/20240418232650/https://www.choq.ca/balados/loeuf-ou-la-poule/emission-du-1-avril-2019" }
+          {
+            "label": "CHOQ.ca : L'œuf ou la poule (1 April 2019, archived copy)",
+            "url": "https://web.archive.org/web/20240418232650/https://www.choq.ca/balados/loeuf-ou-la-poule/emission-du-1-avril-2019"
+          }
         ]
       }
     ]
-  }
+  },
+  "list_title": "Highlights"
 }

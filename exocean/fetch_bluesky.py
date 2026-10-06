@@ -7,6 +7,10 @@ Pulls the most recent posts written by the account named in content/site.json
 and stores them so build.py can show a "Latest from Bluesky" strip on the
 News page. Reposts and replies are skipped; only the lab's own posts appear.
 
+Posts tagged #exoceannews also become news items on the site (News page and
+home page), with their photos saved into assets/img/ — so posting on Bluesky
+is enough to keep the site's news fresh.
+
 Run automatically once a week by the GitHub Action; can also be run by hand:
 
     python3 fetch_bluesky.py
@@ -18,6 +22,7 @@ from __future__ import annotations
 
 import json
 import pathlib
+import re
 import sys
 import urllib.parse
 import urllib.request
@@ -29,7 +34,11 @@ CONTENT = ROOT / "content"
 OUT = CONTENT / "bluesky.json"
 API = "https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed"
 KEEP = 4          # posts kept for the page
-LOOKBACK = 40     # posts fetched before filtering
+LOOKBACK = 60     # posts fetched before filtering
+NEWS_TAG = "exoceannews"   # posts with this hashtag become news items
+NEWS_KEEP = 30
+IMG = ROOT / "assets" / "img"
+UA = {"User-Agent": "exocean-website (https://github.com/exocean-lab/exocean-lab.github.io)"}
 
 
 def handle_from_site() -> str:
@@ -67,12 +76,57 @@ def render(record: dict) -> str:
     return "".join(out).replace("\n", "<br>")
 
 
-def fetch(handle: str) -> list[dict]:
+def is_news(record: dict) -> bool:
+    for f in record.get("facets", []):
+        for feat in f.get("features", []):
+            if feat.get("$type", "").endswith("#tag") and (feat.get("tag") or "").lower() == NEWS_TAG:
+                return True
+    return f"#{NEWS_TAG}" in (record.get("text") or "").lower()
+
+
+def strip_tag(text: str) -> str:
+    return re.sub(r"\s*#" + NEWS_TAG + r"\b", "", text or "", flags=re.I).strip()
+
+
+def save_image(url: str, name: str) -> str | None:
+    """Download a post's photo into assets/img/ (once); returns the file name."""
+    dest = IMG / name
+    if dest.exists():
+        return name
+    try:
+        with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=60) as resp:
+            data = resp.read(8_000_001)
+        if len(data) > 8_000_000 or data[:2] != b"\xff\xd8":
+            return None
+        dest.write_bytes(data)
+        return name
+    except Exception:
+        return None
+
+
+def news_item(post: dict, record: dict, url: str, rkey: str) -> dict:
+    """A Bluesky post turned into a news item: first sentence as the title."""
+    text = strip_tag(record.get("text", ""))
+    first = re.split(r"(?<=[.!?])\s|\n", text, maxsplit=1)[0].strip()
+    title = first if len(first) <= 110 else first[:109].rsplit(" ", 1)[0] + "…"
+    item = {"date": record.get("createdAt", "")[:10], "url": url, "title": title, "text": text, "images": []}
+    embed = post.get("embed") or {}
+    if embed.get("$type", "").startswith("app.bsky.embed.recordWithMedia"):
+        embed = embed.get("media") or {}
+    if embed.get("$type", "").startswith("app.bsky.embed.images"):
+        for i, im in enumerate(embed.get("images", [])[:4]):
+            name = save_image(im.get("fullsize") or im.get("thumb", ""), f"bsky-{rkey}-{i + 1}.jpg")
+            if name:
+                item["images"].append({"file": name, "alt": im.get("alt") or ""})
+    return item
+
+
+def fetch(handle: str) -> tuple[list[dict], list[dict]]:
     query = urllib.parse.urlencode({"actor": handle, "limit": LOOKBACK, "filter": "posts_no_replies"})
-    req = urllib.request.Request(API + "?" + query, headers={"User-Agent": "exocean-website (https://github.com/exocean-lab/exocean-lab.github.io)"})
+    req = urllib.request.Request(API + "?" + query, headers=UA)
     with urllib.request.urlopen(req, timeout=60) as resp:
         feed = json.load(resp).get("feed", [])
-    posts = []
+    posts, news = [], []
     for entry in feed:
         if "reason" in entry:            # a repost of someone else's post
             continue
@@ -83,6 +137,10 @@ def fetch(handle: str) -> list[dict]:
         if record.get("reply"):
             continue
         rkey = post["uri"].rsplit("/", 1)[-1]
+        if is_news(record):
+            news.append(news_item(post, record, f"https://bsky.app/profile/{handle}/post/{rkey}", rkey))
+        if len(posts) == KEEP:
+            continue
         item = {
             "date": record.get("createdAt", "")[:10],
             "url": f"https://bsky.app/profile/{handle}/post/{rkey}",
@@ -122,9 +180,7 @@ def fetch(handle: str) -> list[dict]:
         elif etype.startswith("app.bsky.embed.images"):
             item["images"] = len(embed.get("images", []))
         posts.append(item)
-        if len(posts) == KEEP:
-            break
-    return posts
+    return posts, news
 
 
 def main() -> int:
@@ -133,7 +189,7 @@ def main() -> int:
         print("No Bluesky account in content/site.json — nothing to fetch.")
         return 1
     try:
-        posts = fetch(handle)
+        posts, news = fetch(handle)
     except Exception as exc:
         print(f"Bluesky could not be queried ({exc}); keeping the existing file.")
         return 1
@@ -147,14 +203,20 @@ def main() -> int:
             previous = json.loads(OUT.read_text(encoding="utf-8"))
         except json.JSONDecodeError:
             previous = {}
+    # news items accumulate: older tagged posts stay even when they leave the feed window
+    known = {n["url"]: n for n in previous.get("news", [])}
+    for n in news:
+        known[n["url"]] = n
+    all_news = sorted(known.values(), key=lambda n: n["date"], reverse=True)[:NEWS_KEEP]
+
     strip = lambda ps: [{k: v for k, v in p.items() if k not in ("likes", "reposts")} for p in ps]
-    if strip(previous.get("posts", [])) == strip(posts):
-        print(f"bluesky.json already up to date ({len(posts)} posts).")
+    if strip(previous.get("posts", [])) == strip(posts) and previous.get("news", []) == all_news:
+        print(f"bluesky.json already up to date ({len(posts)} posts, {len(all_news)} news items).")
         return 0
 
-    payload = {"handle": handle, "updated": date.today().isoformat(), "posts": posts}
+    payload = {"handle": handle, "updated": date.today().isoformat(), "posts": posts, "news": all_news}
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-    print(f"Wrote {OUT.relative_to(ROOT)} — {len(posts)} posts from @{handle}.")
+    print(f"Wrote {OUT.relative_to(ROOT)} — {len(posts)} posts and {len(all_news)} news items from @{handle}.")
     return 0
 
 

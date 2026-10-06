@@ -12,15 +12,16 @@ address osulpis.github.io/exocean forwards here)
 
 ## The short version
 
-All the words and people live in four text files inside `content/`.
+All the words and people live in a few text files inside `content/`.
 Everything else is generated.
 
 | File | What's in it |
 |---|---|
-| `content/site.json` | Home page, Services & Instruments page, Data & Models page, "Join us" text, contact details, menu, site address |
-| `content/team.json` | Every person, their photo, bio and links (plus an empty "Former members" group) |
+| `content/site.json` | Home page, Research page (the ocean drawing, key questions), Services & Instruments, Data & Models, Join us (incl. open positions), Contact, legal notice, selected papers, menu, site address |
+| `content/team.json` | Every person: position, one-line research focus, photo, bio, links (plus an empty "Former members" group) |
 | `content/projects.json` | Deep-C, MANGO, DYNAMITE, ForCry, ASPERGE |
-| `content/news.json` | News items (with a month/year date) and the press/media lists |
+| `content/news.json` | News items (each gets its own page) and the press/media lists |
+| `content/fr.json` | The French versions of Services, Join us and Contact |
 
 Change one of those, and the site rebuilds itself. You never have to touch HTML.
 
@@ -29,17 +30,32 @@ them itself every Monday (see below):
 
 | File | Comes from |
 |---|---|
-| `content/publications.json` | HAL, for every person with an `"idhal"` in `team.json` |
-| `content/bluesky.json` | The lab's Bluesky account (its own posts, not reposts) |
+| `content/publications.json` | HAL: everything by members with an `"idhal"` in `team.json`, plus papers HAL links to the ORCID of the others |
+| `content/bluesky.json` | The lab's Bluesky account: its latest posts, and the posts tagged **#exoceannews** |
+
+---
+
+## Three ways to edit
+
+1. **With forms (easiest).** Go to https://app.pagescms.org, sign in with a
+   GitHub account that belongs to the `exocean-lab` organisation, and open this
+   repository. News, open positions, people, projects and the selected papers
+   are there as forms (set up in `.pages.yml` at the top of the repository).
+   *Save* makes a commit and the site updates about a minute later.
+2. **On GitHub.** Open a file in `content/`, click the pencil, edit, *Commit*.
+3. **Post on Bluesky.** A post from the lab's account that contains
+   **#exoceannews** becomes a news item on the site at the next Monday refresh
+   (first sentence = title; its photos are copied into the site). Run the
+   workflow by hand (Actions → *Build and deploy exocean* → *Run workflow*) to
+   see it at once.
 
 ---
 
 ## How a change actually happens
 
 **Automatically.** Every push to `main` runs `.github/workflows/static.yml`,
-which regenerates the HTML and publishes it to GitHub Pages. Edit a JSON file
-in GitHub's web editor, click *Commit*, and the live site updates about a
-minute later.
+which makes light copies of the photos, regenerates the HTML, prints the
+one-page Services summary to PDF and publishes everything to GitHub Pages.
 
 **Every Monday morning**, the same workflow runs on its own: it asks HAL for
 new publications and Bluesky for new posts, commits them if anything changed,
@@ -55,81 +71,101 @@ outside link on the site and opens an issue listing the ones that have died.
 ```bash
 python3 build.py            # regenerate the HTML
 python3 fetch_hal.py        # optional: refresh the publication list
-python3 fetch_bluesky.py    # optional: refresh the Bluesky strip
+python3 fetch_bluesky.py    # optional: refresh Bluesky posts and #exoceannews items
+python3 optimise_images.py  # optional, needs `pip install pillow`: lighter photos
 ```
 
-No installation, no dependencies — just Python 3, which macOS already has.
+Only Python 3 is needed for the first three (macOS has it).
 
 ---
 
 ## Adding things
 
-**A new team member** — open `content/team.json`, copy an existing block inside
-the right group, change the fields. Drop their photo in `assets/img/` (square
-works best, 640×640 or larger) and put the filename in `"photo"`.
-Set `"photo": null` and they get a neat initials tile instead.
+**A news item** — in `content/news.json`, copy an existing item to the top of
+`items`. Give it a short `"id"` (lower case and dashes: it becomes the address
+`news/<id>.html`) and a `"date"` as `"YYYY-MM"`. Body blocks come in three
+flavours: `{"type": "p"}` paragraph, `{"type": "q"}` interview question,
+`{"type": "callout"}` highlighted box. Add an `"image_alt"` describing the
+photo for people who cannot see it. The two newest items also appear on the
+home page. (Or just post on Bluesky with #exoceannews.)
 
-Anyone with a non-empty `"bio"` automatically gets their own page.
-Anyone with `"bio": []` appears as a card only.
+**An open position** — in `content/site.json`, under `"join"`, add it to
+`"openings"`: `"title"`, `"type"` (e.g. "PhD, 3 years"), `"start"`,
+`"deadline"`, `"body"`, and optionally `"url"` + `"link_label"` for the full
+offer. It shows on the Join us page in both languages; remove it once filled.
 
-**An outside collaborator** — in `team.json`, the "Collaborators on current
-projects" group lists them by project (`"external"`), without photos or pages
-of their own: a name, an optional `"role"`, their `"institutions"` (each with
-the `"url"` of its website, which becomes the link) and a `"country"`. They
-are not bolded on the Publications page, which is kept for team members.
+**A team member** — in `content/team.json`, copy a block inside the right
+group. Fill `"position"` (e.g. "PhD student") and `"focus"` (one line on what
+they work on — it is what visitors read to know whom to write to). Drop the
+photo in `assets/img/` (square, 640×640 or larger). Anyone with a non-empty
+`"bio"` gets their own page, listing their projects and recent papers.
 
 Add `"idhal": "firstname-lastname"` (their HAL author identifier) and their
-papers join the Publications page at the next refresh, with a "Publications
-(HAL)" link on their own page. Add `"orcid": "0000-0000-0000-0000"` and an
-ORCID link appears first in their links.
+papers join the Publications page at the next refresh. Without one, papers
+that HAL links to their `"orcid"` are picked up instead — an idHAL is better
+(create one at https://hal.science → *My space* → *My idHAL*).
 
-**Someone leaves** — move their block into the `"Former members"` group at the
-bottom of `team.json` (it is invisible while empty). Put the years in `"role"`,
-e.g. `"PhD student, 2022–2025"`.
+**Someone leaves** — move their block into `"Former members"` at the bottom
+of `team.json` (invisible while empty). Put the years in `"position"`.
 
-**A news item** — open `content/news.json` and copy an existing item to the top
-of the `items` list. Give it a `"date"` as `"YYYY-MM"`; it is shown as
-"February 2026". Body blocks come in three flavours:
-`{"type": "p"}` for a paragraph, `{"type": "q"}` for an interview question, and
-`{"type": "callout"}` for a highlighted box.
+**An outside collaborator** — in `team.json`, the "Collaborators on current
+projects" group lists them by project (`"external"`): name, optional
+`"role"`, `"institutions"` (each with the `"url"` of its website) and
+`"country"`. They are not bolded on the Publications page.
 
-**A project** — copy a block in `content/projects.json`. Add
-`"completed": true` to get the *Completed* tag.
+**A project** — copy a block in `content/projects.json`. `"programme"` and
+`"years"` show on its card; `"completed": true` moves it to *Completed
+projects*. To place it on the ocean drawing, add a pin in `site.json` →
+`"research"` → `"pins"` (`"x"` and `"y"` are percentages across and down the
+drawing). Its page lists, under *Outputs so far*, the papers whose HAL record
+declares the project's funding (same acronym as the project name); add
+others by DOI in `"outputs"`.
 
-**A model or a dataset** — open `content/site.json` and find `"data"` (the
-Data & Models page). Each resource is one entry: a name, a one-line `"sub"`,
-a short text, the team members involved (`"people"`, by their slug in
-`team.json`), and its links grouped by kind (`"Papers"`, `"Code"`,
-`"Archived releases"`, `"Data"`…). Prefer DOIs, and for Zenodo the *concept*
-DOI, which always opens the latest version. Models and datasets only — not
-the scripts behind individual papers.
+**Selected papers** — `site.json` → `"publications"` → `"selected"`: a list
+of DOIs shown first on the Publications page. Each must be in HAL under a team
+member's name (the build warns otherwise).
 
-**An instrument or a service** — open `content/site.json` and find `"services"`.
-Each instrument is a line in one of the `"groups"`, with a short `"id"`
-(e.g. `"cary60"`) and optionally a `"short"` name for its tag. Each service
-sits in one of the three `"themes"`: a title, a text, and in `"kit"` the ids
-of the instruments it uses — they become small tags that jump to the
-instrument's line. The last group is marked `"reserved": true` (grey box) for
-equipment that is not available to outside users. The `"cerege"` block holds
-the "exocean within CEREGE" text, the six technical-centre tiles and the
-other CEREGE platforms worth combining with a visit (each linked to its page
-on cerege.fr). This page is public: keep prices, purchase dates and funding
-sources out of it — quotes go by e-mail.
+**A model or a dataset** — `site.json` → `"data"` (the Data & Models page).
+One entry per resource, with its links grouped by kind (`"Papers"`,
+`"Code"`, `"Archived releases"`, `"Data"`…). Prefer DOIs, and for Zenodo the
+*concept* DOI. Models and datasets only — not the scripts behind single papers.
 
-The stylesheet link carries a version tag (`style.css?v=…`) that `build.py`
-derives from the file's content, so after a design change browsers fetch the
-new stylesheet instead of reusing a cached one.
+**An instrument or a service** — `site.json` → `"services"`. Each instrument
+is a line in one of the `"groups"` with a short `"id"`; each service sits in
+one of the `"themes"` and names its instruments in `"kit"`. The last group is
+`"reserved": true` (grey box) for equipment not open to outside users. Then do
+the same in `content/fr.json` — the build warns when the French page lags
+behind. This page is public: keep prices, purchase dates and funding sources
+out of it; quotes go by e-mail.
 
-HTML is allowed inside any text field (`<strong>`, `<em>`, `<a href="…">`),
-which is how the bold phrases and inline links are done.
+HTML is allowed inside text fields (`<strong>`, `<em>`, `<a href="…">`). Write
+links as seen from the site's root (`services.html`, `people/julie-meilland.html`):
+the build adjusts them on pages in sub-folders. `{email}` in a text becomes
+the lab's address.
+
+---
+
+## Photos, logos and the PDF
+
+- Photos go in `assets/img/`, at their best quality (up to 1600–2000 px wide).
+  `optimise_images.py` makes WebP copies at 480, 960 and 1600 px in
+  `assets/img/w/`, and the pages let each browser pick the smallest sharp
+  enough one. The Action does this on every deploy; the copies are not
+  committed.
+- The logos are the official files, vectorised: `logo.svg` (colour, header),
+  `logo-white.svg` (footer), `logo-stacked.svg` / `logo-stacked-white.svg`,
+  `mark.svg` (the c-and-bubbles symbol, used as the browser icon).
+  `share.jpg` is the picture shown when a link is shared.
+- `assets/exocean-services.pdf`, the one-page summary of the services, is
+  printed from `capabilities.html` by Chrome in the Action (not committed).
 
 ---
 
 ## E-mail addresses
 
 Addresses are never written into the HTML. They're stored as
-`"email_user"` + `"email_domain"` and assembled in the browser, so address
-harvesters don't pick them up. This mirrors how the old Owlstown site did it.
+`"email_user"` + `"email_domain"` (or `{email}` for the lab's) and assembled
+in the browser, so address harvesters don't pick them up.
 
 ---
 
@@ -138,36 +174,41 @@ harvesters don't pick them up. This mirrors how the old Owlstown site did it.
 The site is ready for [GoatCounter](https://www.goatcounter.com) — free,
 no cookies, no consent banner. Create an account there, pick a site code
 (say `exocean`), put it in `"goatcounter"` in `content/site.json`, and the
-counting script is added to every page at the next build. Leave it empty
-and nothing is loaded.
+counting script is added to every page at the next build (the legal notice
+updates itself). Leave it empty and nothing is loaded.
 
 ---
 
 ## What's in the repo
 
 ```
-content/          the content files — this is what you edit
-build.py          the generator; turns content/ into HTML
-fetch_hal.py      refreshes content/publications.json from HAL
-fetch_bluesky.py  refreshes content/bluesky.json from Bluesky
-assets/css/       one stylesheet
-assets/fonts/     the Cabin typeface, served from here (no Google Fonts call)
-assets/js/        one small script (e-mail assembly)
-assets/img/       every photo, logo and figure (share.jpg = link-preview image)
-index.html        ┐
-services.html     │
-data.html         │
-projects.html     │
-publications.html │  generated — don't edit these by hand,
-team.html         │  build.py will overwrite them
-news.html         │
-contact.html      │
-projects/*.html   │
-people/*.html     ┘
-expertise.html    generated — forwards the retired Expertise page to Services
-sitemap.xml       generated
-robots.txt        generated
-404.html          generated
+.pages.yml           (top of the repository) the Pages CMS forms
+content/             the content files — this is what you edit
+build.py             the generator; turns content/ into HTML
+fetch_hal.py         refreshes content/publications.json from HAL
+fetch_bluesky.py     refreshes content/bluesky.json (and #exoceannews items)
+optimise_images.py   makes the light WebP copies of the photos
+assets/css/          one stylesheet
+assets/fonts/        the Cabin typeface, served from here (no Google Fonts call)
+assets/js/           one small script (e-mails, phone menu, publication search)
+assets/img/          every photo, logo and figure
+index.html           ┐
+projects.html        │  Research
+services.html        │
+data.html            │
+publications.html    │
+team.html            │  People
+news.html            │  generated — don't edit these by hand,
+join.html            │  build.py overwrites them
+contact.html         │
+legal.html           │  legal notice and accessibility statement
+projects/*.html      │
+people/*.html        │
+news/*.html          │
+fr/*.html            ┘  French Services, Join us, Contact
+capabilities.html    generated — the printable one-page summary
+expertise.html       generated — forwards the retired Expertise page to Services
+sitemap.xml, robots.txt, 404.html   generated
 ```
 
 ---
@@ -186,17 +227,9 @@ around €10–15 a year; the hosting stays free.
 
 ---
 
-## Known difference from the old site
-
-The old Owlstown site had a **contact form**. A static site can't process a form
-on its own. The Contact page gives the lab's address as a clickable
-`mailto:` link instead. If a real form is wanted, Formspree or Web3Forms both
-have free tiers and need one line of HTML.
-
----
-
 ## Credits
 
 Photography © Elodie Gazquez, © SEMEPA / CEREGE, © Jaime Suárez-Ibarra,
 as credited on each image. Logo and brand: exocean. Typeface: Cabin
-(SIL Open Font License).
+(SIL Open Font License). The ocean cross-section on the home and Research
+pages is drawn by `build.py` (function `ocean_svg`).
