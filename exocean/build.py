@@ -291,25 +291,6 @@ def latest_papers(depth: int, n: int = 3) -> str:
 """
 
 
-def tools_block() -> str:
-    """'Tools and data we share' on the Expertise page (text in site.json)."""
-    t = SITE.get("tools")
-    if not t:
-        return ""
-    lis = "\n".join(
-        f"""          <li><a href="{escape(i['url'])}">{escape(i['label'])}</a><span>{escape(i['desc'])}</span></li>"""
-        for i in t["items"]
-    )
-    return f"""        <section class="tools" id="tools">
-          <h2>{escape(t['title'])}</h2>
-          <p>{escape(t['intro'])}</p>
-          <ul class="tools-list">
-{lis}
-          </ul>
-        </section>
-"""
-
-
 def build_home() -> None:
     h = SITE["home"]
     d = 0
@@ -324,7 +305,7 @@ def build_home() -> None:
         <hr class="rule">
         {"".join(f"<p>{p}</p>" for p in h["intro"])}
 
-        <p class="btn-row"><a class="btn" href="expertise.html">Check our expertise</a></p>
+        <p class="btn-row"><a class="btn" href="services.html">What we can do for you</a></p>
 
         <figure>
           <img src="{asset(d, h['founders_photo'])}" alt="The three exocean founders in the laboratory" width="1400" height="778">
@@ -364,41 +345,82 @@ def build_home() -> None:
     write("index.html", d, SITE["name"], SITE["description"], "index.html", body)
 
 
-def build_expertise() -> None:
-    e = SITE["expertise"]
+def build_data() -> None:
+    """Data & Models page: the models, datasets and tools the lab shares, one
+    entry per resource, each with its links grouped by kind (papers, code,
+    archived releases, data...). All text in the "data" block of site.json."""
+    D = SITE.get("data")
+    if not D:
+        return
     d = 0
-    items = "\n".join(
-        f"""        <article class="expertise-item">
-          <h2>{escape(i['title'])}</h2>
-          <p>{i['body']}</p>
-        </article>"""
-        for i in e["items"]
-    )
-    more = ""
-    if SITE.get("services"):
-        more = ('        <p class="more-link"><a href="services.html">'
-                'The analyses we offer and the full list of our instruments →</a></p>\n')
+    sections = []
+    for sec in D.get("sections", []):
+        entries = []
+        for it in sec["items"]:
+            who = ""
+            if it.get("people"):
+                names = [person_link(d, slug) for slug in it["people"]]
+                joined = names[0] if len(names) == 1 else ", ".join(names[:-1]) + " and " + names[-1]
+                who = f'\n            <p class="res-who">From the team: {joined}</p>'
+            rows = []
+            for grp in it.get("links", []):
+                pills = "".join(f'<li><a href="{escape(l["url"])}">{escape(l["label"])}</a></li>' for l in grp["items"])
+                rows.append(f'              <div class="res-links"><span class="res-kind">{escape(grp["kind"])}</span>'
+                            f'<ul class="pills">{pills}</ul></div>')
+            links = ("\n            <div class=\"res-link-rows\">\n" + "\n".join(rows) + "\n            </div>") if rows else ""
+            sub = f'\n            <p class="res-sub">{escape(it["sub"])}</p>' if it.get("sub") else ""
+            entries.append(f"""          <article class="res">
+            <h3>{escape(it['name'])}</h3>{sub}
+            <p>{it['body']}</p>{who}{links}
+          </article>""")
+        sections.append(f"""        <h2>{escape(sec['title'])}</h2>
+        <hr class="rule short">
+{chr(10).join(entries)}""")
+
     body = f"""    <section class="section">
       <div class="measure">
-        <h1>{escape(e['title'])}</h1>
-        <p class="lede">{escape(e['lede'])}</p>
+        <h1>{escape(D['title'])}</h1>
+        <p class="lede">{escape(D['lede'])}</p>
         <hr class="rule">
-        <figure>
-          <img src="{asset(d, e['hero'])}" alt="Inside the exocean laboratory at CEREGE" width="1400" height="934">
-        </figure>
-{items}
-{more}{tools_block()}
+        <p>{D.get('intro', '')}</p>
+{chr(10).join(sections)}
+        <p class="res-outro">{D.get('outro', '')}</p>
         <div class="btn-row two">
-          <a class="btn" href="projects.html">Explore our projects</a>
-          <a class="btn" href="news.html">News &amp; Highlights</a>
+          <a class="btn" href="services.html">Services &amp; instruments</a>
+          <a class="btn primary" href="contact.html">Contact us</a>
         </div>
-        <p class="btn-row"><a class="btn primary" href="contact.html">Let's connect</a></p>
       </div>
     </section>
 """
-    write("expertise.html", d, e["title"],
-          "Carbonate system measurements, chemical microprofiling, foraminifera cultures, pressurized and rotating disk reactors at the exocean laboratory, CEREGE.",
-          "expertise.html", body)
+    write("data.html", d, D["title"],
+          "Models, datasets and tools shared by the exocean laboratory at CEREGE: the RADI sediment model, the FORCIS "
+          "planktonic foraminifera census, the Cenozoic CO2 synthesis and micro-CT images of foraminifera.",
+          "data.html", body)
+
+
+REDIRECTS = {"expertise.html": "services.html"}   # retired pages -> where their content went
+
+
+def build_redirects() -> None:
+    """Keep old addresses working (bookmarks, search engines, other sites): each
+    retired page becomes a tiny page that forwards to its replacement."""
+    for old, new in REDIRECTS.items():
+        target = rel(0, new)
+        canon = f'<link rel="canonical" href="{escape(absurl(new))}">\n' if BASE else ""
+        (OUT / old).write_text(f"""<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{escape(SITE['name'])} — moved</title>
+<meta name="robots" content="noindex">
+{canon}<meta http-equiv="refresh" content="0; url={escape(target)}">
+</head>
+<body>
+<p>This page has moved: <a href="{escape(target)}">{escape(absurl(new) if BASE else new)}</a>.</p>
+</body>
+</html>
+""", encoding="utf-8")
+        print(f"  {old} -> {new}")
 
 
 def cerege_block(c: dict | None) -> str:
@@ -491,9 +513,10 @@ def build_services() -> None:
             kit = o.get("kit") or []
             pills = (f'\n              <ul class="pills" aria-label="Instruments">{"".join(pill(k) for k in kit)}</ul>'
                      if kit else "")
+            note = f'\n              <p class="svc-note">{o["note"]}</p>' if o.get("note") else ""
             items.append(f"""            <li class="svc">
               <h4>{escape(o['title'])}</h4>
-              <p>{o['body']}</p>{pills}
+              <p>{o['body']}</p>{note}{pills}
             </li>""")
         heading = f"\n          <h3>{escape(t['title'])}</h3>" if t.get("title") else ""
         theme_html.append(f"""        <section class="theme">{heading}
@@ -541,7 +564,7 @@ def build_services() -> None:
 {chr(10).join(groups)}
 {cerege}
         <div class="btn-row two">
-          <a class="btn" href="expertise.html">Check our expertise</a>
+          <a class="btn" href="data.html">Data &amp; models we share</a>
           <a class="btn primary" href="contact.html">Contact us</a>
         </div>
       </div>
@@ -1069,7 +1092,9 @@ def build_404() -> None:
 
 def build_extras() -> None:
     """robots.txt and a sitemap, so the site is findable."""
-    pages = ["index.html", "expertise.html", "projects.html", "publications.html", "team.html", "news.html", "contact.html"]
+    pages = ["index.html", "projects.html", "publications.html", "team.html", "news.html", "contact.html"]
+    if SITE.get("data"):
+        pages.insert(2, "data.html")
     if SITE.get("services"):
         pages.insert(2, "services.html")
     pages += [f"projects/{p['slug']}.html" for p in PROJECTS["projects"]]
@@ -1089,7 +1114,7 @@ def build_extras() -> None:
 if __name__ == "__main__":
     print("Building exocean…")
     build_home()
-    build_expertise()
+    build_data()
     build_services()
     build_projects()
     build_team()
@@ -1097,6 +1122,7 @@ if __name__ == "__main__":
     build_news()
     build_contact()
     build_404()
+    build_redirects()
     build_extras()
     prune()
     print("Done.")

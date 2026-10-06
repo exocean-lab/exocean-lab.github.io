@@ -140,7 +140,7 @@ a:hover, a:focus-visible { color: var(--orange); text-decoration: underline; tex
 .nav a:hover { color: var(--orange-dark); text-decoration: none; border-bottom-color: rgba(240,126,28,.4); }
 .nav a[aria-current="page"] { color: var(--orange-dark); border-bottom-color: var(--orange); }
 /* eight menu items: tighter gaps keep the menu to one line on tablets and two on most phones */
-@media (max-width: 900px) { .nav ul { gap: .25rem 1.1rem; } }
+@media (max-width: 900px) { .nav ul { gap: .25rem .9rem; } }
 @media (max-width: 480px) { .nav { padding: .6rem .6rem; } .nav ul { gap: .1rem .65rem; } .nav a { font-size: .95rem; padding: .2rem .1rem; } }
 
 /* --- main / sections ------------------------------------------- */
@@ -221,11 +221,6 @@ figcaption .credit { display: block; font-style: italic; }
 }
 .btn.primary { background: var(--orange); border-color: var(--orange); color: #fff; }
 .btn.primary:hover, .btn.primary:focus-visible { background: var(--orange-dark); border-color: var(--orange-dark); color: #fff; }
-
-/* --- expertise ------------------------------------------------- */
-.expertise-item { border-top: 1px solid var(--line); padding-top: 1.6rem; margin-top: 1.8rem; }
-.expertise-item:first-of-type { border-top: 0; margin-top: 1rem; padding-top: 0; }
-.expertise-item h2 { margin-top: 0; }
 
 /* --- project cards --------------------------------------------- */
 .cards { display: grid; gap: 1.2rem; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); margin-top: 1.6rem; }
@@ -398,15 +393,6 @@ a.person:hover { text-decoration: none; color: inherit; }
 .lp-meta strong { color: var(--ink); }
 .lp-all { margin-top: .9rem; font-weight: 700; }
 
-/* --- tools & data (expertise) ---------------------------------- */
-.tools { border-top: 1px solid var(--line); padding-top: 1.6rem; margin-top: 2.2rem; }
-.tools > h2 { margin-top: 0; }
-.tools-list { list-style: none; padding: 0; margin: 1.2rem 0 0; }
-.tools-list li { padding: .8rem 0 .8rem 1rem; border-left: 3px solid var(--orange-soft); margin-bottom: .6rem; }
-.tools-list li a { font-weight: 700; display: block; line-height: 1.35; }
-.tools-list li span { display: block; font-size: var(--step--1); color: var(--ink-soft); line-height: 1.5; margin-top: .15rem; }
-
-.more-link { margin-top: 1.8rem; font-weight: 700; }
 
 /* --- services & instruments ------------------------------------ */
 .jump { font-size: var(--step--1); color: var(--ink-faint); margin-top: 1.4rem; }
@@ -423,6 +409,11 @@ a.person:hover { text-decoration: none; color: inherit; }
 .svc:last-child { margin-bottom: 0; }
 .svc h4 { margin: 0 0 .25rem; font-size: 1.12rem; line-height: 1.3; }
 .svc p { margin: 0; }
+
+.svc-note {
+  margin-top: .6rem !important; padding: .6rem .8rem; border-radius: var(--radius);
+  background: var(--orange-soft); font-size: var(--step--1); line-height: 1.5;
+}
 
 /* instrument tags under each service, jumping to the list below */
 .pills { list-style: none; padding: 0; margin: .6rem 0 0; display: flex; flex-wrap: wrap; gap: .35rem .4rem; }
@@ -470,6 +461,24 @@ a.person:hover { text-decoration: none; color: inherit; }
 @media (max-width: 620px) { .inst { grid-template-columns: 1fr; } }
 .inst-group.reserved { background: var(--canvas); border-radius: var(--radius); padding: 1.1rem 1.2rem .5rem; margin-top: 2.2rem; }
 .inst-group.reserved .inst { border-top-color: #dcdfe3; }
+
+/* --- data & models ---------------------------------------------- */
+.res {
+  border: 1px solid var(--line); border-radius: var(--radius); background: #fff;
+  padding: 1.1rem 1.3rem 1.15rem; margin: 0 0 1.1rem;
+}
+.res h3 { margin: 0; font-size: var(--step-1); color: var(--orange-dark); }
+.res .res-sub { margin: .15rem 0 .6rem; color: var(--ink-soft); font-weight: 500; }
+.res p { margin-bottom: .6rem; }
+.res .res-who { font-size: var(--step--1); color: var(--ink-faint); }
+.res .res-who a { font-weight: 700; }
+.res-link-rows { border-top: 1px solid var(--line); margin-top: .8rem; padding-top: .7rem; display: grid; gap: .45rem; }
+.res-links { display: grid; grid-template-columns: 8.5rem 1fr; gap: .2rem .8rem; align-items: baseline; }
+.res-kind { font-size: .72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-faint); padding-top: .25rem; }
+.res-links .pills { margin: 0; }
+.res-links .pills a { color: var(--orange-dark); }
+@media (max-width: 620px) { .res-links { grid-template-columns: 1fr; gap: .25rem; } .res { padding: 1rem 1rem 1.05rem; } }
+.res-outro { margin-top: 1.6rem; }
 
 /* --- contact --------------------------------------------------- */
 .contact-card {

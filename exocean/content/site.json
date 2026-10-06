@@ -9,9 +9,9 @@
   "address": ["CEREGE", "Technopôle de l'Arbois-Méditerranée", "BP80, 13545 Aix-en-Provence", "France"],
   "nav": [
     { "label": "The Lab", "href": "index.html" },
-    { "label": "Expertise", "href": "expertise.html" },
     { "label": "Services", "href": "services.html" },
     { "label": "Projects", "href": "projects.html" },
+    { "label": "Data & Models", "href": "data.html" },
     { "label": "Publications", "href": "publications.html" },
     { "label": "Team", "href": "team.html" },
     { "label": "News & Highlights", "href": "news.html" },
@@ -52,44 +52,190 @@
     "where_caption": "CEREGE (plateau de l'Arbois, Aix-en-Provence, France) / Photo : © SEMEPA / Source CEREGE"
   },
 
-  "expertise": {
-    "title": "What We Do Best",
-    "lede": "- Our key areas of expertise and technical strengths.",
-    "hero": "expertise-hero.jpg",
-    "items": [
+  "data": {
+    "title": "Data & Models",
+    "lede": "- Models, datasets and tools we build and share — all open and free to use.",
+    "intro": "Write to us if you use them, get stuck, or would like something that is not listed.",
+    "sections": [
       {
-        "title": "Carbonate system measurements",
-        "body": "We specialize in <strong>high-precision marine carbonate system analysis</strong>, using an Agilent Cary 60 spectrophotometer with purified indicator dye for pH and ultra-low-volume total alkalinity titrations (down to 4 mL) on a state-of-the-art Metrohm OMNIS system. Following community best practices, our flexible systems can be deployed at sea or used in the lab to deliver robust carbonate chemistry data for experiments and field campaigns."
+        "title": "Models",
+        "items": [
+          {
+            "name": "RADI",
+            "sub": "Reaction-transport model of early diagenesis in marine sediments",
+            "body": "The reactive-advective-diffusive-irrigative model simulates, through time, the chemistry of surface sediments and their exchanges with the overlying seawater, in Julia (Radi.jl) and MATLAB/GNU Octave (Radi.m). RADIv2 handles coastal and open-ocean sediments alike.",
+            "people": [
+              "olivier-sulpis"
+            ],
+            "links": [
+              {
+                "kind": "Papers",
+                "items": [
+                  {
+                    "label": "RADIv2 · Geosci. Model Dev. 2026",
+                    "url": "https://doi.org/10.5194/gmd-19-1965-2026"
+                  },
+                  {
+                    "label": "RADIv1 · Geosci. Model Dev. 2022",
+                    "url": "https://doi.org/10.5194/gmd-15-2105-2022"
+                  }
+                ]
+              },
+              {
+                "kind": "Code",
+                "items": [
+                  {
+                    "label": "Radi.jl (Julia) on GitHub",
+                    "url": "https://github.com/RADI-model/Radi.jl"
+                  },
+                  {
+                    "label": "Radi.m (MATLAB/Octave) on GitHub",
+                    "url": "https://github.com/RADI-model/Radi.m"
+                  }
+                ]
+              },
+              {
+                "kind": "Archived releases",
+                "items": [
+                  {
+                    "label": "RADIv2 v2.0.0 · Zenodo",
+                    "url": "https://doi.org/10.5281/zenodo.18386461"
+                  },
+                  {
+                    "label": "Radi.jl v1 · Zenodo",
+                    "url": "https://doi.org/10.5281/zenodo.5005650"
+                  },
+                  {
+                    "label": "Radi.m v1 · Zenodo",
+                    "url": "https://doi.org/10.5281/zenodo.4739205"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
-        "title": "Chemical microprofiling",
-        "body": "We routinely use a set of <strong>microsensors</strong> to measure chemical composition of water (e.g., pH, oxygen, nitric oxide, hydrogen sulfide) in constrained environments and to follow reactions through time in our various experimental systems.<br><br>With our mobile Unisense micromanipulator, we can perform microprofiles of sediment porewaters on ships right after sediment collection, or on coastal sites. Using the Unisense NanoRespiration kit coupled with a Zeiss stereomicroscope and an axiocam, we can measure the rate of biogeochemical processes at the scale of individual microorganisms."
-      },
-      {
-        "title": "Foraminifera Cultures",
-        "body": "We host the <strong>COntinuous REproduction for Foraminifera Facility (COREFF)</strong>. COREFF is currently equipped with two incubators spanning from 0 to >35°C with light, allowing us to work with samples and temperatures mimicking polar to tropical conditions. Access to additional incubators and an environmental room is also possible on-site. Multiple microscopes, such as binoculars and inverted microscope equipped with an imaging system are available to track the evolution of the plankton in culture.<br><br>We are using and fine-tuning protocols to maintain specimens alive (mostly mediterranean species), make them reproduce and thrive in laboratory conditions. COREFF can simultaneously host thousands of planktonic foraminifera. Next to foraminifera, we also maintain multiple strains of diatoms as a potential food source for our specimens and their different life stages.<br><br>For more information such as access to live specimens, visits, planktonic foraminifera culture season, please get in touch with Julie MEILLAND (<span class=\"eml\" data-u=\"meilland\" data-d=\"cerege.fr\"></span>)."
-      },
-      {
-        "title": "Pressurized reactors",
-        "body": "To simulate <strong>abyssal (3 to 6 km-deep) and hadal (6 to 10+ km-deep)</strong> marine environments, we use pressurized, temperature-controlled reactors made out of titanium and sapphire windows, in which oxygen and pH sensors are incorporated, and from which water can be sampled air-tight without altering the pressure within.<br><br>Experiments can include cultures of hadal microbes, degradation of organic tissues in deep-ocean conditions, investigation of the pressure effect on chemical reactions.<br><br>These reactors are reserved for the Deep-C project. For partner projects and service work, a separate, simpler reactor rated to 500 bar is available — see <a href=\"services.html\">Services &amp; Instruments</a>."
-      },
-      {
-        "title": "Rotating disk reactors",
-        "body": "Half a dozen reactors reproducing <strong>benthic hydrodynamic conditions</strong>, from high-energy (e.g., reefs) to very low-energy (abyssal plains), respectively, stirred, or with a rotating sediment disk, are present in the laboratory. Open or closed to the atmosphere, in free-drift or flow-through mode, and always temperature-controlled, they can be used to follow chemical reactions occurring in surface sediments at atmospheric pressure.<br><br>Chemical monitoring is performed via regular porewater microprofiles, discrete/continuous overlaying seawater chemical analyses, or measurements of solute fluxes across the sediment-water interface."
+        "title": "Datasets",
+        "items": [
+          {
+            "name": "FORCIS",
+            "sub": "Global census of living planktonic foraminifera",
+            "body": "Distribution and diversity of planktonic foraminifera from a century of plankton-net, pump, sediment-trap and continuous-plankton-recorder samples across the world ocean, with an R package to download, filter, harmonise and map the data.",
+            "people": [
+              "sonia-chaabane",
+              "julie-meilland"
+            ],
+            "links": [
+              {
+                "kind": "Papers",
+                "items": [
+                  {
+                    "label": "Database · Scientific Data 2023",
+                    "url": "https://doi.org/10.1038/s41597-023-02264-2"
+                  },
+                  {
+                    "label": "Global reassessment · J. Micropalaeontology 2026",
+                    "url": "https://doi.org/10.5194/jm-45-195-2026"
+                  }
+                ]
+              },
+              {
+                "kind": "Data",
+                "items": [
+                  {
+                    "label": "FORCIS database · Zenodo (latest version)",
+                    "url": "https://doi.org/10.5281/zenodo.7390791"
+                  }
+                ]
+              },
+              {
+                "kind": "R package",
+                "items": [
+                  {
+                    "label": "forcis documentation",
+                    "url": "https://docs.ropensci.org/forcis/"
+                  },
+                  {
+                    "label": "forcis on CRAN",
+                    "url": "https://cran.r-project.org/package=forcis"
+                  },
+                  {
+                    "label": "Package paper · JOSS 2025",
+                    "url": "https://doi.org/10.21105/joss.09217"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Cenozoic CO₂ (CenCO2PIP)",
+            "sub": "66 million years of atmospheric CO₂ from proxy records",
+            "body": "A community-vetted synthesis of atmospheric CO₂ over the Cenozoic, assembled by the Cenozoic CO₂ Proxy Integration Project consortium from marine and terrestrial proxy records. Every record and its evaluation is openly archived.",
+            "people": [
+              "thomas-chalk"
+            ],
+            "links": [
+              {
+                "kind": "Paper",
+                "items": [
+                  {
+                    "label": "Science 2023",
+                    "url": "https://doi.org/10.1126/science.adi5177"
+                  }
+                ]
+              },
+              {
+                "kind": "Data",
+                "items": [
+                  {
+                    "label": "Data archive · NOAA NCEI",
+                    "url": "https://www.ncei.noaa.gov/pub/data/paleo/climate_forcing/trace_gases/Paleo-pCO2/"
+                  },
+                  {
+                    "label": "Vetted CO₂ products · NOAA NCEI",
+                    "url": "https://www.ncei.noaa.gov/pub/data/paleo/climate_forcing/trace_gases/Paleo-pCO2/product_files/"
+                  },
+                  {
+                    "label": "Interactive viewer · paleo-co2.org",
+                    "url": "https://paleo-co2.org/"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Micro-CT images of planktonic foraminifera",
+            "sub": "3D scans of shells with curated taxonomy",
+            "body": "X-ray micro-computed tomography images of 179 shells covering 43 of the 48 recognised species and subspecies of holoplanktonic foraminifera, with their metadata.",
+            "people": [
+              "julie-meilland"
+            ],
+            "links": [
+              {
+                "kind": "Paper",
+                "items": [
+                  {
+                    "label": "Scientific Data 2023",
+                    "url": "https://doi.org/10.1038/s41597-023-02498-0"
+                  }
+                ]
+              },
+              {
+                "kind": "Data",
+                "items": [
+                  {
+                    "label": "Image volumes · PANGAEA",
+                    "url": "https://doi.org/10.1594/PANGAEA.949585"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
-    ]
-  },
-
-  "tools": {
-    "title": "Tools and data we share",
-    "intro": "Some of what the laboratory builds is meant to be reused. Everything below is open; write to us if you use it, get stuck, or would like something that is not listed.",
-    "items": [
-      { "label": "RADI — reaction-transport model of ocean sediments", "url": "https://github.com/RADI-model", "desc": "The reactive-advective-diffusive-irrigative early-diagenesis model, in Julia (Radi.jl) and MATLAB/GNU Octave (Radi.m). RADIv2 handles coastal and open-ocean sediments alike." },
-      { "label": "RADIv2 paper — Geoscientific Model Development (2026)", "url": "https://doi.org/10.5194/gmd-19-1965-2026", "desc": "How the model works and how to set it up; RADIv1 is described in GMD (2022), doi:10.5194/gmd-15-2105-2022." },
-      { "label": "FORCIS — global database of planktonic foraminifera counts", "url": "https://doi.org/10.5281/zenodo.7390792", "desc": "Distribution and diversity of living planktonic foraminifera from a century of net, pump, trap and continuous-plankton-recorder samples (Scientific Data / Zenodo)." },
-      { "label": "forcis — R package (rOpenSci / CRAN)", "url": "https://docs.ropensci.org/forcis/", "desc": "Download, filter, harmonise and map the FORCIS data from R." },
-      { "label": "Our publications on HAL", "url": "publications.html", "desc": "Every article by the team, with open-access PDFs where they exist, refreshed automatically from the French national archive." }
-    ]
+    ],
+    "outro": "All our articles, with open-access PDFs where they exist, are on the <a href=\"publications.html\">Publications</a> page."
   },
 
   "services": {
@@ -145,7 +291,8 @@
           {
             "title": "Cultures and incubations",
             "body": "Culture of plankton, microbes and other small organisms, and incubation experiments, under controlled temperature and light — from 0 to above 35 °C in the incubators of our COREFF foraminifera facility. Light intensity and spectrum are measured with a PAR sensor.",
-            "kit": ["incubators", "par"]
+            "kit": ["incubators", "par"],
+            "note": "<strong>COREFF</strong>, our COntinuous REproduction for Foraminifera Facility, can host thousands of planktonic foraminifera at a time — mostly Mediterranean species, kept alive and reproducing with protocols we keep refining — alongside diatom strains grown as food for their different life stages. For live specimens, visits or the culture season, contact Julie MEILLAND (<span class=\"eml\" data-u=\"meilland\" data-d=\"cerege.fr\"></span>)."
           }
         ]
       },

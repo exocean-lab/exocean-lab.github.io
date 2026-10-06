@@ -14,7 +14,7 @@ Everything else is generated.
 
 | File | What's in it |
 |---|---|
-| `content/site.json` | Home page, Expertise page (incl. "Tools and data we share"), Services & Instruments page, "Join us" text, contact details, menu, site address |
+| `content/site.json` | Home page, Services & Instruments page, Data & Models page, "Join us" text, contact details, menu, site address |
 | `content/team.json` | Every person, their photo, bio and links (plus an empty "Former members" group) |
 | `content/projects.json` | Deep-C, MANGO, DYNAMITE, ForCry, ASPERGE |
 | `content/news.json` | News items (with a month/year date) and the press/media lists |
@@ -93,6 +93,14 @@ of the `items` list. Give it a `"date"` as `"YYYY-MM"`; it is shown as
 **A project** — copy a block in `content/projects.json`. Add
 `"completed": true` to get the *Completed* tag.
 
+**A model or a dataset** — open `content/site.json` and find `"data"` (the
+Data & Models page). Each resource is one entry: a name, a one-line `"sub"`,
+a short text, the team members involved (`"people"`, by their slug in
+`team.json`), and its links grouped by kind (`"Papers"`, `"Code"`,
+`"Archived releases"`, `"Data"`…). Prefer DOIs, and for Zenodo the *concept*
+DOI, which always opens the latest version. Models and datasets only — not
+the scripts behind individual papers.
+
 **An instrument or a service** — open `content/site.json` and find `"services"`.
 Each instrument is a line in one of the `"groups"`, with a short `"id"`
 (e.g. `"cary60"`) and optionally a `"short"` name for its tag. Each service
@@ -144,8 +152,8 @@ assets/fonts/     the Cabin typeface, served from here (no Google Fonts call)
 assets/js/        one small script (e-mail assembly)
 assets/img/       every photo, logo and figure (share.jpg = link-preview image)
 index.html        ┐
-expertise.html    │
 services.html     │
+data.html         │
 projects.html     │
 publications.html │  generated — don't edit these by hand,
 team.html         │  build.py will overwrite them
@@ -153,6 +161,7 @@ news.html         │
 contact.html      │
 projects/*.html   │
 people/*.html     ┘
+expertise.html    generated — forwards the retired Expertise page to Services
 sitemap.xml       generated
 robots.txt        generated
 404.html          generated
