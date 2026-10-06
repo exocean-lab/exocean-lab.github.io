@@ -190,7 +190,7 @@
           "orcid": "0000-0002-1375-5774",
           "name": "Devangi SATHE",
           "affiliation": "CNRS Postdoctoral Researcher at CEREGE, France",
-          "photo": null,
+          "photo": "p-sathe.jpg",
           "greeting": "Hello!",
           "bio": [
             "I am a postdoctoral researcher on the ERC project Deep-C at CEREGE, where I study how calcium carbonate dissolves in the deep sea. Using the laboratory's high-pressure reactors, I measure the solubility of different carbonate minerals at the pressures of the abyssal and hadal seafloor, and how fast they dissolve when microbes are respiring around them.",
@@ -210,19 +210,6 @@
             "I am a biologist and PhD student at the exocean laboratory in CEREGE, supervised by Olivier SULPIS and Julie MEILLAND. My thesis follows deep-sea calcium carbonate dissolution from the microenvironment of a single foraminifera shell to the global carbon cycle, combining micro-CT imaging of dissolving shells, pore-scale modelling and dissolution experiments, with a particular interest in the role of organic matter. Passionate about the ocean, my aim is to get a better understanding of the importance of marine environments in mitigating climate change by dissolving calcium carbonates.",
             "Before joining CEREGE I studied global change biology at the University of Antwerp, where I learned about different consequences of climate change and to help mitigate these effects.",
             "Outside the lab you can find me somewhere hiking, chasing beautiful sunsets or enjoying a big cup of tea, usually accompanied with a homemade song and some jokes!"
-          ],
-          "links": []
-        },
-        {
-          "slug": "ezra-finney",
-          "name": "Ezra FINNEY",
-          "affiliation": "Master's Student at Aix-Marseille Université, France",
-          "role": "Master's intern from January 2027",
-          "photo": null,
-          "greeting": "Salut !",
-          "bio": [
-            "I am a Master's student in Sciences de la mer at Aix-Marseille Université (Institut Pythéas), on the biology and ecology track, and I will join the exocean laboratory in January 2027 for my Master's research internship, on microbial incubations in the high-pressure reactors.",
-            "I first worked with the team in 2025, during my Licence, on a data-mining project combining seafloor respiration measurements, carbonate content and bathymetry to see how sediment chemistry is organised in the deepest ocean trenches — whether trenches act as funnels for carbon. I am coming back to continue on the experimental side."
           ],
           "links": []
         }
