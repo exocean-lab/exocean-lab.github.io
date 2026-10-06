@@ -214,18 +214,6 @@
           "links": []
         },
         {
-          "slug": "sarah-jedidi",
-          "name": "Sarah JEDIDI",
-          "affiliation": "Intern from CentraleSupélec at CEREGE, France",
-          "photo": null,
-          "greeting": "Salut !",
-          "bio": [
-            "I am an engineering student from CentraleSupélec, at CEREGE for a research internship on the MANGO project, which looks at how mangroves influence oxygen and nutrient dynamics in the coastal lagoons of Senegal. I joined the team's fieldwork in Senegal with Sonia CHAABANE and Maxime FELIX, and I work on the sediment and water chemistry we brought back, between the laboratory and the data.",
-            "What drew me here is the combination of field science and the carbon question: how fast-changing coastal ecosystems shape the chemistry of the ocean."
-          ],
-          "links": []
-        },
-        {
           "slug": "ezra-finney",
           "name": "Ezra FINNEY",
           "affiliation": "Master's Student at Aix-Marseille Université, France",
@@ -242,52 +230,35 @@
     },
     {
       "heading": "Collaborators on current projects",
-      "members": [
-        {
-          "slug": "christian-tamburini",
-          "name": "Christian TAMBURINI",
-          "affiliation": "CNRS Research Scientist at MIO, France",
-          "role": "Abyssal microbiologist",
-          "photo": null,
-          "bio": [],
-          "links": []
-        },
-        {
-          "slug": "marc-garel",
-          "name": "Marc GAREL",
-          "affiliation": "CNRS Research Engineer at MIO, France",
-          "role": "High-pressure microbiology",
-          "photo": null,
-          "bio": [],
-          "links": []
-        },
-        {
-          "slug": "ronnie-glud",
-          "name": "Ronnie GLUD",
-          "affiliation": "Professor at the University of Southern Denmark, Denmark",
-          "role": "Hadal biogeochemist",
-          "photo": null,
-          "bio": [],
-          "links": []
-        },
-        {
-          "slug": "peter-stief",
-          "name": "Peter STIEF",
-          "affiliation": "Associate Professor at the University of Southern Denmark, Denmark",
-          "role": "Microbial ecologist",
-          "photo": null,
-          "bio": [],
-          "links": []
-        },
-        {
-          "slug": "steeve-comeau",
-          "name": "Steeve COMEAU",
-          "affiliation": "CNRS Researcher at LOV, Villefranche-sur-Mer, France",
-          "role": "Calcification ecophysiologist",
-          "photo": null,
-          "bio": [],
-          "links": []
-        }
+      "external": [
+        { "label": "Deep-C", "project": "deep-c", "people": [
+            { "name": "Christian TAMBURINI", "role": "Abyssal microbiologist", "institutions": [{ "name": "Mediterranean Institute of Oceanography (MIO)", "url": "https://www.mio.osupytheas.fr/en/" }], "country": "France" },
+            { "name": "Marc GAREL", "role": "High-pressure microbiology", "institutions": [{ "name": "Mediterranean Institute of Oceanography (MIO)", "url": "https://www.mio.osupytheas.fr/en/" }], "country": "France" },
+            { "name": "Ronnie N. GLUD", "role": "Hadal biogeochemist", "institutions": [{ "name": "University of Southern Denmark", "url": "https://www.sdu.dk/en" }], "country": "Denmark" },
+            { "name": "Peter STIEF", "role": "Microbial ecologist", "institutions": [{ "name": "University of Southern Denmark", "url": "https://www.sdu.dk/en" }], "country": "Denmark" },
+            { "name": "Dustin CARROLL", "institutions": [{ "name": "San José State University", "url": "https://www.sjsu.edu/" }], "country": "USA" }
+          ] },
+        { "label": "MANGO", "project": "mango", "people": [
+            { "name": "Malick THIAM", "institutions": [{ "name": "Université Cheikh Anta Diop (UCAD)", "url": "https://www.ucad.sn/" }], "country": "Senegal" },
+            { "name": "Amadou Thierno GAYE", "institutions": [{ "name": "Université Cheikh Anta Diop (UCAD)", "url": "https://www.ucad.sn/" }], "country": "Senegal" },
+            { "name": "Ibrahima CAMARA", "institutions": [{ "name": "Université Cheikh Anta Diop (UCAD)", "url": "https://www.ucad.sn/" }], "country": "Senegal" },
+            { "name": "Eric MACHU", "institutions": [{ "name": "IRD", "url": "https://en.ird.fr/" }, { "name": "LOPS", "url": "https://www.umr-lops.fr/" }], "country": "France" }
+          ] },
+        { "label": "DYNAMITE", "project": "dynamite", "people": [
+            { "name": "Deborah WALL-PALMER", "institutions": [{ "name": "Naturalis Biodiversity Center", "url": "https://www.naturalis.nl/en" }], "country": "Netherlands" },
+            { "name": "Katja PEIJNENBURG", "institutions": [{ "name": "University of Amsterdam", "url": "https://www.uva.nl/en" }, { "name": "Naturalis Biodiversity Center", "url": "https://www.naturalis.nl/en" }], "country": "Netherlands" },
+            { "name": "Fabio BENEDETTI", "institutions": [{ "name": "ETH Zurich", "url": "https://ethz.ch/en.html" }], "country": "Switzerland" },
+            { "name": "Nina BEDNARSEK", "institutions": [{ "name": "Oregon State University, CIMERS", "url": "https://cimers.oregonstate.edu/" }], "country": "USA / Slovenia" },
+            { "name": "Ralf SCHIEBEL", "institutions": [{ "name": "Max Planck Institute for Chemistry", "url": "https://www.mpic.de/en" }], "country": "Germany" },
+            { "name": "Mark OHMAN", "institutions": [{ "name": "Scripps Institution of Oceanography, UC San Diego", "url": "https://scripps.ucsd.edu/" }], "country": "USA" },
+            { "name": "Clara MANNO", "institutions": [{ "name": "British Antarctic Survey", "url": "https://www.bas.ac.uk/" }], "country": "UK" }
+          ] },
+        { "label": "ForCry", "project": "forcry", "people": [
+            { "name": "Christopher STANDISH", "institutions": [{ "name": "University of Southampton", "url": "https://www.southampton.ac.uk/" }], "country": "UK" }
+          ] },
+        { "label": "PhD co-supervision", "people": [
+            { "name": "Steeve COMEAU", "role": "Calcification ecophysiologist", "institutions": [{ "name": "Laboratoire d'Océanographie de Villefranche (LOV)", "url": "https://lov.imev-mer.fr/web/" }], "country": "France" }
+          ] }
       ]
     },
     {

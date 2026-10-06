@@ -45,7 +45,8 @@
     "where_title": "Where We Are",
     "where": [
       "We are based at <strong>CEREGE</strong> (Centre for Research and Teaching in Environmental Geosciences), a multidisciplinary research and teaching center covering a broad range of scientific topics at the highest level, supported by state-of-the-art analytical facilities. It is one of the leading Earth Science laboratories in France and internationally recognized for its scientific excellence.",
-      "Ideally located in the heart of the Technopôle de l'Arbois in Aix-en-Provence and in central Marseille on the Saint-Charles campus, CEREGE benefits from optimal conditions to foster collaborations and partnerships."
+      "Ideally located in the heart of the Technopôle de l'Arbois in Aix-en-Provence and in central Marseille on the Saint-Charles campus, CEREGE benefits from optimal conditions to foster collaborations and partnerships.",
+      "Within CEREGE, exocean is one of the laboratories of the Experimental Biophysics and Chemistry technical centre — see <a href=\"services.html#cerege\">how it fits in, and the other platforms you can use during a visit</a>."
     ],
     "where_photo": "cerege-aerial.jpg",
     "where_caption": "CEREGE (plateau de l'Arbois, Aix-en-Provence, France) / Photo : © SEMEPA / Source CEREGE"
@@ -99,11 +100,12 @@
     "hero_caption": "Planktonic foraminifera under the microscope (top) and Julie MEILLAND preparing cultures in the exocean laboratory at CEREGE.",
     "hero_credit": "Photo © Elodie GAZQUEZ, 2025",
     "intro": [
-      "Beyond our own research, we run measurements and experiments for <strong>academic and private partners</strong> — within a collaboration, or as a paid service. You can send us your samples, or come and work with us in the laboratory."
+      "Beyond our own research, we run measurements and experiments for <strong>academic and private partners</strong> — within a collaboration, or as a paid service. You can send us your samples, or come and work with us in the laboratory; visitors pay a small lab occupation fee.",
+      "exocean is part of CEREGE's network of technical platforms, so a stay with us can be combined with analyses on <a href=\"#platforms\">other CEREGE platforms</a> — stable isotopes, elemental chemistry, X-ray imaging, micropalaeontology and more."
     ],
     "request": {
       "title": "How to request an analysis",
-      "body": "Write to us at {email} with a few lines on your samples (type, number, volume) and on what you need. We will tell you what is feasible and how long it will take, and send a quote for paid services."
+      "body": "Write to us at {email} with a few lines on your samples (type, number, volume) and on what you need. We will tell you what is feasible and how long it will take, and send a quote for paid services. If you would also like to use other CEREGE platforms during your visit, say so and we will put you in touch."
     },
     "offers_title": "What we offer",
     "themes": [
@@ -168,6 +170,31 @@
         ]
       }
     ],
+    "cerege": {
+      "title": "exocean within CEREGE",
+      "body": [
+        "CEREGE groups its analytical and experimental facilities by area of expertise into six <a href=\"https://www.cerege.fr/en/equipment/technical-clusters/\">technical centres</a>, each co-led by a technical and a scientific manager. exocean is one of the four laboratories of the <strong>Experimental Biophysics and Chemistry</strong> centre (technical manager Pierre Boutet, scientific manager Julie Meilland), together with the <a href=\"https://www.cerege.fr/en/equipment/technical-clusters/cirene/\">CIRENE</a> technology hall, the <a href=\"https://www.cerege.fr/en/equipment/technical-clusters/caracterisation-of-colloids/\">colloid characterisation</a> laboratory and the geomicrobiology laboratory."
+      ],
+      "centres": [
+        {"name": "Experimental Biophysics and Chemistry", "labs": ["CIRENE", "Colloid characterisation", "exocean", "Geomicrobiology"], "here": "exocean"},
+        {"name": "Geochemistry", "labs": ["ENVITOP", "LGO2i", "PANISS", "LA-ICP-MS"]},
+        {"name": "Geophysics and Hydrology", "labs": ["Geophysics & petrography", "Petrophysics & acoustics", "Hydro-terrain"]},
+        {"name": "Imaging, AI and Modelling", "labs": ["MATRIX", "MANTA", "SIGEO", "Statistics & geomodelling"]},
+        {"name": "LN2C national instrument – ASTER", "labs": ["Cosmogenic nuclides"]},
+        {"name": "Sample preparation and natural archives", "labs": ["Lithopreparation", "Soils", "LPM", "SEDIM"]}
+      ],
+      "platforms_title": "Combine your visit with other CEREGE platforms",
+      "platforms_intro": "The platforms most often useful to our partners. Each one has its own access conditions and rates — we can put you in touch.",
+      "platforms": [
+        {"what": "Stable isotopes", "name": "PANISS", "url": "https://www.cerege.fr/en/equipment/technical-clusters/analysis-of-stable-isotopes-panis-2/", "desc": "δ¹⁸O and δ¹³C of carbonates, clumped isotopes (Δ<sub>47</sub>, Δ<sub>48</sub>), δ¹⁸O, δ¹⁷O and δD of water, and δ¹⁵N, δ¹³C and δD of organic compounds. Open to academic collaborations and services."},
+        {"what": "Elemental chemistry", "name": "LA-ICP-MS", "url": "https://www.cerege.fr/en/equipment/technical-clusters/chemistry-elementary-the-icp-ms/", "desc": "About 90% of the periodic table in solution by ICP-OES or ICP-MS, and laser ablation of solids for semi-quantitative elemental maps. Open to public and private users."},
+        {"what": "Radiocarbon, biomarkers and sediment geochemistry", "name": "LGO2i", "url": "https://www.cerege.fr/en/equipment/technical-clusters/geochemistry-organic-inorganic-and-isotopic-2/", "desc": "Radiocarbon dating on the AixMICADAS accelerator mass spectrometer, organic compounds as environmental indicators, and the elemental composition of marine and lake sediment archives."},
+        {"what": "2D and 3D X-ray imaging", "name": "MATRIX", "url": "https://www.cerege.fr/en/equipment/technical-clusters/imagery-2d-and-3d-by-x-matrix-ray/", "desc": "Micro- and nano-tomography, X-ray micro-diffraction and micro-XRF mapping of the same sample, all non-destructive. Open to all."},
+        {"what": "Automated micropalaeontology", "name": "MANTA", "url": "https://www.cerege.fr/en/equipment/technical-clusters/micropaleontology-automation/", "desc": "Automated microscopes with AI recognition of coccolithophores, foraminifera, radiolarians, diatoms and pollen, and a robot that picks foraminifera for chemical analyses."},
+        {"what": "Microfossil extraction", "name": "LPM", "url": "https://www.cerege.fr/en/equipment/technical-clusters/micropaleontological-preparation/", "desc": "Extraction of microfossils and other bio-indicators from sediments, soils, plants and water samples, ready for microscopy or geochemistry."},
+        {"what": "Sedimentology", "name": "SEDIM", "url": "https://www.cerege.fr/en/equipment/technical-clusters/sedimentology/", "desc": "High-resolution imaging with mosaics, grain-size and particle-shape distributions (with or without chemical pre-treatment), and identification of micro- and macro-remains such as shells and ostracods."}
+      ]
+    },
     "instruments_title": "Our instruments",
     "instruments_intro": "The equipment of the exocean laboratory at CEREGE, by type.",
     "groups": [
@@ -242,7 +269,7 @@
       },
       {
         "title": "Visiting scientists and facility access",
-        "body": "Colleagues who would like to run experiments with live planktonic foraminifera at COREFF, use our 500-bar reactor or the rotating disk reactors, or spend time in the laboratory can contact <a href=\"people/julie-meilland.html\">Julie MEILLAND</a> (cultures) or <a href=\"people/olivier-sulpis.html\">Olivier SULPIS</a> (reactors) directly. Analyses we can run for you are listed on our <a href=\"services.html\">Services</a> page."
+        "body": "Colleagues who would like to run experiments with live planktonic foraminifera at COREFF, use our 500-bar reactor or the rotating disk reactors, or spend time in the laboratory can contact <a href=\"people/julie-meilland.html\">Julie MEILLAND</a> (cultures) or <a href=\"people/olivier-sulpis.html\">Olivier SULPIS</a> (reactors) directly; visitors pay a small lab occupation fee. Analyses we can run for you are listed on our <a href=\"services.html\">Services</a> page."
       }
     ]
   },

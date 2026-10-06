@@ -401,6 +401,47 @@ def build_expertise() -> None:
           "expertise.html", body)
 
 
+def cerege_block(c: dict | None) -> str:
+    """Services page: where exocean sits among CEREGE's technical centres (one
+    tile per centre, exocean's own highlighted), then the other CEREGE platforms
+    most useful to visitors, each linked to its page on cerege.fr."""
+    if not c:
+        return ""
+    body = "\n".join(f"        <p>{t}</p>" for t in c.get("body", []))
+    tiles = []
+    for ctr in c.get("centres", []):
+        here = ctr.get("here")
+        labs = " · ".join(f"<strong>{escape(l)}</strong>" if l == here else escape(l) for l in ctr["labs"])
+        cls = "centre here" if here else "centre"
+        tag = '<span class="centre-tag">exocean\u2019s centre</span>' if here else ""
+        tiles.append(f'          <li class="{cls}">{tag}<span class="centre-name">{escape(ctr["name"])}</span>'
+                     f'<span class="centre-labs">{labs}</span></li>')
+    plats = []
+    for pf in c.get("platforms", []):
+        plats.append(f"""            <li class="svc">
+              <h4>{escape(pf['what'])} · <a href="{escape(pf['url'])}">{escape(pf['name'])}</a></h4>
+              <p>{pf['desc']}</p>
+            </li>""")
+    platforms = ""
+    if plats:
+        platforms = f"""
+        <h2 id="platforms">{escape(c.get('platforms_title', 'Other CEREGE platforms'))}</h2>
+        <hr class="rule short">
+        <p>{escape(c.get('platforms_intro', ''))}</p>
+        <ul class="svc-list platforms">
+{chr(10).join(plats)}
+        </ul>"""
+    return f"""
+        <h2 id="cerege">{escape(c['title'])}</h2>
+        <hr class="rule short">
+{body}
+        <ul class="centres" aria-label="CEREGE technical centres">
+{chr(10).join(tiles)}
+        </ul>
+{platforms}
+"""
+
+
 def build_services() -> None:
     """Services & Instruments page: what the lab runs for partners, grouped in
     themes, then the instrument list by type (all text in the "services" block
@@ -476,6 +517,10 @@ def build_services() -> None:
           </dl>
         </section>""")
 
+    cerege, jump_more = cerege_block(s.get("cerege")), ""
+    if s.get("cerege", {}).get("platforms"):
+        jump_more = ' · <a href="#platforms">Other CEREGE platforms</a>'
+
     body = f"""    <section class="section">
       <div class="measure">
         <h1>{escape(s['title'])}</h1>
@@ -484,7 +529,7 @@ def build_services() -> None:
 {hero}
 {intro}
 {request}
-        <p class="jump">On this page: <a href="#offers">{escape(s['offers_title'])}</a> · <a href="#instruments">{escape(s['instruments_title'])}</a></p>
+        <p class="jump">On this page: <a href="#offers">{escape(s['offers_title'])}</a> · <a href="#instruments">{escape(s['instruments_title'])}</a>{jump_more}</p>
 
         <h2 id="offers">{escape(s['offers_title'])}</h2>
         <hr class="rule short">
@@ -494,7 +539,7 @@ def build_services() -> None:
         <hr class="rule short">
         <p>{escape(s.get('instruments_intro', ''))}</p>
 {chr(10).join(groups)}
-
+{cerege}
         <div class="btn-row two">
           <a class="btn" href="expertise.html">Check our expertise</a>
           <a class="btn primary" href="contact.html">Contact us</a>
@@ -633,10 +678,43 @@ def build_project(p: dict) -> None:
           p["subtitle"], "projects.html", body)
 
 
+def collaborators_block(depth: int, g: dict) -> str:
+    """Collaborators from outside CEREGE, as a compact list grouped by project:
+    no photos and no pages of their own; each institution links to its website.
+    They are kept out of TEAM_KEYS, so they are not bolded on the Publications page."""
+    parts = []
+    for sub in g["external"]:
+        label = escape(sub["label"])
+        if sub.get("project"):
+            label = f'<a href="{rel(depth, "projects/" + sub["project"] + ".html")}">{label}</a>'
+        items = []
+        for p in sub["people"]:
+            insts = " &amp; ".join(
+                f'<a href="{escape(i["url"])}">{escape(i["name"])}</a>' if i.get("url") else escape(i["name"])
+                for i in p.get("institutions", []))
+            where = ", ".join(x for x in (insts, escape(p.get("country", ""))) if x)
+            role = f'<span class="crole">{escape(p["role"])}</span>' if p.get("role") else ""
+            items.append(f'              <li><span class="cname">{escape(p["name"])}</span>{role}'
+                         f'<span class="cinst">{where}</span></li>')
+        parts.append(f"""          <div class="collab-proj">
+            <h3>{label}</h3>
+            <ul class="collab-list">
+{chr(10).join(items)}
+            </ul>
+          </div>""")
+    return f"""        <section class="team-group collab">
+          <h2>{escape(g['heading'])}</h2>
+{chr(10).join(parts)}
+        </section>"""
+
+
 def build_team() -> None:
     d = 0
     groups = []
     for g in TEAM["groups"]:
+        if g.get("external"):           # outside collaborators: compact list, no photos
+            groups.append(collaborators_block(d, g))
+            continue
         if not g.get("members"):        # e.g. "Former members" while still empty
             continue
         cards = []

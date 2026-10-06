@@ -67,8 +67,13 @@ works best, 640×640 or larger) and put the filename in `"photo"`.
 Set `"photo": null` and they get a neat initials tile instead.
 
 Anyone with a non-empty `"bio"` automatically gets their own page.
-Anyone with `"bio": []` appears as a card only — which is how the external
-collaborators are set up.
+Anyone with `"bio": []` appears as a card only.
+
+**An outside collaborator** — in `team.json`, the "Collaborators on current
+projects" group lists them by project (`"external"`), without photos or pages
+of their own: a name, an optional `"role"`, their `"institutions"` (each with
+the `"url"` of its website, which becomes the link) and a `"country"`. They
+are not bolded on the Publications page, which is kept for team members.
 
 Add `"idhal": "firstname-lastname"` (their HAL author identifier) and their
 papers join the Publications page at the next refresh, with a "Publications
@@ -94,8 +99,11 @@ Each instrument is a line in one of the `"groups"`, with a short `"id"`
 sits in one of the three `"themes"`: a title, a text, and in `"kit"` the ids
 of the instruments it uses — they become small tags that jump to the
 instrument's line. The last group is marked `"reserved": true` (grey box) for
-equipment that is not available to outside users. This page is public: keep
-prices, purchase dates and funding sources out of it — quotes go by e-mail.
+equipment that is not available to outside users. The `"cerege"` block holds
+the "exocean within CEREGE" text, the six technical-centre tiles and the
+other CEREGE platforms worth combining with a visit (each linked to its page
+on cerege.fr). This page is public: keep prices, purchase dates and funding
+sources out of it — quotes go by e-mail.
 
 The stylesheet link carries a version tag (`style.css?v=…`) that `build.py`
 derives from the file's content, so after a design change browsers fetch the

@@ -292,6 +292,20 @@ a.person:hover { text-decoration: none; color: inherit; }
 .person .aff { font-size: var(--step--1); color: var(--ink-soft); display: block; margin-top: .2rem; line-height: 1.45; }
 .person .prole { font-size: var(--step--1); color: var(--ink-faint); display: block; font-style: italic; }
 
+/* outside collaborators: compact list by project, no photos */
+.collab-proj { margin-top: 1.3rem; }
+.collab-proj > h3 { margin: 0 0 .65rem; font-size: 1.02rem; font-weight: 700; color: var(--ink-faint); }
+.collab-proj > h3 a { color: var(--orange-dark); }
+.collab-list {
+  list-style: none; padding: 0; margin: 0;
+  display: grid; gap: .8rem 1.4rem; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.collab-list li { padding-left: .75rem; border-left: 3px solid var(--orange-soft); font-size: var(--step--1); line-height: 1.45; }
+.collab-list span { display: block; }
+.collab-list .cname { font-weight: 700; color: var(--ink); }
+.collab-list .crole { font-style: italic; color: var(--ink-faint); }
+.collab-list .cinst { color: var(--ink-soft); }
+
 /* --- person page ----------------------------------------------- */
 .bio-head { display: grid; grid-template-columns: 200px 1fr; gap: 1.8rem; align-items: start; margin-bottom: 1.8rem; }
 @media (max-width: 620px) { .bio-head { grid-template-columns: 1fr; gap: 1.1rem; } .bio-head .avatar { max-width: 220px; } }
@@ -417,6 +431,26 @@ a.person:hover { text-decoration: none; color: inherit; }
   font-size: .8rem; line-height: 1.55; color: var(--ink-soft); background: #fff;
 }
 .pills a:hover, .pills a:focus-visible { border-color: var(--orange); color: var(--orange-dark); background: var(--orange-soft); text-decoration: none; }
+
+/* exocean within CEREGE: one tile per technical centre */
+.centres {
+  list-style: none; padding: 0; margin: 1.3rem 0 0;
+  display: grid; gap: .7rem; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.centre {
+  border: 1px solid var(--line); border-radius: var(--radius); background: #fff;
+  padding: .75rem .9rem .8rem; font-size: var(--step--1); line-height: 1.45;
+}
+.centre span { display: block; }
+.centre-name { font-weight: 700; color: var(--ink); margin-bottom: .25rem; }
+.centre-labs { color: var(--ink-faint); }
+.centre.here { background: var(--orange-soft); border-color: rgba(240,126,28,.5); }
+.centre.here .centre-labs strong { color: var(--orange-dark); }
+.centre-tag {
+  font-size: .72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--orange-dark); margin-bottom: .2rem;
+}
+.platforms .svc h4 a { font-weight: 700; }
 
 /* instrument list, by type */
 .inst-group { margin-top: 1.8rem; }
