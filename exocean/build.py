@@ -361,6 +361,10 @@ def build_expertise() -> None:
         </article>"""
         for i in e["items"]
     )
+    more = ""
+    if SITE.get("services"):
+        more = ('        <p class="more-link"><a href="services.html">'
+                'The analyses we offer and the full list of our instruments →</a></p>\n')
     body = f"""    <section class="section">
       <div class="measure">
         <h1>{escape(e['title'])}</h1>
@@ -370,7 +374,7 @@ def build_expertise() -> None:
           <img src="{asset(d, e['hero'])}" alt="Inside the exocean laboratory at CEREGE" width="1400" height="934">
         </figure>
 {items}
-{tools_block()}
+{more}{tools_block()}
         <div class="btn-row two">
           <a class="btn" href="projects.html">Explore our projects</a>
           <a class="btn" href="news.html">News &amp; Highlights</a>
@@ -382,6 +386,81 @@ def build_expertise() -> None:
     write("expertise.html", d, e["title"],
           "Carbonate system measurements, chemical microprofiling, foraminifera cultures, pressurized and rotating disk reactors at the exocean laboratory, CEREGE.",
           "expertise.html", body)
+
+
+def build_services() -> None:
+    """Services & Instruments page: what the lab runs for partners, then the
+    instrument list by type (all text in the "services" block of site.json).
+    Prices, purchase dates and funding sources are deliberately not kept there."""
+    s = SITE.get("services")
+    if not s:
+        return
+    d = 0
+    user, domain = SITE["email"].split("@")
+    intro = "\n".join(f"        <p>{p}</p>" for p in s.get("intro", []))
+
+    request = ""
+    if s.get("request"):
+        r = s["request"]
+        text = r["body"].replace("{email}", email_span(user, domain))
+        request = f"""        <div class="callout">
+          <p class="callout-title">{escape(r['title'])}</p>
+          <p>{text}</p>
+        </div>"""
+
+    offers = "\n".join(
+        f"""          <article class="offer">
+            <h3>{escape(o['title'])}</h3>
+            <p>{o['body']}</p>
+            {f'<p class="kit"><span class="visually-hidden">Instruments: </span>{escape(o["kit"])}</p>' if o.get('kit') else ''}
+          </article>"""
+        for o in s.get("offers", [])
+    )
+
+    groups = []
+    for g in s.get("groups", []):
+        rows = "\n".join(
+            f"""            <div class="inst"><dt>{escape(i['name'])}</dt><dd>{i['desc']}</dd></div>"""
+            for i in g["items"]
+        )
+        note = f'\n          <p class="note">{g["note"]}</p>' if g.get("note") else ""
+        cls = "inst-group reserved" if g.get("reserved") else "inst-group"
+        groups.append(f"""        <section class="{cls}">
+          <h3>{escape(g['heading'])}</h3>{note}
+          <dl class="inst-list">
+{rows}
+          </dl>
+        </section>""")
+
+    body = f"""    <section class="section">
+      <div class="measure">
+        <h1>{escape(s['title'])}</h1>
+        <p class="lede">{escape(s['lede'])}</p>
+        <hr class="rule">
+{intro}
+        <p class="jump">On this page: <a href="#offers">{escape(s['offers_title'])}</a> · <a href="#instruments">{escape(s['instruments_title'])}</a></p>
+{request}
+
+        <h2 id="offers">{escape(s['offers_title'])}</h2>
+        <div class="offers">
+{offers}
+        </div>
+
+        <h2 id="instruments">{escape(s['instruments_title'])}</h2>
+        <p>{escape(s.get('instruments_intro', ''))}</p>
+{chr(10).join(groups)}
+
+        <div class="btn-row two">
+          <a class="btn" href="expertise.html">Check our expertise</a>
+          <a class="btn primary" href="contact.html">Contact us</a>
+        </div>
+      </div>
+    </section>
+"""
+    write("services.html", d, s["title"],
+          "Analyses and experiments the exocean laboratory at CEREGE runs for academic and private partners — "
+          "carbonate chemistry, microsensor profiling, cultures, high-pressure incubations — and its instruments.",
+          "services.html", body)
 
 
 def build_projects() -> None:
@@ -868,6 +947,8 @@ def build_404() -> None:
 def build_extras() -> None:
     """robots.txt and a sitemap, so the site is findable."""
     pages = ["index.html", "expertise.html", "projects.html", "publications.html", "team.html", "news.html", "contact.html"]
+    if SITE.get("services"):
+        pages.insert(2, "services.html")
     pages += [f"projects/{p['slug']}.html" for p in PROJECTS["projects"]]
     pages += [f"people/{m['slug']}.html" for m in ALL_MEMBERS.values() if m.get("bio")]
     base = SITE.get("baseurl") or ""
@@ -886,6 +967,7 @@ if __name__ == "__main__":
     print("Building exocean…")
     build_home()
     build_expertise()
+    build_services()
     build_projects()
     build_team()
     build_publications()

@@ -14,7 +14,7 @@ Everything else is generated.
 
 | File | What's in it |
 |---|---|
-| `content/site.json` | Home page, Expertise page (incl. "Tools and data we share"), "Join us" text, contact details, menu, site address |
+| `content/site.json` | Home page, Expertise page (incl. "Tools and data we share"), Services & Instruments page, "Join us" text, contact details, menu, site address |
 | `content/team.json` | Every person, their photo, bio and links (plus an empty "Former members" group) |
 | `content/projects.json` | Deep-C, MANGO, DYNAMITE, ForCry, ASPERGE |
 | `content/news.json` | News items (with a month/year date) and the press/media lists |
@@ -88,6 +88,13 @@ of the `items` list. Give it a `"date"` as `"YYYY-MM"`; it is shown as
 **A project** — copy a block in `content/projects.json`. Add
 `"completed": true` to get the *Completed* tag.
 
+**An instrument or a service** — open `content/site.json` and find `"services"`.
+Each analysis offered is a block in `"offers"` (title, text, and the
+instruments it uses in `"kit"`); each instrument is a line in one of the
+`"groups"`. The last group is marked `"reserved": true` (grey box) for
+equipment that is not available to outside users. This page is public: keep
+prices, purchase dates and funding sources out of it — quotes go by e-mail.
+
 HTML is allowed inside any text field (`<strong>`, `<em>`, `<a href="…">`),
 which is how the bold phrases and inline links are done.
 
@@ -124,6 +131,7 @@ assets/js/        one small script (e-mail assembly)
 assets/img/       every photo, logo and figure (share.jpg = link-preview image)
 index.html        ┐
 expertise.html    │
+services.html     │
 projects.html     │
 publications.html │  generated — don't edit these by hand,
 team.html         │  build.py will overwrite them
