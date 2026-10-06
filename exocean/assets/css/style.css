@@ -395,21 +395,30 @@ a.person:hover { text-decoration: none; color: inherit; }
 .more-link { margin-top: 1.8rem; font-weight: 700; }
 
 /* --- services & instruments ------------------------------------ */
-.jump { font-size: var(--step--1); color: var(--ink-faint); }
+.jump { font-size: var(--step--1); color: var(--ink-faint); margin-top: 1.4rem; }
 .jump a { font-weight: 700; }
 
-.offers { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); margin-top: 1.2rem; }
-.offer {
-  border: 1px solid var(--line); border-radius: var(--radius); background: #fff;
-  padding: 1rem 1.1rem 1.05rem; display: flex; flex-direction: column; gap: .5rem;
+/* services, grouped in themes; same left-bar list style as "Tools and data" */
+.theme { margin-top: 1.9rem; }
+.theme > h3 {
+  margin: 0 0 1rem; font-size: var(--step--1); font-weight: 700;
+  letter-spacing: .07em; text-transform: uppercase; color: var(--orange-dark);
 }
-.offer h3 { margin: 0; font-size: 1.12rem; line-height: 1.3; color: var(--orange-dark); }
-.offer p { margin: 0; font-size: var(--step--1); line-height: 1.55; }
-.offer .kit {
-  margin-top: auto; padding-top: .55rem; border-top: 1px solid var(--line);
-  color: var(--ink-faint); font-size: .82rem; line-height: 1.45;
-}
+.svc-list { list-style: none; padding: 0; margin: 0; }
+.svc { padding: .1rem 0 .15rem 1.1rem; border-left: 3px solid var(--orange-soft); margin: 0 0 1.4rem; }
+.svc:last-child { margin-bottom: 0; }
+.svc h4 { margin: 0 0 .25rem; font-size: 1.12rem; line-height: 1.3; }
+.svc p { margin: 0; }
 
+/* instrument tags under each service, jumping to the list below */
+.pills { list-style: none; padding: 0; margin: .6rem 0 0; display: flex; flex-wrap: wrap; gap: .35rem .4rem; }
+.pills a, .pills span {
+  display: inline-block; padding: .15rem .7rem; border: 1px solid var(--line); border-radius: 100px;
+  font-size: .8rem; line-height: 1.55; color: var(--ink-soft); background: #fff;
+}
+.pills a:hover, .pills a:focus-visible { border-color: var(--orange); color: var(--orange-dark); background: var(--orange-soft); text-decoration: none; }
+
+/* instrument list, by type */
 .inst-group { margin-top: 1.8rem; }
 .inst-group > h3 {
   margin: 0 0 .5rem; font-size: 1rem; text-transform: uppercase; letter-spacing: .05em; color: var(--ink-faint);
@@ -418,10 +427,12 @@ a.person:hover { text-decoration: none; color: inherit; }
 .inst-list { margin: 0; }
 .inst {
   display: grid; grid-template-columns: minmax(0, 16.5rem) 1fr; gap: .15rem 1.4rem;
-  padding: .65rem 0; border-top: 1px solid var(--line);
+  padding: .65rem 0; border-top: 1px solid var(--line); scroll-margin-top: 1.5rem;
+  transition: background-color .6s;
 }
 .inst dt { font-weight: 700; line-height: 1.4; }
 .inst dd { margin: 0; color: var(--ink-soft); line-height: 1.5; }
+.inst:target { background: var(--orange-soft); box-shadow: -.7rem 0 0 var(--orange-soft), .7rem 0 0 var(--orange-soft); }
 @media (max-width: 620px) { .inst { grid-template-columns: 1fr; } }
 .inst-group.reserved { background: var(--canvas); border-radius: var(--radius); padding: 1.1rem 1.2rem .5rem; margin-top: 2.2rem; }
 .inst-group.reserved .inst { border-top-color: #dcdfe3; }

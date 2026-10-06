@@ -94,6 +94,10 @@
   "services": {
     "title": "Services & Instruments",
     "lede": "- Analyses and experiments we run for partners, and the equipment behind them.",
+    "hero": "news-julie.jpg",
+    "hero_alt": "Planktonic foraminifera under the microscope, and Julie Meilland at a culture incubator in the exocean laboratory",
+    "hero_caption": "Planktonic foraminifera under the microscope (top) and Julie MEILLAND preparing cultures in the exocean laboratory at CEREGE.",
+    "hero_credit": "Photo © Elodie GAZQUEZ, 2025",
     "intro": [
       "Beyond our own research, we run measurements and experiments for <strong>academic and private partners</strong> — within a collaboration, or as a paid service. You can send us your samples, or come and work with us in the laboratory."
     ],
@@ -102,51 +106,66 @@
       "body": "Write to us at {email} with a few lines on your samples (type, number, volume) and on what you need. We will tell you what is feasible and how long it will take, and send a quote for paid services."
     },
     "offers_title": "What we offer",
-    "offers": [
+    "themes": [
       {
-        "title": "Seawater carbonate chemistry",
-        "body": "Total alkalinity by potentiometric titration, on sample volumes down to 4 mL, and pH by spectrophotometry with purified indicator dye. Alkalinity measurements are calibrated with Dickson certified reference materials.",
-        "kit": "Metrohm OMNIS titrator · Agilent Cary 60 spectrophotometer"
+        "title": "Water and sediment chemistry",
+        "offers": [
+          {
+            "title": "Seawater carbonate chemistry",
+            "body": "Total alkalinity by potentiometric titration on samples down to 4 mL, and pH by spectrophotometry with purified indicator dye. Alkalinity is calibrated with Dickson certified reference materials.",
+            "kit": ["omnis", "cary60"]
+          },
+          {
+            "title": "Dissolved silicate and phosphate",
+            "body": "Silicate and phosphate concentrations in seawater, by colorimetry on a UV-Vis spectrophotometer.",
+            "kit": ["cary60"]
+          },
+          {
+            "title": "Microsensor profiling",
+            "body": "Microprofiles of oxygen, pH, nitric oxide (NO) and hydrogen sulfide through sediments and other confined environments — in the lab, on ships right after sediment collection, or at coastal sites.",
+            "kit": ["unisense"]
+          }
+        ]
       },
       {
-        "title": "Dissolved silicate and phosphate",
-        "body": "Concentrations of the nutrients silicate and phosphate in seawater, measured by colorimetry on a UV-Vis spectrophotometer.",
-        "kit": "Agilent Cary 60 spectrophotometer"
+        "title": "Experiments and incubations",
+        "offers": [
+          {
+            "title": "Sediment–water interface experiments",
+            "body": "Sediment incubations in six temperature-controlled reactors that reproduce benthic hydrodynamics, from calm abyssal plains to reefs. Open or closed to the atmosphere, in free drift or flow-through, with chemistry followed in the porewaters and the overlying water.",
+            "kit": ["rdr", "corio"]
+          },
+          {
+            "title": "High-pressure incubations",
+            "body": "Water or solid samples held at up to 500 bar (roughly the pressure at 5,000 m depth) in a 600 mL vessel, with water sampling during the run. Gas composition cannot be measured with the current setup.",
+            "kit": ["novoclave"]
+          },
+          {
+            "title": "Cultures and incubations",
+            "body": "Culture of plankton, microbes and other small organisms, and incubation experiments, under controlled temperature and light — from 0 to above 35 °C in the incubators of our COREFF foraminifera facility. Light intensity and spectrum are measured with a PAR sensor.",
+            "kit": ["incubators", "par"]
+          }
+        ]
       },
       {
-        "title": "Microsensor profiling",
-        "body": "Microprofiles of oxygen, pH, nitric oxide (NO) and hydrogen sulfide through sediments and other confined environments. The setup is mobile: profiles can be measured in the lab, on ships right after sediment collection, or at coastal sites.",
-        "kit": "Unisense microsensor profiling system"
-      },
-      {
-        "title": "Respiration of single organisms",
-        "body": "Respiration of microbes, single foraminifera or other small plankton, measured with microsensors in very small volumes of water under a stereomicroscope.",
-        "kit": "Unisense NanoRespiration system · Zeiss Stemi 508 stereomicroscope"
-      },
-      {
-        "title": "Sediment–water interface experiments",
-        "body": "Sediment incubations in six temperature-controlled reactors that reproduce benthic hydrodynamics, from calm abyssal plains to high-energy settings such as reefs. Open or closed to the atmosphere, in free drift or flow-through, with chemistry followed in the porewaters and in the overlying water.",
-        "kit": "Rotating disk reactors (×6) · Julabo CORIO refrigerated circulator"
-      },
-      {
-        "title": "High-pressure incubations",
-        "body": "Water or solid samples held at up to 500 bar (roughly the pressure at 5,000 m depth) in a 600 mL vessel, with water sampling during the run. Gas composition cannot be measured with the current setup.",
-        "kit": "Büchiglas Novoclave high-pressure reactor"
-      },
-      {
-        "title": "Cultures and incubations",
-        "body": "Culture of plankton, microbes and other small organisms, and incubation experiments, under controlled temperature and light — from 0 to above 35 °C in the incubators of our COREFF foraminifera facility. Light intensity and spectrum are measured with a PAR sensor.",
-        "kit": "Friocell 111 EVO and Memmert incubators · PAR sensor"
-      },
-      {
-        "title": "Microscopy and imaging",
-        "body": "Observation and imaging of living plankton and other immersed samples on an inverted microscope, and of small samples under a stereomicroscope.",
-        "kit": "Zeiss Axiovert 5 inverted microscope · Zeiss Stemi 508 stereomicroscope"
-      },
-      {
-        "title": "Plasma cleaning of samples",
-        "body": "Removal of organic matter from samples by plasma cleaning.",
-        "kit": "Henniker HPT-100 plasma cleaner"
+        "title": "Organisms and samples",
+        "offers": [
+          {
+            "title": "Respiration of single organisms",
+            "body": "Respiration of microbes, single foraminifera or other small plankton, measured with microsensors in very small volumes of water under a stereomicroscope.",
+            "kit": ["nanoresp", "stemi"]
+          },
+          {
+            "title": "Microscopy and imaging",
+            "body": "Observation and imaging of living plankton and other immersed samples on an inverted microscope, and of small samples under a stereomicroscope.",
+            "kit": ["axiovert", "stemi"]
+          },
+          {
+            "title": "Plasma cleaning of samples",
+            "body": "Removal of organic matter from samples by plasma cleaning.",
+            "kit": ["plasma"]
+          }
+        ]
       }
     ],
     "instruments_title": "Our instruments",
@@ -155,40 +174,40 @@
       {
         "heading": "Chemical analyses",
         "items": [
-          { "name": "Metrohm OMNIS titrator", "desc": "Total alkalinity of seawater by potentiometric titration, on small volumes." },
-          { "name": "Agilent Cary 60 UV-Vis spectrophotometer", "desc": "Seawater chemistry by spectrophotometry: pH with purified indicator dye, dissolved silicate and phosphate." },
-          { "name": "Unisense microsensor profiling system", "desc": "Microsensors for oxygen, pH, nitric oxide (NO) and hydrogen sulfide on a motorized, automated vertical micromanipulator." }
+          { "id": "omnis", "name": "Metrohm OMNIS titrator", "desc": "Total alkalinity of seawater by potentiometric titration, on small volumes." },
+          { "id": "cary60", "name": "Agilent Cary 60 UV-Vis spectrophotometer", "short": "Agilent Cary 60", "desc": "Seawater chemistry by spectrophotometry: pH with purified indicator dye, dissolved silicate and phosphate." },
+          { "id": "unisense", "name": "Unisense microsensor profiling system", "short": "Unisense microsensors", "desc": "Microsensors for oxygen, pH, nitric oxide (NO) and hydrogen sulfide on a motorized, automated vertical micromanipulator." }
         ]
       },
       {
         "heading": "Experimental systems",
         "items": [
-          { "name": "Büchiglas Novoclave high-pressure reactor", "desc": "600 mL vessel for water or solid samples, up to 500 bar." },
-          { "name": "Rotating disk reactors (×6)", "desc": "Stirred or rotating-disk reactors that reproduce benthic hydrodynamics, with chemical monitoring." },
-          { "name": "Unisense NanoRespiration system", "desc": "Incubation of microbes or plankton in very small volumes of water, followed with microsensors." },
-          { "name": "Friocell 111 EVO (×2) and Memmert incubators", "desc": "Culture of microbes, plankton and other small organisms, and incubations, under controlled temperature and light." }
+          { "id": "novoclave", "name": "Büchiglas Novoclave high-pressure reactor", "short": "Büchiglas Novoclave", "desc": "600 mL vessel for water or solid samples, up to 500 bar." },
+          { "id": "rdr", "name": "Rotating disk reactors (×6)", "short": "Rotating disk reactors", "desc": "Stirred or rotating-disk reactors that reproduce benthic hydrodynamics, with chemical monitoring." },
+          { "id": "nanoresp", "name": "Unisense NanoRespiration system", "short": "Unisense NanoRespiration", "desc": "Incubation of microbes or plankton in very small volumes of water, followed with microsensors." },
+          { "id": "incubators", "name": "Friocell 111 EVO (×2) and Memmert incubators", "short": "Friocell & Memmert incubators", "desc": "Culture of microbes, plankton and other small organisms, and incubations, under controlled temperature and light." }
         ]
       },
       {
         "heading": "Microscopy",
         "items": [
-          { "name": "Zeiss Axiovert 5 inverted microscope", "desc": "Observation and imaging of living plankton and other immersed samples." },
-          { "name": "Zeiss Stemi 508 stereomicroscope", "desc": "Observation of samples and of microsensor tips." }
+          { "id": "axiovert", "name": "Zeiss Axiovert 5 inverted microscope", "short": "Zeiss Axiovert 5", "desc": "Observation and imaging of living plankton and other immersed samples." },
+          { "id": "stemi", "name": "Zeiss Stemi 508 stereomicroscope", "short": "Zeiss Stemi 508", "desc": "Observation of samples and of microsensor tips." }
         ]
       },
       {
         "heading": "Light and temperature",
         "items": [
-          { "name": "PAR sensor", "desc": "Light intensity and spectrum in cultures and incubations." },
-          { "name": "Julabo CORIO refrigerated circulator", "desc": "Heating or cooling of reactors and incubations." }
+          { "id": "par", "name": "PAR sensor", "desc": "Light intensity and spectrum in cultures and incubations." },
+          { "id": "corio", "name": "Julabo CORIO refrigerated circulator", "short": "Julabo CORIO circulator", "desc": "Heating or cooling of reactors and incubations." }
         ]
       },
       {
         "heading": "Sample preparation and storage",
         "items": [
-          { "name": "Henniker HPT-100 plasma cleaner", "desc": "Removal of organic matter from samples." },
-          { "name": "−80 °C freezer", "desc": "Long-term sample storage." },
-          { "name": "Laboratory refrigerator", "desc": "Sample storage." }
+          { "id": "plasma", "name": "Henniker HPT-100 plasma cleaner", "short": "Henniker HPT-100", "desc": "Removal of organic matter from samples." },
+          { "id": "freezer", "name": "−80 °C freezer", "desc": "Long-term sample storage." },
+          { "id": "fridge", "name": "Laboratory refrigerator", "desc": "Sample storage." }
         ]
       },
       {
@@ -196,8 +215,8 @@
         "note": "Built for <a href=\"projects/deep-c.html\">Deep-C</a> and used only for that project; not available for other projects or for service work.",
         "reserved": true,
         "items": [
-          { "name": "High-pressure reactors", "desc": "Abyssal to hadal pressures (up to 1000 bar), temperature-controlled, with water sampling under pressure." },
-          { "name": "Oxygen and pH meters", "desc": "Oxygen and pH monitoring in the high-pressure reactors." }
+          { "id": "deepc-reactors", "name": "High-pressure reactors", "desc": "Abyssal to hadal pressures (up to 1000 bar), temperature-controlled, with water sampling under pressure." },
+          { "id": "deepc-meters", "name": "Oxygen and pH meters", "desc": "Oxygen and pH monitoring in the high-pressure reactors." }
         ]
       }
     ]

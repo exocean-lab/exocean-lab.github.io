@@ -89,11 +89,17 @@ of the `items` list. Give it a `"date"` as `"YYYY-MM"`; it is shown as
 `"completed": true` to get the *Completed* tag.
 
 **An instrument or a service** — open `content/site.json` and find `"services"`.
-Each analysis offered is a block in `"offers"` (title, text, and the
-instruments it uses in `"kit"`); each instrument is a line in one of the
-`"groups"`. The last group is marked `"reserved": true` (grey box) for
+Each instrument is a line in one of the `"groups"`, with a short `"id"`
+(e.g. `"cary60"`) and optionally a `"short"` name for its tag. Each service
+sits in one of the three `"themes"`: a title, a text, and in `"kit"` the ids
+of the instruments it uses — they become small tags that jump to the
+instrument's line. The last group is marked `"reserved": true` (grey box) for
 equipment that is not available to outside users. This page is public: keep
 prices, purchase dates and funding sources out of it — quotes go by e-mail.
+
+The stylesheet link carries a version tag (`style.css?v=…`) that `build.py`
+derives from the file's content, so after a design change browsers fetch the
+new stylesheet instead of reusing a cached one.
 
 HTML is allowed inside any text field (`<strong>`, `<em>`, `<a href="…">`),
 which is how the bold phrases and inline links are done.

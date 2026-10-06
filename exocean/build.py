@@ -18,6 +18,7 @@ the Publications page and the Bluesky strip simply say so.
 
 from __future__ import annotations
 
+import hashlib
 import json
 import pathlib
 import re
@@ -44,6 +45,18 @@ PROJECTS = load("projects")
 NEWS = load("news")
 PUBLICATIONS = load("publications", optional=True)
 BLUESKY = load("bluesky", optional=True)
+
+def _version(path: str) -> str:
+    """Short content hash of an asset, appended as ?v=… to its URL: when the file
+    changes, the URL changes, so browsers cannot keep using a stale cached copy."""
+    try:
+        return hashlib.sha1((ROOT / path).read_bytes()).hexdigest()[:8]
+    except OSError:
+        return ""
+
+
+CSS_V = _version("assets/css/style.css")
+JS_V = _version("assets/js/main.js")
 
 ALL_MEMBERS = {m["slug"]: m for g in TEAM["groups"] for m in g.get("members", [])}
 
@@ -160,7 +173,7 @@ def head(depth: int, title: str, description: str, active: str, path: str = "") 
 <meta name="theme-color" content="#0a0e1a">
 <link rel="icon" href="{asset(depth, 'favicon.png')}">
 <link rel="apple-touch-icon" href="{asset(depth, 'favicon.png')}">
-<link rel="stylesheet" href="{rel(depth, 'assets/css/style.css')}">
+<link rel="stylesheet" href="{rel(depth, 'assets/css/style.css')}?v={CSS_V}">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -207,7 +220,7 @@ def foot(depth: int) -> str:
   </footer>
 
 </div>
-<script src="{rel(depth, 'assets/js/main.js')}"></script>
+<script src="{rel(depth, 'assets/js/main.js')}?v={JS_V}"></script>
 {analytics()}</body>
 </html>
 """
@@ -389,14 +402,35 @@ def build_expertise() -> None:
 
 
 def build_services() -> None:
-    """Services & Instruments page: what the lab runs for partners, then the
-    instrument list by type (all text in the "services" block of site.json).
+    """Services & Instruments page: what the lab runs for partners, grouped in
+    themes, then the instrument list by type (all text in the "services" block
+    of site.json). Each service names its instruments by "id"; they appear as
+    small tags that jump to the instrument's line further down.
     Prices, purchase dates and funding sources are deliberately not kept there."""
     s = SITE.get("services")
     if not s:
         return
     d = 0
     user, domain = SITE["email"].split("@")
+
+    instruments = {i["id"]: i for g in s.get("groups", []) for i in g["items"] if i.get("id")}
+
+    def pill(ref: str) -> str:
+        inst = instruments.get(ref)
+        if not inst:                      # a typo in site.json must not break the build
+            print(f"  warning: services kit names unknown instrument '{ref}'")
+            return f"<li><span>{escape(ref)}</span></li>"
+        label = inst.get("short") or inst["name"]
+        return f'<li><a href="#i-{escape(ref)}">{escape(label)}</a></li>'
+
+    hero = ""
+    if s.get("hero"):
+        credit = f'<span class="credit">{escape(s["hero_credit"])}</span>' if s.get("hero_credit") else ""
+        hero = f"""        <figure>
+          <img src="{asset(d, s['hero'])}" alt="{escape(s.get('hero_alt', ''))}" width="1400" height="788">
+          <figcaption>{escape(s.get('hero_caption', ''))}{credit}</figcaption>
+        </figure>"""
+
     intro = "\n".join(f"        <p>{p}</p>" for p in s.get("intro", []))
 
     request = ""
@@ -408,19 +442,29 @@ def build_services() -> None:
           <p>{text}</p>
         </div>"""
 
-    offers = "\n".join(
-        f"""          <article class="offer">
-            <h3>{escape(o['title'])}</h3>
-            <p>{o['body']}</p>
-            {f'<p class="kit"><span class="visually-hidden">Instruments: </span>{escape(o["kit"])}</p>' if o.get('kit') else ''}
-          </article>"""
-        for o in s.get("offers", [])
-    )
+    themes = s.get("themes") or [{"title": "", "offers": s.get("offers", [])}]
+    theme_html = []
+    for t in themes:
+        items = []
+        for o in t["offers"]:
+            kit = o.get("kit") or []
+            pills = (f'\n              <ul class="pills" aria-label="Instruments">{"".join(pill(k) for k in kit)}</ul>'
+                     if kit else "")
+            items.append(f"""            <li class="svc">
+              <h4>{escape(o['title'])}</h4>
+              <p>{o['body']}</p>{pills}
+            </li>""")
+        heading = f"\n          <h3>{escape(t['title'])}</h3>" if t.get("title") else ""
+        theme_html.append(f"""        <section class="theme">{heading}
+          <ul class="svc-list">
+{chr(10).join(items)}
+          </ul>
+        </section>""")
 
     groups = []
     for g in s.get("groups", []):
         rows = "\n".join(
-            f"""            <div class="inst"><dt>{escape(i['name'])}</dt><dd>{i['desc']}</dd></div>"""
+            f"""            <div class="inst"{f' id="i-{escape(i["id"])}"' if i.get("id") else ""}><dt>{escape(i['name'])}</dt><dd>{i['desc']}</dd></div>"""
             for i in g["items"]
         )
         note = f'\n          <p class="note">{g["note"]}</p>' if g.get("note") else ""
@@ -437,16 +481,17 @@ def build_services() -> None:
         <h1>{escape(s['title'])}</h1>
         <p class="lede">{escape(s['lede'])}</p>
         <hr class="rule">
+{hero}
 {intro}
-        <p class="jump">On this page: <a href="#offers">{escape(s['offers_title'])}</a> · <a href="#instruments">{escape(s['instruments_title'])}</a></p>
 {request}
+        <p class="jump">On this page: <a href="#offers">{escape(s['offers_title'])}</a> · <a href="#instruments">{escape(s['instruments_title'])}</a></p>
 
         <h2 id="offers">{escape(s['offers_title'])}</h2>
-        <div class="offers">
-{offers}
-        </div>
+        <hr class="rule short">
+{chr(10).join(theme_html)}
 
         <h2 id="instruments">{escape(s['instruments_title'])}</h2>
+        <hr class="rule short">
         <p>{escape(s.get('instruments_intro', ''))}</p>
 {chr(10).join(groups)}
 
