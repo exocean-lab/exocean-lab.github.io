@@ -64,7 +64,7 @@ def fetch(ids: list[str]) -> list[dict]:
         "wt": "json",
     }
     url = HAL_API + "?" + urllib.parse.urlencode(query)
-    req = urllib.request.Request(url, headers={"User-Agent": "exocean-website (https://github.com/osulpis/exocean)"})
+    req = urllib.request.Request(url, headers={"User-Agent": "exocean-website (https://github.com/exocean-lab/exocean-lab.github.io)"})
     with urllib.request.urlopen(req, timeout=60) as resp:
         data = json.load(resp)
     return data["response"]["docs"]

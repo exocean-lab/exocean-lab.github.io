@@ -2,7 +2,7 @@
   "name": "exocean",
   "tagline": "Experimental Oceanology Laboratory",
   "description": "exocean is an experimental oceanology laboratory at CEREGE, Aix-en-Provence, founded by CNRS scientists studying the ocean's role in the global carbon cycle.",
-  "baseurl": "https://osulpis.github.io/exocean",
+  "baseurl": "https://exocean-lab.github.io",
   "goatcounter": "",
   "email": "exocean@cerege.fr",
   "bluesky": "https://bsky.app/profile/exoceanlab.bsky.social",

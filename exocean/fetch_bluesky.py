@@ -69,7 +69,7 @@ def render(record: dict) -> str:
 
 def fetch(handle: str) -> list[dict]:
     query = urllib.parse.urlencode({"actor": handle, "limit": LOOKBACK, "filter": "posts_no_replies"})
-    req = urllib.request.Request(API + "?" + query, headers={"User-Agent": "exocean-website (https://github.com/osulpis/exocean)"})
+    req = urllib.request.Request(API + "?" + query, headers={"User-Agent": "exocean-website (https://github.com/exocean-lab/exocean-lab.github.io)"})
     with urllib.request.urlopen(req, timeout=60) as resp:
         feed = json.load(resp).get("feed", [])
     posts = []

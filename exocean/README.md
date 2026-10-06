@@ -3,7 +3,10 @@
 The website of **exocean**, the Experimental Oceanology Laboratory at CEREGE,
 Aix-en-Provence. Plain static HTML, no paid hosting, no subscription.
 
-**Live site:** https://osulpis.github.io/exocean/
+**Live site:** https://exocean-lab.github.io/  
+**Repository:** https://github.com/exocean-lab/exocean-lab.github.io (organisation
+`exocean-lab`; moved from `osulpis/exocean` on 6 October 2026 — the old
+address osulpis.github.io/exocean forwards here)
 
 ---
 
