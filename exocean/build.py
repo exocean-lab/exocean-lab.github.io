@@ -626,7 +626,8 @@ def page_head(title: str, lede: str = "", kicker: str = "", extra: str = "", wid
 
 
 NOWRAP = ("Skłodowska-Curie", "Suárez-Ibarra", "Aix-en-Provence", "Garidel-Thoron", "Wall-Palmer",
-          "HPT-100", "LA-ICP-MS", "ICP-MS", "ICP-OES", "Deep-C", "eCO₂-MorpH", "e-mail")
+          "HPT-100", "LA-ICP-MS", "MC-ICP-MS", "ICP-MS", "ICP-OES", "Deep-C", "eCO₂-MorpH", "e-mail",
+          "U–Th", "U–Pb", "ISO 5")
 _NOWRAP_RE = re.compile("|".join(re.escape(x) for x in sorted(NOWRAP, key=len, reverse=True)))
 _UNIT_RE = re.compile(r"(\d) (mL|µL|L|m|km|mm|µm|cm|bar|°C|K|%|kg|g|h|min|ans|years|Ma|ka)(?=[\s.,;:)!?/]|$)")
 _FR_PUNCT_RE = re.compile(r" ([:;!?»])")

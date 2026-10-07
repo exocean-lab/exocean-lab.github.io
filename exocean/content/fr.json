@@ -316,10 +316,10 @@
           "desc": "δ¹⁸O et δ¹³C des carbonates, isotopes agrégés (Δ<sub>47</sub>, Δ<sub>48</sub>), δ¹⁸O, δ¹⁷O et δD de l'eau, et δ¹⁵N, δ¹³C et δD des composés organiques. Ouverte aux collaborations académiques et aux prestations."
         },
         {
-          "what": "Chimie élémentaire",
-          "name": "LA-ICP-MS",
-          "url": "https://www.cerege.fr/equipements/poles-techniques/chimie-elementaire-la-icp-ms/",
-          "desc": "Environ 90 % du tableau périodique en solution par ICP-OES ou ICP-MS, et ablation laser des solides pour des cartes élémentaires semi-quantitatives. Ouverte aux utilisateurs publics et privés."
+          "what": "Chimie élémentaire et isotopes radiogéniques",
+          "name": "ENVITOP",
+          "url": "https://www.cerege.fr/fr/equipements/poles-techniques/isotopes-radiogeniques-et-non-conventionnels-envitop/",
+          "desc": "Éléments en solution et dans les solides par ICP-MS à haute résolution, avec ablation laser pour les analyses in situ, et ions majeurs par chromatographie ionique. Isotopes radiogéniques et non conventionnels (Sr, Nd, Pb, Fe, Si, Cd…) par MC-ICP-MS et TIMS, dont la datation U–Th et U–Pb, avec une salle blanche ISO 5. Analyses isotopiques pour les organismes de recherche."
         },
         {
           "what": "Radiocarbone, biomarqueurs et géochimie des sédiments",

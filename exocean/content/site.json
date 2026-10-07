@@ -470,10 +470,10 @@
           "desc": "δ¹⁸O and δ¹³C of carbonates, clumped isotopes (Δ<sub>47</sub>, Δ<sub>48</sub>), δ¹⁸O, δ¹⁷O and δD of water, and δ¹⁵N, δ¹³C and δD of organic compounds. Open to academic collaborations and services."
         },
         {
-          "what": "Elemental chemistry",
-          "name": "LA-ICP-MS",
-          "url": "https://www.cerege.fr/en/equipment/technical-clusters/chemistry-elementary-the-icp-ms/",
-          "desc": "About 90% of the periodic table in solution by ICP-OES or ICP-MS, and laser ablation of solids for semi-quantitative elemental maps. Open to public and private users."
+          "what": "Elemental chemistry and radiogenic isotopes",
+          "name": "ENVITOP",
+          "url": "https://www.cerege.fr/en/equipment/technical-clusters/isotopes-radiogenic-and-unconventional-envitop/",
+          "desc": "Elements in solutions and solids by high-resolution ICP-MS, with laser ablation for in situ analyses, and major ions by ion chromatography. Radiogenic and non-traditional isotopes (Sr, Nd, Pb, Fe, Si, Cd…) by MC-ICP-MS and TIMS, including U–Th and U–Pb dating, with an ISO 5 clean room. Isotope analyses for research organisations."
         },
         {
           "what": "Radiocarbon, biomarkers and sediment geochemistry",
