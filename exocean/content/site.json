@@ -3,7 +3,7 @@
   "tagline": "Experimental Oceanology Laboratory",
   "description": "exocean is the experimental oceanology laboratory of CEREGE in Aix-en-Provence: plankton cultures, seafloor and high-pressure experiments, and past-climate geochemistry to understand the ocean carbon cycle.",
   "baseurl": "https://exocean-lab.github.io",
-  "goatcounter": "",
+  "goatcounter": "exocean-lab",
   "google_site_verification": "",
   "bing_site_verification": "",
   "email": "exocean@cerege.fr",
