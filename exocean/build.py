@@ -353,8 +353,16 @@ def picture(depth: int, filename: str, alt: str, sizes: str = "100vw", cls: str 
 # --------------------------------------------------------------------------
 
 def jsonld_org() -> str:
+    """Home page: who the lab is (ResearchOrganization) and the site's own name
+    (WebSite), which Google shows above its results."""
+    website = {
+        "@type": "WebSite",
+        "name": SITE["name"],
+        "alternateName": [f'{SITE["name"]} — {SITE["tagline"]}', "exocean lab"],
+        "url": absurl(""),
+        "inLanguage": ["en", "fr"],
+    }
     data = {
-        "@context": "https://schema.org",
         "@type": "ResearchOrganization",
         "name": SITE["name"],
         "alternateName": SITE["tagline"],
@@ -374,6 +382,60 @@ def jsonld_org() -> str:
     if SITE.get("geo"):
         data["location"] = {"@type": "Place", "geo": {"@type": "GeoCoordinates",
                                                        "latitude": SITE["geo"]["lat"], "longitude": SITE["geo"]["lon"]}}
+    data["member"] = [{"@type": "Person", "name": m["name"], "url": absurl(f"people/{s}.html")}
+                      for s, m in ALL_MEMBERS.items() if m.get("bio")]
+    return json.dumps({"@context": "https://schema.org", "@graph": [website, data]}, ensure_ascii=False)
+
+
+LAB_REF = {"@type": "ResearchOrganization", "name": "exocean", "url": "", "parentOrganization": {"@type": "ResearchOrganization", "name": "CEREGE", "url": "https://www.cerege.fr/"}}
+
+
+def jsonld_person(m: dict) -> str:
+    """A person page: name, position, the lab, photo and their other profiles
+    (ORCID, Google Scholar…), so search engines connect them to the lab."""
+    same = []
+    if m.get("orcid"):
+        same.append(f"https://orcid.org/{m['orcid']}")
+    if m.get("idhal"):
+        same.append(f"https://hal.science/search/index/?q=*&authIdHal_s={m['idhal']}")
+    same += [l["url"] for l in m.get("links", []) if l.get("url", "").startswith("http")]
+    lab = dict(LAB_REF, url=absurl(""))
+    data = {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": m["name"],
+        "jobTitle": m.get("position") or m.get("affiliation", ""),
+        "description": m.get("focus", ""),
+        "url": absurl(f"people/{m['slug']}.html"),
+        "worksFor": lab,
+        "affiliation": lab,
+        "sameAs": same,
+    }
+    if m.get("photo"):
+        data["image"] = absurl("assets/img/" + img_name(m["photo"]))
+    return json.dumps(data, ensure_ascii=False)
+
+
+def jsonld_project(p: dict) -> str:
+    years = re.findall(r"\d{4}", p.get("years", ""))
+    members = [x for x in [p.get("lead"), p.get("colead")] + list(p.get("participants") or []) if x]
+    data = {
+        "@context": "https://schema.org",
+        "@type": "ResearchProject",
+        "name": p["name"],
+        "alternateName": p.get("subtitle", ""),
+        "description": plain(" ".join(p.get("intro", [])))[:600],
+        "url": absurl(f"projects/{p['slug']}.html"),
+        "parentOrganization": dict(LAB_REF, url=absurl("")),
+        "member": [{"@type": "Person", "name": x["name"],
+                    **({"url": absurl(f"people/{x['slug']}.html")} if x.get("slug") in ALL_MEMBERS else {})} for x in members],
+    }
+    if p.get("programme"):
+        data["funder"] = {"@type": "Organization", "name": p["programme"]}
+    if years:
+        data["foundingDate"] = years[0]
+        if len(years) > 1:
+            data["dissolutionDate"] = years[-1]
     return json.dumps(data, ensure_ascii=False)
 
 
@@ -441,6 +503,7 @@ def head(depth: int, title: str, description: str, active: str, path: str, *,
 <meta property="og:image" content="{escape(absurl('assets/img/' + share_file))}">
 {og_dims}<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0a0e1a">
+{verification()}
 <link rel="icon" href="{asset(depth, 'mark.svg')}" type="image/svg+xml">
 <link rel="icon" href="{asset(depth, 'favicon-48.png')}" sizes="48x48" type="image/png">
 <link rel="apple-touch-icon" href="{asset(depth, 'apple-touch-icon.png')}">
@@ -526,6 +589,17 @@ def foot(depth: int, lang: str = "en") -> str:
 {analytics()}</body>
 </html>
 """
+
+
+def verification() -> str:
+    """Ownership tags for Google Search Console and Bing Webmaster Tools, from
+    "google_site_verification" / "bing_site_verification" in site.json."""
+    out = []
+    if (SITE.get("google_site_verification") or "").strip():
+        out.append(f'<meta name="google-site-verification" content="{escape(SITE["google_site_verification"].strip())}">')
+    if (SITE.get("bing_site_verification") or "").strip():
+        out.append(f'<meta name="msvalidate.01" content="{escape(SITE["bing_site_verification"].strip())}">')
+    return "\n".join(out) + ("\n" if out else "")
 
 
 def analytics() -> str:
@@ -1129,7 +1203,8 @@ def build_project(p: dict) -> None:
   </section>
 """
     write(f"projects/{p['slug']}.html", d, p["name"], f"{p['name']}: {p['subtitle']}.", "projects.html", body,
-          image=p.get("hero_image") if p.get("hero_image", "").endswith((".jpg", ".png")) else None)
+          image=p.get("hero_image") if p.get("hero_image", "").endswith((".jpg", ".png")) else None,
+          jsonld=jsonld_project(p))
 
 
 def build_data() -> None:
@@ -1628,7 +1703,8 @@ def build_person(m: dict) -> None:
 """
     write(f"people/{m['slug']}.html", d, m["name"],
           f"{m['name']} — {m['affiliation']}. Member of the exocean laboratory at CEREGE.",
-          "team.html", body, image=m.get("photo") if (m.get("photo") or "").endswith((".jpg", ".png")) else None)
+          "team.html", body, image=m.get("photo") if (m.get("photo") or "").endswith((".jpg", ".png")) else None,
+          jsonld=jsonld_person(m))
 
 
 # -- publications -------------------------------------------------------------
@@ -1985,9 +2061,9 @@ def build_legal() -> None:
     if not L:
         return
     d = 0
-    stats_en = ("Visits are counted with GoatCounter, which sets no cookie and keeps no personal data."
+    stats_en = ("Visits are counted anonymously with GoatCounter (goatcounter.com), which sets no cookie and keeps no personal data."
                 if (SITE.get("goatcounter") or "").strip() else "No visitor statistics are collected.")
-    stats_fr = ("Les visites sont comptées avec GoatCounter, sans cookie ni donnée personnelle."
+    stats_fr = ("Les visites sont comptées de façon anonyme avec GoatCounter (goatcounter.com), sans cookie ni donnée personnelle."
                 if (SITE.get("goatcounter") or "").strip() else "Aucune statistique de visite n'est collectée.")
     email = lab_email()
     body = page_head(L["title"], escape(L["lede"])) + f"""
@@ -1999,7 +2075,7 @@ def build_legal() -> None:
       <h2>Hosting</h2>
       <p>{escape(L['host'])}.</p>
       <h2>Personal data and cookies</h2>
-      <p>This site sets no cookies, has no forms and collects no personal data. {stats_en} It loads no fonts, scripts or images from other websites; links to other sites (Bluesky, publishers, HAL…) lead to services with their own privacy policies. E-mail addresses are assembled in your browser so that robots cannot harvest them.</p>
+      <p>This site sets no cookies, has no forms and collects no personal data. {stats_en} {"Apart from that counting script, it" if (SITE.get("goatcounter") or "").strip() else "It"} loads no fonts, scripts or images from other websites; links to other sites (Bluesky, publishers, HAL…) lead to services with their own privacy policies. E-mail addresses are assembled in your browser so that robots cannot harvest them.</p>
       <h2>Credits</h2>
       <p>{escape(L['credits'])} The ocean cross-section is a drawing made for this site; it is not to scale.</p>
       <h2 id="accessibility">Accessibility</h2>
@@ -2013,7 +2089,7 @@ def build_legal() -> None:
         <p>Directeur de la publication : {escape(L['director'])}. Rédaction : {escape(L['editors'].replace(' and ', ' et '))}.</p>
         <p>Hébergement : GitHub Pages — GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis.</p>
         <h2>Données personnelles et cookies</h2>
-        <p>Ce site ne dépose aucun cookie, ne comporte aucun formulaire et ne collecte aucune donnée personnelle. {stats_fr} Il ne charge ni police, ni script, ni image depuis d'autres sites ; les liens externes (Bluesky, éditeurs, HAL…) mènent vers des services qui ont leur propre politique de confidentialité.</p>
+        <p>Ce site ne dépose aucun cookie, ne comporte aucun formulaire et ne collecte aucune donnée personnelle. {stats_fr} {"Hormis ce script de comptage, il" if (SITE.get("goatcounter") or "").strip() else "Il"} ne charge ni police, ni script, ni image depuis d'autres sites ; les liens externes (Bluesky, éditeurs, HAL…) mènent vers des services qui ont leur propre politique de confidentialité.</p>
         <h2 id="accessibilite">Accessibilité</h2>
         <p><strong>Accessibilité : {escape(L['status_fr'])}.</strong> Ce site n'a pas encore fait l'objet d'un audit de conformité au RGAA. Si vous ne pouvez pas accéder à un contenu, écrivez-nous à {email} : nous vous le transmettrons sous une autre forme. Sans réponse satisfaisante de notre part, vous pouvez saisir le <a href="https://www.defenseurdesdroits.fr/">Défenseur des droits</a>.</p>
       </div>

@@ -171,11 +171,34 @@ in the browser, so address harvesters don't pick them up.
 
 ## Visitor statistics (optional)
 
-The site is ready for [GoatCounter](https://www.goatcounter.com) — free,
-no cookies, no consent banner. Create an account there, pick a site code
-(say `exocean`), put it in `"goatcounter"` in `content/site.json`, and the
-counting script is added to every page at the next build (the legal notice
-updates itself). Leave it empty and nothing is loaded.
+The site is ready for [GoatCounter](https://www.goatcounter.com) — free for a
+site like this, no cookies, no consent banner. Create an account there, pick a
+site code (say `exocean`), put it in `"goatcounter"` in `content/site.json`,
+and the counting script is added to every page at the next build (the legal
+notice updates itself). Leave it empty and nothing is loaded.
+
+Besides visits per page, countries, where visitors came from (Google,
+Bluesky, CEREGE…) and devices, the site then counts a few clicks as
+*events*: `email-<name>` when someone clicks an e-mail address,
+`download-exocean-services.pdf` for the one-page summary, and
+`out-<site>` for links to other sites (e.g. `out-zenodo.org`,
+`out-github.com`), each with the page it was clicked on.
+
+---
+
+## Search engines
+
+- **Google Search Console** (https://search.google.com/search-console): add a
+  *URL prefix* property for the site's address, choose the *HTML tag*
+  method, and put the code from the tag (the `content="…"` part) in
+  `"google_site_verification"` in `content/site.json`. Once verified, submit
+  `sitemap.xml` (Sitemaps → enter `sitemap.xml`).
+- **Bing Webmaster Tools** (https://www.bing.com/webmasters): sign in and
+  *import from Google Search Console* — no code needed. If you verify another
+  way, its code goes in `"bing_site_verification"`.
+- The pages carry structured data (schema.org): the lab and the site's name on
+  the home page, each person (with their ORCID and other profiles) and each
+  project.
 
 ---
 

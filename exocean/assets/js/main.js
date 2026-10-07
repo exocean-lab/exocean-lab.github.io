@@ -2,7 +2,10 @@
    1. E-mail addresses are assembled here, so they are not sitting in the
       markup for address harvesters.
    2. The menu button on phones.
-   3. The search box and person filter on the Publications page. */
+   3. The search box and person filter on the Publications page.
+   4. When visitor counting (GoatCounter) is switched on: count clicks on
+      e-mail addresses, PDF downloads and links to other sites, so the
+      statistics show who tried to get in touch and which resources are used. */
 (function () {
   "use strict";
 
@@ -82,4 +85,26 @@
     });
     apply();
   }
+
+  // --- visitor statistics: count a few meaningful clicks as events --------
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest ? e.target.closest("a[href]") : null;
+    if (!a || !window.goatcounter || !window.goatcounter.count) return;
+    var href = a.getAttribute("href") || "";
+    var name = null;
+    if (href.indexOf("mailto:") === 0) {
+      name = "email-" + href.slice(7).split("@")[0];
+    } else if (/\.pdf($|[?#])/i.test(href) && a.host === location.host) {
+      name = "download-" + href.split("/").pop().split(/[?#]/)[0];
+    } else if (a.host && a.host !== location.host) {
+      name = "out-" + a.host.replace(/^www\./, "");
+    }
+    if (!name) return;
+    window.goatcounter.count({
+      path: name,
+      title: (a.textContent || "").replace(/\s+/g, " ").trim().slice(0, 100),
+      referrer: location.pathname,
+      event: true
+    });
+  });
 })();
