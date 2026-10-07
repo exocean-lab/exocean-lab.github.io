@@ -188,11 +188,12 @@ Bluesky, CEREGE…) and devices, the site then counts a few clicks as
 
 ## Search engines
 
-- **Google Search Console** (https://search.google.com/search-console): add a
-  *URL prefix* property for the site's address, choose the *HTML tag*
-  method, and put the code from the tag (the `content="…"` part) in
-  `"google_site_verification"` in `content/site.json`. Once verified, submit
-  `sitemap.xml` (Sitemaps → enter `sitemap.xml`).
+- **Google Search Console** (https://search.google.com/search-console): the
+  site is verified with Google's file `google904f6ef6c92cc016.html`, which
+  sits next to `index.html`. **Keep it there** — Google checks it again from
+  time to time, and the site loses its verification if it disappears. (The
+  other method, an HTML tag, would go in `"google_site_verification"` in
+  `content/site.json`.) Submit `sitemap.xml` under Sitemaps.
 - **Bing Webmaster Tools** (https://www.bing.com/webmasters): sign in and
   *import from Google Search Console* — no code needed. If you verify another
   way, its code goes in `"bing_site_verification"`.
