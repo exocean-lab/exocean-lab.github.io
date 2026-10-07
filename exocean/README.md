@@ -194,9 +194,10 @@ Bluesky, CEREGE…) and devices, the site then counts a few clicks as
   time to time, and the site loses its verification if it disappears. (The
   other method, an HTML tag, would go in `"google_site_verification"` in
   `content/site.json`.) Submit `sitemap.xml` under Sitemaps.
-- **Bing Webmaster Tools** (https://www.bing.com/webmasters): sign in and
-  *import from Google Search Console* — no code needed. If you verify another
-  way, its code goes in `"bing_site_verification"`.
+- **Bing Webmaster Tools** (https://www.bing.com/webmasters): the site is
+  verified with Bing's file `BingSiteAuth.xml`, next to `index.html`. **Keep it
+  there** too. (The other methods: import from Google Search Console, or a
+  meta tag whose code would go in `"bing_site_verification"`.)
 - The pages carry structured data (schema.org): the lab and the site's name on
   the home page, each person (with their ORCID and other profiles) and each
   project.
