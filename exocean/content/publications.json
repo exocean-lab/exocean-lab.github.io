@@ -12,7 +12,7 @@
   "0000-0002-0720-2962",
   "0000-0002-1375-5774"
  ],
- "updated": "2026-10-06",
+ "updated": "2026-10-12",
  "count": 117,
  "items": [
   {
@@ -79,7 +79,7 @@
    "pdf": "https://hal.science/hal-05679852/document",
    "type": "ART",
    "volume": "14",
-   "pages": null,
+   "pages": "e21437",
    "projects": [
     "BIOINDIC-IA"
    ]
