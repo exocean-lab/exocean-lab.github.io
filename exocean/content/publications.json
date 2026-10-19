@@ -12,9 +12,65 @@
   "0000-0002-0720-2962",
   "0000-0002-1375-5774"
  ],
- "updated": "2026-10-12",
- "count": 117,
+ "updated": "2026-10-19",
+ "count": 124,
  "items": [
+  {
+   "hal": "hal-05804587",
+   "title": "Isotopic and microtextural signatures of Holocene foraminifera at a methane seepage site in the western South Atlantic",
+   "authors": [
+    "Alisson Martins",
+    "Jaime Suárez-Ibarra",
+    "Cristiane Frozza",
+    "Pâmela Palhano",
+    "Marlone H.H. Bom",
+    "Karlos G.D. Kochhann",
+    "João Saldanha",
+    "Ariano de Giovanni Rodrigues",
+    "Mírian L.A. F. Pacheco",
+    "Daniel Praeg",
+    "Adolpho Augustin",
+    "Adriano Viana",
+    "Dennis Miller",
+    "Marcelo Ketzer",
+    "Luiz Rodrigues",
+    "Maria A.G. Pivel"
+   ],
+   "journal": "Marine Geoscience and Energy Resources",
+   "year": 2027,
+   "date": "2027-01-01",
+   "doi": "10.1016/j.marger.2026.207888",
+   "pdf": null,
+   "type": "ART",
+   "volume": "195",
+   "pages": "207888",
+   "projects": [
+    "SEAGAS"
+   ]
+  },
+  {
+   "hal": "hal-05804289",
+   "title": "Habitat Contractions to Drive Future Planktonic Foraminifera Distribution and Diversity Change",
+   "authors": [
+    "Annabelle Gao",
+    "Sonia Chaabane",
+    "Gregory Beaugrand",
+    "Thibault De Garidel-Thoron",
+    "Thomas B Chalk",
+    "Ralf Schiebel",
+    "Julie Meilland",
+    "Olivier Sulpis"
+   ],
+   "journal": "Journal of Biogeography",
+   "year": 2026,
+   "date": "2026-10-01",
+   "doi": "10.1111/jbi.70376",
+   "pdf": "https://hal.science/hal-05804289/document",
+   "type": "ART",
+   "volume": "53",
+   "pages": "e70376",
+   "projects": []
+  },
   {
    "hal": "hal-05703400",
    "title": "Southern component water-driven carbonate dissolution and carbon storage during the Last Glacial Maximum in the western South Atlantic",
@@ -777,6 +833,27 @@
    "projects": [
     "ForCry"
    ]
+  },
+  {
+   "hal": "hal-05804592",
+   "title": "Where it's worth it: frequency and spatial distribution of bioerosional drill holes in planktonic foraminifera reveal different strategies in site selectivity",
+   "authors": [
+    "Cristiane Frozza",
+    "Jaime Suárez-Ibarra",
+    "Carla Bonetti",
+    "Matias Nascimento Ritter",
+    "João Coimbra",
+    "Maria Pivel"
+   ],
+   "journal": "Paleobiology",
+   "year": 2025,
+   "date": "2025-03-11",
+   "doi": "10.1017/pab.2024.48",
+   "pdf": null,
+   "type": "ART",
+   "volume": "50",
+   "pages": "592-607",
+   "projects": []
   },
   {
    "hal": "hal-05188398",
@@ -1822,6 +1899,27 @@
    "projects": []
   },
   {
+   "hal": "hal-05804593",
+   "title": "Calcium Carbonate Dissolution Triggered by High Productivity During the Last Glacial–Interglacial Interval in the Deep Western South Atlantic",
+   "authors": [
+    "Jaime Suárez-Ibarra",
+    "Cristiane Frozza",
+    "Pâmela Palhano",
+    "Sandro Petró",
+    "Manuel Weinkauf",
+    "Maria Pivel"
+   ],
+   "journal": "Frontiers in Earth Science",
+   "year": 2022,
+   "date": "2022-03-23",
+   "doi": "10.3389/feart.2022.830984",
+   "pdf": null,
+   "type": "ART",
+   "volume": "10",
+   "pages": null,
+   "projects": []
+  },
+  {
    "hal": "hal-04700529",
    "title": "RADIv1: a non-steady-state early diagenetic model for ocean sediments in Julia and MATLAB/GNU Octave",
    "authors": [
@@ -1927,6 +2025,27 @@
    "projects": []
   },
   {
+   "hal": "hal-05804598",
+   "title": "Time-spatial boundaries of bioecozonations (planktonic foraminifera) in the latest Quaternary: a case study from the western South Atlantic",
+   "authors": [
+    "Jaime Yesid Suárez-Ibarra",
+    "Sandro Monticelli Petró",
+    "Cristiane Fraga Frozza",
+    "Tiago Menezes Freire",
+    "Rodrigo da Costa Portilho-Ramos",
+    "María Alejandra Gómez Pivel"
+   ],
+   "journal": "Revue de Micropaléontologie",
+   "year": 2021,
+   "date": "2021-12-01",
+   "doi": "10.1016/j.revmic.2021.100554",
+   "pdf": null,
+   "type": "ART",
+   "volume": "73",
+   "pages": "100554",
+   "projects": []
+  },
+  {
    "hal": "hal-05158644",
    "title": "Population dynamics and reproduction strategies of planktonic foraminifera in the open ocean",
    "authors": [
@@ -2012,6 +2131,25 @@
    "projects": []
   },
   {
+   "hal": "hal-05804595",
+   "title": "FRAGMENT OR BROKEN? IMPROVING THE PLANKTONIC FORAMINIFERA FRAGMENTATION ASSESSMENT",
+   "authors": [
+    "Jaime Yesid Suárez-Ibarra",
+    "Cristiane Fraga Frozza",
+    "Sandro Monticelli Petró",
+    "Maria Alejandra Gómez Pivel"
+   ],
+   "journal": "Palaios",
+   "year": 2021,
+   "date": "2021-06-04",
+   "doi": "10.2110/palo.2020.062",
+   "pdf": null,
+   "type": "ART",
+   "volume": "36",
+   "pages": "165-172",
+   "projects": []
+  },
+  {
    "hal": "hal-05158576",
    "title": "Export flux succession of dinoflagellate cysts and planktonic foraminifera in an active upwelling cell off Cape Blanc (NW Africa)",
    "authors": [
@@ -2073,6 +2211,29 @@
    "type": "ART",
    "volume": "126",
    "pages": null,
+   "projects": []
+  },
+  {
+   "hal": "hal-05804594",
+   "title": "Quaternary proboscidean (Mammalia) remains of the UIS Geological Museum, Colombia",
+   "authors": [
+    "Jaime Yesid Suárez-Ibarra",
+    "Gina Cardoso",
+    "Lidiane Asevedo",
+    "Lucas de Melo França",
+    "Mário André Trindade Dantas",
+    "Luis Enrique Cruz-Guevara",
+    "Andrés Felipe Rojas-Mantilla",
+    "Ana Maria Ribeiro"
+   ],
+   "journal": "Revista Brasileira de Paleontologia",
+   "year": 2021,
+   "date": "2021-01-30",
+   "doi": "10.4072/rbp.2021.1.06",
+   "pdf": null,
+   "type": "ART",
+   "volume": "24",
+   "pages": "70-75",
    "projects": []
   },
   {
