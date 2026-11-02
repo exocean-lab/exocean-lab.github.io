@@ -12,8 +12,8 @@
   "0000-0002-0720-2962",
   "0000-0002-1375-5774"
  ],
- "updated": "2026-10-19",
- "count": 124,
+ "updated": "2026-11-02",
+ "count": 126,
  "items": [
   {
    "hal": "hal-05804587",
@@ -40,13 +40,35 @@
    "year": 2027,
    "date": "2027-01-01",
    "doi": "10.1016/j.marger.2026.207888",
-   "pdf": null,
+   "pdf": "https://hal.science/hal-05804587/document",
    "type": "ART",
    "volume": "195",
    "pages": "207888",
    "projects": [
     "SEAGAS"
    ]
+  },
+  {
+   "hal": "hal-05820504",
+   "title": "Rethinking ocean alkalinity enhancement",
+   "authors": [
+    "Lennart Bach",
+    "Dariia Atamanchuk",
+    "Damon Britton",
+    "Michael Fuhr",
+    "Astrid Hylén",
+    "Sara Nawaz",
+    "Tyler Rohr"
+   ],
+   "journal": "Nature Reviews Earth & Environment",
+   "year": 2026,
+   "date": "2026-10-06",
+   "doi": "10.1038/s43017-026-00828-5",
+   "pdf": null,
+   "type": "ART",
+   "volume": "7",
+   "pages": "725-742",
+   "projects": []
   },
   {
    "hal": "hal-05804289",
@@ -69,6 +91,28 @@
    "type": "ART",
    "volume": "53",
    "pages": "e70376",
+   "projects": []
+  },
+  {
+   "hal": "hal-05820512",
+   "title": "Balance Between Biomixing and Bioirrigation Behavior Controls Benthic Metal Efflux in Temperate Swedish Fjords",
+   "authors": [
+    "Cathrin Wittig",
+    "Martine Leermakers",
+    "Per O. J. Hall",
+    "Astrid Hylén",
+    "Mikhail Kononets",
+    "Ulrike Braeckman",
+    "Sebastiaan J van de Velde"
+   ],
+   "journal": "Journal of Geophysical Research: Biogeosciences",
+   "year": 2026,
+   "date": "2026-10-01",
+   "doi": "10.1029/2026jg010194",
+   "pdf": "https://hal.science/hal-05820512/document",
+   "type": "ART",
+   "volume": "131",
+   "pages": null,
    "projects": []
   },
   {
