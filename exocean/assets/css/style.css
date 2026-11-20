@@ -356,15 +356,19 @@ a.tile:hover, a.tile:focus-visible { text-decoration: none; color: inherit; bord
 .tile .icon { width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center; background: var(--orange-soft); color: var(--orange-dark); margin-bottom: .2rem; }
 .tile .icon svg { width: 24px; height: 24px; }
 
-/* --- home: founders, latest, where ----------------------------- */
+/* --- home: platform, latest, where ----------------------------- */
 .split { display: grid; gap: clamp(1.6rem, 4vw, 3.2rem); grid-template-columns: 1fr; align-items: start; }
 @media (min-width: 900px) { .split { grid-template-columns: 1.05fr 1fr; } .split.media-right > :first-child { order: 2; } }
-.founders-list { list-style: none; padding: 0; margin: 1.2rem 0 0; display: grid; gap: 1.1rem; }
-.founders-list li { padding-left: 1rem; border-left: 3px solid var(--orange); }
-.founders-list .who { display: block; font-weight: 700; font-size: 1.05rem; }
-.founders-list .who a { color: var(--ink); text-decoration: none; }
-.founders-list .who a:hover { color: var(--orange-dark); text-decoration: underline; }
-.founders-list p { margin: .2rem 0 0; color: var(--ink-soft); font-size: var(--step--1); line-height: 1.55; }
+.leads { list-style: none; padding: 0; margin: .4rem 0 0; display: grid; gap: .9rem; }
+.leads li { display: grid; grid-template-columns: 72px 1fr; gap: 1rem; align-items: center; }
+.leads .avatar { aspect-ratio: 1; border-radius: var(--radius); overflow: hidden; background: var(--canvas); }
+.leads .avatar img { width: 100%; height: 100%; object-fit: cover; }
+.leads span { display: block; }
+.leads .who { font-weight: 700; font-size: 1.05rem; line-height: 1.3; }
+.leads .who a { color: var(--ink); text-decoration: none; }
+.leads .who a:hover { color: var(--orange-dark); text-decoration: underline; }
+.leads .position { color: var(--ink-soft); font-size: var(--step--1); }
+.prole { font-size: .74rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--orange-dark); line-height: 1.3; margin-bottom: .15rem; }
 
 figure { margin: 0; }
 figure img { border-radius: var(--radius); width: 100%; }
@@ -453,6 +457,7 @@ a.person:hover { text-decoration: none; color: inherit; }
 a.person:hover .pname { color: var(--orange-dark); text-decoration: underline; }
 .person .position { display: block; font-size: var(--step--1); color: var(--ink-soft); margin-top: .15rem; line-height: 1.4; }
 .person .focus { display: block; font-size: var(--step--1); color: var(--ink-faint); margin-top: .3rem; line-height: 1.4; }
+.person .prole { display: block; }
 
 .collab-proj { margin-top: 1.5rem; }
 .collab-proj > h3 { margin: 0 0 .7rem; font-size: 1.02rem; font-weight: 700; color: var(--ink-faint); }
@@ -472,7 +477,6 @@ a.person:hover .pname { color: var(--orange-dark); text-decoration: underline; }
 .bio-head h1 { margin-bottom: .3rem; }
 .bio-head .position { color: var(--ink-soft); margin: 0; font-size: var(--step-1); }
 .bio-head .focus { color: var(--ink-faint); margin: .3rem 0 0; }
-.greeting { font-weight: 700; font-size: var(--step-1); color: var(--orange-dark); margin-bottom: .6rem; }
 .links-list { list-style: none; padding: 0; margin: .8rem 0 0; display: flex; flex-wrap: wrap; gap: .5rem; }
 .links-list a {
   display: inline-block; padding: .35rem .8rem;

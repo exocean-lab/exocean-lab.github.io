@@ -1,7 +1,7 @@
 {
   "name": "exocean",
-  "tagline": "Experimental Oceanology Laboratory",
-  "description": "exocean is the experimental oceanology laboratory of CEREGE in Aix-en-Provence: plankton cultures, seafloor and high-pressure experiments, and past-climate geochemistry to understand the ocean carbon cycle.",
+  "tagline": "Experimental Oceanology Platform",
+  "description": "exocean is the experimental oceanology platform of CEREGE in Aix-en-Provence: plankton cultures, sediment and high-pressure experiments, and seawater chemistry, for research on the ocean carbon cycle.",
   "baseurl": "https://exocean-lab.github.io",
   "goatcounter": "exocean-lab",
   "google_site_verification": "",
@@ -47,46 +47,31 @@
   ],
   "home": {
     "hero_title": "Bringing the ocean into the lab",
-    "hero_text": "exocean is the experimental oceanology laboratory of CEREGE, in Aix-en-Provence. We culture plankton, recreate seafloor currents and deep-sea pressures, and read past climates in fossil shells — to understand how the ocean stores carbon and regulates Earth's climate.",
+    "hero_text": "exocean is the experimental oceanology platform of CEREGE, in Aix-en-Provence. It offers plankton cultures, sediment and high-pressure experiments, and seawater chemistry analyses to CEREGE researchers and outside partners who study how the ocean stores carbon and regulates Earth's climate.",
     "hero_image": "hero-ocean.webp",
     "hero_buttons": [
       {
-        "label": "Our research",
-        "href": "projects.html",
+        "label": "Services and instruments",
+        "href": "services.html",
         "primary": true
       },
       {
-        "label": "Work with us",
-        "href": "services.html"
+        "label": "Research projects",
+        "href": "projects.html"
       },
       {
         "label": "Join us",
         "href": "join.html"
       }
     ],
-    "founders_title": "The founders",
-    "founders_intro": "exocean was founded by three CNRS researchers whose approaches bridge biology, geochemistry and sedimentary processes.",
-    "founders_photo": "founders.jpg",
-    "founders_alt": "Thomas Chalk, Olivier Sulpis and Julie Meilland standing in front of a CEREGE building",
-    "founders_caption": "Thomas B. Chalk, Olivier Sulpis and Julie Meilland, the founders of exocean, at CEREGE.",
-    "founders_credit": "Photo © Elodie Gazquez, 2025",
-    "founders": [
-      {
-        "slug": "thomas-chalk",
-        "name": "Thomas Chalk",
-        "blurb": "Resident geochemist and ERC awardee for the <strong>ForCry</strong> project, I am developing <strong>laser ablation techniques</strong> to analyse ever smaller samples. I specialise in the <strong>reconstruction of past ocean pH and CO₂ at high spatial and temporal scales</strong>."
-      },
-      {
-        "slug": "olivier-sulpis",
-        "name": "Olivier Sulpis",
-        "blurb": "Carbonate cycle expert and ERC grantee behind the <strong>Deep-C</strong> project, I explore <strong>deep-sea carbonate dissolution under high pressure</strong>, in the laboratory, to unveil how marine sediments act as a <strong>long-term CO₂ sink</strong> and contribute to Earth's climate regulation."
-      },
-      {
-        "slug": "julie-meilland",
-        "name": "Julie Meilland",
-        "blurb": "Specialist in <strong>planktonic foraminifera reproduction and in vitro culture</strong>. My work — ranging from culture experiments to field studies — helps clarify the <strong>living conditions and carbon export role</strong> of these key calcifying organisms, contributing essential knowledge on the <strong>biological carbon pump</strong>."
-      }
+    "platform_title": "The platform",
+    "platform_text": [
+      "exocean is one of CEREGE's technical platforms. Its incubators, reactors and analytical instruments are shared between research projects, students, visiting scientists and outside partners.",
+      "It has a scientific lead and a technical lead:"
     ],
+    "platform_photo": "deep-c-fig.jpg",
+    "platform_alt": "Two stainless-steel high-pressure reactors in their frame, with hoses and sensor cables",
+    "platform_caption": "High-pressure reactors of the Deep-C project, on the exocean platform.",
     "doors_title": "Work with us",
     "doors": [
       {
@@ -111,8 +96,8 @@
     "latest_title": "Latest news and papers",
     "where_title": "Where we are",
     "where": [
-      "We are based at <strong>CEREGE</strong>, the Centre for Research and Teaching in Environmental Geosciences — a joint research unit of Aix-Marseille Université, CNRS, IRD, INRAE and the Collège de France. Its main site is on the Arbois plateau between Aix-en-Provence and Marseille, with a second site on the Saint-Charles campus in central Marseille.",
-      "Within CEREGE, exocean is one of the laboratories of the Experimental Biophysics and Chemistry technical centre, next door to platforms for stable isotopes, elemental chemistry, radiocarbon and X-ray imaging — see <a href=\"services.html#cerege\">how it fits in</a> and <a href=\"contact.html#visit\">how to get here</a>."
+      "The platform is at <strong>CEREGE</strong>, the Centre for Research and Teaching in Environmental Geosciences — a joint research unit of Aix-Marseille Université, CNRS, IRD, INRAE and the Collège de France. Its main site is on the Arbois plateau between Aix-en-Provence and Marseille, with a second site on the Saint-Charles campus in central Marseille.",
+      "Within CEREGE, exocean belongs to the Experimental Biophysics and Chemistry technical centre, next door to the platforms for stable isotopes, elemental chemistry, radiocarbon and X-ray imaging — see <a href=\"services.html#cerege\">how it fits in</a> and <a href=\"contact.html#visit\">how to get here</a>."
     ],
     "where_photo": "cerege-aerial.jpg",
     "where_alt": "Aerial view of the CEREGE buildings among the pine woods of the Arbois plateau",
@@ -121,7 +106,7 @@
   },
   "data": {
     "title": "Data & Models",
-    "lede": "Models, datasets and tools we build and share — all open and free to use.",
+    "lede": "Models, datasets and tools shared by exocean — all open and free to use.",
     "intro": "Write to us if you use them, get stuck, or would like something that is not listed.",
     "sections": [
       {
@@ -302,17 +287,17 @@
         ]
       }
     ],
-    "outro": "All our articles, with open-access PDFs where they exist, are on the <a href=\"publications.html\">Publications</a> page."
+    "outro": "All articles, with open-access PDFs where they exist, are on the <a href=\"publications.html\">Publications</a> page."
   },
   "services": {
     "title": "Services & Instruments",
     "lede": "Analyses and experiments we run for partners, and the equipment behind them.",
     "hero": "news-julie.jpg",
-    "hero_alt": "Planktonic foraminifera under the microscope, and Julie Meilland at a culture incubator in the exocean laboratory",
-    "hero_caption": "Planktonic foraminifera under the microscope (top) and Julie Meilland preparing cultures in the exocean laboratory at CEREGE.",
+    "hero_alt": "Planktonic foraminifera under the microscope, and Julie Meilland at a culture incubator at the exocean platform",
+    "hero_caption": "Planktonic foraminifera under the microscope (top) and Julie Meilland preparing cultures at the exocean platform, CEREGE.",
     "hero_credit": "Photo © Elodie Gazquez, 2025",
     "intro": [
-      "Beyond our own research, we run measurements and experiments for <strong>academic and private partners</strong> — within a collaboration, or as a paid service. You can send us your samples, or come and work with us in the laboratory; visitors pay a small lab occupation fee.",
+      "Alongside the research projects it hosts, the platform runs measurements and experiments for <strong>academic and private partners</strong> — within a collaboration, or as a paid service. You can send us your samples, or come and work with us at the platform; visitors pay a small lab occupation fee.",
       "exocean is part of CEREGE's network of technical platforms, so a stay with us can be combined with analyses on <a href=\"#platforms\">other CEREGE platforms</a> — stable isotopes, elemental chemistry, X-ray imaging, micropalaeontology and more."
     ],
     "offers_title": "What we offer",
@@ -405,7 +390,7 @@
     "cerege": {
       "title": "exocean within CEREGE",
       "body": [
-        "CEREGE groups its analytical and experimental facilities by area of expertise into six <a href=\"https://www.cerege.fr/en/equipment/technical-clusters/\">technical centres</a>, each co-led by a technical and a scientific manager. exocean is one of the four laboratories of the <strong>Experimental Biophysics and Chemistry</strong> centre (technical manager Pierre Boutet, scientific manager Julie Meilland), together with the <a href=\"https://www.cerege.fr/en/equipment/technical-clusters/cirene/\">CIRENE</a> technology hall, the <a href=\"https://www.cerege.fr/en/equipment/technical-clusters/caracterisation-of-colloids/\">colloid characterisation</a> laboratory and the geomicrobiology laboratory."
+        "CEREGE groups its analytical and experimental facilities by area of expertise into six <a href=\"https://www.cerege.fr/en/equipment/technical-clusters/\">technical centres</a>, each co-led by a technical and a scientific manager. exocean is one of the four facilities of the <strong>Experimental Biophysics and Chemistry</strong> centre (technical manager Pierre Boutet, scientific manager Julie Meilland), together with the <a href=\"https://www.cerege.fr/en/equipment/technical-clusters/cirene/\">CIRENE</a> technology hall, the <a href=\"https://www.cerege.fr/en/equipment/technical-clusters/caracterisation-of-colloids/\">colloid characterisation</a> laboratory and the geomicrobiology laboratory. The exocean platform itself has a scientific lead, <a href=\"people/julie-meilland.html\">Julie Meilland</a>, and a technical lead, <a href=\"people/maxime-felix.html\">Maxime Felix</a>."
       ],
       "centres": [
         {
@@ -508,7 +493,7 @@
       ]
     },
     "instruments_title": "Our instruments",
-    "instruments_intro": "The equipment of the exocean laboratory at CEREGE, by type.",
+    "instruments_intro": "The platform's equipment, by type.",
     "groups": [
       {
         "heading": "Chemical analyses",
@@ -645,7 +630,7 @@
       },
       {
         "title": "Samples or a visit",
-        "text": "Send us your samples, or come and run the work with us in the laboratory. Visitors pay a small lab occupation fee."
+        "text": "Send us your samples, or come and run the work with us at the platform. Visitors pay a small lab occupation fee."
       },
       {
         "title": "Results",
@@ -654,7 +639,7 @@
     ],
     "visit_title": "Planning a visit",
     "visit": [
-      "The laboratory is at CEREGE, on the Arbois plateau near Aix-en-Provence — see <a href=\"contact.html#visit\">how to get here</a>. Tell us your dates early: instruments are shared between projects, and experiments can run for days or weeks.",
+      "The platform is at CEREGE, on the Arbois plateau near Aix-en-Provence — see <a href=\"contact.html#visit\">how to get here</a>. Tell us your dates early: instruments are shared between projects, and experiments can run for days or weeks.",
       "A stay with us can be combined with analyses on <a href=\"#platforms\">other CEREGE platforms</a>; each has its own access conditions."
     ],
     "sheet": {
@@ -666,13 +651,13 @@
     "title": "Contact",
     "lede": "Questions, collaborations, analyses or a visit — a short e-mail is all it takes.",
     "write_title": "Write to us",
-    "write_text": "One address for the whole lab:",
+    "write_text": "One address for the platform:",
     "bluesky_text": "News, papers and positions are also posted on <a href=\"https://bsky.app/profile/exoceanlab.bsky.social\">Bluesky</a>.",
     "topics_title": "Who to write to",
     "topics": [
       {
         "what": "Analyses, experiments and instrument use",
-        "who": "the lab",
+        "who": "the platform",
         "link": {
           "label": "Services",
           "href": "services.html"
@@ -690,7 +675,7 @@
       },
       {
         "what": "Internships, PhD and postdoctoral positions, fellowships",
-        "who": "the lab",
+        "who": "the platform",
         "link": {
           "label": "Join us",
           "href": "join.html"
@@ -698,7 +683,7 @@
       },
       {
         "what": "Press and media",
-        "who": "the lab"
+        "who": "the platform"
       }
     ],
     "visit_title": "Visit us",
@@ -718,21 +703,21 @@
       },
       {
         "title": "PhD and postdoctoral positions",
-        "body": "We recruit PhD students and postdocs on our funded projects; open positions are listed above. To introduce yourself, send a CV, a short statement of interests and the name of the team member whose work is closest to yours — the <a href=\"team.html\">People</a> page says what everyone works on."
+        "body": "The research projects linked to exocean recruit PhD students and postdocs; open positions are listed above. To introduce yourself, send a CV, a short statement of interests and the name of the person whose work is closest to yours — the <a href=\"team.html\">People</a> page says what everyone works on."
       },
       {
         "title": "Fellowships",
-        "body": "We are glad to hear from candidates who would like to prepare a fellowship application with us, such as a Marie Skłodowska-Curie Postdoctoral Fellowship. Two of our postdocs, Astrid Hylén and Jaime Suárez-Ibarra, hold Marie Skłodowska-Curie fellowships. Get in touch several months before the call deadline: a good application takes time."
+        "body": "We are glad to hear from candidates who would like to prepare a fellowship application with us, such as a Marie Skłodowska-Curie Postdoctoral Fellowship. Two postdocs who work at the platform, Astrid Hylén and Jaime Suárez-Ibarra, hold Marie Skłodowska-Curie fellowships. Get in touch several months before the call deadline: a good application takes time."
       },
       {
         "title": "Visiting scientists and facility access",
-        "body": "Colleagues who would like to run experiments with live planktonic foraminifera at COREFF, use our 500-bar reactor or the rotating disk reactors, or spend time in the laboratory can contact <a href=\"people/julie-meilland.html\">Julie Meilland</a> (cultures) or <a href=\"people/olivier-sulpis.html\">Olivier Sulpis</a> (reactors) directly; visitors pay a small lab occupation fee. Analyses we can run for you are listed on our <a href=\"services.html\">Services</a> page."
+        "body": "Colleagues who would like to run experiments with live planktonic foraminifera at COREFF, use our 500-bar reactor or the rotating disk reactors, or spend time at the platform can contact <a href=\"people/julie-meilland.html\">Julie Meilland</a> (cultures) or <a href=\"people/olivier-sulpis.html\">Olivier Sulpis</a> (reactors) directly; visitors pay a small lab occupation fee. Analyses we can run for you are listed on our <a href=\"services.html\">Services</a> page."
       }
     ],
     "apply_title": "How to apply",
     "apply": "Write to {email} with a CV and a few lines on what you would like to do. For an internship, say when and for how long.",
     "life_title": "Working with us",
-    "life": "Our researchers belong to CEREGE's Climate team, and the laboratory itself is one of CEREGE's technical platforms. CEREGE is on the Arbois plateau near Aix-en-Provence, with Marseille and the Mediterranean close by."
+    "life": "exocean is one of CEREGE's technical platforms, and the researchers who work there belong to CEREGE's Climate team. CEREGE is on the Arbois plateau near Aix-en-Provence, with Marseille and the Mediterranean close by."
   },
   "footer": {
     "partners_image": "partners-strip.png",
@@ -755,7 +740,7 @@
   },
   "research": {
     "column_title": "From surface to seafloor",
-    "column_text": "Our projects follow carbon from the plankton that build shells in the sunlit surface ocean, down through the water column to the deep seafloor, where those shells dissolve or are buried — and into the sediments that record past climates.",
+    "column_text": "The research projects linked to exocean follow carbon from the plankton that build shells in the sunlit surface ocean, down through the water column to the deep seafloor, where those shells dissolve or are buried — and into the sediments that record past climates.",
     "zones": [
       {
         "name": "Sunlit surface",
@@ -814,7 +799,7 @@
         "label": "left"
       }
     ],
-    "questions_title": "Our key questions, from the surface to the deep sea",
+    "questions_title": "Key questions, from the surface to the deep sea",
     "questions": [
       "What controls <strong>spatial variability</strong> in oceanic carbon fluxes?",
       "How are carbon fluxes impacted by <strong>calcifying plankton population dynamics</strong>?",
@@ -835,7 +820,7 @@
   },
   "publications": {
     "title": "Publications",
-    "lede": "Peer-reviewed papers by members of the lab.",
+    "lede": "Peer-reviewed papers by the people working at exocean.",
     "selected_title": "Selected papers",
     "selected": [
       "10.1038/s41586-024-08191-5",
@@ -852,11 +837,11 @@
   "legal": {
     "title": "Legal notice and accessibility",
     "lede": "Who publishes this site, what it does with your data, and how accessible it is.",
-    "publisher": "the exocean laboratory at CEREGE (Centre for Research and Teaching in Environmental Geosciences: Aix-Marseille Université, CNRS, IRD, INRAE, Collège de France), Technopôle de l'Environnement Arbois-Méditerranée, Avenue Louis Philibert, BP 80, 13545 Aix-en-Provence cedex 04, France",
+    "publisher": "the exocean platform at CEREGE (Centre for Research and Teaching in Environmental Geosciences: Aix-Marseille Université, CNRS, IRD, INRAE, Collège de France), Technopôle de l'Environnement Arbois-Méditerranée, Avenue Louis Philibert, BP 80, 13545 Aix-en-Provence cedex 04, France",
     "director": "Olivier Sulpis",
     "editors": "Thomas Chalk, Julie Meilland and Olivier Sulpis",
     "host": "GitHub Pages — GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA",
-    "credits": "Photographs © Elodie Gazquez (2025), © SEMEPA / CEREGE, © Jaime Suárez-Ibarra and the exocean team, as credited on each image. Logo: exocean. Typeface: Cabin (SIL Open Font License).",
+    "credits": "Photographs © Elodie Gazquez (2025), © SEMEPA / CEREGE, © Jaime Suárez-Ibarra and exocean, as credited on each image. Logo: exocean. Typeface: Cabin (SIL Open Font License).",
     "status": "not compliant",
     "status_fr": "non conforme"
   }

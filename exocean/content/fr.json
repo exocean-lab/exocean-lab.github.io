@@ -4,11 +4,11 @@
     "title": "Services et instruments",
     "lede": "Les analyses et expériences que nous réalisons pour nos partenaires, et les équipements qui les rendent possibles.",
     "hero": "news-julie.jpg",
-    "hero_alt": "Foraminifères planctoniques au microscope, et Julie Meilland devant un incubateur de culture au laboratoire exocean",
-    "hero_caption": "Foraminifères planctoniques au microscope (en haut) et Julie Meilland préparant des cultures au laboratoire exocean, au CEREGE.",
+    "hero_alt": "Foraminifères planctoniques au microscope, et Julie Meilland devant un incubateur de culture sur la plateforme exocean",
+    "hero_caption": "Foraminifères planctoniques au microscope (en haut) et Julie Meilland préparant des cultures sur la plateforme exocean, au CEREGE.",
     "hero_credit": "Photo © Elodie Gazquez, 2025",
     "intro": [
-      "Au-delà de nos propres recherches, nous réalisons des mesures et des expériences pour des <strong>partenaires académiques et privés</strong>, dans le cadre d'une collaboration ou d'une prestation payante. Vous pouvez nous envoyer vos échantillons, ou venir travailler avec nous au laboratoire ; les visiteurs versent une participation modeste aux frais de fonctionnement du laboratoire.",
+      "En plus des projets de recherche qu'elle accueille, la plateforme réalise des mesures et des expériences pour des <strong>partenaires académiques et privés</strong>, dans le cadre d'une collaboration ou d'une prestation payante. Vous pouvez nous envoyer vos échantillons, ou venir travailler avec nous sur la plateforme ; les visiteurs versent une participation modeste à ses frais de fonctionnement.",
       "exocean fait partie du réseau de plateformes techniques du CEREGE : un séjour chez nous peut se combiner avec des analyses sur <a href=\"#platforms\">d'autres plateformes du CEREGE</a> — isotopes stables, chimie élémentaire, imagerie par rayons X, micropaléontologie, etc."
     ],
     "how_title": "Comment procéder",
@@ -23,7 +23,7 @@
       },
       {
         "title": "Échantillons ou visite",
-        "text": "Envoyez-nous vos échantillons, ou venez réaliser le travail avec nous au laboratoire. Les visiteurs versent une participation modeste aux frais de fonctionnement du laboratoire."
+        "text": "Envoyez-nous vos échantillons, ou venez réaliser le travail avec nous sur la plateforme. Les visiteurs versent une participation modeste à ses frais de fonctionnement."
       },
       {
         "title": "Résultats",
@@ -118,7 +118,7 @@
       }
     ],
     "instruments_title": "Nos instruments",
-    "instruments_intro": "Les équipements du laboratoire exocean au CEREGE, par type.",
+    "instruments_intro": "Les équipements de la plateforme, par type.",
     "groups": [
       {
         "heading": "Analyses chimiques",
@@ -245,13 +245,13 @@
     ],
     "visit_title": "Préparer une visite",
     "visit": [
-      "Le laboratoire se trouve au CEREGE, sur le plateau de l'Arbois près d'Aix-en-Provence — voir <a href=\"contact.html#visit\">comment venir</a>. Indiquez-nous vos dates le plus tôt possible : les instruments sont partagés entre projets, et certaines expériences durent des jours, voire des semaines.",
+      "La plateforme se trouve au CEREGE, sur le plateau de l'Arbois près d'Aix-en-Provence — voir <a href=\"contact.html#visit\">comment venir</a>. Indiquez-nous vos dates le plus tôt possible : les instruments sont partagés entre projets, et certaines expériences durent des jours, voire des semaines.",
       "Un séjour chez nous peut se combiner avec des analyses sur <a href=\"#platforms\">d'autres plateformes du CEREGE</a>, chacune avec ses propres conditions d'accès."
     ],
     "cerege": {
       "title": "exocean au sein du CEREGE",
       "body": [
-        "Le CEREGE regroupe ses équipements analytiques et expérimentaux par domaine de compétence en six <a href=\"https://www.cerege.fr/fr/equipements/poles-techniques/\">pôles techniques</a>, chacun coanimé par un responsable technique et un responsable scientifique. exocean est l'un des quatre laboratoires du pôle <strong>Bio-physico-chimie expérimentale</strong> (responsable technique Pierre Boutet, responsable scientifique Julie Meilland), avec le Centre d'innovation et de recherche en environnement <a href=\"https://www.cerege.fr/equipements/poles-techniques/cirene/\">CIRENE</a>, le laboratoire de <a href=\"https://www.cerege.fr/equipements/poles-techniques/caracterisation-des-colloides/\">caractérisation des colloïdes</a> et le laboratoire de géomicrobiologie."
+        "Le CEREGE regroupe ses équipements analytiques et expérimentaux par domaine de compétence en six <a href=\"https://www.cerege.fr/fr/equipements/poles-techniques/\">pôles techniques</a>, chacun coanimé par un responsable technique et un responsable scientifique. exocean est l'une des quatre composantes du pôle <strong>Bio-physico-chimie expérimentale</strong> (responsable technique Pierre Boutet, responsable scientifique Julie Meilland), avec le Centre d'innovation et de recherche en environnement <a href=\"https://www.cerege.fr/equipements/poles-techniques/cirene/\">CIRENE</a>, le laboratoire de <a href=\"https://www.cerege.fr/equipements/poles-techniques/caracterisation-des-colloides/\">caractérisation des colloïdes</a> et le laboratoire de géomicrobiologie. La plateforme exocean a elle-même une responsable scientifique, <a href=\"people/julie-meilland.html\">Julie Meilland</a>, et un responsable technique, <a href=\"people/maxime-felix.html\">Maxime Felix</a>."
       ],
       "centres": [
         {
@@ -371,33 +371,33 @@
       },
       {
         "title": "Thèses et postdocs",
-        "body": "Nous recrutons des doctorantes, des doctorants et des postdocs sur nos projets financés ; les postes ouverts sont listés ci-dessus. Pour vous présenter, envoyez un CV, une courte présentation de vos thèmes de recherche et le nom de la personne de l'équipe dont les travaux sont les plus proches des vôtres — la page <a href=\"team.html\">Équipe</a> indique ce sur quoi chacun travaille."
+        "body": "Les projets de recherche liés à exocean recrutent des doctorantes, des doctorants et des postdocs ; les postes ouverts sont listés ci-dessus. Pour vous présenter, envoyez un CV, une courte présentation de vos thèmes de recherche et le nom de la personne dont les travaux sont les plus proches des vôtres — la page <a href=\"team.html\">Personnes</a> indique ce sur quoi chacun travaille."
       },
       {
         "title": "Bourses",
-        "body": "Nous échangeons volontiers avec les candidates et candidats qui souhaitent préparer avec nous une demande de bourse, par exemple une bourse postdoctorale Marie Skłodowska-Curie. Deux de nos postdocs, Astrid Hylén et Jaime Suárez-Ibarra, sont titulaires d'une bourse Marie Skłodowska-Curie. Contactez-nous plusieurs mois avant la date limite de l'appel : une bonne candidature prend du temps."
+        "body": "Nous échangeons volontiers avec les candidates et candidats qui souhaitent préparer avec nous une demande de bourse, par exemple une bourse postdoctorale Marie Skłodowska-Curie. Deux postdocs qui travaillent sur la plateforme, Astrid Hylén et Jaime Suárez-Ibarra, sont titulaires d'une bourse Marie Skłodowska-Curie. Contactez-nous plusieurs mois avant la date limite de l'appel : une bonne candidature prend du temps."
       },
       {
         "title": "Séjours scientifiques et accès aux équipements",
-        "body": "Les collègues qui souhaitent mener des expériences avec des foraminifères planctoniques vivants à COREFF, utiliser notre réacteur 500 bar ou les réacteurs à disque tournant, ou passer du temps au laboratoire peuvent contacter directement <a href=\"people/julie-meilland.html\">Julie Meilland</a> (cultures) ou <a href=\"people/olivier-sulpis.html\">Olivier Sulpis</a> (réacteurs) ; les visiteurs versent une participation modeste aux frais de fonctionnement du laboratoire. Les analyses que nous pouvons réaliser pour vous sont présentées sur notre page <a href=\"services.html\">Services</a>."
+        "body": "Les collègues qui souhaitent mener des expériences avec des foraminifères planctoniques vivants à COREFF, utiliser notre réacteur 500 bar ou les réacteurs à disque tournant, ou passer du temps sur la plateforme peuvent contacter directement <a href=\"people/julie-meilland.html\">Julie Meilland</a> (cultures) ou <a href=\"people/olivier-sulpis.html\">Olivier Sulpis</a> (réacteurs) ; les visiteurs versent une participation modeste aux frais de fonctionnement de la plateforme. Les analyses que nous pouvons réaliser pour vous sont présentées sur notre page <a href=\"services.html\">Services</a>."
       }
     ],
     "apply_title": "Candidater",
     "apply": "Écrivez à {email} avec un CV et quelques lignes sur ce que vous souhaitez faire. Pour un stage, précisez les dates et la durée.",
     "life_title": "Travailler avec nous",
-    "life": "Nos chercheuses et chercheurs font partie de l'équipe Climat du CEREGE, et le laboratoire lui-même est l'une des plateformes techniques du CEREGE. Le CEREGE est installé sur le plateau de l'Arbois, près d'Aix-en-Provence, à proximité de Marseille et de la Méditerranée."
+    "life": "exocean est l'une des plateformes techniques du CEREGE, et les chercheuses et chercheurs qui y travaillent font partie de l'équipe Climat du CEREGE. Le CEREGE est installé sur le plateau de l'Arbois, près d'Aix-en-Provence, à proximité de Marseille et de la Méditerranée."
   },
   "contact": {
     "title": "Contact",
     "lede": "Questions, collaborations, analyses ou visite : un court e-mail suffit.",
     "write_title": "Nous écrire",
-    "write_text": "Une seule adresse pour tout le laboratoire :",
+    "write_text": "Une seule adresse pour la plateforme :",
     "bluesky_text": "Actualités, publications et offres de postes sont aussi publiées sur <a href=\"https://bsky.app/profile/exoceanlab.bsky.social\">Bluesky</a>.",
     "topics_title": "À qui écrire",
     "topics": [
       {
         "what": "Analyses, expériences et accès aux instruments",
-        "who": "le laboratoire",
+        "who": "la plateforme",
         "link": {
           "label": "Services",
           "href": "services.html"
@@ -415,7 +415,7 @@
       },
       {
         "what": "Stages, thèses, postdocs et bourses",
-        "who": "le laboratoire",
+        "who": "la plateforme",
         "link": {
           "label": "Nous rejoindre",
           "href": "join.html"
@@ -423,10 +423,10 @@
       },
       {
         "what": "Presse et médias",
-        "who": "le laboratoire"
+        "who": "la plateforme"
       }
     ],
-    "visit_title": "Venir au laboratoire",
+    "visit_title": "Nous rendre visite",
     "visit_text": "Le CEREGE se trouve sur le plateau de l'Arbois, en dehors de la ville : à environ 15 à 20 minutes en voiture ou en taxi de la gare d'Aix-en-Provence TGV ou du centre d'Aix, et à environ 25 minutes de l'aéroport Marseille Provence. Écrivez-nous avant votre venue : nous vous enverrons les informations pratiques.",
     "post_title": "Adresse postale"
   }

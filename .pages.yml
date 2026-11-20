@@ -159,9 +159,9 @@ content:
               - { name: name, type: string, required: true }
               - { name: affiliation, label: Affiliation (long form), type: string, description: "e.g. CNRS Researcher at CEREGE, France" }
               - { name: position, label: Position, type: string, description: "e.g. PhD student" }
+              - { name: platform_role, label: Role on the platform, type: string, description: "Only for the platform's leads: Scientific lead or Technical lead. Shown on the home page, the People page and their own page." }
               - { name: focus, label: Research focus (one line), type: string }
               - { name: photo, type: image }
-              - { name: greeting, type: string, description: "e.g. Bonjour !" }
               - { name: bio, label: Biography, type: text, list: true, description: One paragraph per item. Leave empty for no personal page. }
               - { name: email_user, label: E-mail (part before @), type: string }
               - { name: email_domain, label: E-mail (part after @), type: string }

@@ -97,7 +97,7 @@ UI = {
         "skip": "Skip to content", "menu": "Menu", "home": "home",
         "nav": {}, "cta": None,
         "switch": "Français", "switch_title": "Version française de cette page",
-        "f_explore": "Explore", "f_lab": "The lab", "f_follow": "Follow",
+        "f_explore": "Explore", "f_lab": "The platform", "f_follow": "Follow",
         "f_legal": "Legal notice", "f_access": "Accessibility",
         "f_french": "En français", "f_french_pages": [("services.html", "Services"), ("join.html", "Nous rejoindre"), ("contact.html", "Contact")],
         "f_place": "CEREGE, Technopôle de l'Environnement Arbois-Méditerranée, Aix-en-Provence, France",
@@ -108,15 +108,15 @@ UI = {
     "fr": {
         "skip": "Aller au contenu", "menu": "Menu", "home": "accueil",
         "nav": {"projects.html": "Recherche", "services.html": "Services", "data.html": "Données et modèles",
-                "publications.html": "Publications", "team.html": "Équipe", "news.html": "Actualités",
+                "publications.html": "Publications", "team.html": "Personnes", "news.html": "Actualités",
                 "join.html": "Nous rejoindre"},
         "cta": "Contact",
         "switch": "English", "switch_title": "English version of this page",
-        "f_explore": "Explorer", "f_lab": "Le laboratoire", "f_follow": "Suivre",
+        "f_explore": "Explorer", "f_lab": "La plateforme", "f_follow": "Suivre",
         "f_legal": "Mentions légales", "f_access": "Accessibilité",
         "f_french": "In English", "f_french_pages": [("services.html", "Services"), ("join.html", "Join us"), ("contact.html", "Contact")],
         "f_place": "CEREGE, Technopôle de l'Environnement Arbois-Méditerranée, Aix-en-Provence, France",
-        "tagline": "Laboratoire d'océanologie expérimentale", "colon": " : ",
+        "tagline": "Plateforme d'océanologie expérimentale", "colon": " : ",
         "read_more": "Lire la suite", "all_news": "Toutes les actualités", "on_bluesky": "Sur Bluesky",
         "photos": "photos", "photo": "photo",
     },
@@ -353,12 +353,12 @@ def picture(depth: int, filename: str, alt: str, sizes: str = "100vw", cls: str 
 # --------------------------------------------------------------------------
 
 def jsonld_org() -> str:
-    """Home page: who the lab is (ResearchOrganization) and the site's own name
-    (WebSite), which Google shows above its results."""
+    """Home page: what exocean is (ResearchOrganization: a CEREGE platform) and
+    the site's own name (WebSite), which Google shows above its results."""
     website = {
         "@type": "WebSite",
         "name": SITE["name"],
-        "alternateName": [f'{SITE["name"]} — {SITE["tagline"]}', "exocean lab"],
+        "alternateName": [f'{SITE["name"]} — {SITE["tagline"]}', "exocean platform", "exocean lab"],
         "url": absurl(""),
         "inLanguage": ["en", "fr"],
     }
@@ -400,11 +400,14 @@ def jsonld_person(m: dict) -> str:
         same.append(f"https://hal.science/search/index/?q=*&authIdHal_s={m['idhal']}")
     same += [l["url"] for l in m.get("links", []) if l.get("url", "").startswith("http")]
     lab = dict(LAB_REF, url=absurl(""))
+    job = m.get("position") or m.get("affiliation", "")
+    if m.get("platform_role"):                  # e.g. ["CNRS researcher", "Scientific lead, exocean platform"]
+        job = [job, f'{m["platform_role"]}, exocean platform']
     data = {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": m["name"],
-        "jobTitle": m.get("position") or m.get("affiliation", ""),
+        "jobTitle": job,
         "description": m.get("focus", ""),
         "url": absurl(f"people/{m['slug']}.html"),
         "worksFor": lab,
@@ -456,7 +459,7 @@ def head(depth: int, title: str, description: str, active: str, path: str, *,
     if path == "index.html":
         full_title = f'{SITE["name"]} — {SITE["tagline"]}, CEREGE'
     elif lang == "fr":
-        full_title = f'{title} — laboratoire {SITE["name"]}'
+        full_title = f'{title} — plateforme {SITE["name"]}'
     else:
         full_title = f'{title} — {SITE["name"]}'
     items = []
@@ -960,9 +963,14 @@ def build_home() -> None:
         f'<a class="btn {"primary" if b.get("primary") else "ghost"}" href="{escape(b["href"])}">{escape(b["label"])}</a>'
         for b in h["hero_buttons"])
     hero_img = picture(d, h["hero_image"], "", sizes="100vw", lazy=False, priority=True)
-    founders = "\n".join(
-        f'          <li><span class="who">{person_link(d, f["slug"], f["name"])}</span><p>{f["blurb"]}</p></li>'
-        for f in h["founders"])
+    # the platform's leads: whoever has a platform_role in team.json, in that order
+    leads = "\n".join(
+        f'          <li>{avatar(d, m, "72px")}<div><span class="prole">{escape(m["platform_role"])}</span>'
+        f'<span class="who">{person_link(d, m["slug"])}</span>'
+        f'<span class="position">{escape(m.get("position") or m.get("affiliation", ""))}</span></div></li>'
+        for g in TEAM["groups"] for m in g.get("members", []) if m.get("platform_role"))
+    platform_credit = (f'<span class="credit">{escape(h["platform_credit"])}</span>'
+                       if h.get("platform_credit") else "")
     doors = "\n".join(
         f"""          <a class="tile" href="{escape(x['href'])}">
             <span class="icon">{ICONS[icon]}</span>
@@ -987,26 +995,26 @@ def build_home() -> None:
     <div class="wrap">
       <div class="section-head">
         <h2 id="column-title">{escape(R.get('column_title', 'From surface to seafloor'))}</h2>
-        <a class="more" href="projects.html">Our research</a>
+        <a class="more" href="projects.html">Research projects</a>
       </div>
       <p class="measure">{escape(R.get('column_text', ''))}</p>
 {ocean_block(d)}
     </div>
   </section>
 
-  <section class="band alt" aria-labelledby="founders-title">
+  <section class="band alt" aria-labelledby="platform-title">
     <div class="wrap split">
       <figure>
-        {picture(d, h['founders_photo'], h['founders_alt'], sizes="(max-width: 900px) 92vw, 560px")}
-        <figcaption>{escape(h['founders_caption'])}<span class="credit">{escape(h['founders_credit'])}</span></figcaption>
+        {picture(d, h['platform_photo'], h['platform_alt'], sizes="(max-width: 900px) 92vw, 560px")}
+        <figcaption>{escape(h['platform_caption'])}{platform_credit}</figcaption>
       </figure>
       <div>
-        <h2 id="founders-title" style="margin-top:0">{escape(h['founders_title'])}</h2>
-        <p>{escape(h['founders_intro'])}</p>
-        <ul class="founders-list">
-{founders}
+        <h2 id="platform-title" style="margin-top:0">{escape(h['platform_title'])}</h2>
+        {"".join(f"<p>{p}</p>" for p in h["platform_text"])}
+        <ul class="leads">
+{leads}
         </ul>
-        <div class="btn-row"><a class="btn" href="team.html">Meet the whole team</a></div>
+        <div class="btn-row"><a class="btn" href="team.html">All people</a></div>
       </div>
     </div>
   </section>
@@ -1081,7 +1089,7 @@ def build_research() -> None:
 
   <section class="band alt" aria-labelledby="questions-title">
     <div class="wrap">
-      <h2 id="questions-title">{escape(R.get('questions_title', 'Our key questions'))}</h2>
+      <h2 id="questions-title">{escape(R.get('questions_title', 'Key questions'))}</h2>
       <ol class="questions">{qs}</ol>
     </div>
   </section>
@@ -1098,7 +1106,7 @@ def build_research() -> None:
 """
     names = ", ".join(p["name"] for p in PROJECTS["projects"])
     write("projects.html", d, PROJECTS["title"],
-          f"The research of the exocean laboratory at CEREGE, from surface plankton to deep-sea sediments: {names}.",
+          f"Research projects linked to the exocean platform at CEREGE, from surface plankton to deep-sea sediments: {names}.",
           "projects.html", body)
     for p in PROJECTS["projects"]:
         build_project(p)
@@ -1223,7 +1231,7 @@ def build_data() -> None:
             if it.get("people"):
                 names = [person_link(d, slug) for slug in it["people"]]
                 joined = names[0] if len(names) == 1 else ", ".join(names[:-1]) + " and " + names[-1]
-                who = f'\n            <p class="res-who">From the team: {joined}</p>'
+                who = f'\n            <p class="res-who">People involved: {joined}</p>'
             rows = []
             for grp in it.get("links", []):
                 pills = "".join(f'<li><a href="{escape(l["url"])}">{escape(l["label"])}</a></li>' for l in grp["items"])
@@ -1254,7 +1262,7 @@ def build_data() -> None:
   </section>
 """
     write("data.html", d, D["title"],
-          "Models, datasets and tools shared by the exocean laboratory at CEREGE: the RADI sediment model, the FORCIS "
+          "Models, datasets and tools shared by exocean, the experimental oceanology platform of CEREGE: the RADI sediment model, the FORCIS "
           "planktonic foraminifera census, the Cenozoic CO2 synthesis and micro-CT images of foraminifera.",
           "data.html", body)
 
@@ -1293,10 +1301,10 @@ def services_block(lang: str) -> dict:
 SVC_UI = {
     "en": {"jump": "On this page", "platforms": "Other CEREGE platforms", "here": "exocean’s centre",
            "data_btn": "Data & models we share", "contact_btn": "Contact us", "centres_label": "CEREGE technical centres",
-           "inst_label": "Instruments", "desc": "Analyses and experiments the exocean laboratory at CEREGE runs for academic and private partners — carbonate chemistry, nutrients, microsensor profiling, cultures, high-pressure incubations — and its instruments."},
+           "inst_label": "Instruments", "desc": "Analyses and experiments the exocean platform at CEREGE runs for academic and private partners — carbonate chemistry, nutrients, microsensor profiling, cultures, high-pressure incubations — and its instruments."},
     "fr": {"jump": "Sur cette page", "platforms": "Autres plateformes du CEREGE", "here": "Le pôle d’exocean",
            "data_btn": "Données et modèles partagés", "contact_btn": "Nous contacter", "centres_label": "Pôles techniques du CEREGE",
-           "inst_label": "Instruments", "desc": "Analyses et expériences que le laboratoire exocean du CEREGE réalise pour des partenaires académiques et privés — chimie des carbonates, nutriments, profils par microcapteurs, cultures, incubations à haute pression — et ses instruments."},
+           "inst_label": "Instruments", "desc": "Analyses et expériences que la plateforme exocean du CEREGE réalise pour des partenaires académiques et privés — chimie des carbonates, nutriments, profils par microcapteurs, cultures, incubations à haute pression — et ses instruments."},
 }
 
 
@@ -1591,8 +1599,9 @@ def build_team() -> None:
         eager, first = first, False
         for m in g["members"]:
             focus = f'<span class="focus">{escape(m["focus"])}</span>' if m.get("focus") else ""
+            prole = f'<span class="prole">{escape(m["platform_role"])}</span>\n              ' if m.get("platform_role") else ""
             inner = f"""{avatar(d, m, "(max-width: 480px) 46vw, 220px", lazy=not eager)}
-              <span class="pname">{escape(m['name'])}</span>
+              {prole}<span class="pname">{escape(m['name'])}</span>
               <span class="position">{escape(m.get('position') or m['affiliation'])}</span>
               {focus}"""
             if m.get("bio"):
@@ -1615,13 +1624,13 @@ def build_team() -> None:
   <section class="band alt tight">
     <div class="wrap">
       <h2 style="margin-top:0">Want to work with us?</h2>
-      <p class="measure">Internships, PhD and postdoctoral positions, fellowships and visits: see how to join the lab.</p>
+      <p class="measure">Internships, PhD and postdoctoral positions, fellowships and visits: see how to come and work at the platform.</p>
       <div class="btn-row"><a class="btn primary" href="join.html">Join us</a><a class="btn" href="contact.html">Contact</a></div>
     </div>
   </section>
 """
     write("team.html", d, TEAM["title"],
-          "The founders, scientific team and collaborators of the exocean laboratory at CEREGE, Aix-en-Provence.",
+          "The scientific and technical leads, researchers, students and collaborators of the exocean platform at CEREGE, Aix-en-Provence.",
           "team.html", body)
 
     for g in TEAM["groups"]:
@@ -1647,7 +1656,6 @@ def member_papers(m: dict, n: int = 5) -> list[dict]:
 
 def build_person(m: dict) -> None:
     d = 1
-    greeting = f'<p class="greeting">{escape(m["greeting"])}</p>' if m.get("greeting") else ""
     paras = "\n".join(f"        <p>{escape(t)}</p>" for t in m["bio"])
     contact = ""
     if m.get("email_user"):
@@ -1673,14 +1681,16 @@ def build_person(m: dict) -> None:
         recent = f"""        <div class="side-block">
           <h2>Recent papers</h2>
 {paper_list(d, papers)}
-          <p style="margin-top:.8rem"><a href="{rel(d, 'publications.html')}">All the lab's publications</a></p>
+          <p style="margin-top:.8rem"><a href="{rel(d, 'publications.html')}">All publications</a></p>
         </div>"""
     focus = f'<p class="focus">{escape(m["focus"])}</p>' if m.get("focus") else ""
+    role = m.get("platform_role")
+    kicker = f'<span class="kicker">{escape(role)} · exocean platform</span>\n        ' if role else ""
     head_html = f"""  <div class="page-head">
     <div class="wrap bio-head">
       {avatar(d, m, "200px", lazy=False)}
       <div>
-        <h1>{escape(m['name'])}</h1>
+        {kicker}<h1>{escape(m['name'])}</h1>
         <p class="position">{escape(m.get('position') or m['affiliation'])}</p>
         {focus}
       </div>
@@ -1691,7 +1701,6 @@ def build_person(m: dict) -> None:
   <section class="band">
     <div class="wrap">
       <div class="measure">
-{greeting}
 {paras}
 {contact}
 {projects}
@@ -1703,7 +1712,8 @@ def build_person(m: dict) -> None:
   </section>
 """
     write(f"people/{m['slug']}.html", d, m["name"],
-          f"{m['name']} — {m['affiliation']}. Member of the exocean laboratory at CEREGE.",
+          f"{m['name']} — {m['affiliation']}. "
+          + (f"{role} of the exocean platform at CEREGE." if role else "Works at the exocean platform, CEREGE."),
           "team.html", body, image=m.get("photo") if (m.get("photo") or "").endswith((".jpg", ".png")) else None,
           jsonld=jsonld_person(m))
 
@@ -2086,7 +2096,7 @@ def build_legal() -> None:
 
       <div class="lang-block" id="fr" lang="fr">
         <h2>Mentions légales</h2>
-        <p>Ce site est édité par le laboratoire exocean du CEREGE (Centre de recherche et d'enseignement de géosciences de l'environnement : Aix-Marseille Université, CNRS, IRD, INRAE, Collège de France), Technopôle de l'Environnement Arbois-Méditerranée, avenue Louis Philibert, BP 80, 13545 Aix-en-Provence cedex 04. Contact : {email}.</p>
+        <p>Ce site est édité par la plateforme exocean du CEREGE (Centre de recherche et d'enseignement de géosciences de l'environnement : Aix-Marseille Université, CNRS, IRD, INRAE, Collège de France), Technopôle de l'Environnement Arbois-Méditerranée, avenue Louis Philibert, BP 80, 13545 Aix-en-Provence cedex 04. Contact : {email}.</p>
         <p>Directeur de la publication : {escape(L['director'])}. Rédaction : {escape(L['editors'].replace(' and ', ' et '))}.</p>
         <p>Hébergement : GitHub Pages — GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis.</p>
         <h2>Données personnelles et cookies</h2>
@@ -2110,8 +2120,8 @@ def build_404() -> None:
     <div class="wrap">
       <p>The page you were looking for doesn't exist, or it has moved.</p>
       <div class="btn-row">
-        <a class="btn primary" href="{home(d)}">Back to the lab</a>
-        <a class="btn" href="{rel(d, 'projects.html')}">Our research</a>
+        <a class="btn primary" href="{home(d)}">Back to the home page</a>
+        <a class="btn" href="{rel(d, 'projects.html')}">Research projects</a>
         <a class="btn" href="{rel(d, 'contact.html')}">Contact us</a>
       </div>
     </div>

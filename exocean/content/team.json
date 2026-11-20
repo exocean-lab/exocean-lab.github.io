@@ -1,47 +1,10 @@
 {
   "title": "People",
-  "lede": "The founders, the scientific team and the colleagues we work with.",
+  "lede": "The platform's scientific and technical leads, the researchers and students who work there, and our collaborators on current projects.",
   "groups": [
     {
-      "heading": "The founders",
+      "heading": "Platform leads",
       "members": [
-        {
-          "slug": "thomas-chalk",
-          "orcid": "0000-0002-2880-3847",
-          "idhal": "thomas-chalk",
-          "name": "Thomas Chalk",
-          "affiliation": "CNRS Researcher at CEREGE, France",
-          "position": "CNRS researcher",
-          "focus": "Past ocean pH and CO₂ from boron isotopes",
-          "photo": "p-chalk.jpg",
-          "greeting": "Bonjour !",
-          "bio": [
-            "I'm Tom, an isotope geochemist and palaeoceanographer whose research explores the interactions between the ocean and climate over seasonal to geological timescales. I earned my PhD from the University of Southampton's National Oceanography Centre in 2015, following my undergraduate and master's studies at the University of Oxford.",
-            "I've held postdoctoral positions at several institutions, including the Woods Hole Oceanographic Institution (WHOI) in the United States and the Arctic University of Tromsø (UiT) in Norway. Currently, I serve as a CNRS research scientist in the Climate team at CEREGE in Aix-en-Provence, France, and I'm a Visiting Fellow at the University of Southampton.",
-            "My work primarily focuses on reconstructing past atmospheric CO₂ levels and ocean pH by analyzing boron isotopes in marine carbonates, to improve our understanding of Earth's climate sensitivity and carbon cycle dynamics. I lead the ERC-funded ForCry project, which employs cryocell laser ablation techniques to analyze minute samples of carbonate minerals. When precipitated from seawater, and preserved in deep sea sediment, these can be used to generate high-resolution CO₂ records.",
-            "Besides doing research, I like to play board games, run up mountains, and veganise recipes."
-          ],
-          "email_user": "chalk",
-          "email_domain": "cerege.fr",
-          "links": [
-            {
-              "label": "ERC ForCry dedicated page on CEREGE website",
-              "url": "https://www.cerege.fr/fr/sciences/climat/projets-climat/erc-forcry/"
-            },
-            {
-              "label": "Google Scholar",
-              "url": "https://scholar.google.com/citations?user=ZOcioqsAAAAJ&hl=en"
-            },
-            {
-              "label": "ResearchGate",
-              "url": "https://www.researchgate.net/profile/Thomas-Chalk"
-            },
-            {
-              "label": "Bluesky",
-              "url": "https://bsky.app/profile/chalkyoceans.bsky.social"
-            }
-          ]
-        },
         {
           "slug": "julie-meilland",
           "orcid": "0000-0001-8966-3115",
@@ -49,13 +12,12 @@
           "name": "Julie Meilland",
           "affiliation": "CNRS Researcher at CEREGE, France",
           "position": "CNRS researcher",
+          "platform_role": "Scientific lead",
           "focus": "Life cycles and culture of planktonic foraminifera",
           "photo": "p-meilland.jpg",
-          "greeting": "Bonjour !",
           "bio": [
             "I'm a marine biologist whose research explores the life cycle and population dynamics of marine pelagic calcifiers such as planktonic Foraminifera and Pteropods. I graduated (PhD) from the University of Angers, France, in late 2015 and joined the Arctic University of Tromsø, Norway for my first postdoctoral research contract.",
-            "During my PhD and in Norway I specialised in the ecology and contribution of pelagic calcifiers, from polar regions and environments, to the marine carbon export. I later joined MARUM, at the University of Bremen, DE, before starting my CNRS research position in the Climate team at CEREGE in early 2025. There, and based on my findings on planktonic foraminifera reproduction in laboratory (Meilland et al., 2023 & 2024) I develop and manage the COntinuous REproduction for Foraminifera Facility (COREFF). I am also a modern foraminifera expert in taxonomy. With more than a year and a half spent at sea on 20 research cruises, from Antarctica to the Arctic, I have extensive field experience — strengthening my fundamental understanding of plankton ecology and population dynamics.",
-            "I love running and diving!"
+            "During my PhD and in Norway I specialised in the ecology and contribution of pelagic calcifiers, from polar regions and environments, to the marine carbon export. I later joined MARUM, at the University of Bremen, DE, before starting my CNRS research position in the Climate team at CEREGE in early 2025. There, and based on my findings on planktonic foraminifera reproduction in laboratory (Meilland et al., 2023 & 2024) I develop and manage the COntinuous REproduction for Foraminifera Facility (COREFF), and I am the scientific lead of the exocean platform. I am also a modern foraminifera expert in taxonomy. With more than a year and a half spent at sea on 20 research cruises, from Antarctica to the Arctic, I have extensive field experience — strengthening my fundamental understanding of plankton ecology and population dynamics."
           ],
           "email_user": "meilland",
           "email_domain": "cerege.fr",
@@ -79,67 +41,24 @@
           ]
         },
         {
-          "slug": "olivier-sulpis",
-          "orcid": "0000-0002-6463-3320",
-          "idhal": "olivier-sulpis",
-          "name": "Olivier Sulpis",
-          "affiliation": "CNRS Researcher at CEREGE, France",
-          "position": "CNRS researcher",
-          "focus": "Deep-sea carbonate dissolution under pressure",
-          "photo": "p-sulpis.jpg",
-          "greeting": "Bonjour !",
+          "slug": "maxime-felix",
+          "name": "Maxime Felix",
+          "affiliation": "CNRS Marine Biogeochemistry Research Engineer at CEREGE, France",
+          "position": "CNRS research engineer",
+          "platform_role": "Technical lead",
+          "focus": "High-pressure equipment and carbonate chemistry",
+          "photo": "p-felix.jpg",
           "bio": [
-            "I'm Olivier, a marine biogeochemist and ecologist, primarily interested in the carbon cycle of the ocean in the early Anthropocene. I use numerical models, laboratory experiments and in-situ observations to understand how sediments and organisms at the seafloor, a mostly unmapped environment that covers more than two thirds of our planet surface, regulate the climate of our planet. My research also explores deep-sea currents, waves and tides, marine snow, calcification and the response of calcifiers to global change. Leader of the Deep-C ERC project, I am developing novel experimental tools to reproduce abyssal and hadal environments in the laboratory, with a set of sensors operating under the highest pressures of the oceans.",
-            "I earned my PhD from McGill University, Montreal, in 2019, in aqueous chemistry. I then worked as a postdoctoral researcher at Utrecht University until 2023, when I started a CNRS research scientist position in the Climate team at CEREGE, south of France. In parallel with my research, I serve as an editor for Global Biogeochemical Cycles and Biogeosciences, and act as co-chair of a working group on the monitoring, reporting and verification of marine carbon dioxide removal, as part of the European Marine Board.",
-            "In my spare time, I enjoy playing bass, dancing, and cooking."
+            "I am a research engineer in the Climate team at CEREGE and the technical lead of the exocean platform. My work focuses on the management of its hyperbaric equipment and on carbonate chemistry measurements. Passionate about ocean dynamics, my aim is to advance scientific research in deep sea waters, but also to enable the successful development of the various projects that use the platform.",
+            "Before joining CEREGE, I studied marine science with a specialization in anthropogenic disturbances at the University of Toulon, where I developed an interest in research as well as in laboratory instruments and analytical techniques."
           ],
-          "email_user": "sulpis",
-          "email_domain": "cerege.fr",
-          "links": [
-            {
-              "label": "Google Scholar",
-              "url": "https://scholar.google.com/citations?user=JPfVNNcAAAAJ&hl=en"
-            },
-            {
-              "label": "ResearchGate",
-              "url": "https://www.researchgate.net/profile/Olivier-Sulpis"
-            },
-            {
-              "label": "CEREGE",
-              "url": "https://www.cerege.fr/fr/cerege/olivier-sulpis/"
-            },
-            {
-              "label": "LinkedIn",
-              "url": "https://www.linkedin.com/in/oliviersulpis/"
-            },
-            {
-              "label": "Bluesky",
-              "url": "https://bsky.app/profile/sulpis.bsky.social"
-            }
-          ]
+          "links": []
         }
       ]
     },
     {
-      "heading": "The scientific team",
+      "heading": "Researchers",
       "members": [
-        {
-          "slug": "matthieu-buisson",
-          "orcid": "0000-0002-0720-2962",
-          "name": "Matthieu Buisson",
-          "affiliation": "CNRS Postdoctoral Researcher at CEREGE, France",
-          "position": "CNRS postdoctoral researcher",
-          "focus": "Boron isotopes and past seawater pH",
-          "photo": "p-buisson.jpg",
-          "greeting": "Bonjour !",
-          "bio": [
-            "I am a postdoctoral researcher in geochemistry and paleoceanography in the Climate team at CEREGE. My work focuses on the development and application of high-precision isotopic and elemental analyses to reconstruct past ocean chemistry and climate variability, with a particular emphasis on boron isotopes in marine carbonates.",
-            "Passionate about understanding past climate–ocean interactions, my aim is to improve reconstructions of seawater pH, atmospheric CO₂, and biogeochemical cycles over geological timescales, in order to anticipate ongoing and future climate change. My research lies at the interface between analytical (geo)chemistry and paleoceanography, combining methodological developments in mass spectrometry with their application to paleoenvironmental archives such as foraminifera."
-          ],
-          "email_user": "buisson",
-          "email_domain": "cerege.fr",
-          "links": []
-        },
         {
           "slug": "sonia-chaabane",
           "orcid": "0000-0002-4653-8610",
@@ -149,7 +68,6 @@
           "position": "IRD researcher",
           "focus": "Plankton responses to warming, acidification and low oxygen",
           "photo": "p-chaabane.jpg",
-          "greeting": "Bonjour !",
           "bio": [
             "I am a marine ecologist and micropalaeontologist at the French National Research Institute for Sustainable Development (IRD), based at CEREGE in Aix-en-Provence. My research focuses on how marine plankton responds to climate change, particularly warming, ocean acidification, and deoxygenation. I use planktonic foraminifera, microscopic calcifying organisms, as bioindicators to understand how marine ecosystems have changed in the past and how they may evolve in the future.",
             "My work bridges global biodiversity databases, trait-based ecology, high-throughput imaging, and artificial intelligence. I have been deeply involved in the development and synthesis of large international databases (such as FORCIS and DYNAMITE), aiming to transform scattered observations into coherent knowledge that can inform both science and society. A key motivation of my research is to improve our capacity to detect, quantify, and anticipate biological responses to global change at large spatial and temporal scales.",
@@ -188,57 +106,98 @@
           ]
         },
         {
-          "slug": "maxime-felix",
-          "name": "Maxime Felix",
-          "affiliation": "CNRS Marine Biogeochemistry Research Engineer at CEREGE, France",
-          "position": "CNRS research engineer",
-          "focus": "High-pressure equipment and carbonate chemistry",
-          "photo": "p-felix.jpg",
-          "greeting": "Bonjour !",
+          "slug": "thomas-chalk",
+          "orcid": "0000-0002-2880-3847",
+          "idhal": "thomas-chalk",
+          "name": "Thomas Chalk",
+          "affiliation": "CNRS Researcher at CEREGE, France",
+          "position": "CNRS researcher",
+          "focus": "Past ocean pH and CO₂ from boron isotopes",
+          "photo": "p-chalk.jpg",
           "bio": [
-            "I am a research engineer in the Climate team at CEREGE. My work focuses on management of hyperbaric equipment and measurement of carbonate chemistry at the exocean laboratory. Passionate about ocean dynamics, my aim is to advance scientific research in deep sea waters, but also to enable the successful development of various projects within the laboratory.",
-            "Before joining CEREGE, I studied marine science with a specialization in anthropogenic disturbances at the University of Toulon, where I developed an interest in research as well as in laboratory instruments and analytical techniques.",
-            "Outside the lab, I enjoy sports such as tennis, running, and football, and I also appreciate discovering marine wildlife while freediving."
+            "I'm Tom, an isotope geochemist and palaeoceanographer whose research explores the interactions between the ocean and climate over seasonal to geological timescales. I earned my PhD from the University of Southampton's National Oceanography Centre in 2015, following my undergraduate and master's studies at the University of Oxford.",
+            "I've held postdoctoral positions at several institutions, including the Woods Hole Oceanographic Institution (WHOI) in the United States and the Arctic University of Tromsø (UiT) in Norway. Currently, I serve as a CNRS research scientist in the Climate team at CEREGE in Aix-en-Provence, France, and I'm a Visiting Fellow at the University of Southampton.",
+            "My work primarily focuses on reconstructing past atmospheric CO₂ levels and ocean pH by analyzing boron isotopes in marine carbonates, to improve our understanding of Earth's climate sensitivity and carbon cycle dynamics. I lead the ERC-funded ForCry project, which employs cryocell laser ablation techniques to analyze minute samples of carbonate minerals. When precipitated from seawater, and preserved in deep sea sediment, these can be used to generate high-resolution CO₂ records."
           ],
-          "links": []
-        },
-        {
-          "slug": "marine-jaumon",
-          "name": "Marine Jaumon",
-          "affiliation": "PhD Student at CEREGE and LOV, France",
-          "position": "PhD student, CEREGE and LOV",
-          "focus": "How coral carbonates form and dissolve",
-          "photo": "p-jaumon.jpg",
-          "greeting": "Bonjour !",
-          "bio": [
-            "I am a PhD student co-supervised by Olivier Sulpis (CEREGE) and Steeve Comeau (LOV). My work focuses on how biogenic calcium carbonate forms and dissolves under environmental changes, with a particular emphasis on coral and reef ecosystems.",
-            "I completed a BSc in Environmental and Physical Geography at the University of Montreal and after graduating, I joined the Aquarium of Guadeloupe for a civic service program, where I was raising awareness about marine biodiversity among children and adults, and worked on coral restoration projects involving Favia fragum. I then pursued a Master's degree in Marine Sciences, focusing on Marine Biology and Ecology at the University of Bordeaux, where I developed an interest in biogeochemistry. This led me to an M2 internship with Olivier, studying the effect of microbial respiration on carbonate dissolution, along with fieldwork in Bermuda at BIOS.",
-            "When I'm not in the lab, you'll probably find me in the ocean looking for sea creatures, diving, or attempting to surf. I also love hiking and reading with a good cup of coffee."
-          ],
-          "links": []
-        },
-        {
-          "slug": "jaime-suarez-ibarra",
-          "orcid": "0000-0002-0227-4369",
-          "idhal": "jaime-y-suarez-ibarra",
-          "name": "Jaime Y. Suárez-Ibarra",
-          "affiliation": "Marie Skłodowska-Curie Fellow at CEREGE, France",
-          "position": "Marie Skłodowska-Curie fellow",
-          "focus": "Neogene foraminifera and past CO₂",
-          "photo": "p-suarez.jpg",
-          "greeting": "¡Hola!",
-          "bio": [
-            "I am a micropaleontologist and paleoceanographer specializing in late Neogene planktonic foraminifera. I work as a CNRS postdoctoral researcher in the Climate team at CEREGE, south of France. My research focuses on past climate changes and planktonic foraminifera ecological and morphological evolution.",
-            "I am curious about the processes that shaped the Earth climate system, languages, cultures and traveling."
-          ],
-          "email_user": "suarez",
+          "email_user": "chalk",
           "email_domain": "cerege.fr",
           "links": [
             {
-              "label": "Personal page",
-              "url": "https://jysuarezibarra.github.io/biography/index.html"
+              "label": "ERC ForCry dedicated page on CEREGE website",
+              "url": "https://www.cerege.fr/fr/sciences/climat/projets-climat/erc-forcry/"
+            },
+            {
+              "label": "Google Scholar",
+              "url": "https://scholar.google.com/citations?user=ZOcioqsAAAAJ&hl=en"
+            },
+            {
+              "label": "ResearchGate",
+              "url": "https://www.researchgate.net/profile/Thomas-Chalk"
+            },
+            {
+              "label": "Bluesky",
+              "url": "https://bsky.app/profile/chalkyoceans.bsky.social"
             }
           ]
+        },
+        {
+          "slug": "olivier-sulpis",
+          "orcid": "0000-0002-6463-3320",
+          "idhal": "olivier-sulpis",
+          "name": "Olivier Sulpis",
+          "affiliation": "CNRS Researcher at CEREGE, France",
+          "position": "CNRS researcher",
+          "focus": "Deep-sea carbonate dissolution under pressure",
+          "photo": "p-sulpis.jpg",
+          "bio": [
+            "I'm Olivier, a marine biogeochemist and ecologist, primarily interested in the carbon cycle of the ocean in the early Anthropocene. I use numerical models, laboratory experiments and in-situ observations to understand how sediments and organisms at the seafloor, a mostly unmapped environment that covers more than two thirds of our planet surface, regulate the climate of our planet. My research also explores deep-sea currents, waves and tides, marine snow, calcification and the response of calcifiers to global change. Leader of the Deep-C ERC project, I am developing novel experimental tools to reproduce abyssal and hadal environments in the laboratory, with a set of sensors operating under the highest pressures of the oceans.",
+            "I earned my PhD from McGill University, Montreal, in 2019, in aqueous chemistry. I then worked as a postdoctoral researcher at Utrecht University until 2023, when I started a CNRS research scientist position in the Climate team at CEREGE, south of France. In parallel with my research, I serve as an editor for Global Biogeochemical Cycles and Biogeosciences, and act as co-chair of a working group on the monitoring, reporting and verification of marine carbon dioxide removal, as part of the European Marine Board."
+          ],
+          "email_user": "sulpis",
+          "email_domain": "cerege.fr",
+          "links": [
+            {
+              "label": "Google Scholar",
+              "url": "https://scholar.google.com/citations?user=JPfVNNcAAAAJ&hl=en"
+            },
+            {
+              "label": "ResearchGate",
+              "url": "https://www.researchgate.net/profile/Olivier-Sulpis"
+            },
+            {
+              "label": "CEREGE",
+              "url": "https://www.cerege.fr/fr/cerege/olivier-sulpis/"
+            },
+            {
+              "label": "LinkedIn",
+              "url": "https://www.linkedin.com/in/oliviersulpis/"
+            },
+            {
+              "label": "Bluesky",
+              "url": "https://bsky.app/profile/sulpis.bsky.social"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Postdoctoral researchers and fellows",
+      "members": [
+        {
+          "slug": "matthieu-buisson",
+          "orcid": "0000-0002-0720-2962",
+          "name": "Matthieu Buisson",
+          "affiliation": "CNRS Postdoctoral Researcher at CEREGE, France",
+          "position": "CNRS postdoctoral researcher",
+          "focus": "Boron isotopes and past seawater pH",
+          "photo": "p-buisson.jpg",
+          "bio": [
+            "I am a postdoctoral researcher in geochemistry and paleoceanography in the Climate team at CEREGE. My work focuses on the development and application of high-precision isotopic and elemental analyses to reconstruct past ocean chemistry and climate variability, with a particular emphasis on boron isotopes in marine carbonates.",
+            "Passionate about understanding past climate–ocean interactions, my aim is to improve reconstructions of seawater pH, atmospheric CO₂, and biogeochemical cycles over geological timescales, in order to anticipate ongoing and future climate change. My research lies at the interface between analytical (geo)chemistry and paleoceanography, combining methodological developments in mass spectrometry with their application to paleoenvironmental archives such as foraminifera."
+          ],
+          "email_user": "buisson",
+          "email_domain": "cerege.fr",
+          "links": []
         },
         {
           "slug": "astrid-hylen",
@@ -249,11 +208,9 @@
           "position": "Marie Skłodowska-Curie fellow",
           "focus": "Carbon burial and fluxes in coastal sediments",
           "photo": "p-hylen.jpg",
-          "greeting": "Hej!",
           "bio": [
             "I am an MSCA postdoctoral researcher in the Climate team at CEREGE. I am passionate about how humans affect the ocean's capacity to store carbon. I use experiments, fieldwork and modelling to understand when carbon is degraded or preserved in the seafloor. My aim is to advance our understanding of carbon cycling in coastal environments, to support the management and restoration of coastal systems.",
-            "Before joining CEREGE, I did my PhD at the University of Gothenburg, Sweden, and a postdoc at the University of Antwerp, Belgium. My speciality is measuring sediment-water fluxes of dissolved compounds, and I have previously worked on sedimentary nutrient cycling and ocean alkalinity enhancement for CO₂ removal.",
-            "In my spare time, I enjoy reading and travelling, as well as cooking, baking, and eating – anything food-related."
+            "Before joining CEREGE, I did my PhD at the University of Gothenburg, Sweden, and a postdoc at the University of Antwerp, Belgium. My speciality is measuring sediment-water fluxes of dissolved compounds, and I have previously worked on sedimentary nutrient cycling and ocean alkalinity enhancement for CO₂ removal."
           ],
           "email_user": "hylen",
           "email_domain": "cerege.fr",
@@ -288,9 +245,8 @@
           "position": "CNRS postdoctoral researcher",
           "focus": "Carbonate solubility at abyssal and hadal pressures",
           "photo": "p-sathe.jpg",
-          "greeting": "Hello!",
           "bio": [
-            "I am a postdoctoral researcher on the ERC project Deep-C at CEREGE, where I study how calcium carbonate dissolves in the deep sea. Using the laboratory's high-pressure reactors, I measure the solubility of different carbonate minerals at the pressures of the abyssal and hadal seafloor, and how fast they dissolve when microbes are respiring around them.",
+            "I am a postdoctoral researcher on the ERC project Deep-C at CEREGE, where I study how calcium carbonate dissolves in the deep sea. Using the high-pressure reactors of the exocean platform, I measure the solubility of different carbonate minerals at the pressures of the abyssal and hadal seafloor, and how fast they dissolve when microbes are respiring around them.",
             "Before coming to Aix-en-Provence I did my PhD with Ronnie Glud at the University of Southern Denmark (HADAL & Nordcee, Odense), studying microbial life under high pressure. That background in experimental microbiology is what brought me to the reactors: my aim is to understand how respiration in sediments drives carbonate dissolution, from incubations of coastal sediment to experiments at 1,000 bar."
           ],
           "email_user": "sathe",
@@ -298,17 +254,55 @@
           "links": []
         },
         {
+          "slug": "jaime-suarez-ibarra",
+          "orcid": "0000-0002-0227-4369",
+          "idhal": "jaime-y-suarez-ibarra",
+          "name": "Jaime Y. Suárez-Ibarra",
+          "affiliation": "Marie Skłodowska-Curie Fellow at CEREGE, France",
+          "position": "Marie Skłodowska-Curie fellow",
+          "focus": "Neogene foraminifera and past CO₂",
+          "photo": "p-suarez.jpg",
+          "bio": [
+            "I am a micropaleontologist and paleoceanographer specializing in late Neogene planktonic foraminifera. I work as a CNRS postdoctoral researcher in the Climate team at CEREGE, south of France. My research focuses on past climate changes and planktonic foraminifera ecological and morphological evolution.",
+            "I am curious about the processes that shaped the Earth climate system, languages, cultures and traveling."
+          ],
+          "email_user": "suarez",
+          "email_domain": "cerege.fr",
+          "links": [
+            {
+              "label": "Personal page",
+              "url": "https://jysuarezibarra.github.io/biography/index.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "PhD students",
+      "members": [
+        {
           "slug": "katoo-declerck",
           "name": "Katoo Declerck",
           "affiliation": "PhD Student at CEREGE, France",
           "position": "PhD student",
           "focus": "Dissolution of single foraminifera shells",
           "photo": "p-declerck.jpg",
-          "greeting": "Hallo!",
           "bio": [
-            "I am a biologist and PhD student at the exocean laboratory in CEREGE, supervised by Olivier Sulpis and Julie Meilland. My thesis follows deep-sea calcium carbonate dissolution from the microenvironment of a single foraminifera shell to the global carbon cycle, combining micro-CT imaging of dissolving shells, pore-scale modelling and dissolution experiments, with a particular interest in the role of organic matter. Passionate about the ocean, my aim is to get a better understanding of the importance of marine environments in mitigating climate change by dissolving calcium carbonates.",
-            "Before joining CEREGE I studied global change biology at the University of Antwerp, where I learned about different consequences of climate change and to help mitigate these effects.",
-            "Outside the lab you can find me somewhere hiking, chasing beautiful sunsets or enjoying a big cup of tea, usually accompanied with a homemade song and some jokes!"
+            "I am a biologist and PhD student at CEREGE, supervised by Olivier Sulpis and Julie Meilland. My thesis follows deep-sea calcium carbonate dissolution from the microenvironment of a single foraminifera shell to the global carbon cycle, combining micro-CT imaging of dissolving shells, pore-scale modelling and dissolution experiments, with a particular interest in the role of organic matter. Passionate about the ocean, my aim is to get a better understanding of the importance of marine environments in mitigating climate change by dissolving calcium carbonates.",
+            "Before joining CEREGE I studied global change biology at the University of Antwerp, where I learned about different consequences of climate change and to help mitigate these effects."
+          ],
+          "links": []
+        },
+        {
+          "slug": "marine-jaumon",
+          "name": "Marine Jaumon",
+          "affiliation": "PhD Student at CEREGE and LOV, France",
+          "position": "PhD student, CEREGE and LOV",
+          "focus": "How coral carbonates form and dissolve",
+          "photo": "p-jaumon.jpg",
+          "bio": [
+            "I am a PhD student co-supervised by Olivier Sulpis (CEREGE) and Steeve Comeau (LOV). My work focuses on how biogenic calcium carbonate forms and dissolves under environmental changes, with a particular emphasis on coral and reef ecosystems.",
+            "I completed a BSc in Environmental and Physical Geography at the University of Montreal and after graduating, I joined the Aquarium of Guadeloupe for a civic service program, where I was raising awareness about marine biodiversity among children and adults, and worked on coral restoration projects involving Favia fragum. I then pursued a Master's degree in Marine Sciences, focusing on Marine Biology and Ecology at the University of Bordeaux, where I developed an interest in biogeochemistry. This led me to an M2 internship with Olivier, studying the effect of microbial respiration on carbonate dissolution, along with fieldwork in Bermuda at BIOS."
           ],
           "links": []
         }
@@ -538,7 +532,7 @@
     },
     {
       "heading": "Former members",
-      "note": "Move a person's block here when they leave — keep the name, affiliation and role fields, set \"photo\": null if you prefer, and put the years in \"role\" (e.g. \"PhD student, 2022–2025\").",
+      "note": "Move a person's block here when they leave — keep the name, affiliation and role fields, set \"photo\": null if you prefer, and put the years in \"position\" (e.g. \"PhD student, 2022–2025\").",
       "members": []
     }
   ]
