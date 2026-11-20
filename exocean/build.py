@@ -1596,20 +1596,22 @@ def build_team() -> None:
         if not g.get("members"):        # e.g. "Former members" while still empty
             continue
         cards = []
-        eager, first = first, False
-        for m in g["members"]:
+        eager_n, first = (5 if first else 0), False     # five cards fill the first row on a laptop
+        for i, m in enumerate(g["members"]):
             focus = f'<span class="focus">{escape(m["focus"])}</span>' if m.get("focus") else ""
-            prole = f'<span class="prole">{escape(m["platform_role"])}</span>\n              ' if m.get("platform_role") else ""
-            inner = f"""{avatar(d, m, "(max-width: 480px) 46vw, 220px", lazy=not eager)}
-              {prole}<span class="pname">{escape(m['name'])}</span>
+            # the role goes under the name, so names stay aligned along a row
+            prole = f'\n              <span class="prole">{escape(m["platform_role"])}</span>' if m.get("platform_role") else ""
+            cls = "person lead" if m.get("platform_role") else "person"      # the platform's two leads stand out
+            inner = f"""{avatar(d, m, "(max-width: 480px) 46vw, 220px", lazy=i >= eager_n)}
+              <span class="pname">{escape(m['name'])}</span>{prole}
               <span class="position">{escape(m.get('position') or m['affiliation'])}</span>
               {focus}"""
             if m.get("bio"):
-                cards.append(f'            <a class="person" href="people/{m["slug"]}.html">\n              {inner}\n            </a>')
+                cards.append(f'            <a class="{cls}" href="people/{m["slug"]}.html">\n              {inner}\n            </a>')
             else:
-                cards.append(f'            <div class="person">\n              {inner}\n            </div>')
-        groups.append(f"""        <section class="team-group">
-          <h2>{escape(g['heading'])}</h2>
+                cards.append(f'            <div class="{cls}">\n              {inner}\n            </div>')
+        heading = f"\n          <h2>{escape(g['heading'])}</h2>" if g.get("heading") else ""   # the main group needs none
+        groups.append(f"""        <section class="team-group">{heading}
           <div class="people">
 {chr(10).join(cards)}
           </div>

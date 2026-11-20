@@ -457,7 +457,8 @@ a.person:hover { text-decoration: none; color: inherit; }
 a.person:hover .pname { color: var(--orange-dark); text-decoration: underline; }
 .person .position { display: block; font-size: var(--step--1); color: var(--ink-soft); margin-top: .15rem; line-height: 1.4; }
 .person .focus { display: block; font-size: var(--step--1); color: var(--ink-faint); margin-top: .3rem; line-height: 1.4; }
-.person .prole { display: block; }
+.person .prole { display: block; margin: .25rem 0 0; }
+.person.lead .avatar { box-shadow: 0 0 0 3px #fff, 0 0 0 6px var(--orange); }
 
 .collab-proj { margin-top: 1.5rem; }
 .collab-proj > h3 { margin: 0 0 .7rem; font-size: 1.02rem; font-weight: 700; color: var(--ink-faint); }

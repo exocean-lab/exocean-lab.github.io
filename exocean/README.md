@@ -18,7 +18,7 @@ Everything else is generated.
 | File | What's in it |
 |---|---|
 | `content/site.json` | Home page, Research page (the ocean drawing, key questions), Services & Instruments, Data & Models, Join us (incl. open positions), Contact, legal notice, selected papers, menu, site address |
-| `content/team.json` | Every person, grouped by role: position, one-line research focus, photo, bio, links (plus an empty "Former members" group). The platform's two leads also carry `"platform_role"` ("Scientific lead", "Technical lead"), which the home page, the People page and their own page show |
+| `content/team.json` | Everyone in one group (no title; the two leads first, then alphabetical): position, one-line research focus, photo, bio, links (plus an empty "Former members" group). The platform's two leads also carry `"platform_role"` ("Scientific lead", "Technical lead"), which the home page, the People page and their own page show |
 | `content/projects.json` | Deep-C, MANGO, DYNAMITE, ForCry, ASPERGE |
 | `content/news.json` | News items (each gets its own page) and the press/media lists |
 | `content/fr.json` | The French versions of Services, Join us and Contact |

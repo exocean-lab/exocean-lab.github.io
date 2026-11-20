@@ -148,7 +148,7 @@ content:
         type: object
         list: true
         fields:
-          - { name: heading, type: string, required: true }
+          - { name: heading, type: string, description: "Leave empty for the main group of people (shown without a title)." }
           - { name: note, type: text, description: Internal note, not shown on the site. }
           - name: members
             label: Members
