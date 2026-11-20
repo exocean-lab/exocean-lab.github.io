@@ -240,6 +240,10 @@
         {
           "name": "Sonia Chaabane",
           "slug": "sonia-chaabane"
+        },
+        {
+          "name": "Thomas Chalk",
+          "slug": "thomas-chalk"
         }
       ],
       "external": [
@@ -249,7 +253,18 @@
         "Nina Bednaršek – Oregon State University, CIMERS (USA/Slovenia)",
         "Ralf Schiebel – Max Planck Institute for Chemistry (Germany)",
         "Mark Ohman – Scripps Institution of Oceanography, University of California San Diego (USA)",
-        "Clara Manno – British Antarctic Survey (UK)"
+        "Clara Manno – British Antarctic Survey (UK)",
+        "Geert-Jan Brummer – NIOZ Royal Netherlands Institute for Sea Research (Netherlands)",
+        "William Gray – Laboratoire des Sciences du Climat et de l'Environnement, LSCE (France)",
+        "Ben Gustafson – Heriot-Watt University (UK)",
+        "Nina Keul – Kiel University (Germany)",
+        "Arturo Lucas – ICTA, Universitat Autònoma de Barcelona (Spain)",
+        "Amy Maas – Bermuda Institute of Ocean Sciences, Arizona State University (Bermuda/USA)",
+        "María Moreno-Alcántara (Mexico)",
+        "Patrizia Ziveri – ICREA &amp; ICTA, Universitat Autònoma de Barcelona (Spain)"
+      ],
+      "former": [
+        "Laura Khim (intern, 2025)"
       ],
       "note": "DYNAMITE was selected through the 2023 CESAB Datashare call for proposals, following evaluation by an independent panel of experts.",
       "funders": [
