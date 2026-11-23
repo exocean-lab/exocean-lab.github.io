@@ -1,18 +1,18 @@
 {
  "source": "HAL — https://hal.science",
  "idhals": [
-  "thomas-chalk",
   "julie-meilland",
-  "olivier-sulpis",
   "sonia-chaabane",
+  "thomas-chalk",
+  "astrid-hylen",
   "jaime-y-suarez-ibarra",
-  "astrid-hylen"
+  "olivier-sulpis"
  ],
  "orcids": [
   "0000-0002-0720-2962",
   "0000-0002-1375-5774"
  ],
- "updated": "2026-11-02",
+ "updated": "2026-11-23",
  "count": 126,
  "items": [
   {
