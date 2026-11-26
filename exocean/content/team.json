@@ -55,6 +55,25 @@
           "links": []
         },
         {
+          "slug": "luc-beaufort",
+          "orcid": "0000-0001-6055-9373",
+          "idhal": "luc-beaufort",
+          "name": "Luc Beaufort",
+          "affiliation": "CNRS Research Director at CEREGE, France",
+          "position": "CNRS research director",
+          "focus": "Coccolithophore ecology and calcification, present and past",
+          "links": [
+            {
+              "label": "CEREGE page",
+              "url": "https://www.cerege.fr/en/cerege/luc-beaufort/"
+            },
+            {
+              "label": "Google Scholar",
+              "url": "https://scholar.google.fr/citations?user=AtJKwIQAAAAJ&hl=fr"
+            }
+          ]
+        },
+        {
           "slug": "matthieu-buisson",
           "orcid": "0000-0002-0720-2962",
           "name": "Matthieu Buisson",

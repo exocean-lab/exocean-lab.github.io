@@ -2,6 +2,7 @@
  "source": "HAL — https://hal.science",
  "idhals": [
   "julie-meilland",
+  "luc-beaufort",
   "sonia-chaabane",
   "thomas-chalk",
   "astrid-hylen",
@@ -12,8 +13,8 @@
   "0000-0002-0720-2962",
   "0000-0002-1375-5774"
  ],
- "updated": "2026-11-23",
- "count": 126,
+ "updated": "2026-11-26",
+ "count": 252,
  "items": [
   {
    "hal": "hal-05804587",
@@ -46,6 +47,32 @@
    "pages": "207888",
    "projects": [
     "SEAGAS"
+   ]
+  },
+  {
+   "hal": "hal-05878675",
+   "title": "Last glacial North Pacific oxygenation due to North Atlantic circulation changes",
+   "authors": [
+    "Martin Tetard",
+    "Alexandre Pohl",
+    "Yusuke Okazaki",
+    "Andy Ridgwell",
+    "Ekaterina Ovsepyan",
+    "Luc Beaufort"
+   ],
+   "journal": "Nature Geoscience",
+   "year": 2026,
+   "date": "2026-11-23",
+   "doi": "10.1038/s41561-026-02122-x",
+   "pdf": "https://hal.science/hal-05878675/document",
+   "type": "ART",
+   "volume": null,
+   "pages": null,
+   "projects": [
+    "CYCLO-SED",
+    "CalHis",
+    "MEDSEA",
+    "PACMEDY"
    ]
   },
   {
@@ -566,6 +593,27 @@
    "projects": []
   },
   {
+   "hal": "hal-05463246",
+   "title": "Orbital-scale variability in the contribution of foraminifera and coccolithophores to pelagic carbonate production",
+   "authors": [
+    "Pauline Cornuault",
+    "Luc Beaufort",
+    "Heiko Pälike",
+    "Torsten Bickert",
+    "Karl-Heinz Baumann",
+    "Michal Kucera"
+   ],
+   "journal": "Biogeosciences",
+   "year": 2025,
+   "date": "2025-12-12",
+   "doi": "10.5194/bg-22-7973-2025",
+   "pdf": "https://hal.science/hal-05463246/document",
+   "type": "ART",
+   "volume": "22",
+   "pages": "7973-7984",
+   "projects": []
+  },
+  {
    "hal": "hal-05302722",
    "title": "Insights into the spatial and vertical distribution of extant planktonic foraminifera in the Bay of Bengal",
    "authors": [
@@ -612,6 +660,26 @@
    "type": "ART",
    "volume": "370",
    "pages": "109652",
+   "projects": []
+  },
+  {
+   "hal": "hal-05383944",
+   "title": "Paleoproductivity and coccolith carbonate export in the northern Bay of Bengal during the late Pleistocene",
+   "authors": [
+    "Medhavi Srivastava",
+    "Clara T Bolton",
+    "Luc Beaufort",
+    "Franck Bassinot",
+    "Katarína Holcová"
+   ],
+   "journal": "Journal of Micropalaeontology",
+   "year": 2025,
+   "date": "2025-11-18",
+   "doi": "10.5194/jm-44-555-2025",
+   "pdf": "https://hal.science/hal-05383944/document",
+   "type": "ART",
+   "volume": "44",
+   "pages": "555-571",
    "projects": []
   },
   {
@@ -900,6 +968,35 @@
    "projects": []
   },
   {
+   "hal": "hal-05121917",
+   "title": "Volcanism in the Comoros Archipelago, Madagascar, and the East African Rift: What is the link?",
+   "authors": [
+    "Charles Masquelet",
+    "Daniel Sauter",
+    "Sylvie Leroy",
+    "Matthias Delescluse",
+    "Nicolas Chamot-Rooke",
+    "Isabelle Thinon",
+    "Louise Watremez",
+    "Anne Lemoine",
+    "Dieter Franke",
+    "Sébastien Zaragosi",
+    "Jean Claude Ringenbach",
+    "Luc Beaufort"
+   ],
+   "journal": "Geosphere",
+   "year": 2025,
+   "date": "2025-01-01",
+   "doi": "10.1130/ges02788.1",
+   "pdf": "https://hal.science/hal-05121917/document",
+   "type": "ART",
+   "volume": "21",
+   "pages": "774-796",
+   "projects": [
+    "COYOTES"
+   ]
+  },
+  {
    "hal": "hal-05188398",
    "title": "Planktonic foraminifera test size dictated by conditions in life and post-mortem",
    "authors": [
@@ -923,6 +1020,106 @@
    "type": "ART",
    "volume": "55",
    "pages": "320-335",
+   "projects": []
+  },
+  {
+   "hal": "hal-05462396",
+   "title": "Photic zone niche partitioning, stratification, and carbon cycling in the tropical Indian Ocean during the Piacenzian",
+   "authors": [
+    "Deborah N Tangunan",
+    "Ian R Hall",
+    "Luc Beaufort",
+    "Melissa A Berke",
+    "Alexandra Nederbragt",
+    "Paul R Bown"
+   ],
+   "journal": "Climate of the Past",
+   "year": 2025,
+   "date": "2025-01-01",
+   "doi": "10.5194/cp-21-2541-2025",
+   "pdf": "https://hal.science/hal-05462396/document",
+   "type": "ART",
+   "volume": "21",
+   "pages": "2541 - 2560",
+   "projects": [
+    "P4"
+   ]
+  },
+  {
+   "hal": "hal-05215198",
+   "title": "Onset of extensive human fire use 50,000 y ago",
+   "authors": [
+    "Shoushu Jiang",
+    "Debo Zhao",
+    "Stefanie Kaboth-Bahr",
+    "Luc L Beaufort",
+    "Hua Tu",
+    "Zhengyao Lu",
+    "Zhongjing Cheng",
+    "Shanjia Zhang",
+    "Yi Zhong",
+    "Xiudong Hao",
+    "Wenqiang Pei",
+    "Guangqiang Cui",
+    "Yifei Yang",
+    "Anni Lin",
+    "Jie Huang",
+    "Shiming Wan"
+   ],
+   "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+   "year": 2025,
+   "date": "2025-01-01",
+   "doi": "10.1073/pnas.2500042122",
+   "pdf": null,
+   "type": "ART",
+   "volume": "122",
+   "pages": "e2500042122",
+   "projects": []
+  },
+  {
+   "hal": "hal-05208880",
+   "title": "Contrasting Trends in Phytoplankton Diversity, Size Structure, and Carbon Burial Efficiency in the Mediterranean Sea Under Shifting Environmental Conditions",
+   "authors": [
+    "Camille Godbillot",
+    "Baptiste Pesenti",
+    "Karine Leblanc",
+    "Luc Beaufort",
+    "Cristele Chevalier",
+    "Julien Di Pane",
+    "Xavier Durrieu de Madron",
+    "Thibault de Garidel-Thoron"
+   ],
+   "journal": "Journal of Geophysical Research. Oceans",
+   "year": 2025,
+   "date": "2025-01-01",
+   "doi": "10.1029/2025jc022486",
+   "pdf": "https://hal.science/hal-05208880/document",
+   "type": "ART",
+   "volume": "130",
+   "pages": "e2025JC022486",
+   "projects": []
+  },
+  {
+   "hal": "hal-05034522",
+   "title": "Changes in Atmospheric Convection Over the Indo‐Pacific Warm Pool and Coupled IOD and ENSO Patterns During the Last Glacial Maximum",
+   "authors": [
+    "Xinquan Zhou",
+    "Stéphanie Duchamp-Alphonse",
+    "Xiaoxu Shi",
+    "Franck Bassinot",
+    "Eva Moreno",
+    "Xiaobo Jin",
+    "Luc Beaufort",
+    "Chuanlian Liu"
+   ],
+   "journal": "Geophysical Research Letters",
+   "year": 2025,
+   "date": "2025-01-01",
+   "doi": "10.1029/2024gl112276",
+   "pdf": "https://hal.science/hal-05034522/document",
+   "type": "ART",
+   "volume": "52",
+   "pages": null,
    "projects": []
   },
   {
@@ -1217,6 +1414,23 @@
    "projects": []
   },
   {
+   "hal": "hal-04719059",
+   "title": "Eccentricity forcing on tropical ocean seasonality",
+   "authors": [
+    "Luc L Beaufort",
+    "Anta-Clarisse Sarr"
+   ],
+   "journal": "Climate of the Past",
+   "year": 2024,
+   "date": "2024-06-12",
+   "doi": "10.5194/cp-20-1283-2024",
+   "pdf": "https://hal.science/hal-04719059/document",
+   "type": "ART",
+   "volume": "20",
+   "pages": "1283-1301",
+   "projects": []
+  },
+  {
    "hal": "hal-04700511",
    "title": "Greenhouse gas effects on Quaternary climates",
    "authors": [
@@ -1231,6 +1445,35 @@
    "type": "ART",
    "volume": null,
    "pages": null,
+   "projects": []
+  },
+  {
+   "hal": "hal-04593322",
+   "title": "A user‐friendly method to get automated pollen analysis from environmental samples",
+   "authors": [
+    "Betty Gimenez",
+    "Sébastien Joannin",
+    "Jérôme Pasquet",
+    "Luc Beaufort",
+    "Yves Gally",
+    "Thibault de Garidel-Thoron",
+    "Nathalie Combourieu-Nebout",
+    "Laurent Bouby",
+    "Sandrine Canal",
+    "Sarah Ivorra",
+    "Bertrand Limier",
+    "Jean-Frédéric Terral",
+    "Céline Devaux",
+    "Odile Peyron"
+   ],
+   "journal": "New Phytologist",
+   "year": 2024,
+   "date": "2024-05-28",
+   "doi": "10.1111/nph.19857",
+   "pdf": "https://hal.science/hal-04593322/document",
+   "type": "ART",
+   "volume": "243",
+   "pages": "797-810",
    "projects": []
   },
   {
@@ -1280,6 +1523,25 @@
    "type": "ART",
    "volume": "54",
    "pages": "81-94",
+   "projects": []
+  },
+  {
+   "hal": "hal-04664051",
+   "title": "Technical note: A comparison of methods for estimating coccolith mass",
+   "authors": [
+    "Celina Rebeca Valença",
+    "Luc Beaufort",
+    "Gustaaf Marinus Hallegraeff",
+    "Marius Nils Müller"
+   ],
+   "journal": "Biogeosciences",
+   "year": 2024,
+   "date": "2024-03-28",
+   "doi": "10.5194/bg-21-1601-2024",
+   "pdf": "https://hal.inrae.fr/hal-04664051/document",
+   "type": "ART",
+   "volume": "21",
+   "pages": "1601-1611",
    "projects": []
   },
   {
@@ -1359,6 +1621,29 @@
    "type": "ART",
    "volume": "129",
    "pages": "e2023JG007581",
+   "projects": []
+  },
+  {
+   "hal": "hal-04709563",
+   "title": "A New Method for the Detection of Siliceous Microfossils on Sediment Microscope Slides Using Convolutional Neural Networks",
+   "authors": [
+    "Camille Godbillot",
+    "Ross Marchant",
+    "Luc Beaufort",
+    "Karine Leblanc",
+    "Yves Gally",
+    "Thang D Q Le",
+    "Cristele Chevalier",
+    "Thibault de Garidel-Thoron"
+   ],
+   "journal": "Journal of Geophysical Research: Biogeosciences",
+   "year": 2024,
+   "date": "2024-01-01",
+   "doi": "10.1029/2024jg008047",
+   "pdf": "https://hal.science/hal-04709563/document",
+   "type": "ART",
+   "volume": "129",
+   "pages": "e2024JG008047",
    "projects": []
   },
   {
@@ -1447,6 +1732,29 @@
    "pages": "354",
    "projects": [
     "ITEM"
+   ]
+  },
+  {
+   "hal": "hal-04719063",
+   "title": "Taxonomic and nomenclatural notes on the coccolithophore Gephyrocapsa huxleyi (Noelaerhabdaceae, Haptophyta) and related species",
+   "authors": [
+    "Odysseas A. Archontikis",
+    "Ian Probert",
+    "Luc Beaufort",
+    "Rosalind E.M. Rickaby",
+    "Dmitry A. Filatov",
+    "El Mahdi Bendif"
+   ],
+   "journal": "Notulae algarum",
+   "year": 2023,
+   "date": "2023-11-13",
+   "doi": null,
+   "pdf": "https://hal.science/hal-04719063/document",
+   "type": "ART",
+   "volume": "307",
+   "pages": "1-9",
+   "projects": [
+    "PHENOMAP"
    ]
   },
   {
@@ -1668,6 +1976,30 @@
    "projects": []
   },
   {
+   "hal": "hal-03984673",
+   "title": "Rapid diversification underlying the global dominance of a cosmopolitan phytoplankton",
+   "authors": [
+    "El Mahdi Bendif",
+    "Ian Probert",
+    "Odysseas A Archontikis",
+    "Jeremy R Young",
+    "Luc L Beaufort",
+    "Rosalind E Rickaby",
+    "Dmitry Filatov"
+   ],
+   "journal": "The International Society of Microbiologial Ecology Journal",
+   "year": 2023,
+   "date": "2023-02-06",
+   "doi": "10.1038/s41396-023-01365-5",
+   "pdf": "https://hal.science/hal-03984673/document",
+   "type": "ART",
+   "volume": "17",
+   "pages": "630-640",
+   "projects": [
+    "PHENOMAP"
+   ]
+  },
+  {
    "hal": "hal-04698943",
    "title": "Toward a Cenozoic history of atmospheric CO<sub>2</sub>",
    "authors": [
@@ -1841,6 +2173,32 @@
    "type": "ART",
    "volume": "602",
    "pages": "117923",
+   "projects": []
+  },
+  {
+   "hal": "hal-04016217",
+   "title": "Shelf-edge deglacial reef establishment and subsequent partial demise: Response to distinct pulses of sea-level rise associated with environmental changes",
+   "authors": [
+    "Brandon Harper",
+    "André Droxler",
+    "Jody Webster",
+    "Paolo Montagna",
+    "Yusuke Yokoyama",
+    "Marc Humblet",
+    "Stéphan Jorry",
+    "Luc L Beaufort",
+    "Kazuyo Tachikawa",
+    "Edouard Bard",
+    "Edwige Pons-Branchu"
+   ],
+   "journal": "Coral Reefs and Sea-Level Change: Quaternary Records and Modelling",
+   "year": 2022,
+   "date": "2022-12-01",
+   "doi": "10.54780/iassp49/05",
+   "pdf": null,
+   "type": "COUV",
+   "volume": null,
+   "pages": "141-171",
    "projects": []
   },
   {
@@ -2049,6 +2407,37 @@
    "projects": []
   },
   {
+   "hal": "hal-03536895",
+   "title": "Cyclic evolution of phytoplankton forced by changes in tropical seasonality",
+   "authors": [
+    "Luc L Beaufort",
+    "Clara Bolton",
+    "Anta-Clarisse Sarr",
+    "Baptiste Sucheras-Marx",
+    "Yair Rosenthal",
+    "Yannick Donnadieu",
+    "Nicolas Barbarin",
+    "Samantha Bova",
+    "Pauline Cornuault",
+    "Yves Gally",
+    "Emmeline Gray",
+    "J. C. Mazur",
+    "Martin Tetard"
+   ],
+   "journal": "Nature",
+   "year": 2022,
+   "date": "2022-01-06",
+   "doi": "10.1038/s41586-021-04195-7",
+   "pdf": "https://hal.science/hal-03536895/document",
+   "type": "ART",
+   "volume": "601",
+   "pages": "79–84",
+   "projects": [
+    "AMOR",
+    "iMonsoon"
+   ]
+  },
+  {
    "hal": "insu-03780581",
    "title": "Late Miocene cooling coupled to carbon dioxide with Pleistocene-like climate sensitivity",
    "authors": [
@@ -2066,6 +2455,27 @@
    "type": "ART",
    "volume": "15",
    "pages": "664-670",
+   "projects": []
+  },
+  {
+   "hal": "hal-03517096",
+   "title": "Coccolith size rules – What controls the size of coccoliths during coccolithogenesis?",
+   "authors": [
+    "Baptiste Suchéras-Marx",
+    "Sophie Viseur",
+    "Charlotte Walker",
+    "Luc L Beaufort",
+    "Ian Probert",
+    "C. T. Bolton"
+   ],
+   "journal": "Marine Micropaleontology",
+   "year": 2022,
+   "date": "2022-01-01",
+   "doi": "10.1016/j.marmicro.2021.102080",
+   "pdf": "https://hal.science/hal-03517096/document",
+   "type": "ART",
+   "volume": "170",
+   "pages": "102080",
    "projects": []
   },
   {
@@ -2194,6 +2604,30 @@
    "projects": []
   },
   {
+   "hal": "hal-03440291",
+   "title": "Toward a global calibration for quantifying past oxygenation in oxygen minimum zones using benthic Foraminifera",
+   "authors": [
+    "Martin Tetard",
+    "Laetitia Licari",
+    "Ekaterina Ovsepyan",
+    "Tachikawa Kazuyo",
+    "Luc L Beaufort"
+   ],
+   "journal": "Biogeosciences",
+   "year": 2021,
+   "date": "2021-05-10",
+   "doi": "10.5194/bg-18-2827-2021",
+   "pdf": "https://hal.science/hal-03440291/document",
+   "type": "ART",
+   "volume": "18",
+   "pages": "2827 - 2841",
+   "projects": [
+    "CalHis",
+    "MEDSEA",
+    "PACMEDY"
+   ]
+  },
+  {
    "hal": "hal-05158576",
    "title": "Export flux succession of dinoflagellate cysts and planktonic foraminifera in an active upwelling cell off Cape Blanc (NW Africa)",
    "authors": [
@@ -2302,6 +2736,55 @@
    "projects": []
   },
   {
+   "hal": "hal-03323130",
+   "title": "Timescale dependent sedimentary record during the past 130 kyr from a tropical mixed siliciclastic–carbonate shelf edge and slope: Ashmore Trough (southern Gulf of Papua)",
+   "authors": [
+    "Gianni Mallarino",
+    "Jason Francis",
+    "Stephan Jorry",
+    "James Daniell",
+    "André Droxler",
+    "Gerald Dickens",
+    "Luc L Beaufort",
+    "Samuel Bentley",
+    "Bradley Opdyke",
+    "Larry Peterson"
+   ],
+   "journal": "Sedimentology",
+   "year": 2021,
+   "date": "2021-01-01",
+   "doi": "10.1111/sed.12867",
+   "pdf": "https://hal.inrae.fr/hal-03323130/document",
+   "type": "ART",
+   "volume": "68",
+   "pages": "2606 - 2648",
+   "projects": []
+  },
+  {
+   "hal": "hal-03167060",
+   "title": "Origin of manganese in nannofossil calcite based on synchrotron nanoXRF and Xanes",
+   "authors": [
+    "Baptiste Suchéras-Marx",
+    "Fabienne Giraud",
+    "Isabelle Daniel",
+    "Camille Rivard",
+    "Marie-Pierre Aubry",
+    "Karl-Heinz Baumann",
+    "Luc L Beaufort",
+    "Rémi Tucoulou",
+    "Alexandre S. Simionovici"
+   ],
+   "journal": "Marine Micropaleontology",
+   "year": 2021,
+   "date": "2021-01-01",
+   "doi": "10.1016/j.marmicro.2021.101961",
+   "pdf": "https://hal.science/hal-03167060/document",
+   "type": "ART",
+   "volume": "163",
+   "pages": "101961",
+   "projects": []
+  },
+  {
    "hal": "hal-03122401",
    "title": "NIST RM 8301 Boron Isotopes in Marine Carbonate (Simulated Coral and Foraminifera Solutions): Inter‐laboratory δ 11 B and Trace Element Ratio Value Assignment",
    "authors": [
@@ -2367,6 +2850,52 @@
    "projects": []
   },
   {
+   "hal": "hal-03561622",
+   "title": "Controls on Alkenone Carbon Isotope Fractionation in the Modern Ocean",
+   "authors": [
+    "Samuel R Phelps",
+    "Heather M Stoll",
+    "Clara Bolton",
+    "Luc L Beaufort",
+    "Pratigya J Polissar"
+   ],
+   "journal": "Geochemistry, Geophysics, Geosystems",
+   "year": 2021,
+   "date": "2021-01-01",
+   "doi": "10.1029/2021gc009658",
+   "pdf": "https://hal.science/hal-03561622/document",
+   "type": "ART",
+   "volume": "22",
+   "pages": "e2021GC009658",
+   "projects": [
+    "iMonsoon"
+   ]
+  },
+  {
+   "hal": "hal-03038635",
+   "title": "Technical note: A new automated radiolarian image acquisition, stacking, processing, segmentation and identification workflow",
+   "authors": [
+    "Martin Tetard",
+    "Ross Marchant",
+    "Giuseppe Cortese",
+    "Yves Gally",
+    "Thibault de Garidel-Thoron",
+    "Luc L Beaufort"
+   ],
+   "journal": "Climate of the Past",
+   "year": 2020,
+   "date": "2020-12-02",
+   "doi": "10.5194/cp-16-2415-2020",
+   "pdf": "https://hal.science/hal-03038635/document",
+   "type": "ART",
+   "volume": "16",
+   "pages": "2415 - 2429",
+   "projects": [
+    "CoMeDiC",
+    "NanoID"
+   ]
+  },
+  {
    "hal": "hal-04707843",
    "title": "On climate and abyssal circulation in the Atlantic Ocean during late Pliocene marine isotope stage M2, ∼3.3 million years ago",
    "authors": [
@@ -2393,6 +2922,52 @@
    "type": "ART",
    "volume": "250",
    "pages": "106644",
+   "projects": []
+  },
+  {
+   "hal": "hal-03323672",
+   "title": "Dynamics of primary productivity in the northeastern Bay of Bengal over the last 26 000 years",
+   "authors": [
+    "Xinquan Zhou",
+    "Stéphanie Duchamp-Alphonse",
+    "Masa Kageyama",
+    "Franck Bassinot",
+    "Luc L Beaufort",
+    "Christophe Colin"
+   ],
+   "journal": "Climate of the Past",
+   "year": 2020,
+   "date": "2020-10-28",
+   "doi": "10.5194/cp-16-1969-2020",
+   "pdf": "https://hal.science/hal-03323672/document",
+   "type": "ART",
+   "volume": "16",
+   "pages": "1969 - 1986",
+   "projects": [
+    "PSI"
+   ]
+  },
+  {
+   "hal": "hal-03038703",
+   "title": "Pliocene four-rayed discoasters from IODP Expedition 363 sites in the eastern Indian Ocean and western Pacific Ocean",
+   "authors": [
+    "Allan Gil S. Fernando",
+    "Tom Dunkley Jones",
+    "Luc L Beaufort",
+    "Denise K Kulhanek",
+    "Yvonne Ivy L. Doyongan",
+    "Ana Marie E Binuya",
+    "Jaan Rcp Nogot",
+    "Mirko Alessandro C. Uy"
+   ],
+   "journal": "Journal of Nannoplankton Research",
+   "year": 2020,
+   "date": "2020-10-01",
+   "doi": "10.58998/jnr2090",
+   "pdf": null,
+   "type": "ART",
+   "volume": "38",
+   "pages": "49-55",
    "projects": []
   },
   {
@@ -2542,6 +3117,24 @@
    ]
   },
   {
+   "hal": "hal-02409222",
+   "title": "Late Quaternary coccolith weight variations in the northern South China Sea and their environmental controls",
+   "authors": [
+    "Xiang Su",
+    "Chuanlian Liu",
+    "Luc L Beaufort"
+   ],
+   "journal": "Marine Micropaleontology",
+   "year": 2020,
+   "date": "2020-01-01",
+   "doi": "10.1016/j.marmicro.2019.101798",
+   "pdf": null,
+   "type": "ART",
+   "volume": "154",
+   "pages": null,
+   "projects": []
+  },
+  {
    "hal": "hal-04700519",
    "title": "Control of CaCO<sub>3</sub> dissolution at the deep seafloor and its consequences",
    "authors": [
@@ -2577,6 +3170,51 @@
    "type": "ART",
    "volume": "35",
    "pages": "e2020PA003865",
+   "projects": []
+  },
+  {
+   "hal": "insu-02953384",
+   "title": "Automated recognition by multiple convolutional neural networks of modern, fossil, intact and damaged pollen grains",
+   "authors": [
+    "Benjamin Bourel",
+    "Ross Marchant",
+    "Thibault de Garidel-Thoron",
+    "Martin Tetard",
+    "Doris Barboni",
+    "Yves Gally",
+    "Luc L Beaufort"
+   ],
+   "journal": "Computers & Geosciences",
+   "year": 2020,
+   "date": "2020-01-01",
+   "doi": "10.1016/j.cageo.2020.104498",
+   "pdf": "https://insu.hal.science/insu-02953384/document",
+   "type": "ART",
+   "volume": "140",
+   "pages": "104498",
+   "projects": [
+    "FIRST"
+   ]
+  },
+  {
+   "hal": "hal-02464944",
+   "title": "Anatomy of a ‘suspended’ seafloor in the dense brine waters of the deep hypersaline Urania Basin",
+   "authors": [
+    "I.W. Aiello",
+    "Luc L Beaufort",
+    "T. Goldhammer",
+    "V.B. Heuer",
+    "K.-U. Hinrichs",
+    "M. Zabel"
+   ],
+   "journal": "Deep Sea Research Part II: Topical Studies in Oceanography",
+   "year": 2020,
+   "date": "2020-01-01",
+   "doi": "10.1016/j.dsr2.2019.07.014",
+   "pdf": null,
+   "type": "ART",
+   "volume": "171",
+   "pages": "104626",
    "projects": []
   },
   {
@@ -2830,6 +3468,49 @@
    "projects": []
   },
   {
+   "hal": "hal-02049223",
+   "title": "X-ray nanotomography of coccolithophores reveals that coccolith mass and segment number correlate with grid size",
+   "authors": [
+    "Thomas Beuvier",
+    "I. Probert",
+    "L. Beaufort",
+    "Baptiste Suchéras-Marx",
+    "Y. Chushkin",
+    "F. Zontone",
+    "Alain Gibaud"
+   ],
+   "journal": "Nature Communications",
+   "year": 2019,
+   "date": "2019-01-01",
+   "doi": "10.1038/s41467-019-08635-x",
+   "pdf": "https://hal.sorbonne-universite.fr/hal-02049223/document",
+   "type": "ART",
+   "volume": "10",
+   "pages": "751",
+   "projects": []
+  },
+  {
+   "hal": "hal-01819587",
+   "title": "Enhanced ocean-atmosphere carbon partitioning via the carbonate counter pump during the last deglacial",
+   "authors": [
+    "Stéphanie Duchamp-Alphonse",
+    "Giuseppe Siani",
+    "Elisabeth Michel",
+    "Luc L Beaufort",
+    "Yves Gally",
+    "Samuel Jaccard"
+   ],
+   "journal": "Nature Communications",
+   "year": 2018,
+   "date": "2018-12-01",
+   "doi": "10.1038/s41467-018-04625-7",
+   "pdf": "https://hal.science/hal-01819587/document",
+   "type": "ART",
+   "volume": "9",
+   "pages": "2396",
+   "projects": []
+  },
+  {
    "hal": "hal-02091055",
    "title": "Advances in planktonic foraminifer research: New perspectives for paleoceanography",
    "authors": [
@@ -2970,6 +3651,26 @@
    "projects": []
   },
   {
+   "hal": "hal-01669206",
+   "title": "A 2700-year record of ENSO and PDO variability from the Californian margin based on coccolithophore assemblages and calcification",
+   "authors": [
+    "Luc L Beaufort",
+    "Michaël Grelaud"
+   ],
+   "journal": "Progress in Earth and Planetary Science",
+   "year": 2017,
+   "date": "2017-12-01",
+   "doi": "10.1186/s40645-017-0123-z",
+   "pdf": "https://hal.science/hal-01669206/document",
+   "type": "ART",
+   "volume": "4",
+   "pages": null,
+   "projects": [
+    "CalHis",
+    "PACMEDY"
+   ]
+  },
+  {
    "hal": "hal-04698938",
    "title": "Causes of ice age intensification across the Mid-Pleistocene Transition",
    "authors": [
@@ -3016,6 +3717,27 @@
    "volume": "195",
    "pages": "70-83",
    "projects": []
+  },
+  {
+   "hal": "hal-01669212",
+   "title": "A new optical method for automated pore analysis on benthic foraminifera",
+   "authors": [
+    "Martin Tetard",
+    "Luc L Beaufort",
+    "Laetitia Licari"
+   ],
+   "journal": "Marine Micropaleontology",
+   "year": 2017,
+   "date": "2017-10-01",
+   "doi": "10.1016/j.marmicro.2017.08.005",
+   "pdf": null,
+   "type": "ART",
+   "volume": "136",
+   "pages": "30 - 36",
+   "projects": [
+    "CalHis",
+    "PACMEDY"
+   ]
   },
   {
    "hal": "hal-04707808",
@@ -3068,6 +3790,26 @@
    "projects": []
   },
   {
+   "hal": "hal-01514644",
+   "title": "Oxygen history off Baja California over the last 80 kyr: A new foraminiferal-based record",
+   "authors": [
+    "Martin Tetard",
+    "Laetitia Licari",
+    "Luc L Beaufort"
+   ],
+   "journal": "Paleoceanography",
+   "year": 2017,
+   "date": "2017-01-01",
+   "doi": "10.1002/2016pa003034",
+   "pdf": "https://hal.science/hal-01514644/document",
+   "type": "ART",
+   "volume": "32",
+   "pages": "246 - 264",
+   "projects": [
+    "CalHis"
+   ]
+  },
+  {
    "hal": "hal-01584249",
    "title": "Modern planktic foraminifers in the high-latitude ocean",
    "authors": [
@@ -3096,6 +3838,74 @@
    "projects": []
   },
   {
+   "hal": "hal-01670642",
+   "title": "International Ocean Discovery Program Expedition 363 Preliminary Report Western Pacific Warm Pool Neogene and Quaternary records of Western Pacific Warm Pool paleoceanography",
+   "authors": [
+    "Yair Rosenthal",
+    "Ann E Holbourn",
+    "Denise K Kulhanek",
+    "Ivano W. Aiello",
+    "Tali L. Babila",
+    "Germain Bayon",
+    "Luc L Beaufort",
+    "Samantha C. Bova",
+    "Jong-Hwa Chun",
+    "Haowen Dang",
+    "Anna Joy Drury",
+    "Tom Dunkley Jones",
+    "Patricia P.B. Eichler",
+    "Allan G.Salazar Fernando",
+    "Kelly Gibson",
+    "Robert G. Hatfield",
+    "Daniel L. Johnson",
+    "Yuho Kumagai",
+    "Braddock K. Linsley",
+    "Niklas Meinicke",
+    "Gregory S. Mountain",
+    "Bradley N. Opdyke",
+    "Paul N. Pearson",
+    "Christopher Poole",
+    "Ana Christina Ravelo",
+    "Takuya Sagawa",
+    "Anaïs Schmitt",
+    "Jennifer B. Wurtzel",
+    "Jian Xu",
+    "Masanobu Yamamoto",
+    "Yige Zhang"
+   ],
+   "journal": "",
+   "year": 2017,
+   "date": "2017-01-01",
+   "doi": "10.14379/iodp.pr.363.2017",
+   "pdf": "https://hal.science/hal-01670642/document",
+   "type": "OUV",
+   "volume": null,
+   "pages": null,
+   "projects": []
+  },
+  {
+   "hal": "hal-01584174",
+   "title": "From monsoon to marine productivity in the Arabian Sea: insights from glacial and interglacial climates",
+   "authors": [
+    "Priscilla Le Mézo",
+    "Luc L Beaufort",
+    "Laurent Bopp",
+    "Pascale Braconnot",
+    "Masa Kageyama"
+   ],
+   "journal": "Climate of the Past",
+   "year": 2017,
+   "date": "2017-01-01",
+   "doi": "10.5194/cp-13-759-2017",
+   "pdf": "https://hal.science/hal-01584174/document",
+   "type": "ART",
+   "volume": "13",
+   "pages": "759-778",
+   "projects": [
+    "L-IPSL"
+   ]
+  },
+  {
    "hal": "hal-04707794",
    "title": "Geochemical response of the mid-depth Northeast Atlantic Ocean to freshwater input during Heinrich events 1 to 4",
    "authors": [
@@ -3118,6 +3928,53 @@
    "projects": []
   },
   {
+   "hal": "hal-01419501",
+   "title": "Authigenic 10Be/9Be ratio signatures of the cosmogenic nuclide production linked to geomagnetic dipole moment variation since the Brunhes/Matuyama boundary",
+   "authors": [
+    "Quentin Simon",
+    "Nicolas Thouveny",
+    "Didier L Bourlès",
+    "Jean-Pierre Valet",
+    "Franck Bassinot",
+    "Luc L Ménabréaz",
+    "Valéry Guillou",
+    "Sandrine Choy",
+    "Luc L Beaufort"
+   ],
+   "journal": "Journal of Geophysical Research : Solid Earth",
+   "year": 2016,
+   "date": "2016-11-01",
+   "doi": "10.1002/2016jb013335",
+   "pdf": "https://amu.hal.science/hal-01419501/document",
+   "type": "ART",
+   "volume": "121",
+   "pages": "7716-7741",
+   "projects": [
+    "MAG-ORB"
+   ]
+  },
+  {
+   "hal": "hal-01458293",
+   "title": "Do sample preparation techniques affect the relative abundance of Florisphaera profunda?",
+   "authors": [
+    "Claudia Lupi",
+    "Manuela Bordiga",
+    "Roberto Sacchi",
+    "Pietro Galinetto",
+    "Luc L Beaufort",
+    "Miriam Cobianchi"
+   ],
+   "journal": "Marine Micropaleontology",
+   "year": 2016,
+   "date": "2016-09-01",
+   "doi": "10.1016/j.marmicro.2016.07.007",
+   "pdf": null,
+   "type": "ART",
+   "volume": "127",
+   "pages": "42-49",
+   "projects": []
+  },
+  {
    "hal": "hal-04736286",
    "title": "Exploring the oxygen and carbon isotopic composition of the Mediterranean red coral (Corallium rubrum) for seawater temperature reconstruction",
    "authors": [
@@ -3137,6 +3994,36 @@
    "type": "ART",
    "volume": "186",
    "pages": "11 - 23",
+   "projects": []
+  },
+  {
+   "hal": "hal-01458292",
+   "title": "Why marine phytoplankton calcify",
+   "authors": [
+    "Fanny M. Monteiro",
+    "Lennart T. Bach",
+    "Colin Brownlee",
+    "Paul Bown",
+    "Rosalind E. M. Rickaby",
+    "Alex J. Poulton",
+    "Toby Tyrrell",
+    "Luc L Beaufort",
+    "Stephanie Dutkiewicz",
+    "Samantha Gibbs",
+    "Magdalena A. Gutowska",
+    "Renee Lee",
+    "Ulf Riebesell",
+    "Jeremy Young",
+    "Andy Ridgwell"
+   ],
+   "journal": "Science Advances",
+   "year": 2016,
+   "date": "2016-07-01",
+   "doi": "10.1126/sciadv.1501822",
+   "pdf": "https://hal.science/hal-01458292/document",
+   "type": "ART",
+   "volume": "2",
+   "pages": null,
    "projects": []
   },
   {
@@ -3182,6 +4069,46 @@
    "projects": []
   },
   {
+   "hal": "hal-01458291",
+   "title": "Comparative geochemistry of quaternary carbonaceous sediments from the continental slope of the Baja California and the miocene monterey formation",
+   "authors": [
+    "G. N. Baturin",
+    "I. O. Murdmaa",
+    "L. Beaufort",
+    "G. N. Alekhina"
+   ],
+   "journal": "Lithology and Mineral Resources",
+   "year": 2016,
+   "date": "2016-03-01",
+   "doi": "10.1134/s0024490216020024",
+   "pdf": null,
+   "type": "ART",
+   "volume": "51",
+   "pages": "93-106",
+   "projects": []
+  },
+  {
+   "hal": "hal-01461250",
+   "title": "Starch granules identification and automatic classification based on an extended set of morphometric and optical measurements",
+   "authors": [
+    "H Arraiz",
+    "N Barbarin",
+    "M Pasturel",
+    "L. Beaufort",
+    "M Domínguez-Rodrigo",
+    "Doris Barboni"
+   ],
+   "journal": "Journal of Archaeological Science: Reports",
+   "year": 2016,
+   "date": "2016-01-01",
+   "doi": "10.1016/j.jasrep.2016.03.039",
+   "pdf": null,
+   "type": "ART",
+   "volume": "7",
+   "pages": "169--179",
+   "projects": []
+  },
+  {
    "hal": "hal-01453020",
    "title": "Planktonic foraminiferal biogeography in the Indian sector of the Southern Ocean: Contribution from CPR data",
    "authors": [
@@ -3224,6 +4151,28 @@
    "projects": []
   },
   {
+   "hal": "hal-01458290",
+   "title": "Calcification response of a key phytoplankton family to millennial-scale environmental change",
+   "authors": [
+    "H. L. O. Mcclelland",
+    "N. Barbarin",
+    "Luc L Beaufort",
+    "M. Hermoso",
+    "P. Ferretti",
+    "M. Greaves",
+    "R. E. M. Rickaby"
+   ],
+   "journal": "Scientific Reports",
+   "year": 2016,
+   "date": "2016-01-01",
+   "doi": "10.1038/srep34263",
+   "pdf": "https://hal.science/hal-01458290/document",
+   "type": "ART",
+   "volume": "6",
+   "pages": "34263",
+   "projects": []
+  },
+  {
    "hal": "hal-04703001",
    "title": "Precession-driven changes in Iceland–Scotland Overflow Water penetration and bottom water circulation on Gardar Drift since ~ 200 ka",
    "authors": [
@@ -3239,6 +4188,97 @@
    "type": "ART",
    "volume": "440",
    "pages": "551-563",
+   "projects": []
+  },
+  {
+   "hal": "hal-01458297",
+   "title": "Differences in Late Quaternary primary productivity between the western tropical Pacific and the South China Sea: Evidence from coccoliths",
+   "authors": [
+    "Xiang Su",
+    "Chuanlian Liu",
+    "Luc L Beaufort",
+    "Nicolas Barbarin",
+    "Zhimin Jian"
+   ],
+   "journal": "Deep Sea Research Part II: Topical Studies in Oceanography",
+   "year": 2015,
+   "date": "2015-12-01",
+   "doi": "10.1016/j.dsr2.2015.07.008",
+   "pdf": null,
+   "type": "ART",
+   "volume": "122",
+   "pages": "131-141",
+   "projects": []
+  },
+  {
+   "hal": "hal-01458298",
+   "title": "Persistent drying in the tropics linked to natural forcing",
+   "authors": [
+    "Amos Winter",
+    "Davide Zanchettin",
+    "Thomas Miller",
+    "Yochanan Kushnir",
+    "David Black",
+    "Gerrit Lohmann",
+    "Allison Burnett",
+    "Gerald H. Haug",
+    "Juan Estrella-Martinez",
+    "Sebastian F. M. Breitenbach",
+    "Luc L Beaufort",
+    "Angelo Rubino",
+    "Hai Cheng"
+   ],
+   "journal": "Nature Communications",
+   "year": 2015,
+   "date": "2015-07-01",
+   "doi": "10.1038/ncomms8627",
+   "pdf": "https://hal.science/hal-01458298/document",
+   "type": "ART",
+   "volume": "6",
+   "pages": null,
+   "projects": []
+  },
+  {
+   "hal": "hal-01458295",
+   "title": "Reconstruction of past climate variability and ENSO-like fluctuations in the southern Gulf of California (Alfonso Basin) since the last glacial maximum",
+   "authors": [
+    "Francisca Staines-Urias",
+    "Oscar Gonzalez-Yajimovich",
+    "Luc L Beaufort"
+   ],
+   "journal": "Quaternary Research",
+   "year": 2015,
+   "date": "2015-05-01",
+   "doi": "10.1016/j.yqres.2015.03.007",
+   "pdf": null,
+   "type": "ART",
+   "volume": "83",
+   "pages": "488-501",
+   "projects": []
+  },
+  {
+   "hal": "hal-01458296",
+   "title": "Progressive shoaling of the equatorial Pacific thermocline over the last eight glacial periods",
+   "authors": [
+    "Zhiming Jian",
+    "Liming Ye",
+    "Andre W. Droxler",
+    "Guillaume Lenoir",
+    "Michel Crucifix",
+    "Nicolas Barbarin",
+    "Luc L Beaufort",
+    "Fabienne Regoli",
+    "Thibault Garidel-Thoron",
+    "Tachikawa Kazuyo"
+   ],
+   "journal": "Paleoceanography",
+   "year": 2015,
+   "date": "2015-05-01",
+   "doi": "10.1002/2014pa002696",
+   "pdf": "https://hal.science/hal-01458296/document",
+   "type": "ART",
+   "volume": "30",
+   "pages": "439-455",
    "projects": []
   },
   {
@@ -3263,6 +4303,1737 @@
    "type": "ART",
    "volume": "518",
    "pages": "49-54",
+   "projects": []
+  },
+  {
+   "hal": "hal-01458302",
+   "title": "Precipitation variability within the West Pacific Warm Pool over the past 120ka: Evidence from the Davao Gulf, southern Philippines",
+   "authors": [
+    "Nicholas Fraser",
+    "Wolfgang Kuhnt",
+    "Ann Holbourn",
+    "Timothe Bolliet",
+    "Nils Andersen",
+    "Thomas Blanz",
+    "Luc L Beaufort"
+   ],
+   "journal": "Paleoceanography",
+   "year": 2014,
+   "date": "2014-10-24",
+   "doi": "10.1002/2013pa002599",
+   "pdf": "https://hal.science/hal-01458302/document",
+   "type": "ART",
+   "volume": "29",
+   "pages": "1094-1110",
+   "projects": []
+  },
+  {
+   "hal": "hal-01458301",
+   "title": "Poleward expansion of the coccolithophore Emiliania huxleyi",
+   "authors": [
+    "Amos Winter",
+    "Jorijntje Henderiks",
+    "Luc L Beaufort",
+    "Rosalind E. M. Rickaby",
+    "Christopher W. Brown"
+   ],
+   "journal": "Journal of Plankton Research",
+   "year": 2014,
+   "date": "2014-03-01",
+   "doi": "10.1093/plankt/fbt110",
+   "pdf": "https://hal.science/hal-01458301/document",
+   "type": "ART",
+   "volume": "36",
+   "pages": "316-325",
+   "projects": []
+  },
+  {
+   "hal": "hal-01458300",
+   "title": "Optical measurements to determine the thickness of calcite crystals and the mass of thin carbonate particles such as coccoliths",
+   "authors": [
+    "Luc L Beaufort",
+    "Nicolas Barbarin",
+    "Yves Gally"
+   ],
+   "journal": "Nature Protocols",
+   "year": 2014,
+   "date": "2014-03-01",
+   "doi": "10.1038/nprot.2014.028",
+   "pdf": null,
+   "type": "ART",
+   "volume": "9",
+   "pages": "633-642",
+   "projects": []
+  },
+  {
+   "hal": "hal-01458299",
+   "title": "Modern and glacial tropical snowlines controlled by sea surface temperature and atmospheric mixing",
+   "authors": [
+    "Aradhna K. Tripati",
+    "Sandeep Sahany",
+    "Dustin Pittman",
+    "Robert A. Eagle",
+    "J. David Neelin",
+    "Jonathan L. Mitchell",
+    "Luc L Beaufort"
+   ],
+   "journal": "Nature Geoscience",
+   "year": 2014,
+   "date": "2014-03-01",
+   "doi": "10.1038/ngeo2082",
+   "pdf": "https://hal.science/hal-01458299/document",
+   "type": "ART",
+   "volume": "7",
+   "pages": "205-209",
+   "projects": []
+  },
+  {
+   "hal": "hal-01136429",
+   "title": "Middle Jurassic coccolith fluxes: A novel approach by automated quantification",
+   "authors": [
+    "Baptiste Suchéras-Marx",
+    "Fabienne Giraud",
+    "Emanuela Mattioli",
+    "Yves Gally",
+    "Nicolas Barbarin",
+    "Luc L Beaufort"
+   ],
+   "journal": "Marine Micropaleontology",
+   "year": 2014,
+   "date": "2014-01-01",
+   "doi": "10.1016/j.marmicro.2014.06.002",
+   "pdf": "https://hal.science/hal-01136429/document",
+   "type": "ART",
+   "volume": "111",
+   "pages": "15-25",
+   "projects": []
+  },
+  {
+   "hal": "hal-01458307",
+   "title": "Late Quaternary coccolith records in the South China Sea and East Asian monsoon dynamics",
+   "authors": [
+    "Xiang Su",
+    "Chuanlian Liu",
+    "Luc L Beaufort",
+    "Jun Tian",
+    "Enqing Huang"
+   ],
+   "journal": "Global and Planetary Change",
+   "year": 2013,
+   "date": "2013-12-01",
+   "doi": "10.1016/j.gloplacha.2013.08.016",
+   "pdf": null,
+   "type": "ART",
+   "volume": "111",
+   "pages": "88-96",
+   "projects": []
+  },
+  {
+   "hal": "hal-01458306",
+   "title": "Quantified intermediate water oxygenation history of the NE Pacific: A new benthic foraminiferal record from Santa Barbara basin",
+   "authors": [
+    "K. Ohkushi",
+    "J. P. Kennett",
+    "C. M. Zeleski",
+    "S. E. Moffitt",
+    "T. M. Hill",
+    "Cédric Robert Robert",
+    "L. Beaufort",
+    "R. J. Behl"
+   ],
+   "journal": "Paleoceanography",
+   "year": 2013,
+   "date": "2013-09-01",
+   "doi": "10.1002/palo.20043",
+   "pdf": "https://hal.science/hal-01458306/document",
+   "type": "ART",
+   "volume": "28",
+   "pages": "453-467",
+   "projects": []
+  },
+  {
+   "hal": "hal-01458304",
+   "title": "Diatom fluxes in the NW Mediterranean: evidence from a 12-year sediment trap record and surficial sediments",
+   "authors": [
+    "Andrés S. Rigual-Hernández",
+    "Maria A. Barcena",
+    "Richard W. Jordan",
+    "Francisco J. Sierro",
+    "José A. Flores",
+    "K. J. Sebastian Meier",
+    "Luc L Beaufort",
+    "Serge Heussner"
+   ],
+   "journal": "Journal of Plankton Research",
+   "year": 2013,
+   "date": "2013-09-01",
+   "doi": "10.1093/plankt/fbt055",
+   "pdf": null,
+   "type": "ART",
+   "volume": "35",
+   "pages": "1109-1125",
+   "projects": []
+  },
+  {
+   "hal": "hal-01458305",
+   "title": "Calcareous plankton and geochemistry from the ODP site 1209B in the NW Pacific Ocean (Shatsky Rise): New data to interpret calcite dissolution and paleoproductivity changes of the last 450 ka",
+   "authors": [
+    "Manuela Bordiga",
+    "Luc L Beaufort",
+    "Miriam Cobianchi",
+    "Claudia Lupi",
+    "Nicoletta Mancin",
+    "Valeria Luciani",
+    "Nicola Pelosi",
+    "Mario Sprovieri"
+   ],
+   "journal": "Palaeogeography, Palaeoclimatology, Palaeoecology",
+   "year": 2013,
+   "date": "2013-02-01",
+   "doi": "10.1016/j.palaeo.2012.12.021",
+   "pdf": null,
+   "type": "ART",
+   "volume": "371",
+   "pages": "93-108",
+   "projects": []
+  },
+  {
+   "hal": "hal-01458303",
+   "title": "Global marine plankton functional type biomass distributions: coccolithophores",
+   "authors": [
+    "C. J. O'Brien",
+    "J. A. Peloquin",
+    "M. Vogt",
+    "M. Heinle",
+    "N. Gruber",
+    "P. Ajani",
+    "H. Andruleit",
+    "J. Aristegui",
+    "Luc L Beaufort",
+    "M. Estrada",
+    "D. Karentz",
+    "E. Kopczynska",
+    "R. Lee",
+    "A. J. Poulton",
+    "T. Pritchard",
+    "C. Widdicombe"
+   ],
+   "journal": "Earth System Science Data",
+   "year": 2013,
+   "date": "2013-01-01",
+   "doi": "10.5194/essd-5-259-2013",
+   "pdf": "https://hal.science/hal-01458303/document",
+   "type": "ART",
+   "volume": "5",
+   "pages": "259-276",
+   "projects": []
+  },
+  {
+   "hal": "insu-00771704",
+   "title": "Processes controlling a volcaniclastic turbiditic system during the last climatic cycle: Example of the Cilaos deep-sea fan, offshore La Réunion Island",
+   "authors": [
+    "Emmanuelle Sisavath",
+    "Aude Mazuel",
+    "Stéphan J. Jorry",
+    "Nathalie Babonneau",
+    "Patrick Bachèlery",
+    "Béatrice de Voogd",
+    "Marie Salpin",
+    "Laurent Emmanuel",
+    "Luc L Beaufort",
+    "Samuel Toucanne"
+   ],
+   "journal": "Sedimentary Geology",
+   "year": 2012,
+   "date": "2012-12-15",
+   "doi": "10.1016/j.sedgeo.2012.09.010",
+   "pdf": "https://insu.hal.science/insu-00771704/document",
+   "type": "ART",
+   "volume": "281",
+   "pages": "180-193",
+   "projects": []
+  },
+  {
+   "hal": "hal-01458309",
+   "title": "Reconstructing calcification in ancient coccolithophores: Individual coccolith weight and morphology of Coccolithus pelagicus (sensu lato)",
+   "authors": [
+    "Joana C. Cubillos",
+    "Jorijntje Henderiks",
+    "Luc L Beaufort",
+    "William R. Howard",
+    "Gustaaf M. Hallegraeff"
+   ],
+   "journal": "Marine Micropaleontology",
+   "year": 2012,
+   "date": "2012-09-01",
+   "doi": "10.1016/j.marmicro.2012.04.005",
+   "pdf": null,
+   "type": "ART",
+   "volume": "92-93",
+   "pages": "29-39",
+   "projects": []
+  },
+  {
+   "hal": "hal-01458308",
+   "title": "Precession forcing of productivity in the Eastern Equatorial Pacific during the last glacial cycle",
+   "authors": [
+    "Elena V. Ivanova",
+    "Luc L Beaufort",
+    "Laurence Vidal",
+    "Michal Kucera"
+   ],
+   "journal": "Quaternary Science Reviews",
+   "year": 2012,
+   "date": "2012-04-01",
+   "doi": "10.1016/j.quascirev.2012.02.020",
+   "pdf": null,
+   "type": "ART",
+   "volume": "40",
+   "pages": "64-77",
+   "projects": []
+  },
+  {
+   "hal": "hal-00848437",
+   "title": "Influence of CO2 and nitrogen limitation on the coccolith volume of Emiliania huxleyi (Haptophyta)",
+   "authors": [
+    "Marius N. Müller",
+    "Luc L Beaufort",
+    "Olivier Bernard",
+    "Maria-Luiza Pedrotti",
+    "Amélie Talec",
+    "Antoine Sciandra"
+   ],
+   "journal": "Biogeosciences",
+   "year": 2012,
+   "date": "2012-01-01",
+   "doi": "10.5194/bg-9-4155-2012",
+   "pdf": "https://inria.hal.science/hal-00848437/document",
+   "type": "ART",
+   "volume": "9",
+   "pages": "4155--4167",
+   "projects": []
+  },
+  {
+   "hal": "hal-01458311",
+   "title": "The precession phase of hydrological variability in the Western Pacific Warm Pool during the past 400 ka",
+   "authors": [
+    "K. Tachikawa",
+    "Olivier Cartapanis",
+    "Laurence Vidal",
+    "Luc L Beaufort",
+    "Tatiana Barlyaeva",
+    "Edouard Bard"
+   ],
+   "journal": "Quaternary Science Reviews",
+   "year": 2011,
+   "date": "2011-12-01",
+   "doi": "10.1016/j.quascirev.2011.09.016",
+   "pdf": null,
+   "type": "ART",
+   "volume": "30",
+   "pages": "3716-3727",
+   "projects": []
+  },
+  {
+   "hal": "hal-00866853",
+   "title": "Sensitivity of coccolithophores to carbonate chemistry and ocean acidification",
+   "authors": [
+    "Luc Beaufort",
+    "Ian Probert",
+    "Thibault de Garidel-Thoron",
+    "El Mahdi Bendif",
+    "Diana Ruiz-Pino",
+    "Nicolas Metzl",
+    "Catherine Goyet",
+    "Noëlle Buchet",
+    "Pierre Coupel",
+    "M. Grelaud",
+    "B. Rost",
+    "R. E. M. Rickaby",
+    "C. Vargas"
+   ],
+   "journal": "Nature",
+   "year": 2011,
+   "date": "2011-01-01",
+   "doi": "10.1038/nature10295",
+   "pdf": null,
+   "type": "ART",
+   "volume": "476",
+   "pages": "80-83",
+   "projects": []
+  },
+  {
+   "hal": "hal-01458310",
+   "title": "Mindanao Dome variability over the last 160 kyr: Episodic glacial cooling of the West Pacific Warm Pool",
+   "authors": [
+    "Timothe Bolliet",
+    "Ann Holbourn",
+    "Wolfgang Kuhnt",
+    "Carlo Laj",
+    "Catherine Kissel",
+    "Luc L Beaufort",
+    "Markus Kienast",
+    "Nils Andersen",
+    "Dieter Garbe-Schoenberg"
+   ],
+   "journal": "Paleoceanography",
+   "year": 2011,
+   "date": "2011-01-01",
+   "doi": "10.1029/2010pa001966",
+   "pdf": "https://hal.science/hal-01458310/document",
+   "type": "ART",
+   "volume": "26",
+   "pages": "PA1208",
+   "projects": []
+  },
+  {
+   "hal": "hal-01458316",
+   "title": "Combining charcoal and elemental black carbon analysis in sedimentary archives: Implications for past fire regimes, the pyrogenic carbon cycle, and the human-climate interactions",
+   "authors": [
+    "Florian Thevenon",
+    "David Williamson",
+    "Edouard Bard",
+    "Flavio S. Anselmetti",
+    "Luc L Beaufort",
+    "Hélène Cachier"
+   ],
+   "journal": "Global and Planetary Change",
+   "year": 2010,
+   "date": "2010-07-01",
+   "doi": "10.1016/j.gloplacha.2010.01.014",
+   "pdf": null,
+   "type": "ART",
+   "volume": "72",
+   "pages": "381-389",
+   "projects": []
+  },
+  {
+   "hal": "hal-01458315",
+   "title": "Glacial ocean temperatures from `clumped isotope' thermometry in foraminifera and coccoliths",
+   "authors": [
+    "A. Tripati",
+    "R. Eagle",
+    "J. Eiler",
+    "L. Beaufort"
+   ],
+   "journal": "Geochimica et Cosmochimica Acta",
+   "year": 2010,
+   "date": "2010-06-01",
+   "doi": null,
+   "pdf": null,
+   "type": "ART",
+   "volume": "74",
+   "pages": "A1057",
+   "projects": []
+  },
+  {
+   "hal": "hal-01458314",
+   "title": "Upper quaternary laminated sapropelic sediments from the continental slope of Baja California",
+   "authors": [
+    "I. O. Murdmaa",
+    "G. H. Kazarina",
+    "L. Beaufort",
+    "E. V. Ivanova",
+    "E. M. Emelyanov",
+    "V. A. Kravtsov",
+    "G. N. Alekhina",
+    "V. E. Vasileva"
+   ],
+   "journal": "Lithology and Mineral Resources",
+   "year": 2010,
+   "date": "2010-03-01",
+   "doi": "10.1134/s0024490210020057",
+   "pdf": null,
+   "type": "ART",
+   "volume": "45",
+   "pages": "154-171",
+   "projects": []
+  },
+  {
+   "hal": "hal-01458313",
+   "title": "Interhemispheric leakage of isotopically heavy nitrate in the eastern tropical Pacific during the last glacial period",
+   "authors": [
+    "Laetitia E. Pichevin",
+    "Raja S. Ganeshram",
+    "Stephen Francavilla",
+    "Elsa Arellano-Torres",
+    "Tom F. Pedersen",
+    "Luc L Beaufort"
+   ],
+   "journal": "Paleoceanography",
+   "year": 2010,
+   "date": "2010-02-01",
+   "doi": "10.1029/2009pa001754",
+   "pdf": "https://hal.science/hal-01458313/document",
+   "type": "ART",
+   "volume": "25",
+   "pages": null,
+   "projects": []
+  },
+  {
+   "hal": "hal-01419571",
+   "title": "Past dynamics of the Australian monsoon: precession, phase and links to the global monsoon concept",
+   "authors": [
+    "Luc L Beaufort",
+    "S van Der Kaars",
+    "F C Bassinot",
+    "V C Moron"
+   ],
+   "journal": "Climate of the Past",
+   "year": 2010,
+   "date": "2010-01-01",
+   "doi": "10.5194/cp-6-695-2010",
+   "pdf": "https://hal.science/hal-01419571/document",
+   "type": "ART",
+   "volume": "6",
+   "pages": "695 - 706",
+   "projects": []
+  },
+  {
+   "hal": "hal-01458319",
+   "title": "A NEW HELICOSPHAERA-SYRACOLITHUS COMBINATION COCCOSPHERE (HAPTOPHYTA) FROM THE WESTERN MEDITERRANEAN SEA",
+   "authors": [
+    "Martine J. J. Couapel",
+    "Luc L Beaufort",
+    "Jeremy R. Young"
+   ],
+   "journal": "Journal of Phycology",
+   "year": 2009,
+   "date": "2009-08-01",
+   "doi": "10.1111/j.1529-8817.2009.00703.x",
+   "pdf": null,
+   "type": "ART",
+   "volume": "45",
+   "pages": "914-916",
+   "projects": [
+    "BOOM"
+   ]
+  },
+  {
+   "hal": "hal-01458318",
+   "title": "Glacial to interglacial primary production and El Nino-Southern Oscillation dynamics inferred from coccolithophores of the Santa Barbara Basin",
+   "authors": [
+    "Michael Grelaud",
+    "Luc L Beaufort",
+    "Stéphanie Cuven",
+    "Noëlle Buchet"
+   ],
+   "journal": "Paleoceanography",
+   "year": 2009,
+   "date": "2009-01-01",
+   "doi": "10.1029/2007pa001578",
+   "pdf": "https://hal.science/hal-01458318/document",
+   "type": "ART",
+   "volume": "24",
+   "pages": "PA1203",
+   "projects": []
+  },
+  {
+   "hal": "hal-01458317",
+   "title": "Coccolithophore response to climate and surface hydrography in Santa Barbara Basin, California, AD 1917-2004",
+   "authors": [
+    "M. Grelaud",
+    "A. Schimmelmann",
+    "L. Beaufort"
+   ],
+   "journal": "Biogeosciences",
+   "year": 2009,
+   "date": "2009-01-01",
+   "doi": "10.5194/bg-6-2025-2009",
+   "pdf": "https://hal.science/hal-01458317/document",
+   "type": "ART",
+   "volume": "6",
+   "pages": "2025-2039",
+   "projects": []
+  },
+  {
+   "hal": "hal-01458323",
+   "title": "Introduction to the special section ``Proxy Records and Mechanistic Studies of the Late Quaternary Paleoceanography of the Western Pacific Marginal Seas Using IMAGES Cores",
+   "authors": [
+    "Meixun Zhao",
+    "Min-Te Chen",
+    "Luc L Beaufort"
+   ],
+   "journal": "TAO : Terrestrial, Atmospheric and Oceanic Sciences journal",
+   "year": 2008,
+   "date": "2008-08-01",
+   "doi": "10.3319/tao.2008.19.4.i(images)",
+   "pdf": null,
+   "type": "ART",
+   "volume": "19",
+   "pages": "I-III",
+   "projects": []
+  },
+  {
+   "hal": "hal-01458322",
+   "title": "Deep water geomorphology of the mixed siliciclastic-carbonate system, Gulf of Papua",
+   "authors": [
+    "Jason M. Francis",
+    "James J. Daniell",
+    "Andre W. Droxler",
+    "Gerald R. Dickens",
+    "Samuel J. Bentley",
+    "Larry C. Peterson",
+    "Bradley N. Opdyke",
+    "Luc L Beaufort"
+   ],
+   "journal": "Journal of Geophysical Research: Earth Surface",
+   "year": 2008,
+   "date": "2008-03-01",
+   "doi": "10.1029/2007jf000851",
+   "pdf": "https://hal.science/hal-01458322/document",
+   "type": "ART",
+   "volume": "113",
+   "pages": "F01S16",
+   "projects": []
+  },
+  {
+   "hal": "hal-01458321",
+   "title": "Neogene evolution of the mixed carbonate-siliciclastic system in the Gulf of Papua, Papua New Guinea",
+   "authors": [
+    "Evgueni N. Tcherepanov",
+    "Andre W. Droxler",
+    "Philippe Lapointe",
+    "Gerald R. Dickens",
+    "Sam J. Bentley",
+    "Luc L Beaufort",
+    "Larry C. Peterson",
+    "James Daniell",
+    "Bradley N. Opdyke"
+   ],
+   "journal": "Journal of Geophysical Research: Earth Surface",
+   "year": 2008,
+   "date": "2008-02-01",
+   "doi": "10.1029/2006jf000684",
+   "pdf": "https://hal.science/hal-01458321/document",
+   "type": "ART",
+   "volume": "113",
+   "pages": null,
+   "projects": []
+  },
+  {
+   "hal": "hal-04110508",
+   "title": "Calcite production by coccolithophores in the south east Pacific Ocean",
+   "authors": [
+    "L. Beaufort",
+    "M. Couapel",
+    "N. Buchet",
+    "H. Claustre",
+    "C. Goyet"
+   ],
+   "journal": "Biogeosciences",
+   "year": 2008,
+   "date": "2008-01-01",
+   "doi": "10.5194/bg-5-1101-2008",
+   "pdf": "https://hal.science/hal-04110508/document",
+   "type": "ART",
+   "volume": "5",
+   "pages": "1101-1117",
+   "projects": [
+    "BOOM"
+   ]
+  },
+  {
+   "hal": "hal-01458324",
+   "title": "Bundled turbidite deposition in the central Pandora Trough (Gulf of Papua) since Last Glacial Maximum: Linking sediment nature and accumulation to sea level fluctuations at millennial timescale",
+   "authors": [
+    "Stéphan J. Jorry",
+    "Andre W. Droxler",
+    "Gianni Mallarino",
+    "Gerald R. Dickens",
+    "Sam J. Bentley",
+    "Luc L Beaufort",
+    "Larry C. Peterson",
+    "Bradley N. Opdyke"
+   ],
+   "journal": "Journal of Geophysical Research: Earth Surface",
+   "year": 2008,
+   "date": "2008-01-01",
+   "doi": "10.1029/2006jf000649",
+   "pdf": "https://hal.science/hal-01458324/document",
+   "type": "ART",
+   "volume": "113",
+   "pages": "F01S19",
+   "projects": []
+  },
+  {
+   "hal": "hal-01458320",
+   "title": "Biostratigraphic and paleoenvironmental contributions of calcareous nannofossil study from Tortonian-Messinian deposits of Chelif basin (NW Algeria)",
+   "authors": [
+    "Mohamed El Habib Mansouri",
+    "Mostefa Bessedik",
+    "Marie-Pierre Aubry",
+    "Lahcene Belkebir",
+    "Bouhameur Mansour",
+    "Luc L Beaufort"
+   ],
+   "journal": "Geodiversitas",
+   "year": 2008,
+   "date": "2008-01-01",
+   "doi": null,
+   "pdf": null,
+   "type": "ART",
+   "volume": "30",
+   "pages": "59-77",
+   "projects": []
+  },
+  {
+   "hal": "hal-01458330",
+   "title": "Terrigenous input response to glacial/interglacial climatic variations over southern Baja California: a rock magnetic approach",
+   "authors": [
+    "Cecile L. Blanchet",
+    "Nicolas Thouveny",
+    "Laurence Vidal",
+    "Guillaume Leduc",
+    "K. Tachikawa",
+    "Edouard Bard",
+    "Luc L Beaufort"
+   ],
+   "journal": "Quaternary Science Reviews",
+   "year": 2007,
+   "date": "2007-12-01",
+   "doi": "10.1016/j.quascirev.2007.07.008",
+   "pdf": null,
+   "type": "ART",
+   "volume": "26",
+   "pages": "3118-3133",
+   "projects": []
+  },
+  {
+   "hal": "hal-01458329",
+   "title": "Late Quaternary marginal marine palaeoenvironments of northern Australia as inferred from cluster analysis of coccolith assemblages",
+   "authors": [
+    "Martine J. J. Couapel",
+    "Luc L Beaufort",
+    "Brian G. Jones",
+    "Allan R. Chivas"
+   ],
+   "journal": "Marine Micropaleontology",
+   "year": 2007,
+   "date": "2007-12-01",
+   "doi": "10.1016/j.marmicro.2007.07.006",
+   "pdf": null,
+   "type": "ART",
+   "volume": "65",
+   "pages": "213-231",
+   "projects": []
+  },
+  {
+   "hal": "hal-01458328",
+   "title": "Effects of acidification and primary production on coccolith weight: Implications for carbonate transfer from the surface to the deep ocean",
+   "authors": [
+    "Luc L Beaufort",
+    "Ian Probert",
+    "Noëlle Buchet"
+   ],
+   "journal": "Geochemistry, Geophysics, Geosystems",
+   "year": 2007,
+   "date": "2007-08-01",
+   "doi": "10.1029/2006gc001493",
+   "pdf": "https://hal.science/hal-01458328/document",
+   "type": "ART",
+   "volume": "8",
+   "pages": null,
+   "projects": [
+    "BOOM"
+   ]
+  },
+  {
+   "hal": "hal-01458327",
+   "title": "A multiproxy assessment of the western equatorial Pacific hydrography during the last 30 kyr",
+   "authors": [
+    "Thibault Garidel-Thoron",
+    "Yair Rosenthal",
+    "Luc L Beaufort",
+    "Edouard Bard",
+    "Corinne Sonzogni",
+    "Alan C. Mix"
+   ],
+   "journal": "Paleoceanography",
+   "year": 2007,
+   "date": "2007-07-01",
+   "doi": "10.1029/2006pa001269",
+   "pdf": "https://hal.science/hal-01458327/document",
+   "type": "ART",
+   "volume": "22",
+   "pages": null,
+   "projects": []
+  },
+  {
+   "hal": "hal-01458326",
+   "title": "Moisture transport across Central America as a positive feedback on abrupt climatic changes",
+   "authors": [
+    "Guillaume Leduc",
+    "Laurence Vidal",
+    "K. Tachikawa",
+    "Frauke Rostek",
+    "Corinne Sonzogni",
+    "Luc L Beaufort",
+    "Edouard Bard"
+   ],
+   "journal": "Nature",
+   "year": 2007,
+   "date": "2007-02-01",
+   "doi": "10.1038/nature05578",
+   "pdf": null,
+   "type": "ART",
+   "volume": "445",
+   "pages": "908-911",
+   "projects": []
+  },
+  {
+   "hal": "hal-01458325",
+   "title": "Coccolith chemistry reveals secular variations in the global ocean carbon cycle?",
+   "authors": [
+    "R. E. M. Rickaby",
+    "E. Bard",
+    "C. Sonzogni",
+    "F. Rostek",
+    "L. Beaufort",
+    "S. Barker",
+    "G. Rees",
+    "D. P. Schrag"
+   ],
+   "journal": "Earth and Planetary Science Letters",
+   "year": 2007,
+   "date": "2007-01-01",
+   "doi": "10.1016/j.epsl.2006.10.016",
+   "pdf": null,
+   "type": "ART",
+   "volume": "253",
+   "pages": "83-95",
+   "projects": []
+  },
+  {
+   "hal": "hal-01460377",
+   "title": "Testing the direct effect of CO2 concentration on a bloom of the coccolithophorid Emiliania huxleyi in mesocosm experiments",
+   "authors": [
+    "A Engel",
+    "I Zondervan",
+    "K Aerts",
+    "L. Beaufort",
+    "A Benthien",
+    "L Chou",
+    "B Delille",
+    "Jean-Pierre Gattuso",
+    "J Harlay",
+    "C Heemann",
+    "L Hoffmann",
+    "S Jacquet",
+    "J Nejstgaard",
+    "Md Pizay",
+    "E Rochelle-Newall",
+    "U Schneider",
+    "A Terbrueggen",
+    "U Riebesell"
+   ],
+   "journal": "Limnology and Oceanography",
+   "year": 2005,
+   "date": "2005-03-01",
+   "doi": null,
+   "pdf": null,
+   "type": "ART",
+   "volume": "50",
+   "pages": "493-507",
+   "projects": []
+  },
+  {
+   "hal": "hal-01460379",
+   "title": "Evolution and variability of the Asian monsoon system: state of the art and outstanding issues",
+   "authors": [
+    "Px Wang",
+    "S Clemens",
+    "Luc L Beaufort",
+    "P Braconnot",
+    "G Ganssen",
+    "Zm Jian",
+    "P Kershaw",
+    "M Sarnthein"
+   ],
+   "journal": "Quaternary Science Reviews",
+   "year": 2005,
+   "date": "2005-03-01",
+   "doi": "10.1016/j.quascirev.2004.10.002",
+   "pdf": null,
+   "type": "ART",
+   "volume": "24",
+   "pages": "595-629",
+   "projects": []
+  },
+  {
+   "hal": "hal-01460378",
+   "title": "Weight estimates of coccoliths using the optical properties (birefringence) of calcite",
+   "authors": [
+    "L. Beaufort"
+   ],
+   "journal": "Micropaleontology",
+   "year": 2005,
+   "date": "2005-01-01",
+   "doi": "10.2113/gsmicropal.51.4.289",
+   "pdf": null,
+   "type": "ART",
+   "volume": "51",
+   "pages": "289-297",
+   "projects": []
+  },
+  {
+   "hal": "hal-01460376",
+   "title": "Trends in size changes in the coccolithophorids, calcareous nannoplankton, during the Mesozoic: A pilot study",
+   "authors": [
+    "L. Beaufort",
+    "A Kahn",
+    "S Boyd",
+    "Mp Aubry",
+    "D Bord"
+   ],
+   "journal": "Micropaleontology",
+   "year": 2005,
+   "date": "2005-01-01",
+   "doi": "10.2113/gsmicropal.51.4.309",
+   "pdf": null,
+   "type": "ART",
+   "volume": "51",
+   "pages": "309-318",
+   "projects": []
+  },
+  {
+   "hal": "hal-03506656",
+   "title": "Testing the direct effect of CO<sub>2</sub> concentration on a bloom of the coccolithophorid Emiliania huxleyi in mesocosm experiments",
+   "authors": [
+    "A Engel",
+    "I Zondervan",
+    "K Aerts",
+    "L. Beaufort",
+    "A Benthien",
+    "L Chou",
+    "B Delille",
+    "Jean-Pierre Gattuso",
+    "J Harlay",
+    "C Heemann",
+    "L Hoffmann",
+    "Stéphan Jacquet",
+    "J Nejstgaard",
+    "Marie-Dominique Pizay",
+    "E Rochelle-Newall",
+    "U Schneider",
+    "A Terbrueggen",
+    "U Riebesell"
+   ],
+   "journal": "Limnology and Oceanography",
+   "year": 2005,
+   "date": "2005-01-01",
+   "doi": "10.4319/lo.2005.50.2.0493",
+   "pdf": null,
+   "type": "ART",
+   "volume": "50",
+   "pages": "493-507",
+   "projects": []
+  },
+  {
+   "hal": "hal-02677918",
+   "title": "Testing the direct effect of CO2 concentration on a bloom of the coccolithophorid Emiliania huxleyi in mesocosm experiments",
+   "authors": [
+    "Anja Engel",
+    "Ingrid Zondervan",
+    "Katrien Aerts",
+    "Luc L Beaufort",
+    "Albert Benthien",
+    "Lei Chou",
+    "Bruno Delille",
+    "Jean-Pierre Gattuso",
+    "Jerome Harlay",
+    "Christel Heeman",
+    "Linn Hoffmann",
+    "Stéphan Jacquet",
+    "Jens Nejstgaard",
+    "Marie-Dominique Pizay",
+    "Emma Rochelle-Newall",
+    "Uta Schneider",
+    "Anja Terbrueggen",
+    "Ulf Riebesell"
+   ],
+   "journal": "Limnology and Oceanography",
+   "year": 2005,
+   "date": "2005-01-01",
+   "doi": null,
+   "pdf": null,
+   "type": "ART",
+   "volume": "50",
+   "pages": "493-507",
+   "projects": []
+  },
+  {
+   "hal": "hal-00866976",
+   "title": "Stable sea surface temperatures in the western Pacific warm pool over the past 1.75 million years",
+   "authors": [
+    "Thibault de Garidel-Thoron-De Garidel-Thoron",
+    "Y. Rosenthal",
+    "F. Bassinot",
+    "Luc L Beaufort"
+   ],
+   "journal": "Nature",
+   "year": 2005,
+   "date": "2005-01-01",
+   "doi": "10.1038/nature03189",
+   "pdf": null,
+   "type": "ART",
+   "volume": "433",
+   "pages": "294-298",
+   "projects": []
+  },
+  {
+   "hal": "hal-01460382",
+   "title": "A biomass burning record from the West Equatorial Pacific over the last 360 ky: methodological, climatic and anthropic implications",
+   "authors": [
+    "F Thevenon",
+    "E. Bard",
+    "D Williamson",
+    "L. Beaufort"
+   ],
+   "journal": "Palaeogeography, Palaeoclimatology, Palaeoecology",
+   "year": 2004,
+   "date": "2004-10-01",
+   "doi": "10.1016/j.palaeo.2004.07.003",
+   "pdf": null,
+   "type": "ART",
+   "volume": "213",
+   "pages": "83-99",
+   "projects": []
+  },
+  {
+   "hal": "hal-01460380",
+   "title": "Evidence for large methane releases to the atmosphere from deep-sea gas-hydrate dissociation during the last glacial episode",
+   "authors": [
+    "T De Garidel-Thoron",
+    "L. Beaufort",
+    "F Bassinot",
+    "P Henry"
+   ],
+   "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+   "year": 2004,
+   "date": "2004-06-01",
+   "doi": "10.1073/pnas.0402909101",
+   "pdf": "https://hal.science/hal-01460380/document",
+   "type": "ART",
+   "volume": "101",
+   "pages": "9187-9192",
+   "projects": []
+  },
+  {
+   "hal": "hal-01460381",
+   "title": "Automatic recognition of coccoliths by dynamical neural networks",
+   "authors": [
+    "L. Beaufort",
+    "D Dollfus"
+   ],
+   "journal": "Marine Micropaleontology",
+   "year": 2004,
+   "date": "2004-04-01",
+   "doi": "10.1016/j.marmicro.2003.09.003",
+   "pdf": null,
+   "type": "ART",
+   "volume": "51",
+   "pages": "57-73",
+   "projects": []
+  },
+  {
+   "hal": "hal-01460385",
+   "title": "Late quaternary paleoclimatology of the western equatorial Pacific",
+   "authors": [
+    "Y Rosenthal",
+    "T de Garidel-Thoron",
+    "Dw Oppo",
+    "Bk Linsley",
+    "L. Beaufort",
+    "F Bassinot",
+    "A Mix"
+   ],
+   "journal": "Geochimica et Cosmochimica Acta",
+   "year": 2003,
+   "date": "2003-09-01",
+   "doi": null,
+   "pdf": null,
+   "type": "ART",
+   "volume": "67",
+   "pages": "A401",
+   "projects": []
+  },
+  {
+   "hal": "hal-01460383",
+   "title": "Orbital and suborbital climate variability in the Sulu Sea, western tropical Pacific",
+   "authors": [
+    "Dw Oppo",
+    "Bk Linsley",
+    "Y Rosenthal",
+    "S Dannenmann",
+    "L. Beaufort"
+   ],
+   "journal": "Geochemistry, Geophysics, Geosystems",
+   "year": 2003,
+   "date": "2003-01-01",
+   "doi": "10.1029/2001gc000260",
+   "pdf": "https://hal.science/hal-01460383/document",
+   "type": "ART",
+   "volume": "4",
+   "pages": null,
+   "projects": []
+  },
+  {
+   "hal": "hal-01460384",
+   "title": "East Asian monsoon forcing of suborbital variability in the Sulu Sea during Marine Isotope Stage 3: Link to Northern Hemisphere climate",
+   "authors": [
+    "S Dannenmann",
+    "Bk Linsley",
+    "Dw Oppo",
+    "Y Rosenthal",
+    "L. Beaufort"
+   ],
+   "journal": "Geochemistry, Geophysics, Geosystems",
+   "year": 2003,
+   "date": "2003-01-01",
+   "doi": "10.1029/2002gc000390",
+   "pdf": "https://hal.science/hal-01460384/document",
+   "type": "ART",
+   "volume": "4",
+   "pages": null,
+   "projects": []
+  },
+  {
+   "hal": "hal-01461252",
+   "title": "Biomass burning and oceanic primary production estimates in the Sulu Sea area over the last 380 kyr and the East Asian monsoon dynamics",
+   "authors": [
+    "L. Beaufort",
+    "T De Garidel-Thoron",
+    "B Linsley",
+    "D Oppo",
+    "N Buchet"
+   ],
+   "journal": "Marine Geology",
+   "year": 2003,
+   "date": "2003-01-01",
+   "doi": null,
+   "pdf": null,
+   "type": "ART",
+   "volume": "201",
+   "pages": "53--65",
+   "projects": []
+  },
+  {
+   "hal": "hal-01461253",
+   "title": "Long-chain alkenones and U 37 k′ variability along a south―north transect in the Western Pacific Ocean",
+   "authors": [
+    "Ilham Bentaleb",
+    "Michel Fontugne",
+    "Luc L Beaufort"
+   ],
+   "journal": "Global and Planetary Change",
+   "year": 2002,
+   "date": "2002-11-01",
+   "doi": "10.1016/s0921-8181(02)00113-3",
+   "pdf": null,
+   "type": "ART",
+   "volume": "34",
+   "pages": "173-183",
+   "projects": []
+  },
+  {
+   "hal": "hal-01460386",
+   "title": "Geomagnetic-assisted stratigraphy and sea surface temperature changes in core MD94-103 (Southern Indian Ocean): possible implications for North-South climatic relationships around H4",
+   "authors": [
+    "A. Mazaud",
+    "Marie-Alexandrine Sicre",
+    "Ullah Ezat",
+    "J.-J. Pichon",
+    "J. Duprat",
+    "C. Laj",
+    "C. Kissel",
+    "Luc L Beaufort",
+    "Elisabeth Michel",
+    "Jean-Louis Turon"
+   ],
+   "journal": "Earth and Planetary Science Letters",
+   "year": 2002,
+   "date": "2002-07-01",
+   "doi": "10.1016/s0012-821x(02)00662-3",
+   "pdf": null,
+   "type": "ART",
+   "volume": "201",
+   "pages": "159-170",
+   "projects": []
+  },
+  {
+   "hal": "hal-01460389",
+   "title": "Millennial-scale dynamics of the East Asian winter monsoon during the last 200,000 years",
+   "authors": [
+    "T De Garidel-Thoron",
+    "L. Beaufort",
+    "Bk Linsley",
+    "S Dannenmann"
+   ],
+   "journal": "Paleoceanography",
+   "year": 2001,
+   "date": "2001-10-01",
+   "doi": "10.1029/2000pa000557",
+   "pdf": "https://hal.science/hal-01460389/document",
+   "type": "ART",
+   "volume": "16",
+   "pages": "491-502",
+   "projects": []
+  },
+  {
+   "hal": "hal-02880696",
+   "title": "Downward particle fluxes within different productivity regimes off the Mauritanian upwelling zone (EUMELI program)",
+   "authors": [
+    "Aloys Bory",
+    "Catherine Jeandel",
+    "Nathalie Leblond",
+    "Annick Vangriesheim",
+    "Alexis Khripounoff",
+    "Luc Beaufort",
+    "Christophe Rabouille",
+    "E Nicolas",
+    "Kazuyo Tachikawa",
+    "Henri Etcheber",
+    "Patrick Buat-Ménard"
+   ],
+   "journal": "Deep Sea Research Part I: Oceanographic Research Papers",
+   "year": 2001,
+   "date": "2001-10-01",
+   "doi": "10.1016/s0967-0637(01)00010-3",
+   "pdf": null,
+   "type": "ART",
+   "volume": "48",
+   "pages": "2251-2282",
+   "projects": []
+  },
+  {
+   "hal": "hal-02298830",
+   "title": "Sea-level and environmental changes since the last interglacial in the Gulf of Carpentaria, Australia: an overview",
+   "authors": [
+    "Allan Chivas",
+    "Adriana García",
+    "Sander van Der Kaars",
+    "Martine Couapel",
+    "Sabine Holt",
+    "Jessica Reeves",
+    "David Wheeler",
+    "Adam Switzer",
+    "Colin Murray-Wallace",
+    "Debabrata Banerjee",
+    "David Price",
+    "Sue Wang",
+    "Grant Pearson",
+    "N.Terry Edgar",
+    "Luc L Beaufort",
+    "Patrick de Deckker",
+    "Ewan Lawson",
+    "C.Blaine Cecil"
+   ],
+   "journal": "Quaternary International",
+   "year": 2001,
+   "date": "2001-09-01",
+   "doi": "10.1016/s1040-6182(01)00029-5",
+   "pdf": null,
+   "type": "ART",
+   "volume": "83-85",
+   "pages": "19-46",
+   "projects": []
+  },
+  {
+   "hal": "hal-01460388",
+   "title": "ENSO-like forcing on oceanic primary production during the Late Pleistocene",
+   "authors": [
+    "L. Beaufort",
+    "T De Garidel-Thoron",
+    "Ac Mix",
+    "Ng Pisias"
+   ],
+   "journal": "Science",
+   "year": 2001,
+   "date": "2001-09-01",
+   "doi": "10.1126/science.293.5539.2440",
+   "pdf": null,
+   "type": "ART",
+   "volume": "293",
+   "pages": "2440-2444",
+   "projects": []
+  },
+  {
+   "hal": "hal-01461254",
+   "title": "Seasonal dynamics of calcareous nannoplankton on a West European continental margin: the Bay of Biscay",
+   "authors": [
+    "Luc L Beaufort",
+    "Serge Heussner"
+   ],
+   "journal": "Marine Micropaleontology",
+   "year": 2001,
+   "date": "2001-01-01",
+   "doi": null,
+   "pdf": null,
+   "type": "ART",
+   "volume": "43",
+   "pages": "27--55",
+   "projects": []
+  },
+  {
+   "hal": "hal-01460390",
+   "title": "Biomarker stratigraphic records over the last 150 kyears off the NW African coast at 25° N",
+   "authors": [
+    "Marie-Alexandrine Sicre",
+    "Yann Ternois",
+    "Martine Paterne",
+    "Anne Boireau",
+    "Luc Beaufort",
+    "Philippe Martinez"
+   ],
+   "journal": "Organic Geochemistry",
+   "year": 2000,
+   "date": "2000-01-01",
+   "doi": "10.1016/s0146-6380(00)00021-8",
+   "pdf": null,
+   "type": "ART",
+   "volume": "31",
+   "pages": "577-588",
+   "projects": []
+  },
+  {
+   "hal": "hal-01460392",
+   "title": "Fat neural network for recognition of position-normalised objects",
+   "authors": [
+    "D Dollfus",
+    "L. Beaufort"
+   ],
+   "journal": "Neural Networks",
+   "year": 1999,
+   "date": "1999-04-01",
+   "doi": "10.1016/s0893-6080(99)00011-8",
+   "pdf": null,
+   "type": "ART",
+   "volume": "12",
+   "pages": "553-560",
+   "projects": []
+  },
+  {
+   "hal": "hal-01461259",
+   "title": "Spatial and temporal patterns of downward particle fluxes on the continental slope of the Bay of Biscay (northeastern Atlantic)",
+   "authors": [
+    "Serge Heussner",
+    "Xavier Durrieu de Madron",
+    "Olivier Radakovitch",
+    "Luc L Beaufort",
+    "Pierre E Biscaye",
+    "Jacques Carbonne",
+    "Nicole Delsaut",
+    "Henri Etcheber",
+    "André Monaco"
+   ],
+   "journal": "Deep Sea Research Part II: Topical Studies in Oceanography",
+   "year": 1999,
+   "date": "1999-01-01",
+   "doi": null,
+   "pdf": null,
+   "type": "ART",
+   "volume": "46",
+   "pages": "2101--2146",
+   "projects": []
+  },
+  {
+   "hal": "hal-01461258",
+   "title": "Paleoproductivity in the Equatorial Indian Ocean for the last 260,000 yr: a transfer function based on planktonic foraminifera",
+   "authors": [
+    "Olivia Cayre",
+    "Luc L Beaufort",
+    "Edith Vincent"
+   ],
+   "journal": "Quaternary Science Reviews",
+   "year": 1999,
+   "date": "1999-01-01",
+   "doi": null,
+   "pdf": null,
+   "type": "ART",
+   "volume": "18",
+   "pages": "839--857",
+   "projects": []
+  },
+  {
+   "hal": "hal-01461260",
+   "title": "Coccolithophorids on the continental slope of the Bay of Biscay―production, transport and contribution to mass fluxes",
+   "authors": [
+    "Luc L Beaufort",
+    "Serge Heussner"
+   ],
+   "journal": "Deep Sea Research Part II: Topical Studies in Oceanography",
+   "year": 1999,
+   "date": "1999-01-01",
+   "doi": null,
+   "pdf": null,
+   "type": "ART",
+   "volume": "46",
+   "pages": "2147--2174",
+   "projects": []
+  },
+  {
+   "hal": "hal-01460393",
+   "title": "Exploring quaternary variability of the east Asia monsoon, Kuroshio Current, and western Pacific warm pool systems: High-resolution investigations of paleoceanography from the IMAGES III (MD106) IPHIS cruise",
+   "authors": [
+    "Mt Chen",
+    "L. Beaufort",
+    "Shipboard Sci Party Images Iiimd 106 - Iphis"
+   ],
+   "journal": "TAO : Terrestrial, Atmospheric and Oceanic Sciences journal",
+   "year": 1998,
+   "date": "1998-03-01",
+   "doi": null,
+   "pdf": null,
+   "type": "ART",
+   "volume": "9",
+   "pages": "129-142",
+   "projects": []
+  },
+  {
+   "hal": "hal-01461262",
+   "title": "Sea surface temperature and productivity records for the last 240 kyr on the Arabian Sea",
+   "authors": [
+    "F Rostek",
+    "E. Bard",
+    "L. Beaufort"
+   ],
+   "journal": "Oceanographic Literature Review",
+   "year": 1998,
+   "date": "1998-01-01",
+   "doi": null,
+   "pdf": null,
+   "type": "ART",
+   "volume": "7",
+   "pages": "1123",
+   "projects": []
+  },
+  {
+   "hal": "hal-01461261",
+   "title": "Hydrocarbons, sterols and alkenones in sinking particles in the Indian Ocean sector of the Southern Ocean",
+   "authors": [
+    "Yann Ternois",
+    "Marie-Alexandrine Sicre",
+    "Anne Boireau",
+    "Luc Beaufort",
+    "Juan-Carlos Miquel",
+    "Catherine Jeandel"
+   ],
+   "journal": "Organic Geochemistry",
+   "year": 1998,
+   "date": "1998-01-01",
+   "doi": "10.1016/s0146-6380(98)00008-4",
+   "pdf": null,
+   "type": "ART",
+   "volume": "28",
+   "pages": "489--501",
+   "projects": []
+  },
+  {
+   "hal": "hal-01460394",
+   "title": "Insolation cycles as a major control equatorial Indian Ocean primary production",
+   "authors": [
+    "L. Beaufort",
+    "Y Lancelot",
+    "P Camberlin",
+    "O Cayre",
+    "E Vincent",
+    "F. Bassinot",
+    "L. Labeyrie"
+   ],
+   "journal": "Science",
+   "year": 1997,
+   "date": "1997-11-01",
+   "doi": "10.1126/science.278.5342.1451",
+   "pdf": null,
+   "type": "ART",
+   "volume": "278",
+   "pages": "1451-1454",
+   "projects": []
+  },
+  {
+   "hal": "hal-01461265",
+   "title": "Sea surface temperature and productivity records for the past 240 kyr in the Arabian Sea",
+   "authors": [
+    "Frauke Rostek",
+    "Edouard Bard",
+    "Luc L Beaufort",
+    "Corinne Sonzogni",
+    "Gerald Ganssen"
+   ],
+   "journal": "Deep Sea Research Part II: Topical Studies in Oceanography",
+   "year": 1997,
+   "date": "1997-01-01",
+   "doi": null,
+   "pdf": null,
+   "type": "ART",
+   "volume": "44",
+   "pages": "1461--1480",
+   "projects": []
+  },
+  {
+   "hal": "hal-01461264",
+   "title": "Changes in the dynamics of western equatorial Atlantic surface currents and biogenic productivity at the “Mid-Pleistocene Revolution”(~930 ka)",
+   "authors": [
+    "F.C. Bassinot",
+    "L. Beaufort",
+    "E. Vincent",
+    "L. Labeyrie"
+   ],
+   "journal": "Proceedings of the Ocean Drilling Program, Scientific Results, Vol. 154",
+   "year": 1997,
+   "date": "1997-01-01",
+   "doi": "10.2973/odp.proc.sr.154.108.1997",
+   "pdf": "https://hal.science/hal-01461264/document",
+   "type": "COUV",
+   "volume": "154",
+   "pages": "269-284",
+   "projects": []
+  },
+  {
+   "hal": "hal-01460395",
+   "title": "The glacial ocean productivity hypothesis: The importance of regional temporal and spatial studies",
+   "authors": [
+    "Pierre Bertrand",
+    "G. Shimmield",
+    "P. Martinez",
+    "F. Grousset",
+    "Frans Jorissen",
+    "M. Paterne",
+    "C. Pujol",
+    "Ioanna Bouloubassi",
+    "P. Buat Menard",
+    "J.-P. Peypouquet",
+    "Luc Beaufort",
+    "Marie-Alexandrine Sicre",
+    "Elisabeth Lallier-Vergès",
+    "J. M. Foster",
+    "Yann Ternois"
+   ],
+   "journal": "Marine Geology",
+   "year": 1996,
+   "date": "1996-02-01",
+   "doi": "10.1016/0025-3227(95)00166-2",
+   "pdf": null,
+   "type": "ART",
+   "volume": "130",
+   "pages": "1-9",
+   "projects": []
+  },
+  {
+   "hal": "hal-01461266",
+   "title": "Dynamics of the monsoon in the equatorial Indian Ocean over the last 260,000 years",
+   "authors": [
+    "Luc L Beaufort"
+   ],
+   "journal": "Quaternary International",
+   "year": 1996,
+   "date": "1996-01-01",
+   "doi": null,
+   "pdf": null,
+   "type": "ART",
+   "volume": "31",
+   "pages": "13--18",
+   "projects": []
+  },
+  {
+   "hal": "hal-01461270",
+   "title": "Periodicities of carbonate cycles in the Valanginian of the Vocontian Trough: a strong obliquity control",
+   "authors": [
+    "F Giraud",
+    "Luc L Beaufort",
+    "P Cotillon"
+   ],
+   "journal": "The Geological Society, London, Special Publications",
+   "year": 1995,
+   "date": "1995-01-01",
+   "doi": null,
+   "pdf": null,
+   "type": "ART",
+   "volume": "85",
+   "pages": "143--164",
+   "projects": []
+  },
+  {
+   "hal": "hal-01461269",
+   "title": "Controle astronomique de la sedimentation carbonatee dans le Cretace inferieur du Bassin vocontien (SE France)",
+   "authors": [
+    "Fabienne Giraud",
+    "Luc L Beaufort",
+    "Pierre Cotillon"
+   ],
+   "journal": "Bulletin de la Société Géologique de France",
+   "year": 1995,
+   "date": "1995-01-01",
+   "doi": null,
+   "pdf": null,
+   "type": "ART",
+   "volume": "166",
+   "pages": "409--421",
+   "projects": []
+  },
+  {
+   "hal": "hal-01460396",
+   "title": "ASTRONOMICAL CONTROL OF CARBONATE RECORD IN THE LOWER CRETACEOUS OF THE VOCONTIAN BASIN (SE FRANCE)",
+   "authors": [
+    "F Giraud",
+    "L. Beaufort",
+    "P Cotillon"
+   ],
+   "journal": "Bulletin de la Société Géologique de France",
+   "year": 1995,
+   "date": "1995-01-01",
+   "doi": null,
+   "pdf": null,
+   "type": "ART",
+   "volume": "166",
+   "pages": "409-421",
+   "projects": []
+  },
+  {
+   "hal": "hal-01460397",
+   "title": "CLIMATIC IMPORTANCE OF THE MODULATION OF THE 100-KYR CYCLE INFERRED FROM 16-MY LONG MIOCENE RECORDS",
+   "authors": [
+    "L. Beaufort"
+   ],
+   "journal": "Paleoceanography",
+   "year": 1994,
+   "date": "1994-12-01",
+   "doi": "10.1029/94pa02115",
+   "pdf": "https://hal.science/hal-01460397/document",
+   "type": "ART",
+   "volume": "9",
+   "pages": "821-834",
+   "projects": []
+  },
+  {
+   "hal": "hal-01460400",
+   "title": "COARSE FRACTION FLUCTUATIONS IN PELAGIC CARBONATE SEDIMENTS FROM THE TROPICAL INDIAN-OCEAN - A 1500-KYR RECORD OF CARBONATE DISSOLUTION",
+   "authors": [
+    "Fc Bassinot",
+    "L. Beaufort",
+    "E Vincent",
+    "Ld Labeyrie",
+    "F Rostek",
+    "Pj Muller",
+    "X Quidelleur",
+    "Y Lancelot"
+   ],
+   "journal": "Paleoceanography",
+   "year": 1994,
+   "date": "1994-08-01",
+   "doi": "10.1029/94pa00860",
+   "pdf": "https://hal.science/hal-01460400/document",
+   "type": "ART",
+   "volume": "9",
+   "pages": "579-600",
+   "projects": []
+  },
+  {
+   "hal": "hal-01461271",
+   "title": "The formation of Pliocene sapropels and carbonate cycles in the Mediterranean: diagenesis, dilution, and productivity",
+   "authors": [
+    "Bjh van Os",
+    "Lj Lourens",
+    "Fj Hilgen",
+    "Gj de Lange",
+    "L. Beaufort"
+   ],
+   "journal": "Paleoceanography",
+   "year": 1994,
+   "date": "1994-01-01",
+   "doi": null,
+   "pdf": "https://hal.science/hal-01461271/document",
+   "type": "ART",
+   "volume": "9",
+   "pages": "601--617",
+   "projects": []
+  },
+  {
+   "hal": "hal-01461272",
+   "title": "Fluctuations of the Indian monsoon regime during the last 170,000 years: Evidence from sea surface temperature, salinity and organic carbon records",
+   "authors": [
+    "Frauke Rostek",
+    "Götz Ruhland",
+    "Franck C Bassinot",
+    "Luc L Beaufort",
+    "Peter J Müller",
+    "Edouard Bard"
+   ],
+   "journal": "Global Precipitations and Climate Change",
+   "year": 1994,
+   "date": "1994-01-01",
+   "doi": "10.1007/978-3-642-79268-7_2",
+   "pdf": null,
+   "type": "COUV",
+   "volume": null,
+   "pages": "27--51",
+   "projects": []
+  },
+  {
+   "hal": "hal-01670447",
+   "title": "Size Variations in Late Miocene Reticulofenestra and implication for paleo climatic interpretation",
+   "authors": [
+    "Luc L Beaufort"
+   ],
+   "journal": "Memorie di Scienze Geologiche",
+   "year": 1992,
+   "date": "1992-01-01",
+   "doi": null,
+   "pdf": "https://hal.science/hal-01670447/document",
+   "type": "ART",
+   "volume": null,
+   "pages": null,
+   "projects": []
+  },
+  {
+   "hal": "hal-01461274",
+   "title": "Paleoceanographic implications of a 17-mylong record of high-latitude Miocene calcareous nannoplankton fluctuations",
+   "authors": [
+    "Luc L Beaufort",
+    "Marie-Pierre Aubry"
+   ],
+   "journal": "Proceedings of the Ocean Drilling Program, Scientific Results",
+   "year": 1992,
+   "date": "1992-01-01",
+   "doi": null,
+   "pdf": null,
+   "type": "COUV",
+   "volume": "130",
+   "pages": "539--549",
+   "projects": []
+  },
+  {
+   "hal": "hal-01460401",
+   "title": "ADAPTATION OF THE RANDOM SETTLING METHOD FOR QUANTITATIVE STUDIES OF CALCAREOUS NANNOFOSSILS",
+   "authors": [
+    "L. Beaufort"
+   ],
+   "journal": "Micropaleontology",
+   "year": 1991,
+   "date": "1991-01-01",
+   "doi": "10.2307/1485914",
+   "pdf": null,
+   "type": "ART",
+   "volume": "37",
+   "pages": "415-418",
+   "projects": []
+  },
+  {
+   "hal": "hal-01460402",
+   "title": "FLUCTUATIONS IN THE COMPOSITION OF LATE MIOCENE CALCAREOUS NANNOFOSSIL ASSEMBLAGES AS A RESPONSE TO ORBITAL FORCING",
+   "authors": [
+    "Luc L Beaufort",
+    "Marie-Pierre Aubry"
+   ],
+   "journal": "Paleoceanography",
+   "year": 1990,
+   "date": "1990-12-01",
+   "doi": "10.1029/pa005i006p00845",
+   "pdf": "https://hal.science/hal-01460402/document",
+   "type": "ART",
+   "volume": "5",
+   "pages": "845-865",
    "projects": []
   }
  ]
